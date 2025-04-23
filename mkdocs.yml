@@ -1,8 +1,8 @@
 site_name: ac-library-mojo Docs
 docs_dir: docs
 site_dir: site
-site_url: https://shogo314.github.io/page-test3/
-repo_url: https://github.com/shogo314/page-test3
+site_url: https://shogo314.github.io/ac-library-mojo/
+repo_url: https://github.com/shogo314/ac-library-mojo
 
 theme:
   name: material

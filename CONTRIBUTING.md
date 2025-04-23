@@ -1,6 +1,6 @@
 # コントリビュート
 
-詳しくは[こちら](https://shogo314.github.io/page-test3/latest/contribute/)をご覧ください
+詳しくは[こちら](https://shogo314.github.io/ac-library-mojo/latest/contribute/)をご覧ください
 
 ## ライブラリ
 

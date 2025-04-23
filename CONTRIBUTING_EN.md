@@ -1,6 +1,6 @@
 # Contributing
 
-For more details, please see [here](https://shogo314.github.io/page-test3/latest/en/contribute/).
+For more details, please see [here](https://shogo314.github.io/ac-library-mojo/latest/en/contribute/).
 
 ## Library
 
