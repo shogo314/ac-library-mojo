@@ -53,7 +53,7 @@ struct IO:
         T: HasInitStringRaisingCollectionElement
     ](mut self, n: Int) raises -> List[T]:
         var res = List[T](capacity=n)
-        for i in range(n):
+        for _ in range(n):
             res.append(T(self.next()))
         return res
 
