@@ -183,6 +183,13 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.0en/modules/py/bisect/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.0/modules/py/builtin/</loc>
+        <lastmod>2025-04-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.0/modules/py/builtin/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.0en/modules/py/builtin/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.0/modules/py/heapq/</loc>
         <lastmod>2025-04-23</lastmod>
         <changefreq>daily</changefreq>
@@ -405,6 +412,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.0/en/modules/py/bisect/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.0modules/py/bisect/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.0/en/modules/py/builtin/</loc>
+        <lastmod>2025-04-23</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.0/en/modules/py/builtin/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.0modules/py/builtin/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.0/en/modules/py/heapq/</loc>
