@@ -22,7 +22,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install mkdocs mkdocs-material mkdocs-static-i18n mike
+          pip install mkdocs mkdocs-material mkdocs-static-i18n markdown-katex mike
 
       - name: Read version info from .version
         id: version

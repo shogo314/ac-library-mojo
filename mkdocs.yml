@@ -21,7 +21,7 @@ nav:
   - モジュール:
     - convolution: modules/convolution.md
     - dsu: modules/dsu.md
-    - fenwick: modules/fenwick.md
+    - fenwicktree: modules/fenwicktree.md
     - io: modules/io.md
     - lazysegtree: modules/lazysegtree.md
     - math: modules/math.md
@@ -32,6 +32,7 @@ nav:
     - scc: modules/scc.md
     - segtree: modules/segtree.md
     - string: modules/string.md
+    - twosat: modules/twosat.md
     - py:
       - bisect: modules/py/bisect.md
       - heapq: modules/py/heapq.md
@@ -69,3 +70,9 @@ plugins:
             モジュール: Modules
             コントリビュート: Contribute
             ライセンス: License
+
+markdown_extensions:
+  - markdown_katex:
+      no_inline_svg: True
+      insert_fonts_css: True
+      macro-file: macros.tex

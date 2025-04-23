@@ -20,7 +20,7 @@ struct FenwickTree[T: AddGroup]:
             if j < self._n:
                 self._data[j] = self._data[j] + self._data[i]
 
-    fn add(mut self, p: Int, x: T) raises -> None:
+    fn add(mut self, p: Int, x: T) raises:
         assert_true(0 <= p < self._n)
         var q = p + 1
         while q <= self._n:
