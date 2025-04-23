@@ -35,6 +35,7 @@ nav:
     - twosat: modules/twosat.md
     - py:
       - bisect: modules/py/bisect.md
+      - builtin: modules/py/builtin.md
       - heapq: modules/py/heapq.md
       - itertools: modules/py/itertools.md
       - math: modules/py/math.md
