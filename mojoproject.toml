@@ -1,0 +1,7 @@
+[project]
+channels = ["conda-forge", "https://conda.modular.com/max", "https://repo.prefix.dev/modular-community"]
+name = "mojo"
+platforms = ["linux-64"]
+
+[dependencies]
+max = "=25.2.0"
