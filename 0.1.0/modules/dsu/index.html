@@ -14,7 +14,7 @@
         <link rel="prev" href="../convolution/">
       
       
-        <link rel="next" href="../io/">
+        <link rel="next" href="../fenwicktree/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#dsu" class="md-skip">
+        <a href="#struct-dsu" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -396,6 +396,8 @@
       
         
       
+        
+      
     
     
     
@@ -469,8 +471,19 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    dsu
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -484,6 +497,101 @@
 
       </a>
       
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目次">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#struct-dsu" class="md-nav__link">
+    <span class="md-ellipsis">
+      struct DSU
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="struct DSU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__out-self-n-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__(out self, n: Int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mergemut-self-a-int-b-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge(mut self, a: Int, b: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samemut-self-a-int-b-int-raises-bool" class="md-nav__link">
+    <span class="md-ellipsis">
+      same(mut self, a: Int, b: Int) raises -&gt; Bool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leadermut-self-a-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      leader(mut self, a: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizemut-self-a-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      size(mut self, a: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupsmut-self-raises-listlistint" class="md-nav__link">
+    <span class="md-ellipsis">
+      groups(mut self) raises -&gt; List[List[Int]]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alias-unionfind-dsu" class="md-nav__link">
+    <span class="md-ellipsis">
+      alias UnionFind = DSU
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -496,12 +604,12 @@
   
   
     <li class="md-nav__item">
-      <a href="../fenwick.md" class="md-nav__link">
+      <a href="../fenwicktree/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    fenwick
+    fenwicktree
     
   </span>
   
@@ -748,6 +856,29 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../twosat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    twosat
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
     
     
       
@@ -778,10 +909,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_14" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15" >
         
           
-          <label class="md-nav__link" for="__nav_2_14" id="__nav_2_14_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
             
   
   
@@ -794,8 +925,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_14_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_14">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_15">
             <span class="md-nav__icon md-icon"></span>
             py
           </label>
@@ -1008,10 +1139,10 @@
         
           
         
-        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_15" >
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2_16" >
         
           
-          <label class="md-nav__link" for="__nav_2_15" id="__nav_2_15_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_16" id="__nav_2_16_label" tabindex="0">
             
   
   
@@ -1024,8 +1155,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_15_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_2_15">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_16_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_16">
             <span class="md-nav__icon md-icon"></span>
             ext
           </label>
@@ -1291,8 +1422,92 @@
   
   
   
-    
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目次
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#struct-dsu" class="md-nav__link">
+    <span class="md-ellipsis">
+      struct DSU
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="struct DSU">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#__init__out-self-n-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      __init__(out self, n: Int)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mergemut-self-a-int-b-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      merge(mut self, a: Int, b: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samemut-self-a-int-b-int-raises-bool" class="md-nav__link">
+    <span class="md-ellipsis">
+      same(mut self, a: Int, b: Int) raises -&gt; Bool
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#leadermut-self-a-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      leader(mut self, a: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sizemut-self-a-int-raises-int" class="md-nav__link">
+    <span class="md-ellipsis">
+      size(mut self, a: Int) raises -&gt; Int
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#groupsmut-self-raises-listlistint" class="md-nav__link">
+    <span class="md-ellipsis">
+      groups(mut self) raises -&gt; List[List[Int]]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alias-unionfind-dsu" class="md-nav__link">
+    <span class="md-ellipsis">
+      alias UnionFind = DSU
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -1311,7 +1526,17 @@
   
 
 
-<h1 id="dsu">dsu</h1>
+  <h1>dsu</h1>
+
+<h2 id="struct-dsu"><code>struct DSU</code></h2>
+<p>素集合データ構造</p>
+<h3 id="__init__out-self-n-int"><code>__init__(out self, n: Int)</code></h3>
+<h3 id="mergemut-self-a-int-b-int-raises-int"><code>merge(mut self, a: Int, b: Int) raises -&gt; Int</code></h3>
+<h3 id="samemut-self-a-int-b-int-raises-bool"><code>same(mut self, a: Int, b: Int) raises -&gt; Bool</code></h3>
+<h3 id="leadermut-self-a-int-raises-int"><code>leader(mut self, a: Int) raises -&gt; Int</code></h3>
+<h3 id="sizemut-self-a-int-raises-int"><code>size(mut self, a: Int) raises -&gt; Int</code></h3>
+<h3 id="groupsmut-self-raises-listlistint"><code>groups(mut self) raises -&gt; List[List[Int]]</code></h3>
+<h2 id="alias-unionfind-dsu"><code>alias UnionFind = DSU</code></h2>
 
 
 
