@@ -1,0 +1,11 @@
+.verify-helper/
+!.verify-helper/config.toml
+
+.vscode/
+
+*.out
+
+.magic/
+magic.lock
+
+site/

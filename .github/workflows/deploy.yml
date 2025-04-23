@@ -1,0 +1,44 @@
+name: Deploy MkDocs via mike
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo with full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material mkdocs-static-i18n mike
+
+      - name: Read version info from .version
+        id: version
+        run: |
+          source .version
+          echo "VERSION=$version" >> $GITHUB_OUTPUT
+          echo "SET_DEFAULT=$set_default" >> $GITHUB_OUTPUT
+
+      - name: Deploy with mike
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          if [ "${{ steps.version.outputs.SET_DEFAULT }}" = "true" ]; then
+            mike deploy "${{ steps.version.outputs.VERSION }}" latest --push
+            mike set-default "${{ steps.version.outputs.VERSION }}" --push
+          else
+            mike deploy "${{ steps.version.outputs.VERSION }}" --push
+          fi

@@ -1,0 +1,71 @@
+site_name: ac-library-mojo Docs
+docs_dir: docs
+site_dir: site
+site_url: https://shogo314.github.io/page-test3/
+repo_url: https://github.com/shogo314/page-test3
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.indexes
+    - navigation.expand
+    - version-selector
+
+extra:
+  version:
+    provider: mike
+
+nav:
+  - ホーム: index.md
+  - モジュール:
+    - convolution: modules/convolution.md
+    - dsu: modules/dsu.md
+    - fenwick: modules/fenwick.md
+    - io: modules/io.md
+    - lazysegtree: modules/lazysegtree.md
+    - math: modules/math.md
+    - maxflow: modules/maxflow.md
+    - method_traits: modules/method_traits.md
+    - mincostflow: modules/mincostflow.md
+    - modint: modules/modint.md
+    - scc: modules/scc.md
+    - segtree: modules/segtree.md
+    - string: modules/string.md
+    - py:
+      - bisect: modules/py/bisect.md
+      - heapq: modules/py/heapq.md
+      - itertools: modules/py/itertools.md
+      - math: modules/py/math.md
+      - operator: modules/py/operator.md
+      - string: modules/py/string.md
+      - sympy: modules/py/sympy.md
+    - ext:
+      - affine: modules/ext/affine.md
+      - algorithm: modules/ext/algorithm.md
+      - avltree: modules/ext/avltree.md
+      - dualsegtree: modules/ext/dualsegtree.md
+      - interval_heap: modules/ext/interval_heap.md
+      - potentialized_unionfind: modules/ext/potentialized_unionfind.md
+      - priority_queue: modules/ext/priority_queue.md
+      - string: modules/ext/string.md
+  - コントリビュート: contribute.md
+  - ライセンス: license.md
+
+plugins:
+  - search:
+  - i18n:
+      docs_structure: suffix
+      languages:
+        - locale: ja
+          name: 日本語
+          default: true
+          build: true
+        - locale: en
+          name: English
+          build: true
+          nav_translations:
+            ホーム: Home
+            モジュール: Modules
+            コントリビュート: Contribute
+            ライセンス: License
