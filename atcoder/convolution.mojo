@@ -1,7 +1,6 @@
 from testing import assert_true
 from bit import log2_floor, count_trailing_zeros
 
-from atcoder._bit import bit_ceil
 from atcoder._math import _primitive_root
 from atcoder.modint import StaticModint
 
