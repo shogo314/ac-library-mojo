@@ -1,17 +1,16 @@
-**Structs**
+[モジュール](../index.md) > [dsu](./index.md) > [DSU]()
 
-- `DSU`
-- `UnionFind`
-
----
-
-## `DSU`
+# DSU
 
 ```
 struct DSU
 ```
 
 素集合データ構造
+
+---
+
+## Methods
 
 ---
 
@@ -82,12 +81,4 @@ fn size(mut self, a: Int) raises -> Int
 
 ```
 fn groups(mut self) raises -> List[List[Int]]
-```
-
----
-
-## `UnionFind`
-
-```
-alias UnionFind = DSU
 ```

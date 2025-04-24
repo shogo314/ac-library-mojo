@@ -19,8 +19,11 @@ extra:
 nav:
   - ホーム: index.md
   - モジュール:
-    - convolution: modules/convolution.md
-    - dsu: modules/dsu.md
+    - modules/index.md
+    - convolution:
+      - modules/convolution/index.md
+    - dsu:
+      - modules/dsu/index.md
     - fenwicktree: modules/fenwicktree.md
     - io: modules/io.md
     - lazysegtree: modules/lazysegtree.md
