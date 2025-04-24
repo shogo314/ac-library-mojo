@@ -1,12 +1,12 @@
 from testing import assert_true
 from collections import Optional
+from bit import log2_floor, count_trailing_zeros
 
-from atcoder._bit import bit_ceil, countr_zero
 from atcoder.method_traits import AddMonoid
 from atcoder.py.operator import add
 
 
-struct DualSegtree[S: CollectionElement, F: CollectionElement]:
+struct DualSegTree[S: CollectionElement, F: CollectionElement]:
     var n: Int
     var size: Int
     var log: Int
@@ -30,8 +30,8 @@ struct DualSegtree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = n
-        self.size = Int(bit_ceil(n))
-        self.log = countr_zero(self.size)
+        self.size = 1 << (log2_floor(n - 1) + 1)
+        self.log = count_trailing_zeros(self.size)
         self.d = List[S](e) * n
         self.lz = List[F](id) * (2 * self.size)
 
@@ -47,8 +47,8 @@ struct DualSegtree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = len(v)
-        self.size = Int(bit_ceil(self.n))
-        self.log = countr_zero(self.size)
+        self.size = 1 << (log2_floor(self.n - 1) + 1)
+        self.log = count_trailing_zeros(self.size)
         self.d = v
         self.lz = List[F](id) * (2 * self.size)
 
@@ -108,11 +108,11 @@ struct DualSegtree[S: CollectionElement, F: CollectionElement]:
         self.lz[k] = self.id
 
 
-fn RAddQ[S: AddMonoid](n: Int) -> DualSegtree[S, S]:
-    return DualSegtree[S](n, S(), add[S], add[S], S())
+fn RAddQ[S: AddMonoid](n: Int) -> DualSegTree[S, S]:
+    return DualSegTree[S](n, S(), add[S], add[S], S())
 
 
-fn RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegtree[S, Optional[S]]:
+fn RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegTree[S, Optional[S]]:
     fn mapping(f: Optional[S], s: S) -> S:
         if f:
             return f.value()
@@ -125,6 +125,6 @@ fn RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegtree[S, Optional[S]]:
         else:
             return g
 
-    return DualSegtree[S, Optional[S]](
+    return DualSegTree[S, Optional[S]](
         n, e, mapping, composition, Optional[S]()
     )

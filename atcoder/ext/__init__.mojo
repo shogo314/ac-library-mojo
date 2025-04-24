@@ -1,5 +1,5 @@
 from atcoder.ext.avltree import AVLTree
-from atcoder.ext.dualsegtree import DualSegtree, RAddQ, RUpdateQ
+from atcoder.ext.dualsegtree import DualSegTree, RAddQ, RUpdateQ
 from atcoder.ext.interval_heap import IntervalHeap
 from atcoder.ext.potentialized_unionfind import (
     PotentializedUnionFind,

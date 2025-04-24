@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_B
 
 from atcoder.io import IO
-from atcoder.segtree import Segtree
+from atcoder.segtree import SegTree
 from atcoder.py.operator import add
 
 
@@ -9,7 +9,7 @@ fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = Segtree[Int](n, add[Int], 0)
+    var seg = SegTree[Int](n, add[Int], 0)
     for _ in range(q):
         var com = io.nextInt()
         var x = io.nextInt()

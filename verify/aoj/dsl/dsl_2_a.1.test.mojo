@@ -1,14 +1,14 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_A
 
 from atcoder.io import IO
-from atcoder.segtree import Segtree
+from atcoder.segtree import SegTree
 
 
 fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = Segtree[Int](n, min, 2**31 - 1)
+    var seg = SegTree[Int](n, min, 2**31 - 1)
     for _ in range(q):
         var com = io.nextInt()
         var x = io.nextInt()

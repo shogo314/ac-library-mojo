@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/range_affine_range_sum
 
 from atcoder.io import IO
-from atcoder.lazysegtree import LazySegtree
+from atcoder.lazysegtree import LazySegTree
 from atcoder.modint import modint998244353
 
 alias mint = modint998244353
@@ -53,7 +53,7 @@ fn main() raises:
     for _ in range(N):
         var a = io.nextInt()
         init.append(ValueWithSize(mint(a), 1))
-    var seg = LazySegtree[ValueWithSize, Affine](
+    var seg = LazySegTree[ValueWithSize, Affine](
         init, op, e(), mapping, composite, id()
     )
     for _ in range(Q):

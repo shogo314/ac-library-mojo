@@ -1,6 +1,7 @@
 from testing import assert_true
+from bit import log2_floor, count_trailing_zeros
 
-from atcoder._bit import countr_zero, bit_ceil
+from atcoder._bit import bit_ceil
 from atcoder._math import _primitive_root
 from atcoder.modint import StaticModint
 
@@ -16,7 +17,7 @@ struct _FFTInfo[M: Int]:
     fn __init__(out self) raises:
         alias mint = StaticModint[M]
         alias g = _primitive_root(M)
-        alias rank2 = countr_zero(M - 1)
+        alias rank2 = count_trailing_zeros(M - 1)
 
         self.root = List[mint](mint()) * (rank2 + 1)
         self.iroot = List[mint](mint()) * (rank2 + 1)
@@ -51,7 +52,7 @@ struct _FFTInfo[M: Int]:
 fn _butterfly[M: Int](mut a: List[StaticModint[M]]) raises:
     alias mint = StaticModint[M]
     var n = len(a)
-    var h = countr_zero(n)
+    var h = count_trailing_zeros(n)
     var info = _FFTInfo[M]()
     var ln = 0
     while ln < h:
@@ -66,7 +67,7 @@ fn _butterfly[M: Int](mut a: List[StaticModint[M]]) raises:
                     a[i + offset] = l + r
                     a[i + offset + p] = l - r
                 if s + 1 != (1 << ln):
-                    rot = rot * info.rate2[countr_zero(~UInt32(s))]
+                    rot = rot * info.rate2[count_trailing_zeros(~UInt32(s))]
             ln += 1
         else:
             var p = 1 << (h - ln - 2)
@@ -93,14 +94,14 @@ fn _butterfly[M: Int](mut a: List[StaticModint[M]]) raises:
                     a[i + offset + 2 * p] = mint(a0 + na2 + a1na3imag)
                     a[i + offset + 3 * p] = mint(a0 + na2 + (mod2 - a1na3imag))
                 if s + 1 != (1 << ln):
-                    rot = rot * info.rate3[countr_zero(~UInt32(s))]
+                    rot = rot * info.rate3[count_trailing_zeros(~UInt32(s))]
             ln += 2
 
 
 fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]) raises:
     alias mint = StaticModint[M]
     var n = len(a)
-    var h = countr_zero(n)
+    var h = count_trailing_zeros(n)
     var info = _FFTInfo[M]()
     var ln = h
     while ln:
@@ -117,7 +118,7 @@ fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]) raises:
                         (UInt64(M) + l.valu64() - r.valu64()) * irot.valu64()
                     )
                 if s + 1 != (1 << (ln - 1)):
-                    irot = irot * info.irate2[countr_zero(~UInt32(s))]
+                    irot = irot * info.irate2[count_trailing_zeros(~UInt32(s))]
             ln -= 1
         else:
             var p = 1 << (h - ln)
@@ -149,7 +150,7 @@ fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]) raises:
                         * irot3.val()
                     )
                 if s + 1 != (1 << (ln - 2)):
-                    irot = irot * info.irate3[countr_zero(~UInt32(s))]
+                    irot = irot * info.irate3[count_trailing_zeros(~UInt32(s))]
             ln -= 2
 
 
@@ -163,7 +164,7 @@ fn _convolution_fft[
     var b = b_
     var n = len(a)
     var m = len(b)
-    var z = Int(bit_ceil(UInt32(n + m - 1)))
+    var z = 1 << (log2_floor(n + m - 1) + 1)
     a.resize(z, mint())
     _butterfly(a)
     b.resize(z, mint())
@@ -187,7 +188,7 @@ fn convolution_mod[
     var m = len(b)
     if n == 0 or m == 0:
         return List[StaticModint[M]]()
-    var z = Int(bit_ceil(n + m - 1))
+    var z = 1 << (log2_floor(n + m - 1) + 1)
     assert_true((StaticModint[M].mod() - 1) % z == 0)
     return _convolution_fft(a, b)
 

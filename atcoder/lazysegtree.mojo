@@ -1,11 +1,11 @@
 from testing import assert_true
+from bit import log2_floor, count_trailing_zeros
 
-from atcoder._bit import bit_ceil, countr_zero
 from atcoder.method_traits import HasLtCollectionElement
 from atcoder.py.operator import add
 
 
-struct LazySegtree[S: CollectionElement, F: CollectionElement]:
+struct LazySegTree[S: CollectionElement, F: CollectionElement]:
     var n: Int
     var size: Int
     var log: Int
@@ -34,8 +34,8 @@ struct LazySegtree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = n
-        self.size = Int(bit_ceil(n))
-        self.log = countr_zero(self.size)
+        self.size = 1 << (log2_floor(n - 1) + 1)
+        self.log = count_trailing_zeros(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -55,8 +55,8 @@ struct LazySegtree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = len(v)
-        self.size = Int(bit_ceil(self.n))
-        self.log = countr_zero(self.size)
+        self.size = 1 << (log2_floor(self.n - 1) + 1)
+        self.log = count_trailing_zeros(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -162,7 +162,7 @@ struct LazySegtree[S: CollectionElement, F: CollectionElement]:
 
 fn RUpdateMinQ[
     S: HasLtCollectionElement
-](n: Int, e: S) -> LazySegtree[S, Optional[S]]:
+](n: Int, e: S) -> LazySegTree[S, Optional[S]]:
     fn op(x: S, y: S) -> S:
         if y < x:
             return y
@@ -181,6 +181,6 @@ fn RUpdateMinQ[
         else:
             return g
 
-    return LazySegtree[S, Optional[S]](
+    return LazySegTree[S, Optional[S]](
         n, op, e, mapping, composition, Optional[S]()
     )

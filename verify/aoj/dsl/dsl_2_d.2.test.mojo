@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_D
 
 from atcoder.io import IO
-from atcoder.ext.dualsegtree import DualSegtree
+from atcoder.ext.dualsegtree import DualSegTree
 
 
 fn e() -> Int:
@@ -30,7 +30,7 @@ fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = DualSegtree[Int, Int](n, e(), mapping, composition, id())
+    var seg = DualSegTree[Int, Int](n, e(), mapping, composition, id())
     for _ in range(q):
         var op = io.nextInt()
         if op == 0:

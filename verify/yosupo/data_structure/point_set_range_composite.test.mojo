@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/point_set_range_composite
 
 from atcoder.io import IO
-from atcoder.segtree import Segtree
+from atcoder.segtree import SegTree
 from atcoder.modint import modint998244353
 from atcoder.ext.affine import Affine
 
@@ -21,7 +21,7 @@ fn main() raises:
         var a = io.nextInt()
         var b = io.nextInt()
         init.append(Affine(mint(a), mint(b)))
-    var seg = Segtree[Affine[mint]](init, composite, Affine(mint(1), mint(0)))
+    var seg = SegTree[Affine[mint]](init, composite, Affine(mint(1), mint(0)))
     for _ in range(Q):
         var q = io.nextInt()
         if q == 0:

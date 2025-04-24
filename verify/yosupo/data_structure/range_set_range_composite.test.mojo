@@ -3,7 +3,7 @@
 from collections import Optional
 
 from atcoder.io import IO
-from atcoder.lazysegtree import LazySegtree
+from atcoder.lazysegtree import LazySegTree
 from atcoder.modint import modint998244353
 from atcoder.ext.affine import Affine
 
@@ -64,7 +64,7 @@ fn main() raises:
         var a = io.nextInt()
         var b = io.nextInt()
         init.append(S(Affine(mint(a), mint(b))))
-    var seg = LazySegtree[S, F](
+    var seg = LazySegTree[S, F](
         init, op, e(), mapping, composite, id()
     )
     for _ in range(Q):

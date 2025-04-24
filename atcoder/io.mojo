@@ -16,16 +16,17 @@ struct IO:
         with open("/dev/stdin", "r") as f:
             self.buff = f.read()
 
-    fn ok(self, c: String) -> Bool:
-        return c in String(
-            "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!\22#$%&'()*+,-./:;<=>?@[\\]^_{|}~"
-        )
+    fn _ok(self, c: String) -> Bool:
+        if "!" <= c <= "~":
+            return True
+        else:
+            return False
 
     fn next(mut self) raises -> String:
         var res = List[String]()
-        while self.idx < len(self.buff) and not self.ok(self.buff[self.idx]):
+        while self.idx < len(self.buff) and not self._ok(self.buff[self.idx]):
             self.idx += 1
-        while self.idx < len(self.buff) and self.ok(self.buff[self.idx]):
+        while self.idx < len(self.buff) and self._ok(self.buff[self.idx]):
             res.append(self.buff[self.idx])
             self.idx += 1
         return "".join(res)
@@ -45,7 +46,7 @@ struct IO:
 
     fn nextListInt(mut self, n: Int) raises -> List[Int]:
         var res = List[Int](capacity=n)
-        for i in range(n):
+        for _ in range(n):
             res.append(self.nextInt())
         return res
 

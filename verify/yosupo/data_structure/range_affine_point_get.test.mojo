@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/range_affine_point_get
 
 from atcoder.io import IO
-from atcoder.ext.dualsegtree import DualSegtree
+from atcoder.ext.dualsegtree import DualSegTree
 from atcoder.modint import modint998244353
 from atcoder.ext.affine import Affine
 
@@ -21,7 +21,7 @@ fn main() raises:
     var N = io.nextInt()
     var Q = io.nextInt()
     var init = io.nextList[mint](N)
-    var seg = DualSegtree[mint, Affine[mint]](
+    var seg = DualSegTree[mint, Affine[mint]](
         init, mapping, composite, Affine(mint(1), mint(0))
     )
     for _ in range(Q):

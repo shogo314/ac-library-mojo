@@ -3,7 +3,7 @@
 from collections import Optional
 
 from atcoder.io import IO
-from atcoder.lazysegtree import LazySegtree
+from atcoder.lazysegtree import LazySegTree
 from atcoder.py.operator import add
 
 
@@ -29,7 +29,7 @@ fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = LazySegtree[WithSize[Int], Int](
+    var seg = LazySegTree[WithSize[Int], Int](
         List[WithSize[Int]](WithSize(0)) * n,
         op,
         WithSize(0, 0),
