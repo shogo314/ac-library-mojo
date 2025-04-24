@@ -77,3 +77,11 @@ markdown_extensions:
       no_inline_svg: True
       insert_fonts_css: True
       macro-file: macros.tex
+  - admonition:
+  - pymdownx.superfences:
+  - pymdownx.highlight:
+  - pymdownx.inlinehilite:
+  - pymdownx.details:
+  - pymdownx.emoji:
+  - codehilite:
+      guess_lang: false

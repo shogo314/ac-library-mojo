@@ -1,17 +1,93 @@
-## `struct DSU`
+**Structs**
+
+- `DSU`
+- `UnionFind`
+
+---
+
+## `DSU`
+
+```
+struct DSU
+```
 
 素集合データ構造
 
-### `__init__(out self, n: Int)`
+---
 
-### `merge(mut self, a: Int, b: Int) raises -> Int`
+### `__init__`
 
-### `same(mut self, a: Int, b: Int) raises -> Bool`
+```
+fn __init__(out self, n: Int)
+```
 
-### `leader(mut self, a: Int) raises -> Int`
+$`n`$ 頂点 $`0`$ 辺の無向グラフを作る。
 
-### `size(mut self, a: Int) raises -> Int`
+**制約**
 
-### `groups(mut self) raises -> List[List[Int]]`
+- $`0 \le n \le 10^8`$
 
-## `alias UnionFind = DSU`
+**計算量**
+
+- $`O(n)`$
+
+---
+
+### `merge`
+
+```
+fn merge(mut self, a: Int, b: Int) raises -> Int
+```
+
+辺 $`(a, b)`$ を足す。
+
+$`a, b`$ が連結だった場合はその代表元、非連結だった場合は新たな代表元を返す。
+
+**制約**
+
+- $`0 \le a \lt n`$
+- $`0 \le b \lt n`$
+
+**計算量**
+
+- 償却 $`O(\alpha(n))`$
+
+---
+
+### `same`
+
+```
+fn same(mut self, a: Int, b: Int) raises -> Bool
+```
+
+---
+
+### `leader`
+
+```
+fn leader(mut self, a: Int) raises -> Int
+```
+
+---
+
+### `size`
+
+```
+fn size(mut self, a: Int) raises -> Int
+```
+
+---
+
+### `groups`
+
+```
+fn groups(mut self) raises -> List[List[Int]]
+```
+
+---
+
+## `UnionFind`
+
+```
+alias UnionFind = DSU
+```
