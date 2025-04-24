@@ -8,11 +8,7 @@ struct DSU
 
 素集合データ構造
 
----
-
 ## Methods
-
----
 
 ### `__init__`
 
@@ -29,8 +25,6 @@ $`n`$ 頂点 $`0`$ 辺の無向グラフを作る。
 **計算量**
 
 - $`O(n)`$
-
----
 
 ### `merge`
 
@@ -51,15 +45,11 @@ $`a, b`$ が連結だった場合はその代表元、非連結だった場合�
 
 - 償却 $`O(\alpha(n))`$
 
----
-
 ### `same`
 
 ```
 fn same(mut self, a: Int, b: Int) raises -> Bool
 ```
-
----
 
 ### `leader`
 
@@ -67,15 +57,11 @@ fn same(mut self, a: Int, b: Int) raises -> Bool
 fn leader(mut self, a: Int) raises -> Int
 ```
 
----
-
 ### `size`
 
 ```
 fn size(mut self, a: Int) raises -> Int
 ```
-
----
 
 ### `groups`
 

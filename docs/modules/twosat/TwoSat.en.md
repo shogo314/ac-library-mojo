@@ -1,0 +1,29 @@
+[Modules](../index.md) > [twosat](./index.md) > [TwoSat]()
+
+# twosat
+
+## Methods
+
+### `__init__`
+
+```
+__init__(out self, n: Int)
+```
+
+### `add_clause`
+
+```
+add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool) raises
+```
+
+### `satisfiable`
+
+```
+satisfiable(mut self) -> Bool
+```
+
+### `answer`
+
+```
+answer(self) -> List[Bool]
+```

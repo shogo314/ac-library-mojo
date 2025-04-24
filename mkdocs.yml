@@ -24,36 +24,64 @@ nav:
       - modules/convolution/index.md
     - dsu:
       - modules/dsu/index.md
-    - fenwicktree: modules/fenwicktree.md
-    - io: modules/io.md
-    - lazysegtree: modules/lazysegtree.md
-    - math: modules/math.md
-    - maxflow: modules/maxflow.md
-    - method_traits: modules/method_traits.md
-    - mincostflow: modules/mincostflow.md
-    - modint: modules/modint.md
-    - scc: modules/scc.md
-    - segtree: modules/segtree.md
-    - string: modules/string.md
-    - twosat: modules/twosat.md
+    - fenwicktree:
+      - modules/fenwicktree/index.md
+    - io:
+      - modules/io/index.md
+    - lazysegtree:
+      - modules/lazysegtree/index.md
+    - math:
+      - modules/math/index.md
+    - maxflow:
+      - modules/maxflow/index.md
+    - method_traits:
+      - modules/method_traits/index.md
+    - mincostflow:
+      - modules/mincostflow/index.md
+    - modint:
+      - modules/modint/index.md
+    - scc:
+      - modules/scc/index.md
+    - segtree:
+      - modules/segtree/index.md
+    - string:
+      - modules/string/index.md
+    - twosat:
+      - modules/twosat/index.md
     - py:
-      - bisect: modules/py/bisect.md
-      - builtin: modules/py/builtin.md
-      - heapq: modules/py/heapq.md
-      - itertools: modules/py/itertools.md
-      - math: modules/py/math.md
-      - operator: modules/py/operator.md
-      - string: modules/py/string.md
-      - sympy: modules/py/sympy.md
+      - bisect:
+        - modules/py/bisect/index.md
+      - builtin:
+        - modules/py/builtin/index.md
+      - heapq:
+        - modules/py/heapq/index.md
+      - itertools:
+        - modules/py/itertools/index.md
+      - math:
+        - modules/py/math/index.md
+      - operator:
+        - modules/py/operator/index.md
+      - string:
+        - modules/py/string/index.md
+      - sympy:
+        - modules/py/sympy/index.md
     - ext:
-      - affine: modules/ext/affine.md
-      - algorithm: modules/ext/algorithm.md
-      - avltree: modules/ext/avltree.md
-      - dualsegtree: modules/ext/dualsegtree.md
-      - interval_heap: modules/ext/interval_heap.md
-      - potentialized_unionfind: modules/ext/potentialized_unionfind.md
-      - priority_queue: modules/ext/priority_queue.md
-      - string: modules/ext/string.md
+      - affine:
+        - modules/ext/affine/index.md
+      - algorithm:
+        - modules/ext/algorithm/index.md
+      - avltree:
+        - modules/ext/avltree/index.md
+      - dualsegtree:
+        - modules/ext/dualsegtree/index.md
+      - interval_heap:
+        - modules/ext/interval_heap/index.md
+      - potentialized_unionfind:
+        - modules/ext/potentialized_unionfind/index.md
+      - priority_queue:
+        - modules/ext/priority_queue/index.md
+      - string:
+        - modules/ext/string/index.md
   - コントリビュート: contribute.md
   - ライセンス: license.md
 

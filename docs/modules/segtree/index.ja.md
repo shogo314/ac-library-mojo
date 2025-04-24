@@ -1,0 +1,12 @@
+[モジュール](../index.md) > [segtree]()
+
+# segtree
+
+## Structs
+
+- [`SegTree`](./SegTree.md)
+
+## Functions
+
+- [`max_right`](./max_right.md)
+- [`min_left`](./min_left.md)
