@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#struct-fenwicktreet-addgroup" class="md-skip">
+        <a href="#fenwicktree" class="md-skip">
           コンテンツにスキップ
         </a>
       
@@ -534,46 +534,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#struct-fenwicktreet-addgroup" class="md-nav__link">
+  <a href="#fenwicktree" class="md-nav__link">
     <span class="md-ellipsis">
-      struct FenwickTree[T: AddGroup]
+      FenwickTree
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="struct FenwickTree[T: AddGroup]">
+    <nav class="md-nav" aria-label="FenwickTree">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#__init__out-self-n-int" class="md-nav__link">
+  <a href="#__init__" class="md-nav__link">
     <span class="md-ellipsis">
-      __init__(out self, n: Int)
+      __init__
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#__init__out-self-v-listt" class="md-nav__link">
+  <a href="#add" class="md-nav__link">
     <span class="md-ellipsis">
-      __init__(out self, v: List[T])
+      add
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#addmut-self-p-int-x-t-raises" class="md-nav__link">
+  <a href="#sum" class="md-nav__link">
     <span class="md-ellipsis">
-      add(mut self, p: Int, x: T) raises
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sumself-left-int-right-int-raises-t" class="md-nav__link">
-    <span class="md-ellipsis">
-      sum(self, left: Int, right: Int) raises -&gt; T
+      sum
     </span>
   </a>
   
@@ -1428,46 +1419,37 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#struct-fenwicktreet-addgroup" class="md-nav__link">
+  <a href="#fenwicktree" class="md-nav__link">
     <span class="md-ellipsis">
-      struct FenwickTree[T: AddGroup]
+      FenwickTree
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="struct FenwickTree[T: AddGroup]">
+    <nav class="md-nav" aria-label="FenwickTree">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#__init__out-self-n-int" class="md-nav__link">
+  <a href="#__init__" class="md-nav__link">
     <span class="md-ellipsis">
-      __init__(out self, n: Int)
+      __init__
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#__init__out-self-v-listt" class="md-nav__link">
+  <a href="#add" class="md-nav__link">
     <span class="md-ellipsis">
-      __init__(out self, v: List[T])
+      add
     </span>
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#addmut-self-p-int-x-t-raises" class="md-nav__link">
+  <a href="#sum" class="md-nav__link">
     <span class="md-ellipsis">
-      add(mut self, p: Int, x: T) raises
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#sumself-left-int-right-int-raises-t" class="md-nav__link">
-    <span class="md-ellipsis">
-      sum(self, left: Int, right: Int) raises -&gt; T
+      sum
     </span>
   </a>
   
@@ -1499,11 +1481,28 @@
 
   <h1>fenwicktree</h1>
 
-<h2 id="struct-fenwicktreet-addgroup"><code>struct FenwickTree[T: AddGroup]</code></h2>
-<h3 id="__init__out-self-n-int"><code>__init__(out self, n: Int)</code></h3>
-<h3 id="__init__out-self-v-listt"><code>__init__(out self, v: List[T])</code></h3>
-<h3 id="addmut-self-p-int-x-t-raises"><code>add(mut self, p: Int, x: T) raises</code></h3>
-<h3 id="sumself-left-int-right-int-raises-t"><code>sum(self, left: Int, right: Int) raises -&gt; T</code></h3>
+<p><strong>Structs</strong></p>
+<ul>
+<li><code>FenwickTree</code></li>
+</ul>
+<hr />
+<h2 id="fenwicktree"><code>FenwickTree</code></h2>
+<div class="highlight"><pre><span></span><code>struct FenwickTree[T: AddGroup]
+</code></pre></div>
+<hr />
+<h3 id="__init__"><code>__init__</code></h3>
+<div class="highlight"><pre><span></span><code>fn __init__(out self, n: Int)
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>fn __init__(out self, v: List[T])
+</code></pre></div>
+<hr />
+<h3 id="add"><code>add</code></h3>
+<div class="highlight"><pre><span></span><code>fn add(mut self, p: Int, x: T) raises
+</code></pre></div>
+<hr />
+<h3 id="sum"><code>sum</code></h3>
+<div class="highlight"><pre><span></span><code>sum(self, left: Int, right: Int) raises -&gt; T
+</code></pre></div>
 
 
 

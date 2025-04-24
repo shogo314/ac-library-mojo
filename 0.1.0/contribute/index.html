@@ -1505,20 +1505,20 @@
 <h2 id="_2">ライブラリ</h2>
 <p><a href="https://github.com/online-judge-tools/verification-helper">online-judge-tools/verification-helper</a> を使ってテストしています。</p>
 <h3 id="_3">インストール</h3>
-<pre><code>pip3 install online-judge-verify-helper
-</code></pre>
+<div class="highlight"><pre><span></span><code>pip3 install online-judge-verify-helper
+</code></pre></div>
 <h3 id="_4">準備</h3>
 <p><code>.verify-helper/config.toml</code> というファイルを作って、内容を以下のようにしてください。</p>
-<pre><code>[languages.mojo]
+<div class="highlight"><pre><span></span><code>[languages.mojo]
 compile = &quot;magic run mojo build -o a.out {path} -I {basedir}&quot;
 execute = &quot;./a.out&quot;
 bundle = &quot;false&quot;
 list_dependencies = &quot;python list_dependencies.py {path}&quot;
 verification_file_suffix = &quot;.test.mojo&quot;
-</code></pre>
+</code></pre></div>
 <h3 id="_5">実行</h3>
-<pre><code>oj-verify run
-</code></pre>
+<div class="highlight"><pre><span></span><code>oj-verify run
+</code></pre></div>
 <p>初回は時間がかかります。</p>
 <h2 id="_6">ドキュメント</h2>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> を使っています。
