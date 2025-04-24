@@ -37,7 +37,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           if [ "${{ steps.version.outputs.SET_DEFAULT }}" = "true" ]; then
-            mike deploy "${{ steps.version.outputs.VERSION }}" latest --push
+            mike deploy "${{ steps.version.outputs.VERSION }}" latest --update-aliases --push
             mike set-default "${{ steps.version.outputs.VERSION }}" --push
           else
             mike deploy "${{ steps.version.outputs.VERSION }}" --push
