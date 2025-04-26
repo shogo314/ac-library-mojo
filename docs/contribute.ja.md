@@ -37,3 +37,17 @@ oj-verify run
 
 [MkDocs](https://www.mkdocs.org/) を使っています。
 GitHub Actionsで自動化しているので `docs` を編集するだけでよいです。
+
+手元でページを見たい場合は以下を参考にしてください。
+
+### インストール
+
+```
+pip3 install mkdocs mkdocs-material mkdocs-static-i18n markdown-katex pymdown-extensions mike
+```
+
+### 実行
+
+```
+mkdocs serve
+```

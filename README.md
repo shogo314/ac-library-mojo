@@ -10,7 +10,7 @@
 
 **ac-library-mojo** is a Mojo port of [AtCoder's ac-library](https://github.com/atcoder/ac-library), a high-performance algorithm library designed for competitive programming.
 
-**ac-library-mojo** は [AtCoderの ac-library](https://github.com/atcoder/ac-library) を Mojo 言語で移植したもので、競技プログラミング向けに設計された高性能なアルゴリズムライブラリです。
+**ac-library-mojo** は AtCoder の [ac-library](https://github.com/atcoder/ac-library) を Mojo 言語に移植したもので、競技プログラミング向けに設計された高性能なアルゴリズムライブラリです。
 
 ---
 
