@@ -4,6 +4,4 @@
 
 ## Structs
 
-- [`AVLTreeNodePointer`](./AVLTreeNodePointer.md)
-- [`AVLTreeNode`](./AVLTreeNode.md)
 - [`AVLTree`](./AVLTree.md)
