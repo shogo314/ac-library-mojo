@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [operator](./index.md) > [truediv]()
 
-# operator
+# truediv
+
+```
+truediv[T: HasTruediv](x: T, y: T) -> T
+```

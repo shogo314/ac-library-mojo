@@ -35,9 +35,9 @@ struct SegTree[S: CollectionElement]:
         for i in range(self.n):
             self.d[self.size + i] = v[i]
         for i in reversed(range(1, self.size)):
-            self.update(i)
+            self._update(i)
 
-    fn update(mut self, k: Int) -> None:
+    fn _update(mut self, k: Int) -> None:
         self.d[k] = self.op(self.d[2 * k], self.d[2 * k + 1])
 
     fn set(mut self, p: Int, x: S) raises -> None:
@@ -45,7 +45,7 @@ struct SegTree[S: CollectionElement]:
         var q = p + self.size
         self.d[q] = x
         for i in range(1, self.log + 1):
-            self.update(q >> i)
+            self._update(q >> i)
 
     fn get(mut self, p: Int) raises -> S:
         assert_true(0 <= p < self.n)

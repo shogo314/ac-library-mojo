@@ -23,11 +23,6 @@ trait HasTruediv:
         pass
 
 
-trait HasLt:
-    fn __lt__(self, x: Self) -> Bool:
-        pass
-
-
 trait HasEq:
     fn __eq__(self, x: Self) -> Bool:
         pass
@@ -38,17 +33,12 @@ trait HasInitInt:
         pass
 
 
-trait HasInitUInt64:
-    fn __init__(out self, x: UInt64):
-        pass
-
-
 trait HasInitStringRaising:
     fn __init__(out self, x: String) raises:
         pass
 
 
-trait HasLtCollectionElement(CollectionElement, HasLt):
+trait HasLtCollectionElement(CollectionElement, LessThanComparable):
     pass
 
 

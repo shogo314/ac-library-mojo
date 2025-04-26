@@ -9,7 +9,7 @@ trait Capable(CollectionElement, Defaultable, HasAdd, HasSub, Comparable):
 
 
 @value
-struct Edge[Cap: Capable](CollectionElement):
+struct Edge[Cap: Capable]:
     var src: Int
     var dst: Int
     var cap: Cap
@@ -17,7 +17,7 @@ struct Edge[Cap: Capable](CollectionElement):
 
 
 @value
-struct _Edge[Cap: Capable](CollectionElement):
+struct _Edge[Cap: Capable]:
     var dst: Int
     var rev: Int
     var cap: Cap

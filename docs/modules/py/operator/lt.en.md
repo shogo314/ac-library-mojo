@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [operator](./index.md) > [lt]()
 
-# operator
+# lt
+
+```
+lt[T: LessThanComparable](x: T, y: T) -> Bool
+```

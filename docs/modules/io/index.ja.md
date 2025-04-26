@@ -5,3 +5,7 @@
 ## Structs
 
 - [`IO`](./IO.md)
+
+## Traits
+
+- [`HasInitStringRaisingCollectionElement`](./HasInitStringRaisingCollectionElement.md)

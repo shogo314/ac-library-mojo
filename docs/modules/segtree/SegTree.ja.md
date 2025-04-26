@@ -2,18 +2,17 @@
 
 # SegTree
 
+```
+struct SegTree[S: CollectionElement]
+```
+
 ## Methods
 
 ### `__init__`
 
 ```
 __init__(out self, n: Int, op: fn (S, S) -> S, e: S)
-```
-
-### `update`
-
-```
-update(mut self, k: Int) -> None
+__init__(out self, v: List[S], op: fn (S, S) -> S, e: S)
 ```
 
 ### `set`

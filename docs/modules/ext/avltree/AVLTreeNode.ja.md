@@ -1,6 +1,10 @@
 [モジュール](../../index.md) > [ext](../index.md) > [avltree](./index.md) > [AVLTreeNode]()
 
-# avltree
+# AVLTreeNode
+
+```
+struct AVLTreeNode[T: HasLtCollectionElement]
+```
 
 ## Methods
 
@@ -8,4 +12,5 @@
 
 ```
 __init__(out self, key: T)
+__init__(out self, key: T, idx: AVLTreeNodePointer, par: AVLTreeNodePointer)
 ```

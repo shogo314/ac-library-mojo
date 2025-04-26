@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [operator](./index.md) > [add]()
 
-# operator
+# add
+
+```
+add[T: HasAdd](x: T, y: T) -> T
+```

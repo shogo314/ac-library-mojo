@@ -1,6 +1,10 @@
 [モジュール](../../index.md) > [ext](../index.md) > [avltree](./index.md) > [AVLTreeNodePointer]()
 
-# avltree
+# AVLTreeNodePointer
+
+```
+struct AVLTreeNodePointer
+```
 
 ## Methods
 
@@ -8,6 +12,7 @@
 
 ```
 __init__(out self, x: Int)
+__init__(out self)
 ```
 
 ### `__bool__`

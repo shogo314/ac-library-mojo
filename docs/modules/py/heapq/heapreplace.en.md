@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heapreplace]()
 
-# heapq
+# heapreplace
+
+```
+heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) raises -> S
+```

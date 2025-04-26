@@ -1,6 +1,10 @@
 [Modules](../index.md) > [maxflow](./index.md) > [MFGraph]()
 
-# maxflow
+# MFGraph
+
+```
+struct MFGraph[Cap: Capable]
+```
 
 ## Methods
 

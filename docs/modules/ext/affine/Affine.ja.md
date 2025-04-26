@@ -1,6 +1,10 @@
 [モジュール](../../index.md) > [ext](../index.md) > [affine](./index.md) > [Affine]()
 
-# affine
+# Affine
+
+```
+struct Affine[T: AffineElement]
+```
 
 ## Methods
 
@@ -8,4 +12,5 @@
 
 ```
 assign(self, x: T) -> T
+assign(self, o: Self) -> Self
 ```

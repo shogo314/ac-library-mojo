@@ -2,6 +2,10 @@
 
 # FenwickTree
 
+```
+struct FenwickTree[T: AddGroup]
+```
+
 ## Methods
 
 ### `__init__`

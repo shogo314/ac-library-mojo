@@ -1,6 +1,10 @@
 [Modules](../../index.md) > [ext](../index.md) > [avltree](./index.md) > [AVLTree]()
 
-# avltree
+# AVLTree
+
+```
+struct AVLTree[T: HasLtCollectionElement]
+```
 
 ## Methods
 

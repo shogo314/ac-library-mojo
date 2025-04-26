@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [operator](./index.md) > [neg]()
 
-# operator
+# neg
+
+```
+neg[T: HasNeg](x: T) -> T
+```

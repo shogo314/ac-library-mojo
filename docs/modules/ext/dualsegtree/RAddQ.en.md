@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [ext](../index.md) > [dualsegtree](./index.md) > [RAddQ]()
 
-# dualsegtree
+# RAddQ
+
+```
+RAddQ[S: AddMonoid](n: Int) -> DualSegTree[S, S]
+```

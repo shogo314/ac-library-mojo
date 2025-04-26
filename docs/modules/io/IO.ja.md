@@ -2,6 +2,10 @@
 
 # IO
 
+```
+struct IO
+```
+
 ## Methods
 
 ### `__init__`
@@ -37,12 +41,11 @@ nextListInt(mut self, n: Int) raises -> List[Int]
 ### `nextList`
 
 ```
-nextList[T: HasInitStringRaising & CollectionElement](mut self, n: Int) raises -> List[T]
+nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]
 ```
 
 ### `print`
 
 ```
-@staticmethod
 print[S: WritableCollectionElement](v: List[S])
 ```

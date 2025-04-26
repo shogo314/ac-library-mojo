@@ -1,3 +1,7 @@
 [Modules](../index.md) > [math](./index.md) > [floor_sum]()
 
-# math
+# floor_sum
+
+```
+floor_sum(n: Int, m: Int, a: Int, b: Int) raises -> Int
+```

@@ -2,6 +2,10 @@
 
 # SCCGraph
 
+```
+struct SCCGraph
+```
+
 ## Methods
 
 ### `__init__`

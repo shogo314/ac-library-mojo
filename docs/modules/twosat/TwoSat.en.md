@@ -1,6 +1,10 @@
 [Modules](../index.md) > [twosat](./index.md) > [TwoSat]()
 
-# twosat
+# TwoSat
+
+```
+struct TwoSat
+```
 
 ## Methods
 

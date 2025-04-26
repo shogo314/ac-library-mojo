@@ -1,3 +1,8 @@
 [モジュール](../index.md) > [segtree](./index.md) > [RSumQ]()
 
-# segtree
+# RSumQ
+
+```
+RSumQ[S: AddMonoid](n: Int) -> SegTree[S]
+RSumQ[S: AddMonoid](v: List[S]) -> SegTree[S]
+```

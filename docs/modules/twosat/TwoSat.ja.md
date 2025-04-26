@@ -2,6 +2,10 @@
 
 # TwoSat
 
+```
+struct TwoSat
+```
+
 ## Methods
 
 ### `__init__`

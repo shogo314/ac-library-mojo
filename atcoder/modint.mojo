@@ -3,16 +3,19 @@ from testing import assert_true
 from atcoder._math import _inv_gcd
 
 
-struct StaticModint[M: Int](WritableCollectionElement):
+struct StaticModint[M: Int]:
     var _val: Int
 
     fn __init__(out self):
+        constrained[M >= 1]()
         self._val = 0
 
     fn __init__(out self, v: Int):
+        constrained[M >= 1]()
         self._val = v % M
 
     fn __init__(out self, v: UInt64):
+        constrained[M >= 1]()
         self._val = Int(v % UInt64(M))
 
     fn __init__(out self, v: String) raises:

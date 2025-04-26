@@ -13,7 +13,7 @@ struct DSU
 ### `__init__`
 
 ```
-fn __init__(out self, n: Int)
+__init__(out self, n: Int)
 ```
 
 $`n`$ 頂点 $`0`$ 辺の無向グラフを作る。
@@ -29,7 +29,7 @@ $`n`$ 頂点 $`0`$ 辺の無向グラフを作る。
 ### `merge`
 
 ```
-fn merge(mut self, a: Int, b: Int) raises -> Int
+merge(mut self, a: Int, b: Int) raises -> Int
 ```
 
 辺 $`(a, b)`$ を足す。
@@ -48,23 +48,23 @@ $`a, b`$ が連結だった場合はその代表元、非連結だった場合�
 ### `same`
 
 ```
-fn same(mut self, a: Int, b: Int) raises -> Bool
+same(mut self, a: Int, b: Int) raises -> Bool
 ```
 
 ### `leader`
 
 ```
-fn leader(mut self, a: Int) raises -> Int
+leader(mut self, a: Int) raises -> Int
 ```
 
 ### `size`
 
 ```
-fn size(mut self, a: Int) raises -> Int
+size(mut self, a: Int) raises -> Int
 ```
 
 ### `groups`
 
 ```
-fn groups(mut self) raises -> List[List[Int]]
+groups(mut self) raises -> List[List[Int]]
 ```

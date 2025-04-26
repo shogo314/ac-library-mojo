@@ -1,6 +1,10 @@
 [Modules](../../index.md) > [ext](../index.md) > [potentialized_unionfind](./index.md) > [PotentializedUnionFind]()
 
-# potentialized_unionfind
+# PotentializedUnionFind
+
+```
+struct PotentializedUnionFind[S: CollectionElement]
+```
 
 ## Methods
 

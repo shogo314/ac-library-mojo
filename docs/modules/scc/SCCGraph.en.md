@@ -1,6 +1,10 @@
 [Modules](../index.md) > [scc](./index.md) > [SCCGraph]()
 
-# scc
+# SCCGraph
+
+```
+struct SCCGraph
+```
 
 ## Methods
 

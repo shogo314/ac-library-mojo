@@ -1,7 +1,7 @@
 from atcoder.py.builtin import pow_mod
 
 
-def _miller_rabin(n: Int, l: List[Int]) -> Bool:
+fn _miller_rabin(n: Int, l: List[Int]) -> Bool:
     var s = 0
     var d = n - 1
     while d % 2 == 0:
@@ -16,7 +16,7 @@ def _miller_rabin(n: Int, l: List[Int]) -> Bool:
         except:
             return False
         if x != 1:
-            for t in range(s):
+            for _ in range(s):
                 if x == n - 1:
                     break
                 x = Int(Int128(x) * Int128(x) % Int128(n))
@@ -25,7 +25,7 @@ def _miller_rabin(n: Int, l: List[Int]) -> Bool:
     return True
 
 
-def isprime(n: Int) -> Bool:
+fn isprime(n: Int) -> Bool:
     if n <= 1:
         return False
     if n == 2:

@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [operator](./index.md) > [mul]()
 
-# operator
+# mul
+
+```
+mul[T: HasMul](x: T, y: T) -> T
+```

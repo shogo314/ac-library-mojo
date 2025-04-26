@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heapify]()
 
-# heapq
+# heapify
+
+```
+heapify[S: HasLtCollectionElement](mut heap: List[S])
+```

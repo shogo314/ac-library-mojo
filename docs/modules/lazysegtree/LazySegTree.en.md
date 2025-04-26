@@ -1,10 +1,19 @@
 [Modules](../index.md) > [lazysegtree](./index.md) > [LazySegTree]()
 
-# lazysegtree
+# LazySegTree
+
+```
+struct LazySegTree[S: CollectionElement, F: CollectionElement]
+```
 
 ## Methods
 
 ### `__init__`
+
+```
+__init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)
+__init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)
+```
 
 ### `set`
 
@@ -34,4 +43,5 @@ all_prod(self) -> S
 
 ```
 apply(mut self, p: Int, f: F) raises
+apply(mut self, l: Int, r: Int, f: F) raises
 ```

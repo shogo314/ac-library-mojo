@@ -1,3 +1,7 @@
 [モジュール](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heappushpop]()
 
-# heapq
+# heappushpop
+
+```
+heappushpop[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S
+```

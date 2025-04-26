@@ -3,7 +3,7 @@
 # convolution_int
 
 ```
-fn convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]
+convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]
 ```
 
 畳み込みを計算する。$`a, b`$ の少なくとも一方が空配列の場合は空配列を返す。

@@ -4,7 +4,6 @@ from atcoder.method_traits import (
     HasNeg,
     HasMul,
     HasTruediv,
-    HasLt,
 )
 
 
@@ -24,9 +23,9 @@ fn truediv[T: HasTruediv](x: T, y: T) -> T:
     return x / y
 
 
-fn lt[T: HasLt](x: T, y: T) -> Bool:
+fn lt[T: LessThanComparable](x: T, y: T) -> Bool:
     return x < y
 
 
-fn gt[T: HasLt](x: T, y: T) -> Bool:
+fn gt[T: LessThanComparable](x: T, y: T) -> Bool:
     return y < x

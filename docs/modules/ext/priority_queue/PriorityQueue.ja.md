@@ -1,6 +1,10 @@
 [モジュール](../../index.md) > [ext](../index.md) > [priority_queue](./index.md) > [PriorityQueue]()
 
-# priority_queue
+# PriorityQueue
+
+```
+struct PriorityQueue[S: HasLtCollectionElement]
+```
 
 ## Methods
 
@@ -8,6 +12,7 @@
 
 ```
 __init__(out self)
+__init__(out self, data: List[S])
 ```
 
 ### `top`

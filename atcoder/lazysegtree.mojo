@@ -63,22 +63,22 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         for i in range(self.n):
             self.d[self.size + i] = v[i]
         for i in reversed(range(1, self.size)):
-            self.update(i)
+            self._update(i)
 
     fn set(mut self, p: Int, x: S) raises:
         assert_true(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
-            self.push(q >> i)
+            self._push(q >> i)
         self.d[q] = x
         for i in range(1, self.log + 1):
-            self.update(q >> i)
+            self._update(q >> i)
 
     fn get(mut self, p: Int) raises -> S:
         assert_true(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
-            self.push(q >> i)
+            self._push(q >> i)
         return self.d[q]
 
     fn prod(mut self, l: Int, r: Int) raises -> S:
@@ -89,9 +89,9 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         var b = r + self.size
         for i in reversed(range(1, self.log + 1)):
             if ((a >> i) << i) != a:
-                self.push(a >> i)
+                self._push(a >> i)
             if ((b >> i) << i) != b:
-                self.push((b - 1) >> i)
+                self._push((b - 1) >> i)
         var sml = self.e
         var smr = self.e
         while a < b:
@@ -112,10 +112,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         assert_true(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
-            self.push(q >> i)
+            self._push(q >> i)
         self.d[q] = self.mapping(f, self.d[q])
         for i in range(1, self.log + 1):
-            self.update(q >> i)
+            self._update(q >> i)
 
     fn apply(mut self, l: Int, r: Int, f: F) raises:
         assert_true(0 <= l <= r <= self.n)
@@ -125,38 +125,38 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         var b = r + self.size
         for i in reversed(range(1, self.log + 1)):
             if ((a >> i) << i) != a:
-                self.push(a >> i)
+                self._push(a >> i)
             if ((b >> i) << i) != b:
-                self.push((b - 1) >> i)
+                self._push((b - 1) >> i)
         while a < b:
             if a & 1:
-                self.all_apply(a, f)
+                self._all_apply(a, f)
                 a += 1
             if b & 1:
                 b -= 1
-                self.all_apply(b, f)
+                self._all_apply(b, f)
             a >>= 1
             b >>= 1
         a = l + self.size
         b = r + self.size
         for i in range(1, self.log + 1):
             if ((a >> i) << i) != a:
-                self.update(a >> i)
+                self._update(a >> i)
             if ((b >> i) << i) != b:
-                self.update((b - 1) >> i)
+                self._update((b - 1) >> i)
 
-    fn update(mut self, k: Int):
+    fn _update(mut self, k: Int):
         self.d[k] = self.op(self.d[2 * k], self.d[2 * k + 1])
 
-    fn all_apply(mut self, k: Int, f: F):
+    fn _all_apply(mut self, k: Int, f: F):
         self.d[k] = self.mapping(f, self.d[k])
         if k < self.size:
             self.lz[k] = self.composition(f, self.lz[k])
 
-    fn push(mut self, k: Int):
+    fn _push(mut self, k: Int):
         var lzk = self.lz[k]
-        self.all_apply(2 * k, lzk)
-        self.all_apply(2 * k + 1, lzk)
+        self._all_apply(2 * k, lzk)
+        self._all_apply(2 * k + 1, lzk)
         self.lz[k] = self.id
 
 

@@ -1,6 +1,10 @@
 [Modules](../index.md) > [io](./index.md) > [IO]()
 
-# io
+# IO
+
+```
+struct IO
+```
 
 ## Methods
 
@@ -35,6 +39,10 @@ nextListInt(mut self, n: Int) raises -> List[Int]
 ```
 
 ### `nextList`
+
+```
+nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]
+```
 
 ### `print`
 

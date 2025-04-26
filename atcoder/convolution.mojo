@@ -211,6 +211,9 @@ fn convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]:
     alias i3 = UInt64(187290749)
 
     alias MAX_AB_BIT = 24
+    constrained[MOD1 % (UInt64(1) << MAX_AB_BIT) == 1]()
+    constrained[MOD2 % (UInt64(1) << MAX_AB_BIT) == 1]()
+    constrained[MOD3 % (UInt64(1) << MAX_AB_BIT) == 1]()
     assert_true(n + m - 1 <= (1 << MAX_AB_BIT))
 
     var c1: List[StaticModint[754974721]]

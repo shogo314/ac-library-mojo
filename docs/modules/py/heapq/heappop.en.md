@@ -1,3 +1,7 @@
 [Modules](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heappop]()
 
-# heapq
+# heappop
+
+```
+heappop[S: HasLtCollectionElement](mut heap: List[S]) raises -> S
+```

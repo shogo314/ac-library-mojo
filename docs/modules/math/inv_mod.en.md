@@ -1,3 +1,7 @@
 [Modules](../index.md) > [math](./index.md) > [inv_mod]()
 
-# math
+# inv_mod
+
+```
+inv_mod(x: Int, m: Int) raises -> Int
+```

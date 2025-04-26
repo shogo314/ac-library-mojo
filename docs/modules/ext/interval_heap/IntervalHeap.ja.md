@@ -1,6 +1,10 @@
 [モジュール](../../index.md) > [ext](../index.md) > [interval_heap](./index.md) > [IntervalHeap]()
 
-# interval_heap
+# IntervalHeap
+
+```
+struct IntervalHeap[S: HasLtCollectionElement]
+```
 
 ## Methods
 
@@ -8,6 +12,7 @@
 
 ```
 __init__(out self)
+__init__(out self, data: List[S])
 ```
 
 ### `min`
