@@ -2,6 +2,8 @@
 
 # Modules
 
+## Modules
+
 - [convolution](./convolution/index.md)
 - [dsu](./dsu/index.md)
 - [fenwicktree](./fenwicktree/index.md)
@@ -16,3 +18,8 @@
 - [segtree](./segtree/index.md)
 - [string](./string/index.md)
 - [twosat](./twosat/index.md)
+
+## Packages
+
+- [py](./py/index.md)
+- [ext](./ext/index.md)
