@@ -2,1260 +2,1526 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/contribute/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/contribute/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/contribute/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/license/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/license/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/license/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/convolution_int/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/convolution_int/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/convolution/convolution_int/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/convolution_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/convolution_mod/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/convolution/convolution_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/convolution/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/convolution/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/dsu/DSU/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/dsu/DSU/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/dsu/DSU/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/dsu/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/dsu/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/dsu/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/Affine/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/Affine/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/affine/Affine/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/AffineElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/AffineElement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/affine/AffineElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/affine/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/affine/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/algorithm/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/knapsack/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/knapsack/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/algorithm/knapsack/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/knapsack_01/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/knapsack_01/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/algorithm/knapsack_01/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/longest_increasing_subsequence/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/algorithm/longest_increasing_subsequence/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/algorithm/longest_increasing_subsequence/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/avltree/AVLTree/"/>
     </url>
     <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTreeNode/</loc>
-        <lastmod>2025-04-24</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTreeNode/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/avltree/AVLTreeNode/"/>
-    </url>
-    <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTreeNodePointer/</loc>
-        <lastmod>2025-04-24</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/AVLTreeNodePointer/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/avltree/AVLTreeNodePointer/"/>
-    </url>
-    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/avltree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/avltree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/DualSegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/DualSegTree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/dualsegtree/DualSegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/RAddQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/RAddQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/dualsegtree/RAddQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/RUpdateQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/RUpdateQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/dualsegtree/RUpdateQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/dualsegtree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/dualsegtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/interval_heap/IntervalHeap/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/interval_heap/IntervalHeap/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/interval_heap/IntervalHeap/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/interval_heap/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/interval_heap/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/interval_heap/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/PotentializedUnionFind/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/PotentializedUnionFind/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/potentialized_unionfind/PotentializedUnionFind/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindMul/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindMul/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/potentialized_unionfind/UnionFindMul/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindMulElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindMulElement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/potentialized_unionfind/UnionFindMulElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindPlus/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/UnionFindPlus/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/potentialized_unionfind/UnionFindPlus/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/potentialized_unionfind/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/potentialized_unionfind/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/priority_queue/PriorityQueue/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/priority_queue/PriorityQueue/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/priority_queue/PriorityQueue/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/priority_queue/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/priority_queue/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/priority_queue/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/edit_distance/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/edit_distance/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/string/edit_distance/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/levenshtein_distance/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/ext/string/levenshtein_distance/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/ext/string/levenshtein_distance/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/fenwicktree/FenwickTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/fenwicktree/FenwickTree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/fenwicktree/FenwickTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/fenwicktree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/fenwicktree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/fenwicktree/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/HasInitStringRaisingCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/HasInitStringRaisingCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/io/HasInitStringRaisingCollectionElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/IO/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/IO/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/io/IO/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/io/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/LazySegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/LazySegTree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/lazysegtree/LazySegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/RUpdateMinQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/RUpdateMinQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/lazysegtree/RUpdateMinQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/lazysegtree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/lazysegtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/crt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/crt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/math/crt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/floor_sum/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/floor_sum/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/math/floor_sum/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/math/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/inv_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/math/inv_mod/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/math/inv_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/maxflow/MFGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/maxflow/MFGraph/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/maxflow/MFGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/maxflow/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/maxflow/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/maxflow/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/AddGroup/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/AddGroup/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/AddGroup/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/AddMonoid/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/AddMonoid/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/AddMonoid/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasAdd/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasAdd/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasAdd/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasEq/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasEq/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasEq/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasEqCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasEqCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasEqCollectionElement/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitInt/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitInt/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasInitInt/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitStringRaising/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitStringRaising/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasInitStringRaising/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitUInt64/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasInitUInt64/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasInitUInt64/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasLtCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasLtCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasLtCollectionElement/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasMul/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasMul/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasMul/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasNeg/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasNeg/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasNeg/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasSub/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasSub/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasSub/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasTruediv/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/HasTruediv/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/HasTruediv/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/MulMonoid/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/MulMonoid/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/MulMonoid/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/method_traits/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/method_traits/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/mincostflow/MCFGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/mincostflow/MCFGraph/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/mincostflow/MCFGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/mincostflow/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/mincostflow/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/mincostflow/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/modint/StaticModint/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/modint/StaticModint/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/modint/StaticModint/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/modint/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/modint/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/modint/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/bisect/bisect_left/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/bisect/bisect_left/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/bisect/bisect_left/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/bisect/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/bisect/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/bisect/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/builtin/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/builtin/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/builtin/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/builtin/pow_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/builtin/pow_mod/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/builtin/pow_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heapify/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heapify/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/heapify/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappop/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappop/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/heappop/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappush/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappush/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/heappush/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappushpop/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heappushpop/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/heappushpop/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heapreplace/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/heapreplace/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/heapreplace/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/heapq/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/heapq/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/itertools/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/itertools/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/itertools/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/math/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/math/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/math/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/math/isqrt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/math/isqrt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/math/isqrt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/add/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/add/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/add/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/gt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/gt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/gt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/lt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/lt/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/lt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/mul/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/mul/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/mul/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/neg/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/neg/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/neg/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/truediv/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/operator/truediv/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/operator/truediv/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/string/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/string/string_to_list/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/string/string_to_list/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/string/string_to_list/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/sympy/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/sympy/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/sympy/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/sympy/isprime/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/py/sympy/isprime/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/py/sympy/isprime/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/scc/SCCGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/scc/SCCGraph/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/scc/SCCGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/scc/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/scc/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/scc/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMaxQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMaxQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/RMaxQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMinQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMinQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/RMinQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMulQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RMulQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/RMulQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RSumQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/RSumQ/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/RSumQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/SegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/SegTree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/SegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/max_right/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/max_right/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/max_right/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/min_left/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/segtree/min_left/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/segtree/min_left/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/lcp_array/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/lcp_array/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/string/lcp_array/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/suffix_array/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/suffix_array/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/string/suffix_array/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/z_algorithm/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/string/z_algorithm/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/string/z_algorithm/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/twosat/TwoSat/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/twosat/TwoSat/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/twosat/TwoSat/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/twosat/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/twosat/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/twosat/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/contribute/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/contribute/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1contribute/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/license/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/license/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1license/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/convolution_int/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/convolution_int/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/convolution/convolution_int/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/convolution_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/convolution_mod/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/convolution/convolution_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/convolution/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/convolution/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/dsu/DSU/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/dsu/DSU/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/dsu/DSU/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/dsu/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/dsu/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/dsu/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/Affine/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/Affine/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/affine/Affine/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/AffineElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/AffineElement/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/affine/AffineElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/affine/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/affine/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/algorithm/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/knapsack/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/knapsack/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/algorithm/knapsack/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/knapsack_01/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/knapsack_01/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/algorithm/knapsack_01/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/longest_increasing_subsequence/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/algorithm/longest_increasing_subsequence/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/algorithm/longest_increasing_subsequence/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/avltree/AVLTree/"/>
     </url>
     <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTreeNode/</loc>
-        <lastmod>2025-04-24</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTreeNode/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/avltree/AVLTreeNode/"/>
-    </url>
-    <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTreeNodePointer/</loc>
-        <lastmod>2025-04-24</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/AVLTreeNodePointer/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/avltree/AVLTreeNodePointer/"/>
-    </url>
-    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/avltree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/avltree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/DualSegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/DualSegTree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/dualsegtree/DualSegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/RAddQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/RAddQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/dualsegtree/RAddQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/RUpdateQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/RUpdateQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/dualsegtree/RUpdateQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/dualsegtree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/dualsegtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/interval_heap/IntervalHeap/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/interval_heap/IntervalHeap/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/interval_heap/IntervalHeap/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/interval_heap/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/interval_heap/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/interval_heap/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/PotentializedUnionFind/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/PotentializedUnionFind/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/potentialized_unionfind/PotentializedUnionFind/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindMul/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindMul/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/potentialized_unionfind/UnionFindMul/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindMulElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindMulElement/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/potentialized_unionfind/UnionFindMulElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindPlus/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/UnionFindPlus/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/potentialized_unionfind/UnionFindPlus/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/potentialized_unionfind/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/potentialized_unionfind/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/priority_queue/PriorityQueue/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/priority_queue/PriorityQueue/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/priority_queue/PriorityQueue/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/priority_queue/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/priority_queue/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/priority_queue/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/edit_distance/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/edit_distance/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/string/edit_distance/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/levenshtein_distance/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/ext/string/levenshtein_distance/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/ext/string/levenshtein_distance/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/fenwicktree/FenwickTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/fenwicktree/FenwickTree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/fenwicktree/FenwickTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/fenwicktree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/fenwicktree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/fenwicktree/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/HasInitStringRaisingCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/HasInitStringRaisingCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/io/HasInitStringRaisingCollectionElement/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/IO/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/IO/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/io/IO/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/io/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/LazySegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/LazySegTree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/lazysegtree/LazySegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/RUpdateMinQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/RUpdateMinQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/lazysegtree/RUpdateMinQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/lazysegtree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/lazysegtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/crt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/crt/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/math/crt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/floor_sum/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/floor_sum/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/math/floor_sum/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/math/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/inv_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/math/inv_mod/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/math/inv_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/maxflow/MFGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/maxflow/MFGraph/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/maxflow/MFGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/maxflow/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/maxflow/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/maxflow/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/AddGroup/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/AddGroup/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/AddGroup/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/AddMonoid/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/AddMonoid/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/AddMonoid/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasAdd/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasAdd/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasAdd/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasEq/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasEq/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasEq/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasEqCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasEqCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasEqCollectionElement/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitInt/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitInt/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasInitInt/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitStringRaising/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitStringRaising/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasInitStringRaising/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitUInt64/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasInitUInt64/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasInitUInt64/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasLtCollectionElement/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasLtCollectionElement/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasLtCollectionElement/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasMul/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasMul/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasMul/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasNeg/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasNeg/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasNeg/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasSub/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasSub/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasSub/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasTruediv/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/HasTruediv/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/HasTruediv/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/MulMonoid/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/MulMonoid/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/MulMonoid/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/method_traits/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/method_traits/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/mincostflow/MCFGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/mincostflow/MCFGraph/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/mincostflow/MCFGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/mincostflow/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/mincostflow/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/mincostflow/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/modint/StaticModint/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/modint/StaticModint/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/modint/StaticModint/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/modint/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/modint/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/modint/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/bisect/bisect_left/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/bisect/bisect_left/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/bisect/bisect_left/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/bisect/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/bisect/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/bisect/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/builtin/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/builtin/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/builtin/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/builtin/pow_mod/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/builtin/pow_mod/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/builtin/pow_mod/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heapify/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heapify/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/heapify/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappop/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappop/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/heappop/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappush/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappush/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/heappush/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappushpop/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heappushpop/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/heappushpop/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heapreplace/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/heapreplace/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/heapreplace/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/heapq/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/heapq/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/itertools/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/itertools/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/itertools/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/math/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/math/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/math/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/math/isqrt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/math/isqrt/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/math/isqrt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/add/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/add/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/add/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/gt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/gt/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/gt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/lt/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/lt/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/lt/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/mul/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/mul/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/mul/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/neg/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/neg/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/neg/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/truediv/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/operator/truediv/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/operator/truediv/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/string/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/string/string_to_list/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/string/string_to_list/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/string/string_to_list/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/sympy/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/sympy/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/sympy/"/>
     </url>
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/sympy/isprime/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/py/sympy/isprime/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/py/sympy/isprime/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/scc/SCCGraph/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/scc/SCCGraph/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/scc/SCCGraph/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/scc/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/scc/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/scc/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMaxQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMaxQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/RMaxQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMinQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMinQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/RMinQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMulQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RMulQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/RMulQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RSumQ/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/RSumQ/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/RSumQ/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/SegTree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/SegTree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/SegTree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/max_right/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/max_right/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/max_right/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/min_left/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/segtree/min_left/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/segtree/min_left/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/string/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/lcp_array/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/lcp_array/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/string/lcp_array/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/suffix_array/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/suffix_array/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/string/suffix_array/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/z_algorithm/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/string/z_algorithm/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/string/z_algorithm/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/twosat/TwoSat/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/twosat/TwoSat/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/twosat/TwoSat/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/twosat/</loc>
-        <lastmod>2025-04-24</lastmod>
+        <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/twosat/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/twosat/"/>

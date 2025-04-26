@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#modint" class="md-skip">
+        <a href="#staticmodint" class="md-skip">
           Skip to content
         </a>
       
@@ -2735,10 +2735,15 @@
 
 
 <p><a href="../../">Modules</a> &gt; <a href="../">modint</a> &gt; <a href="">StaticModint</a></p>
-<h1 id="modint">modint</h1>
+<h1 id="staticmodint">StaticModint</h1>
+<div class="highlight"><pre><span></span><code>struct StaticModint[M: Int]
+</code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self)
+__init__(out self, v: Int)
+__init__(out self, v: UInt64)
+__init__(out self, v: String) raises
 </code></pre></div>
 <h3 id="__copyinit__"><code>__copyinit__</code></h3>
 <div class="highlight"><pre><span></span><code>__copyinit__(out self, o: Self)
@@ -2754,15 +2759,19 @@
 </code></pre></div>
 <h3 id="__iadd__"><code>__iadd__</code></h3>
 <div class="highlight"><pre><span></span><code>__iadd__(mut self, rhs: Self)
+__iadd__(mut self, rhs: Int)
 </code></pre></div>
 <h3 id="__isub__"><code>__isub__</code></h3>
 <div class="highlight"><pre><span></span><code>__isub__(mut self, rhs: Self)
+__isub__(mut self, rhs: Int)
 </code></pre></div>
 <h3 id="__imul__"><code>__imul__</code></h3>
 <div class="highlight"><pre><span></span><code>__imul__(mut self, rhs: Self)
+__imul__(mut self, rhs: Int)
 </code></pre></div>
 <h3 id="__itruediv__"><code>__itruediv__</code></h3>
 <div class="highlight"><pre><span></span><code>__itruediv__(mut self, rhs: Self) raises
+__itruediv__(mut self, rhs: Int) raises
 </code></pre></div>
 <h3 id="__pos__"><code>__pos__</code></h3>
 <div class="highlight"><pre><span></span><code>__pos__(self) -&gt; Self
@@ -2781,21 +2790,27 @@
 </code></pre></div>
 <h3 id="__add__"><code>__add__</code></h3>
 <div class="highlight"><pre><span></span><code>__add__(self, o: Self) -&gt; Self
+__add__(self, o: Int) -&gt; Self
 </code></pre></div>
 <h3 id="__sub__"><code>__sub__</code></h3>
 <div class="highlight"><pre><span></span><code>__sub__(self, o: Self) -&gt; Self
+__sub__(self, o: Int) -&gt; Self
 </code></pre></div>
 <h3 id="__mul__"><code>__mul__</code></h3>
 <div class="highlight"><pre><span></span><code>__mul__(self, o: Self) -&gt; Self
+__mul__(self, o: Int) -&gt; Self
 </code></pre></div>
 <h3 id="__truediv__"><code>__truediv__</code></h3>
 <div class="highlight"><pre><span></span><code>__truediv__(self, o: Self) raises -&gt; Self
+__truediv__(self, o: Int) raises -&gt; Self
 </code></pre></div>
 <h3 id="__eq__"><code>__eq__</code></h3>
 <div class="highlight"><pre><span></span><code>__eq__(self, rhs: Self) -&gt; Bool
+__eq__(self, rhs: Int) -&gt; Bool
 </code></pre></div>
 <h3 id="__ne__"><code>__ne__</code></h3>
 <div class="highlight"><pre><span></span><code>__ne__(self, rhs: Self) -&gt; Bool
+__ne__(self, rhs: Int) -&gt; Bool
 </code></pre></div>
 <h3 id="write_to"><code>write_to</code></h3>
 <div class="highlight"><pre><span></span><code>write_to[W: Writer](self, mut writer: W)

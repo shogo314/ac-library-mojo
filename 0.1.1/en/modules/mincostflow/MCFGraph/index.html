@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#mincostflow" class="md-skip">
+        <a href="#mcfgraph" class="md-skip">
           Skip to content
         </a>
       
@@ -2573,12 +2573,16 @@
 
 
 <p><a href="../../">Modules</a> &gt; <a href="../">mincostflow</a> &gt; <a href="">MCFGraph</a></p>
-<h1 id="mincostflow">mincostflow</h1>
+<h1 id="mcfgraph">MCFGraph</h1>
+<div class="highlight"><pre><span></span><code>struct MCFGraph
+</code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self, n: Int)
 </code></pre></div>
 <h3 id="add_edge"><code>add_edge</code></h3>
+<div class="highlight"><pre><span></span><code>add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) raises -&gt; Int
+</code></pre></div>
 <h3 id="get_edge"><code>get_edge</code></h3>
 <div class="highlight"><pre><span></span><code>get_edge(self, i: Int) raises -&gt; Edge
 </code></pre></div>
@@ -2589,6 +2593,8 @@
 <div class="highlight"><pre><span></span><code>flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -&gt; (Cap, Cost)
 </code></pre></div>
 <h3 id="slope"><code>slope</code></h3>
+<div class="highlight"><pre><span></span><code>slope(mut self, s: Int, t: Int, flow_limit: Cap) raises -&gt; List[(Cap, Cost)]
+</code></pre></div>
 
 
 

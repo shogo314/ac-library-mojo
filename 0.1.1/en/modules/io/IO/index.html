@@ -2582,7 +2582,9 @@
 
 
 <p><a href="../../">Modules</a> &gt; <a href="../">io</a> &gt; <a href="">IO</a></p>
-<h1 id="io">io</h1>
+<h1 id="io">IO</h1>
+<div class="highlight"><pre><span></span><code>struct IO
+</code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self) raises
@@ -2600,6 +2602,8 @@
 <div class="highlight"><pre><span></span><code>nextListInt(mut self, n: Int) raises -&gt; List[Int]
 </code></pre></div>
 <h3 id="nextlist"><code>nextList</code></h3>
+<div class="highlight"><pre><span></span><code>nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -&gt; List[T]
+</code></pre></div>
 <h3 id="print"><code>print</code></h3>
 <div class="highlight"><pre><span></span><code>print[S: WritableCollectionElement](v: List[S])
 </code></pre></div>

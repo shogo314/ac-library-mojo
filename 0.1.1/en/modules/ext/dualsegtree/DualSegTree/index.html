@@ -2573,9 +2573,14 @@
 
 
 <p><a href="../../../">Modules</a> &gt; <a href="../../">ext</a> &gt; <a href="../">dualsegtree</a> &gt; <a href="">DualSegTree</a></p>
-<h1 id="dualsegtree">dualsegtree</h1>
+<h1 id="dualsegtree">DualSegTree</h1>
+<div class="highlight"><pre><span></span><code>struct DualSegTree[S: CollectionElement, F: CollectionElement]
+</code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
+<div class="highlight"><pre><span></span><code>__init__(out self, n: Int, e: S, mapping: fn (F, S) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+__init__(out self, v: List[S], mapping: fn (F, S) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+</code></pre></div>
 <h3 id="set"><code>set</code></h3>
 <div class="highlight"><pre><span></span><code>set(mut self, p: Int, x: S) raises
 </code></pre></div>
@@ -2584,6 +2589,7 @@
 </code></pre></div>
 <h3 id="apply"><code>apply</code></h3>
 <div class="highlight"><pre><span></span><code>apply(mut self, p: Int, f: F) raises
+apply(mut self, l: Int, r: Int, f: F) raises
 </code></pre></div>
 <h3 id="all_apply"><code>all_apply</code></h3>
 <div class="highlight"><pre><span></span><code>all_apply(mut self, k: Int, f: F)

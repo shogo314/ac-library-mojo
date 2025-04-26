@@ -2512,7 +2512,7 @@
 </style>
 <p><a href="../../">モジュール</a> &gt; <a href="../">convolution</a> &gt; <a href="">convolution_mod</a></p>
 <h1 id="convolution_mod">convolution_mod</h1>
-<div class="highlight"><pre><span></span><code>fn convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -&gt; List[StaticModint[M]]
+<div class="highlight"><pre><span></span><code>convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -&gt; List[StaticModint[M]]
 </code></pre></div>
 <p>畳み込みを mod <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>m</mi></mrow><annotation encoding="application/x-tex">m</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal">m</span></span></span></span> で計算する。<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>a</mi><mo separator="true">,</mo><mi>b</mi></mrow><annotation encoding="application/x-tex">a, b</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">a</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord mathnormal">b</span></span></span></span> の少なくとも一方が空配列の場合は空配列を返す。</p>
 <p><strong>制約</strong></p>

@@ -2504,15 +2504,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#update" class="md-nav__link">
-    <span class="md-ellipsis">
-      update
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#set" class="md-nav__link">
     <span class="md-ellipsis">
       set
@@ -2574,12 +2565,12 @@
 
 <p><a href="../../">モジュール</a> &gt; <a href="../">segtree</a> &gt; <a href="">SegTree</a></p>
 <h1 id="segtree">SegTree</h1>
+<div class="highlight"><pre><span></span><code>struct SegTree[S: CollectionElement]
+</code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self, n: Int, op: fn (S, S) -&gt; S, e: S)
-</code></pre></div>
-<h3 id="update"><code>update</code></h3>
-<div class="highlight"><pre><span></span><code>update(mut self, k: Int) -&gt; None
+__init__(out self, v: List[S], op: fn (S, S) -&gt; S, e: S)
 </code></pre></div>
 <h3 id="set"><code>set</code></h3>
 <div class="highlight"><pre><span></span><code>set(mut self, p: Int, x: S) raises -&gt; None
