@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/benchmark/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/benchmark/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/benchmark/"/>
+    </url>
+    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/contribute/</loc>
         <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
@@ -755,6 +762,13 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/twosat/"/>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/twosat/"/>
+    </url>
+    <url>
+        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/benchmark/</loc>
+        <lastmod>2025-04-26</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/benchmark/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1benchmark/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/contribute/</loc>
