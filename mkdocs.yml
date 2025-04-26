@@ -82,6 +82,7 @@ nav:
         - modules/ext/priority_queue/index.md
       - string:
         - modules/ext/string/index.md
+  - ベンチマーク: benchmark.md
   - コントリビュート: contribute.md
   - ライセンス: license.md
 
@@ -100,6 +101,7 @@ plugins:
           nav_translations:
             ホーム: Home
             モジュール: Modules
+            ベンチマーク: Benchmark
             コントリビュート: Contribute
             ライセンス: License
 

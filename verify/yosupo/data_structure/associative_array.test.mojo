@@ -16,7 +16,4 @@ fn main() raises:
             d[k] = v
         else:
             var k = io.nextInt()
-            if k in d:
-                print(d[k])
-            else:
-                print(0)
+            print(d.get(k, 0))
