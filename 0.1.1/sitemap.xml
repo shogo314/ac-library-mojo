@@ -260,13 +260,6 @@
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/fenwicktree/"/>
     </url>
     <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/HasInitStringRaisingCollectionElement/</loc>
-        <lastmod>2025-04-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/HasInitStringRaisingCollectionElement/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1en/modules/io/HasInitStringRaisingCollectionElement/"/>
-    </url>
-    <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/modules/io/IO/</loc>
         <lastmod>2025-04-26</lastmod>
         <changefreq>daily</changefreq>
@@ -1021,13 +1014,6 @@
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/fenwicktree/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/fenwicktree/"/>
-    </url>
-    <url>
-        <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/HasInitStringRaisingCollectionElement/</loc>
-        <lastmod>2025-04-26</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/HasInitStringRaisingCollectionElement/"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://shogo314.github.io/ac-library-mojo/0.1.1modules/io/HasInitStringRaisingCollectionElement/"/>
     </url>
     <url>
         <loc>https://shogo314.github.io/ac-library-mojo/0.1.1/en/modules/io/IO/</loc>
