@@ -9,7 +9,6 @@ theme:
   features:
     - navigation.tabs
     - navigation.indexes
-    - navigation.expand
     - version-selector
 
 extra:
@@ -18,70 +17,159 @@ extra:
 
 nav:
   - ホーム: index.md
-  - モジュール:
-    - modules/index.md
-    - convolution:
-      - modules/convolution/index.md
-    - dsu:
-      - modules/dsu/index.md
-    - fenwicktree:
-      - modules/fenwicktree/index.md
-    - io:
-      - modules/io/index.md
-    - lazysegtree:
-      - modules/lazysegtree/index.md
-    - math:
-      - modules/math/index.md
-    - maxflow:
-      - modules/maxflow/index.md
-    - method_traits:
-      - modules/method_traits/index.md
-    - mincostflow:
-      - modules/mincostflow/index.md
-    - modint:
-      - modules/modint/index.md
-    - scc:
-      - modules/scc/index.md
-    - segtree:
-      - modules/segtree/index.md
-    - string:
-      - modules/string/index.md
-    - twosat:
-      - modules/twosat/index.md
-    - py:
-      - bisect:
-        - modules/py/bisect/index.md
-      - builtin:
-        - modules/py/builtin/index.md
-      - heapq:
-        - modules/py/heapq/index.md
-      - itertools:
-        - modules/py/itertools/index.md
-      - math:
-        - modules/py/math/index.md
-      - operator:
-        - modules/py/operator/index.md
-      - string:
-        - modules/py/string/index.md
-      - sympy:
-        - modules/py/sympy/index.md
+  - APIs:
+    - apis/index.md
     - ext:
-      - affine:
-        - modules/ext/affine/index.md
-      - algorithm:
-        - modules/ext/algorithm/index.md
-      - avltree:
-        - modules/ext/avltree/index.md
-      - dualsegtree:
-        - modules/ext/dualsegtree/index.md
-      - interval_heap:
-        - modules/ext/interval_heap/index.md
-      - potentialized_unionfind:
-        - modules/ext/potentialized_unionfind/index.md
-      - priority_queue:
-        - modules/ext/priority_queue/index.md
+      - apis/ext/index.md
+      - data_structure:
+        - apis/ext/data_structure/index.md
+        - avltree:
+          - apis/ext/data_structure/avltree/index.md
+          - AVLTree: apis/ext/data_structure/avltree/AVLTree.md
+          - AVLTreeNode: apis/ext/data_structure/avltree/AVLTreeNode.md
+          - AVLTreeNodePointer: apis/ext/data_structure/avltree/AVLTreeNodePointer.md
+        - dualsegtree:
+          - apis/ext/data_structure/dualsegtree/index.md
+          - DualSegTree: apis/ext/data_structure/dualsegtree/DualSegTree.md
+          - RAddQ: apis/ext/data_structure/dualsegtree/RAddQ.md
+          - RUpdateQ: apis/ext/data_structure/dualsegtree/RUpdateQ.md
+        - interval_heap:
+          - apis/ext/data_structure/interval_heap/index.md
+          - IntervalHeap: apis/ext/data_structure/interval_heap/IntervalHeap.md
+        - potentialized_unionfind:
+          - apis/ext/data_structure/potentialized_unionfind/index.md
+          - PotentializedUnionFind: apis/ext/data_structure/potentialized_unionfind/PotentializedUnionFind.md
+          - UnionFindMulElement: apis/ext/data_structure/potentialized_unionfind/UnionFindMulElement.md
+          - UnionFindMul: apis/ext/data_structure/potentialized_unionfind/UnionFindMul.md
+          - UnionFindPlus: apis/ext/data_structure/potentialized_unionfind/UnionFindPlus.md
+        - priority_queue:
+          - apis/ext/data_structure/priority_queue/index.md
+          - PriorityQueue: apis/ext/data_structure/priority_queue/PriorityQueue.md
+          - heap_max: apis/ext/data_structure/priority_queue/heap_max.md
+          - heap_min: apis/ext/data_structure/priority_queue/heap_min.md
+      - dp:
+        - apis/ext/dp/index.md
+        - knapsack_problem:
+          - apis/ext/dp/knapsack_problem/index.md
+          - knapsack: apis/ext/dp/knapsack_problem/knapsack.md
+          - knapsack_01: apis/ext/dp/knapsack_problem/knapsack_01.md
+        - levenshtein_distance_problem:
+          - apis/ext/dp/levenshtein_distance_problem/index.md
+          - edit_distance: apis/ext/dp/levenshtein_distance_problem/edit_distance.md
+          - levenshtein_distance: apis/ext/dp/levenshtein_distance_problem/levenshtein_distance.md
+        - longest_increasing_subsequence_problem:
+          - apis/ext/dp/longest_increasing_subsequence_problem/index.md
+          - longest_increasing_subsequence: apis/ext/dp/longest_increasing_subsequence_problem/longest_increasing_subsequence.md
+      - math:
+        - apis/ext/math/index.md
+        - affine:
+          - apis/ext/math/affine/index.md
+          - Affine: apis/ext/math/affine/Affine.md
+          - AffineElement: apis/ext/math/affine/AffineElement.md
+    - py:
+      - apis/py/index.md
+      - bisect:
+        - apis/py/bisect/index.md
+        - bisect_left: apis/py/bisect/bisect_left.md
+      - builtin:
+        - apis/py/builtin/index.md
+        - pow_mod: apis/py/builtin/pow_mod.md
+      - heapq:
+        - apis/py/heapq/index.md
+        - heapify: apis/py/heapq/heapify.md
+        - heappop: apis/py/heapq/heappop.md
+        - heappush: apis/py/heapq/heappush.md
+        - heappushpop: apis/py/heapq/heappushpop.md
+        - heapreplace: apis/py/heapq/heapreplace.md
+      - itertools:
+        - apis/py/itertools/index.md
+      - math:
+        - apis/py/math/index.md
+        - isqrt: apis/py/math/isqrt.md
+      - operator:
+        - apis/py/operator/index.md
+        - add: apis/py/operator/add.md
+        - gt: apis/py/operator/gt.md
+        - lt: apis/py/operator/lt.md
+        - mul: apis/py/operator/mul.md
+        - neg: apis/py/operator/neg.md
+        - truediv: apis/py/operator/truediv.md
       - string:
-        - modules/ext/string/index.md
+        - apis/py/string/index.md
+        - string_to_list: apis/py/string/string_to_list.md
+      - sympy:
+        - apis/py/sympy/index.md
+        - isprime: apis/py/sympy/isprime.md
+    - convolution:
+      - apis/convolution/index.md
+      - convolution_int: apis/convolution/convolution_int.md
+      - convolution_mod: apis/convolution/convolution_mod.md
+    - dsu:
+      - apis/dsu/index.md
+      - DSU: apis/dsu/DSU.md
+    - fenwicktree:
+      - apis/fenwicktree/index.md
+      - FenwickTree: apis/fenwicktree/FenwickTree.md
+    - io:
+      - apis/io/index.md
+      - IO: apis/io/IO.md
+      - HasInitStringRaisingCollectionElement: apis/io/HasInitStringRaisingCollectionElement.md
+    - lazysegtree:
+      - apis/lazysegtree/index.md
+      - LazySegTree: apis/lazysegtree/LazySegTree.md
+      - RUpdateMinQ: apis/lazysegtree/RUpdateMinQ.md
+    - math:
+      - apis/math/index.md
+      - crt: apis/math/crt.md
+      - floor_sum: apis/math/floor_sum.md
+      - inv_mod: apis/math/inv_mod.md
+    - maxflow:
+      - apis/maxflow/index.md
+      - Edge: apis/maxflow/Edge.md
+      - MFGraph: apis/maxflow/MFGraph.md
+      - Capable: apis/maxflow/Capable.md
+    - method_traits:
+      - apis/method_traits/index.md
+      - AddGroup: apis/method_traits/AddGroup.md
+      - AddMonoid: apis/method_traits/AddMonoid.md
+      - HasAdd: apis/method_traits/HasAdd.md
+      - HasEq: apis/method_traits/HasEq.md
+      - HasEqCollectionElement: apis/method_traits/HasEqCollectionElement.md
+      - HasInitInt: apis/method_traits/HasInitInt.md
+      - HasInitStringRaising: apis/method_traits/HasInitStringRaising.md
+      - HasLtCollectionElement: apis/method_traits/HasLtCollectionElement.md
+      - HasMul: apis/method_traits/HasMul.md
+      - HasNeg: apis/method_traits/HasNeg.md
+      - HasSub: apis/method_traits/HasSub.md
+      - HasTruediv: apis/method_traits/HasTruediv.md
+      - MulMonoid: apis/method_traits/MulMonoid.md
+    - mincostflow:
+      - apis/mincostflow/index.md
+      - Edge: apis/mincostflow/Edge.md
+      - MCFGraph: apis/mincostflow/MCFGraph.md
+    - modint:
+      - apis/modint/index.md
+      - StaticModint: apis/modint/StaticModint.md
+    - scc:
+      - apis/scc/index.md
+      - SCCGraph: apis/scc/SCCGraph.md
+    - segtree:
+      - apis/segtree/index.md
+      - SegTree: apis/segtree/SegTree.md
+      - RMaxQ: apis/segtree/RMaxQ.md
+      - RMinQ: apis/segtree/RMinQ.md
+      - RMulQ: apis/segtree/RMulQ.md
+      - RSumQ: apis/segtree/RSumQ.md
+      - max_right: apis/segtree/max_right.md
+      - min_left: apis/segtree/min_left.md
+    - string:
+      - apis/string/index.md
+      - lcp_array: apis/string/lcp_array.md
+      - suffix_array: apis/string/suffix_array.md
+      - z_algorithm: apis/string/z_algorithm.md
+    - twosat:
+      - apis/twosat/index.md
+      - TwoSat: apis/twosat/TwoSat.md
   - ベンチマーク: benchmark.md
   - コントリビュート: contribute.md
   - ライセンス: license.md
@@ -100,7 +188,6 @@ plugins:
           build: true
           nav_translations:
             ホーム: Home
-            モジュール: Modules
             ベンチマーク: Benchmark
             コントリビュート: Contribute
             ライセンス: License
@@ -116,5 +203,3 @@ markdown_extensions:
   - pymdownx.inlinehilite:
   - pymdownx.details:
   - pymdownx.emoji:
-  - codehilite:
-      guess_lang: false

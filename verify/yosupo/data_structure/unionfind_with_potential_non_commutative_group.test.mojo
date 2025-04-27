@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind_with_potential_non_commutative_group
 
 from atcoder.io import IO
-from atcoder.ext.potentialized_unionfind import PotentializedUnionFind
+from atcoder.ext.data_structure.potentialized_unionfind import PotentializedUnionFind
 from atcoder.modint import modint998244353
 
 alias mint = modint998244353

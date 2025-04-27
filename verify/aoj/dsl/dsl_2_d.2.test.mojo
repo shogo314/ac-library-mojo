@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_D
 
 from atcoder.io import IO
-from atcoder.ext.dualsegtree import DualSegTree
+from atcoder.ext.data_structure.dualsegtree import DualSegTree
 
 
 fn e() -> Int:

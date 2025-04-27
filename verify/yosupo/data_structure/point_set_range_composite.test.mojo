@@ -3,7 +3,7 @@
 from atcoder.io import IO
 from atcoder.segtree import SegTree
 from atcoder.modint import modint998244353
-from atcoder.ext.affine import Affine
+from atcoder.ext.math.affine import Affine
 
 alias mint = modint998244353
 

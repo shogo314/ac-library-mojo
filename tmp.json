@@ -1,0 +1,1561 @@
+{
+  "name": "atcoder",
+  "packages": [
+    {
+      "name": "ext",
+      "packages": [
+        {
+          "name": "data_structure",
+          "packages": [],
+          "modules": [
+            {
+              "name": "avltree",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "AVLTree",
+                  "data": "struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__len__",
+                      "data": [
+                        "__len__(self) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "clear",
+                      "data": [
+                        "clear(mut self)"
+                      ]
+                    },
+                    {
+                      "name": "bisect_left",
+                      "data": [
+                        "bisect_left(self, v: T) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "bisect_right",
+                      "data": [
+                        "bisect_right(self, v: T) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "__getitem__",
+                      "data": [
+                        "__getitem__(self, i: Int) raises -> T"
+                      ]
+                    },
+                    {
+                      "name": "__contains__",
+                      "data": [
+                        "__contains__(self, v: T) raises -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "add",
+                      "data": [
+                        "add(mut self, v: T) raises"
+                      ]
+                    },
+                    {
+                      "name": "remove",
+                      "data": [
+                        "remove(mut self, v: T) raises"
+                      ]
+                    },
+                    {
+                      "name": "discard",
+                      "data": [
+                        "discard(mut self, v: T) raises"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AVLTreeNode",
+                  "data": "struct AVLTreeNode[T: HasLtCollectionElement]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self, key: T)",
+                        "__init__(out self, key: T, idx: AVLTreeNodePointer, par: AVLTreeNodePointer)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "AVLTreeNodePointer",
+                  "data": "struct AVLTreeNodePointer",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self, x: Int)",
+                        "__init__(out self)"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__eq__",
+                      "data": [
+                        "__eq__(self, o: Self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__ne__",
+                      "data": [
+                        "__ne__(self, o: Self) -> Bool"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": []
+            },
+            {
+              "name": "dualsegtree",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "DualSegTree",
+                  "data": "struct DualSegTree[S: CollectionElement, F: CollectionElement]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self, n: Int, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)",
+                        "__init__(out self, v: List[S], mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)"
+                      ]
+                    },
+                    {
+                      "name": "set",
+                      "data": [
+                        "set(mut self, p: Int, x: S) raises"
+                      ]
+                    },
+                    {
+                      "name": "get",
+                      "data": [
+                        "get(mut self, p: Int) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "apply",
+                      "data": [
+                        "apply(mut self, p: Int, f: F) raises",
+                        "apply(mut self, l: Int, r: Int, f: F) raises"
+                      ]
+                    },
+                    {
+                      "name": "all_apply",
+                      "data": [
+                        "all_apply(mut self, k: Int, f: F)"
+                      ]
+                    },
+                    {
+                      "name": "push",
+                      "data": [
+                        "push(mut self, k: Int)"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": [
+                {
+                  "name": "RAddQ",
+                  "data": [
+                    "RAddQ[S: AddMonoid](n: Int) -> DualSegTree[S, S]"
+                  ]
+                },
+                {
+                  "name": "RUpdateQ",
+                  "data": [
+                    "RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegTree[S, Optional[S]]"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "interval_heap",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "IntervalHeap",
+                  "data": "struct IntervalHeap[S: HasLtCollectionElement]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)",
+                        "__init__(out self, data: List[S])"
+                      ]
+                    },
+                    {
+                      "name": "min",
+                      "data": [
+                        "min(self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "max",
+                      "data": [
+                        "max(self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "pop_min",
+                      "data": [
+                        "pop_min(mut self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "pop_max",
+                      "data": [
+                        "pop_max(mut self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "push",
+                      "data": [
+                        "push(mut self, item: S)"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__len__",
+                      "data": [
+                        "__len__(self) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "parent",
+                      "data": [
+                        "parent(k: Int) -> Int"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": []
+            },
+            {
+              "name": "potentialized_unionfind",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "PotentializedUnionFind",
+                  "data": "struct PotentializedUnionFind[S: CollectionElement]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self, n: Int, op: fn (S, S) -> S, e: S, inv: fn (S) -> S)"
+                      ]
+                    },
+                    {
+                      "name": "leader",
+                      "data": [
+                        "leader(mut self, a: Int) raises -> Int"
+                      ]
+                    },
+                    {
+                      "name": "merge",
+                      "data": [
+                        "merge(mut self, a: Int, b: Int, w: S) raises -> Int"
+                      ]
+                    },
+                    {
+                      "name": "same",
+                      "data": [
+                        "same(mut self, a: Int, b: Int) raises -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "diff",
+                      "data": [
+                        "diff(mut self, a: Int, b: Int) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "size",
+                      "data": [
+                        "size(mut self, a: Int) raises -> Int"
+                      ]
+                    },
+                    {
+                      "name": "weight",
+                      "data": [
+                        "weight(mut self, a: Int) raises -> S"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [
+                {
+                  "name": "UnionFindMulElement",
+                  "data": "trait UnionFindMulElement(CollectionElement, HasMul, HasTruediv, HasInitInt)",
+                  "methods": []
+                }
+              ],
+              "functions": [
+                {
+                  "name": "UnionFindMul",
+                  "data": [
+                    "UnionFindMul[S: UnionFindMulElement](n: Int) -> PotentializedUnionFind[S]"
+                  ]
+                },
+                {
+                  "name": "UnionFindPlus",
+                  "data": [
+                    "UnionFindPlus[S: AddGroup](n: Int) -> PotentializedUnionFind[S]"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "priority_queue",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "PriorityQueue",
+                  "data": "struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)",
+                        "__init__(out self, data: List[S])"
+                      ]
+                    },
+                    {
+                      "name": "top",
+                      "data": [
+                        "top(self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "push",
+                      "data": [
+                        "push(mut self, item: S)"
+                      ]
+                    },
+                    {
+                      "name": "pop",
+                      "data": [
+                        "pop(mut self) raises -> S"
+                      ]
+                    },
+                    {
+                      "name": "clear",
+                      "data": [
+                        "clear(mut self)"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__len__",
+                      "data": [
+                        "__len__(self) -> Int"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": [
+                {
+                  "name": "heap_max",
+                  "data": [
+                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S, gt[S]]"
+                  ]
+                },
+                {
+                  "name": "heap_min",
+                  "data": [
+                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S, lt[S]]"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "dp",
+          "packages": [],
+          "modules": [
+            {
+              "name": "knapsack_problem",
+              "aliases": [],
+              "structs": [],
+              "traits": [],
+              "functions": [
+                {
+                  "name": "knapsack",
+                  "data": [
+                    "knapsack(vw: List[(Int, Int)], weight_limit: Int) -> Int"
+                  ]
+                },
+                {
+                  "name": "knapsack_01",
+                  "data": [
+                    "knapsack_01(vw: List[(Int, Int)], weight_limit: Int) -> Int"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "levenshtein_distance_problem",
+              "aliases": [],
+              "structs": [],
+              "traits": [],
+              "functions": [
+                {
+                  "name": "edit_distance",
+                  "data": [
+                    "edit_distance[C: HasEqCollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "edit_distance(s1: String, s2: String) -> Int"
+                  ]
+                },
+                {
+                  "name": "levenshtein_distance",
+                  "data": [
+                    "levenshtein_distance[C: HasEqCollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "levenshtein_distance(s1: String, s2: String) -> Int"
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "longest_increasing_subsequence_problem",
+              "aliases": [],
+              "structs": [],
+              "traits": [],
+              "functions": [
+                {
+                  "name": "longest_increasing_subsequence",
+                  "data": [
+                    "longest_increasing_subsequence(a: List[Int]) -> List[Int]"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "math",
+          "packages": [],
+          "modules": [
+            {
+              "name": "affine",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "Affine",
+                  "data": "struct Affine[T: AffineElement]",
+                  "methods": [
+                    {
+                      "name": "assign",
+                      "data": [
+                        "assign(self, x: T) -> T",
+                        "assign(self, o: Self) -> Self"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [
+                {
+                  "name": "AffineElement",
+                  "data": "trait AffineElement(HasAdd, HasMul, CollectionElement)",
+                  "methods": []
+                }
+              ],
+              "functions": []
+            }
+          ]
+        }
+      ],
+      "modules": []
+    },
+    {
+      "name": "py",
+      "packages": [],
+      "modules": [
+        {
+          "name": "bisect",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "bisect_left",
+              "data": [
+                "bisect_left[T: HasLtCollectionElement](a: List[T], x: T) -> Int"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "builtin",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "pow_mod",
+              "data": [
+                "pow_mod(x: Int, n: Int, m: Int) raises -> Int"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "heapq",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "heapify",
+              "data": [
+                "heapify[S: HasLtCollectionElement](mut heap: List[S])"
+              ]
+            },
+            {
+              "name": "heappop",
+              "data": [
+                "heappop[S: HasLtCollectionElement](mut heap: List[S]) raises -> S"
+              ]
+            },
+            {
+              "name": "heappush",
+              "data": [
+                "heappush[S: HasLtCollectionElement](mut heap: List[S], item: S)"
+              ]
+            },
+            {
+              "name": "heappushpop",
+              "data": [
+                "heappushpop[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S"
+              ]
+            },
+            {
+              "name": "heapreplace",
+              "data": [
+                "heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) raises -> S"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "itertools",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": []
+        },
+        {
+          "name": "math",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "isqrt",
+              "data": [
+                "isqrt(x: Int) -> Int"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "operator",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "add",
+              "data": [
+                "add[T: HasAdd](x: T, y: T) -> T"
+              ]
+            },
+            {
+              "name": "gt",
+              "data": [
+                "gt[T: LessThanComparable](x: T, y: T) -> Bool"
+              ]
+            },
+            {
+              "name": "lt",
+              "data": [
+                "lt[T: LessThanComparable](x: T, y: T) -> Bool"
+              ]
+            },
+            {
+              "name": "mul",
+              "data": [
+                "mul[T: HasMul](x: T, y: T) -> T"
+              ]
+            },
+            {
+              "name": "neg",
+              "data": [
+                "neg[T: HasNeg](x: T) -> T"
+              ]
+            },
+            {
+              "name": "truediv",
+              "data": [
+                "truediv[T: HasTruediv](x: T, y: T) -> T"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "string",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "string_to_list",
+              "data": [
+                "string_to_list(s: String) -> List[Int]"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "sympy",
+          "aliases": [],
+          "structs": [],
+          "traits": [],
+          "functions": [
+            {
+              "name": "isprime",
+              "data": [
+                "isprime(n: Int) -> Bool"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "name": "convolution",
+      "aliases": [],
+      "structs": [],
+      "traits": [],
+      "functions": [
+        {
+          "name": "convolution_int",
+          "data": [
+            "convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]"
+          ]
+        },
+        {
+          "name": "convolution_mod",
+          "data": [
+            "convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -> List[StaticModint[M]]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "dsu",
+      "aliases": [
+        {
+          "name": "UnionFind",
+          "data": "UnionFind = DSU"
+        }
+      ],
+      "structs": [
+        {
+          "name": "DSU",
+          "data": "struct DSU",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)"
+              ]
+            },
+            {
+              "name": "merge",
+              "data": [
+                "merge(mut self, a: Int, b: Int) raises -> Int"
+              ]
+            },
+            {
+              "name": "same",
+              "data": [
+                "same(mut self, a: Int, b: Int) raises -> Bool"
+              ]
+            },
+            {
+              "name": "leader",
+              "data": [
+                "leader(mut self, a: Int) raises -> Int"
+              ]
+            },
+            {
+              "name": "size",
+              "data": [
+                "size(mut self, a: Int) raises -> Int"
+              ]
+            },
+            {
+              "name": "groups",
+              "data": [
+                "groups(mut self) raises -> List[List[Int]]"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    },
+    {
+      "name": "fenwicktree",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "FenwickTree",
+          "data": "struct FenwickTree[T: AddGroup]",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)",
+                "__init__(out self, v: List[T])"
+              ]
+            },
+            {
+              "name": "add",
+              "data": [
+                "add(mut self, p: Int, x: T) raises"
+              ]
+            },
+            {
+              "name": "sum",
+              "data": [
+                "sum(self, left: Int, right: Int) raises -> T"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    },
+    {
+      "name": "io",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "IO",
+          "data": "struct IO",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self) raises"
+              ]
+            },
+            {
+              "name": "next",
+              "data": [
+                "next(mut self) raises -> String"
+              ]
+            },
+            {
+              "name": "readline",
+              "data": [
+                "readline(mut self) raises -> String"
+              ]
+            },
+            {
+              "name": "nextInt",
+              "data": [
+                "nextInt(mut self) raises -> Int"
+              ]
+            },
+            {
+              "name": "nextListInt",
+              "data": [
+                "nextListInt(mut self, n: Int) raises -> List[Int]"
+              ]
+            },
+            {
+              "name": "nextList",
+              "data": [
+                "nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]"
+              ]
+            },
+            {
+              "name": "print",
+              "data": [
+                "print[S: WritableCollectionElement](v: List[S])"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "name": "HasInitStringRaisingCollectionElement",
+          "data": "trait HasInitStringRaisingCollectionElement(HasInitStringRaising, CollectionElement)",
+          "methods": []
+        }
+      ],
+      "functions": []
+    },
+    {
+      "name": "lazysegtree",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "LazySegTree",
+          "data": "struct LazySegTree[S: CollectionElement, F: CollectionElement]",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)",
+                "__init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)"
+              ]
+            },
+            {
+              "name": "set",
+              "data": [
+                "set(mut self, p: Int, x: S) raises"
+              ]
+            },
+            {
+              "name": "get",
+              "data": [
+                "get(mut self, p: Int) raises -> S"
+              ]
+            },
+            {
+              "name": "prod",
+              "data": [
+                "prod(mut self, l: Int, r: Int) raises -> S"
+              ]
+            },
+            {
+              "name": "all_prod",
+              "data": [
+                "all_prod(self) -> S"
+              ]
+            },
+            {
+              "name": "apply",
+              "data": [
+                "apply(mut self, p: Int, f: F) raises",
+                "apply(mut self, l: Int, r: Int, f: F) raises"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": [
+        {
+          "name": "RUpdateMinQ",
+          "data": [
+            "RUpdateMinQ[S: HasLtCollectionElement](n: Int, e: S) -> LazySegTree[S, Optional[S]]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "math",
+      "aliases": [],
+      "structs": [],
+      "traits": [],
+      "functions": [
+        {
+          "name": "crt",
+          "data": [
+            "crt(r: List[Int], m: List[Int]) raises -> (Int, Int)"
+          ]
+        },
+        {
+          "name": "floor_sum",
+          "data": [
+            "floor_sum(n: Int, m: Int, a: Int, b: Int) raises -> Int"
+          ]
+        },
+        {
+          "name": "inv_mod",
+          "data": [
+            "inv_mod(x: Int, m: Int) raises -> Int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "maxflow",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "Edge",
+          "data": "struct Edge[Cap: Capable]",
+          "methods": []
+        },
+        {
+          "name": "MFGraph",
+          "data": "struct MFGraph[Cap: Capable]",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)"
+              ]
+            },
+            {
+              "name": "add_edge",
+              "data": [
+                "add_edge(mut self, src: Int, dst: Int, cap: Cap) raises -> Int"
+              ]
+            },
+            {
+              "name": "get_edge",
+              "data": [
+                "get_edge(self, i: Int) raises -> Edge[Cap]"
+              ]
+            },
+            {
+              "name": "edges",
+              "data": [
+                "edges(self) raises -> List[Edge[Cap]]"
+              ]
+            },
+            {
+              "name": "change_edge",
+              "data": [
+                "change_edge(mut self, i: Int, new_cap: Cap, new_flow: Cap) raises"
+              ]
+            },
+            {
+              "name": "flow",
+              "data": [
+                "flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> Cap"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [
+        {
+          "name": "Capable",
+          "data": "trait Capable(CollectionElement, Defaultable, HasAdd, HasSub, Comparable)",
+          "methods": []
+        }
+      ],
+      "functions": []
+    },
+    {
+      "name": "method_traits",
+      "aliases": [],
+      "structs": [],
+      "traits": [
+        {
+          "name": "AddGroup",
+          "data": "trait AddGroup(AddMonoid, HasNeg)",
+          "methods": []
+        },
+        {
+          "name": "AddMonoid",
+          "data": "trait AddMonoid(CollectionElement, Defaultable, HasAdd)",
+          "methods": []
+        },
+        {
+          "name": "HasAdd",
+          "data": "trait HasAdd",
+          "methods": [
+            {
+              "name": "__add__",
+              "data": [
+                "__add__(self, x: Self) -> Self"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasEq",
+          "data": "trait HasEq",
+          "methods": [
+            {
+              "name": "__eq__",
+              "data": [
+                "__eq__(self, x: Self) -> Bool"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasEqCollectionElement",
+          "data": "trait HasEqCollectionElement(CollectionElement, HasEq)",
+          "methods": []
+        },
+        {
+          "name": "HasInitInt",
+          "data": "trait HasInitInt",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, x: Int)"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasInitStringRaising",
+          "data": "trait HasInitStringRaising",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, x: String) raises"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasLtCollectionElement",
+          "data": "trait HasLtCollectionElement(CollectionElement, LessThanComparable)",
+          "methods": []
+        },
+        {
+          "name": "HasMul",
+          "data": "trait HasMul",
+          "methods": [
+            {
+              "name": "__mul__",
+              "data": [
+                "__mul__(self, x: Self) -> Self"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasNeg",
+          "data": "trait HasNeg",
+          "methods": [
+            {
+              "name": "__neg__",
+              "data": [
+                "__neg__(self) -> Self"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasSub",
+          "data": "trait HasSub",
+          "methods": [
+            {
+              "name": "__sub__",
+              "data": [
+                "__sub__(self, x: Self) -> Self"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "HasTruediv",
+          "data": "trait HasTruediv",
+          "methods": [
+            {
+              "name": "__truediv__",
+              "data": [
+                "__truediv__(self, x: Self) -> Self"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "MulMonoid",
+          "data": "trait MulMonoid(CollectionElement, HasInitInt, HasMul)",
+          "methods": []
+        }
+      ],
+      "functions": []
+    },
+    {
+      "name": "mincostflow",
+      "aliases": [
+        {
+          "name": "Cap",
+          "data": "Cap = Int"
+        },
+        {
+          "name": "Cost",
+          "data": "Cost = Int"
+        }
+      ],
+      "structs": [
+        {
+          "name": "Edge",
+          "data": "struct Edge",
+          "methods": []
+        },
+        {
+          "name": "MCFGraph",
+          "data": "struct MCFGraph",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)"
+              ]
+            },
+            {
+              "name": "add_edge",
+              "data": [
+                "add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) raises -> Int"
+              ]
+            },
+            {
+              "name": "get_edge",
+              "data": [
+                "get_edge(self, i: Int) raises -> Edge"
+              ]
+            },
+            {
+              "name": "edges",
+              "data": [
+                "edges(self) -> List[Edge]"
+              ]
+            },
+            {
+              "name": "flow",
+              "data": [
+                "flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> (Cap, Cost)"
+              ]
+            },
+            {
+              "name": "slope",
+              "data": [
+                "slope(mut self, s: Int, t: Int, flow_limit: Cap) raises -> List[(Cap, Cost)]"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    },
+    {
+      "name": "modint",
+      "aliases": [
+        {
+          "name": "modint1000000007",
+          "data": "modint1000000007 = StaticModint[1000000007]"
+        },
+        {
+          "name": "modint1000000009",
+          "data": "modint1000000009 = StaticModint[1000000009]"
+        },
+        {
+          "name": "modint998244353",
+          "data": "modint998244353 = StaticModint[998244353]"
+        }
+      ],
+      "structs": [
+        {
+          "name": "StaticModint",
+          "data": "struct StaticModint[M: Int]",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self)",
+                "__init__(out self, v: Int)",
+                "__init__(out self, v: UInt64)",
+                "__init__(out self, v: String) raises"
+              ]
+            },
+            {
+              "name": "__copyinit__",
+              "data": [
+                "__copyinit__(out self, o: Self)"
+              ]
+            },
+            {
+              "name": "__moveinit__",
+              "data": [
+                "__moveinit__(out self, owned o: Self)"
+              ]
+            },
+            {
+              "name": "val",
+              "data": [
+                "val(self) -> Int"
+              ]
+            },
+            {
+              "name": "valu64",
+              "data": [
+                "valu64(self) -> UInt64"
+              ]
+            },
+            {
+              "name": "__iadd__",
+              "data": [
+                "__iadd__(mut self, rhs: Self)",
+                "__iadd__(mut self, rhs: Int)"
+              ]
+            },
+            {
+              "name": "__isub__",
+              "data": [
+                "__isub__(mut self, rhs: Self)",
+                "__isub__(mut self, rhs: Int)"
+              ]
+            },
+            {
+              "name": "__imul__",
+              "data": [
+                "__imul__(mut self, rhs: Self)",
+                "__imul__(mut self, rhs: Int)"
+              ]
+            },
+            {
+              "name": "__itruediv__",
+              "data": [
+                "__itruediv__(mut self, rhs: Self) raises",
+                "__itruediv__(mut self, rhs: Int) raises"
+              ]
+            },
+            {
+              "name": "__pos__",
+              "data": [
+                "__pos__(self) -> Self"
+              ]
+            },
+            {
+              "name": "__neg__",
+              "data": [
+                "__neg__(self) -> Self"
+              ]
+            },
+            {
+              "name": "pow",
+              "data": [
+                "pow(self, n: Int) raises -> Self"
+              ]
+            },
+            {
+              "name": "__pow__",
+              "data": [
+                "__pow__(self, n: Int) raises -> Self"
+              ]
+            },
+            {
+              "name": "inv",
+              "data": [
+                "inv(self) raises -> Self"
+              ]
+            },
+            {
+              "name": "__add__",
+              "data": [
+                "__add__(self, o: Self) -> Self",
+                "__add__(self, o: Int) -> Self"
+              ]
+            },
+            {
+              "name": "__sub__",
+              "data": [
+                "__sub__(self, o: Self) -> Self",
+                "__sub__(self, o: Int) -> Self"
+              ]
+            },
+            {
+              "name": "__mul__",
+              "data": [
+                "__mul__(self, o: Self) -> Self",
+                "__mul__(self, o: Int) -> Self"
+              ]
+            },
+            {
+              "name": "__truediv__",
+              "data": [
+                "__truediv__(self, o: Self) raises -> Self",
+                "__truediv__(self, o: Int) raises -> Self"
+              ]
+            },
+            {
+              "name": "__eq__",
+              "data": [
+                "__eq__(self, rhs: Self) -> Bool",
+                "__eq__(self, rhs: Int) -> Bool"
+              ]
+            },
+            {
+              "name": "__ne__",
+              "data": [
+                "__ne__(self, rhs: Self) -> Bool",
+                "__ne__(self, rhs: Int) -> Bool"
+              ]
+            },
+            {
+              "name": "write_to",
+              "data": [
+                "write_to[W: Writer](self, mut writer: W)"
+              ]
+            },
+            {
+              "name": "__int__",
+              "data": [
+                "__int__(self) -> Int"
+              ]
+            },
+            {
+              "name": "mod",
+              "data": [
+                "mod() -> Int"
+              ]
+            },
+            {
+              "name": "modu64",
+              "data": [
+                "modu64() -> UInt64"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    },
+    {
+      "name": "scc",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "SCCGraph",
+          "data": "struct SCCGraph",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)"
+              ]
+            },
+            {
+              "name": "add_edge",
+              "data": [
+                "add_edge(mut self, src: Int, dst: Int) raises"
+              ]
+            },
+            {
+              "name": "scc",
+              "data": [
+                "scc(self) -> List[List[Int]]"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    },
+    {
+      "name": "segtree",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "SegTree",
+          "data": "struct SegTree[S: CollectionElement]",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int, op: fn (S, S) -> S, e: S)",
+                "__init__(out self, v: List[S], op: fn (S, S) -> S, e: S)"
+              ]
+            },
+            {
+              "name": "set",
+              "data": [
+                "set(mut self, p: Int, x: S) raises -> None"
+              ]
+            },
+            {
+              "name": "get",
+              "data": [
+                "get(mut self, p: Int) raises -> S"
+              ]
+            },
+            {
+              "name": "prod",
+              "data": [
+                "prod(self, l: Int, r: Int) raises -> S"
+              ]
+            },
+            {
+              "name": "all_prod",
+              "data": [
+                "all_prod(self) -> S"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": [
+        {
+          "name": "RMaxQ",
+          "data": [
+            "RMaxQ[S: HasLtCollectionElement](n: Int, MIN: S) -> SegTree[S]",
+            "RMaxQ[S: HasLtCollectionElement](v: List[S], MIN: S) -> SegTree[S]"
+          ]
+        },
+        {
+          "name": "RMinQ",
+          "data": [
+            "RMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> SegTree[S]",
+            "RMinQ[S: HasLtCollectionElement](v: List[S], MAX: S) -> SegTree[S]"
+          ]
+        },
+        {
+          "name": "RMulQ",
+          "data": [
+            "RMulQ[S: MulMonoid](n: Int) -> SegTree[S]",
+            "RMulQ[S: MulMonoid](v: List[S]) -> SegTree[S]"
+          ]
+        },
+        {
+          "name": "RSumQ",
+          "data": [
+            "RSumQ[S: AddMonoid](n: Int) -> SegTree[S]",
+            "RSumQ[S: AddMonoid](v: List[S]) -> SegTree[S]"
+          ]
+        },
+        {
+          "name": "max_right",
+          "data": [
+            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) raises -> Int",
+            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) raises -> Int"
+          ]
+        },
+        {
+          "name": "min_left",
+          "data": [
+            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) raises -> Int",
+            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) raises -> Int"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "string",
+      "aliases": [],
+      "structs": [],
+      "traits": [],
+      "functions": [
+        {
+          "name": "lcp_array",
+          "data": [
+            "lcp_array(s: String, sa: List[Int]) raises -> List[Int]",
+            "lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) raises -> List[Int]"
+          ]
+        },
+        {
+          "name": "suffix_array",
+          "data": [
+            "suffix_array(s: String) -> List[Int]"
+          ]
+        },
+        {
+          "name": "z_algorithm",
+          "data": [
+            "z_algorithm[S: HasEqCollectionElement](s: List[S]) -> List[Int]",
+            "z_algorithm(s: String) -> List[Int]"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "twosat",
+      "aliases": [],
+      "structs": [
+        {
+          "name": "TwoSat",
+          "data": "struct TwoSat",
+          "methods": [
+            {
+              "name": "__init__",
+              "data": [
+                "__init__(out self, n: Int)"
+              ]
+            },
+            {
+              "name": "add_clause",
+              "data": [
+                "add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool) raises"
+              ]
+            },
+            {
+              "name": "satisfiable",
+              "data": [
+                "satisfiable(mut self) -> Bool"
+              ]
+            },
+            {
+              "name": "answer",
+              "data": [
+                "answer(self) -> List[Bool]"
+              ]
+            }
+          ]
+        }
+      ],
+      "traits": [],
+      "functions": []
+    }
+  ]
+}

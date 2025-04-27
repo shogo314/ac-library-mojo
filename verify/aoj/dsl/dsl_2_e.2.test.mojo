@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_2_E
 
 from atcoder.io import IO
-from atcoder.ext.dualsegtree import DualSegTree
+from atcoder.ext.data_structure.dualsegtree import DualSegTree
 from atcoder.py.operator import add
 
 

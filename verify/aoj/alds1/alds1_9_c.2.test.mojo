@@ -1,17 +1,19 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_9_C
 
 from atcoder.io import IO
-from atcoder.ext.priority_queue import PriorityQueue
+from testing import assert_true
+
+from atcoder.ext.data_structure.priority_queue import heap_max
 
 
 fn main() raises:
     var io = IO()
-    var heap = PriorityQueue[Int]()
+    var heap = heap_max[Int]()
     while True:
         var q = io.next()
         if q == "insert":
-            heap.push(-io.nextInt())
+            heap.push(io.nextInt())
         elif q == "extract":
-            print(-heap.pop())
+            print(heap.pop())
         else:
             break

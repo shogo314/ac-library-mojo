@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_F
 
 from atcoder.io import IO
-from atcoder.ext.algorithm import knapsack_01
+from atcoder.ext.dp.knapsack_problem import knapsack_01
 
 
 fn main() raises:

@@ -3,7 +3,7 @@
 from collections import Optional
 
 from atcoder.io import IO
-from atcoder.ext.dualsegtree import RUpdateQ
+from atcoder.ext.data_structure.dualsegtree import RUpdateQ
 
 
 fn main() raises:

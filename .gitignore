@@ -1,5 +1,5 @@
-.verify-helper/
-!.verify-helper/config.toml
+./.verify-helper/
+!./.verify-helper/config.toml
 
 .vscode/
 

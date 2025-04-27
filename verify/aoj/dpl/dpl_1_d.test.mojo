@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DPL_1_D
 
 from atcoder.io import IO
-from atcoder.ext.algorithm import longest_increasing_subsequence
+from atcoder.ext.dp.longest_increasing_subsequence_problem import longest_increasing_subsequence
 
 
 fn main() raises:

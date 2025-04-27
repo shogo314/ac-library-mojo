@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/DSL_1_B
 
 from atcoder.io import IO
-from atcoder.ext.potentialized_unionfind import PotentializedUnionFind
+from atcoder.ext.data_structure.potentialized_unionfind import PotentializedUnionFind
 from atcoder.py.operator import add, neg
 
 

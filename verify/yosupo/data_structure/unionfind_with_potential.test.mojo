@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind_with_potential
 
 from atcoder.io import IO
-from atcoder.ext.potentialized_unionfind import UnionFindPlus
+from atcoder.ext.data_structure.potentialized_unionfind import UnionFindPlus
 from atcoder.modint import modint998244353
 
 alias mint = modint998244353
