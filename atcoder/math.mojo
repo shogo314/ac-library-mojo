@@ -1,23 +1,21 @@
-from testing import assert_true
-
 from atcoder._math import _inv_gcd
 from atcoder.py.builtin import pow_mod
 
 
-fn inv_mod(x: Int, m: Int) raises -> Int:
-    assert_true(1 <= m)
+fn inv_mod(x: Int, m: Int) -> Int:
+    debug_assert(1 <= m)
     var z = atcoder._math._inv_gcd(x, m)
-    assert_true(z[0] == 1)
+    debug_assert(z[0] == 1)
     return z[1]
 
 
-fn crt(r: List[Int], m: List[Int]) raises -> (Int, Int):
-    assert_true(len(r) == len(m))
+fn crt(r: List[Int], m: List[Int]) -> (Int, Int):
+    debug_assert(len(r) == len(m))
     var n = len(r)
     var r0 = 0
     var m0 = 1
     for i in range(n):
-        assert_true(1 <= m[i])
+        debug_assert(1 <= m[i])
         var r1 = r[i] % m[i]
         var m1 = m[i]
         if m0 < m1:
@@ -39,9 +37,9 @@ fn crt(r: List[Int], m: List[Int]) raises -> (Int, Int):
     return (r0, m0)
 
 
-fn floor_sum(n: Int, m: Int, a: Int, b: Int) raises -> Int:
-    assert_true(1 <= n)
-    assert_true(1 <= m)
+fn floor_sum(n: Int, m: Int, a: Int, b: Int) -> Int:
+    debug_assert(1 <= n)
+    debug_assert(1 <= m)
     var x = a
     var y = b
     ans = 0

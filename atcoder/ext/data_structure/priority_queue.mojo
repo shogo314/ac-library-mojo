@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import HasLtCollectionElement
 from atcoder.py.operator import lt, gt
 
@@ -29,7 +27,7 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
             self._heapify(i)
 
     fn top(self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         return self.data[0]
 
     fn push(mut self, item: S):
@@ -44,7 +42,7 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
                 break
 
     fn pop(mut self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         if len(self.data) == 1:
             return self.data.pop()
         var res = self.data[0]

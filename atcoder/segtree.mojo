@@ -1,4 +1,3 @@
-from testing import assert_true
 from bit import log2_floor, count_trailing_zeros
 
 from atcoder.method_traits import (
@@ -42,19 +41,19 @@ struct SegTree[S: CollectionElement]:
     fn _update(mut self, k: Int):
         self.d[k] = self.op(self.d[2 * k], self.d[2 * k + 1])
 
-    fn set(mut self, p: Int, x: S) raises:
-        assert_true(0 <= p < self.n)
+    fn set(mut self, p: Int, x: S):
+        debug_assert(0 <= p < self.n)
         var q = p + self.size
         self.d[q] = x
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
-    fn get(mut self, p: Int) raises -> S:
-        assert_true(0 <= p < self.n)
+    fn get(mut self, p: Int) -> S:
+        debug_assert(0 <= p < self.n)
         return self.d[p + self.size]
 
-    fn prod(self, l: Int, r: Int) raises -> S:
-        assert_true(0 <= l and l <= r and r <= self.n)
+    fn prod(self, l: Int, r: Int) -> S:
+        debug_assert(0 <= l and l <= r and r <= self.n)
         var sml = self.e
         var smr = self.e
         var a = l + self.size
@@ -74,9 +73,9 @@ struct SegTree[S: CollectionElement]:
         return self.d[1]
 
 
-fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) raises -> Int:
-    assert_true(0 <= l <= seg.n)
-    assert_true(f(seg.e))
+fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) -> Int:
+    debug_assert(0 <= l <= seg.n)
+    debug_assert(f(seg.e))
     if l == seg.n:
         return seg.n
     var l_ = l + seg.size
@@ -98,11 +97,9 @@ fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) raises -> Int:
     return seg.n
 
 
-fn max_right(
-    seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool
-) raises -> Int:
-    assert_true(0 <= l <= seg.n)
-    assert_true(f(seg.e))
+fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) -> Int:
+    debug_assert(0 <= l <= seg.n)
+    debug_assert(f(seg.e))
     if l == seg.n:
         return seg.n
     var l_ = l + seg.size
@@ -124,9 +121,9 @@ fn max_right(
     return seg.n
 
 
-fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) raises -> Int:
-    assert_true(0 <= r <= seg.n)
-    assert_true(f(seg.e))
+fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) -> Int:
+    debug_assert(0 <= r <= seg.n)
+    debug_assert(f(seg.e))
     if r == 0:
         return 0
     var r_ = r + seg.size
@@ -148,11 +145,9 @@ fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) raises -> Int:
     return 0
 
 
-fn min_left(
-    seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool
-) raises -> Int:
-    assert_true(0 <= r <= seg.n)
-    assert_true(f(seg.e))
+fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) -> Int:
+    debug_assert(0 <= r <= seg.n)
+    debug_assert(f(seg.e))
     if r == 0:
         return 0
     var r_ = r + seg.size

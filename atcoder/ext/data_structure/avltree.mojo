@@ -1,4 +1,3 @@
-from testing import assert_true
 from atcoder.method_traits import HasLtCollectionElement
 
 
@@ -102,8 +101,8 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 p = node.right
         return Int(k)
 
-    fn __getitem__(self, i: Int) raises -> T:
-        assert_true(0 <= i < len(self))
+    fn __getitem__(self, i: Int) -> T:
+        debug_assert(0 <= i < len(self))
         var k = Int32(i)
         var p = self._root
         while True:
@@ -116,10 +115,10 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
             else:
                 return node.key
 
-    fn __contains__(self, v: T) raises -> Bool:
+    fn __contains__(self, v: T) -> Bool:
         return Bool(self._find(v))
 
-    fn add(mut self, v: T) raises:
+    fn add(mut self, v: T):
         if not self._root:
             self._data.clear()
             var node = AVLTreeNode(
@@ -161,12 +160,12 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
         self._data.append(new_node)
         self._balance(p)
 
-    fn remove(mut self, v: T) raises:
+    fn remove(mut self, v: T):
         var p = self._find(v)
-        assert_true(p)
+        debug_assert(Bool(p))
         self._remove(p)
 
-    fn discard(mut self, v: T) raises:
+    fn discard(mut self, v: T):
         var p = self._find(v)
         if p:
             self._remove(p)
@@ -183,17 +182,17 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 return node.idx
         return AVLTreeNodePointer()
 
-    fn _remove(mut self, q: AVLTreeNodePointer) raises:
-        assert_true(q)
+    fn _remove(mut self, q: AVLTreeNodePointer):
+        debug_assert(Bool(q))
         var node = self._data[q.p].copy()
         var par = node.par.copy()
         var p = AVLTreeNodePointer()
         if node.left and node.right:
             var r = node.left
-            assert_true(r)
+            debug_assert(Bool(r))
             while self._data[r.p].right:
                 r = self._data[r.p].right
-            assert_true(r)
+            debug_assert(Bool(r))
             self._remove(r)
             self._data[q.p].key = self._data[r.p].key
         elif node.left or node.right:
@@ -212,7 +211,7 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 elif self._data[par.p].key < node.key:
                     self._data[par.p].right = p
                 else:
-                    assert_true(False)
+                    debug_assert(False)
             else:
                 self._root = p
             self._balance(p)
@@ -224,12 +223,12 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 elif self._data[par.p].key < node.key:
                     self._data[par.p].right = p
                 else:
-                    assert_true(False)
+                    debug_assert(False)
                 self._balance(par)
             else:
                 self.clear()
 
-    fn _balance(mut self, q: AVLTreeNodePointer) raises:
+    fn _balance(mut self, q: AVLTreeNodePointer):
         var p = q
         while p:
             self._update(p)
@@ -241,7 +240,7 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 ):
                     self._data[p.p].left = self._rotate_left(node.left)
                 node = self._data[p.p].copy()
-                assert_true(
+                debug_assert(
                     self._level(self._data[node.left.p].left)
                     <= self._level(self._data[node.left.p].right) + 2
                 )
@@ -253,7 +252,7 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                         p = self._rotate_right(p)
                         self._data[par.p].left = p.copy()
                     else:
-                        assert_true(False)
+                        debug_assert(False)
                 else:
                     self._root = self._rotate_right(p)
                     break
@@ -265,7 +264,7 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 ):
                     self._data[p.p].right = self._rotate_right(node.right)
                 node = self._data[p.p].copy()
-                assert_true(
+                debug_assert(
                     self._level(self._data[node.right.p].left) + 2
                     >= self._level(self._data[node.right.p].right)
                 )
@@ -277,22 +276,20 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                         p = self._rotate_left(p)
                         self._data[par.p].left = p.copy()
                     else:
-                        assert_true(False)
+                        debug_assert(False)
                 else:
                     self._root = self._rotate_left(p)
                     break
                 node = self._data[p.p].copy()
-            assert_true(
+            debug_assert(
                 abs(self._level(node.left) - self._level(node.right))
                 <= Int32(1)
             )
             p = self._data[p.p].par.copy()
 
-    fn _rotate_right(
-        mut self, p: AVLTreeNodePointer
-    ) raises -> AVLTreeNodePointer:
-        assert_true(p)
-        assert_true(self._data[p.p].left)
+    fn _rotate_right(mut self, p: AVLTreeNodePointer) -> AVLTreeNodePointer:
+        debug_assert(Bool(p))
+        debug_assert(Bool(self._data[p.p].left))
         var node = self._data[p.p].copy()
         var left = self._data[node.left.p].copy()
         var root = node.par.copy()
@@ -306,11 +303,9 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
         self._update(left.idx)
         return left.idx.copy()
 
-    fn _rotate_left(
-        mut self, p: AVLTreeNodePointer
-    ) raises -> AVLTreeNodePointer:
-        assert_true(p)
-        assert_true(self._data[p.p].right)
+    fn _rotate_left(mut self, p: AVLTreeNodePointer) -> AVLTreeNodePointer:
+        debug_assert(Bool(p))
+        debug_assert(Bool(self._data[p.p].right))
         var node = self._data[p.p].copy()
         var right = self._data[node.right.p].copy()
         var root = node.par.copy()
@@ -324,8 +319,8 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
         self._update(right.idx)
         return right.idx.copy()
 
-    fn _update(mut self, p: AVLTreeNodePointer) raises:
-        assert_true(p)
+    fn _update(mut self, p: AVLTreeNodePointer):
+        debug_assert(Bool(p))
         var left = self._data[p.p].left
         var right = self._data[p.p].right
         self._data[p.p].level = max(

@@ -1,4 +1,3 @@
-from testing import assert_true
 from bit import log2_floor, count_trailing_zeros
 
 from atcoder.method_traits import HasLtCollectionElement
@@ -65,8 +64,8 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         for i in reversed(range(1, self.size)):
             self._update(i)
 
-    fn set(mut self, p: Int, x: S) raises:
-        assert_true(0 <= p < self.n)
+    fn set(mut self, p: Int, x: S):
+        debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
@@ -74,15 +73,15 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
-    fn get(mut self, p: Int) raises -> S:
-        assert_true(0 <= p < self.n)
+    fn get(mut self, p: Int) -> S:
+        debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
         return self.d[q]
 
-    fn prod(mut self, l: Int, r: Int) raises -> S:
-        assert_true(0 <= l <= r <= self.n)
+    fn prod(mut self, l: Int, r: Int) -> S:
+        debug_assert(0 <= l <= r <= self.n)
         if l == r:
             return self.e
         var a = l + self.size
@@ -108,8 +107,8 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
     fn all_prod(self) -> S:
         return self.d[1]
 
-    fn apply(mut self, p: Int, f: F) raises:
-        assert_true(0 <= p < self.n)
+    fn apply(mut self, p: Int, f: F):
+        debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
@@ -117,8 +116,8 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
-    fn apply(mut self, l: Int, r: Int, f: F) raises:
-        assert_true(0 <= l <= r <= self.n)
+    fn apply(mut self, l: Int, r: Int, f: F):
+        debug_assert(0 <= l <= r <= self.n)
         if l == r:
             return
         var a = l + self.size

@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import AddGroup
 
 
@@ -20,15 +18,15 @@ struct FenwickTree[T: AddGroup]:
             if j < self._n:
                 self._data[j] = self._data[j] + self._data[i]
 
-    fn add(mut self, p: Int, x: T) raises:
-        assert_true(0 <= p < self._n)
+    fn add(mut self, p: Int, x: T):
+        debug_assert(0 <= p < self._n)
         var q = p + 1
         while q <= self._n:
             self._data[q - 1] = self._data[q - 1] + x
             q += q & -q
 
-    fn sum(self, left: Int, right: Int) raises -> T:
-        assert_true(0 <= left <= right <= self._n)
+    fn sum(self, left: Int, right: Int) -> T:
+        debug_assert(0 <= left <= right <= self._n)
         return self._sum(right) + -self._sum(left)
 
     fn _sum(self, r: Int) -> T:

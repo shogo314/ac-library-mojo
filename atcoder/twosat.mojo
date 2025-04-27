@@ -1,4 +1,3 @@
-from testing import assert_true
 from atcoder._scc import _SCCGraph
 
 
@@ -13,9 +12,9 @@ struct TwoSat:
         self._answer = List[Bool]()
         self._answer.resize(n, False)
 
-    fn add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool) raises:
-        assert_true(0 <= i < self._n)
-        assert_true(0 <= j < self._n)
+    fn add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool):
+        debug_assert(0 <= i < self._n)
+        debug_assert(0 <= j < self._n)
         self._scc.add_edge(2 * i + (not f), 2 * j + g)
         self._scc.add_edge(2 * j + (not g), 2 * i + f)
 

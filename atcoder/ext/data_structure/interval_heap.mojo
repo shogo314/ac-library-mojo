@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import HasLtCollectionElement
 
 
@@ -17,18 +15,18 @@ struct IntervalHeap[S: HasLtCollectionElement]:
             _ = self._up(self._down(i), i)
 
     fn min(self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         if len(self.data) == 1:
             return self.data[0]
         else:
             return self.data[1]
 
     fn max(self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         return self.data[0]
 
     fn pop_min(mut self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         if len(self.data) < 3:
             return self.data.pop()
         else:
@@ -38,7 +36,7 @@ struct IntervalHeap[S: HasLtCollectionElement]:
             return res
 
     fn pop_max(mut self) raises -> S:
-        assert_true(len(self.data))
+        debug_assert(len(self.data))
         if len(self.data) < 2:
             return self.data.pop()
         else:

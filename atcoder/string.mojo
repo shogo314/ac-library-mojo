@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import HasEqCollectionElement
 from atcoder.py.string import string_to_list
 
@@ -178,20 +176,18 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
     return sa
 
 
-fn lcp_array(s: String, sa: List[Int]) raises -> List[Int]:
+fn lcp_array(s: String, sa: List[Int]) -> List[Int]:
     return lcp_array(string_to_list(s), sa)
 
 
-fn lcp_array[
-    C: HasEqCollectionElement
-](s: List[C], sa: List[Int]) raises -> List[Int]:
-    assert_true(len(s) == len(sa))
+fn lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) -> List[Int]:
+    debug_assert(len(s) == len(sa))
     var n = len(s)
-    assert_true(n >= 1)
+    debug_assert(n >= 1)
     var rnk = List[Int]()
     rnk.resize(n, 0)
     for i in range(n):
-        assert_true(0 <= sa[i] < n)
+        debug_assert(0 <= sa[i] < n)
         rnk[sa[i]] = i
     var lcp = List[Int]()
     lcp.resize(n - 1, 0)

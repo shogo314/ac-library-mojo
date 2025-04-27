@@ -1,4 +1,3 @@
-from testing import assert_true
 from collections import Deque
 
 from atcoder.method_traits import HasAdd, HasSub
@@ -33,10 +32,10 @@ struct MFGraph[Cap: Capable]:
         self._g = List[List[_Edge[Cap]]](List[_Edge[Cap]]()) * n
         self._pos = List[(Int, Int)]()
 
-    fn add_edge(mut self, src: Int, dst: Int, cap: Cap) raises -> Int:
-        assert_true(0 <= src < self._n)
-        assert_true(0 <= dst < self._n)
-        assert_true(Cap() <= cap)
+    fn add_edge(mut self, src: Int, dst: Int, cap: Cap) -> Int:
+        debug_assert(0 <= src < self._n)
+        debug_assert(0 <= dst < self._n)
+        debug_assert(Cap() <= cap)
         var m = len(self._pos)
         self._pos.append((src, len(self._g[src])))
         var src_id = len(self._g[src])
@@ -47,24 +46,24 @@ struct MFGraph[Cap: Capable]:
         self._g[dst].append(_Edge(src, src_id, Cap()))
         return m
 
-    fn get_edge(self, i: Int) raises -> Edge[Cap]:
+    fn get_edge(self, i: Int) -> Edge[Cap]:
         var m = len(self._pos)
-        assert_true(0 <= i < m)
+        debug_assert(0 <= i < m)
         var _e = self._g[self._pos[i][0]][self._pos[i][1]]
         var _re = self._g[_e.dst][_e.rev]
         return Edge(self._pos[i][0], _e.dst, _e.cap + _re.cap, _re.cap)
 
-    fn edges(self) raises -> List[Edge[Cap]]:
+    fn edges(self) -> List[Edge[Cap]]:
         var m = len(self._pos)
         var result = List[Edge[Cap]]()
         for i in range(m):
             result.append(self.get_edge(i))
         return result
 
-    fn change_edge(mut self, i: Int, new_cap: Cap, new_flow: Cap) raises:
+    fn change_edge(mut self, i: Int, new_cap: Cap, new_flow: Cap):
         var m = len(self._pos)
-        assert_true(0 <= i < m)
-        assert_true(Cap() <= new_flow <= new_cap)
+        debug_assert(0 <= i < m)
+        debug_assert(Cap() <= new_flow <= new_cap)
         var _e = self._g[self._pos[i][0]][self._pos[i][1]]
         var _re = self._g[_e.dst][_e.rev]
         _e.cap = new_cap - new_flow
@@ -72,10 +71,10 @@ struct MFGraph[Cap: Capable]:
         self._g[self._pos[i][0]][self._pos[i][1]] = _e
         self._g[_e.dst][_e.rev] = _re
 
-    fn flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> Cap:
-        assert_true(0 <= s < self._n)
-        assert_true(0 <= t < self._n)
-        assert_true(s != t)
+    fn flow(mut self, s: Int, t: Int, flow_limit: Cap) -> Cap:
+        debug_assert(0 <= s < self._n)
+        debug_assert(0 <= t < self._n)
+        debug_assert(s != t)
         var level = List[Int](0) * self._n
         var current_edge = List[Int](0) * self._n
 
@@ -87,7 +86,11 @@ struct MFGraph[Cap: Capable]:
             var queue = Deque[Int]()
             queue.append(s)
             while queue:
-                var v = queue.popleft()
+                var v: Int
+                try:
+                    v = queue.popleft()
+                except:
+                    v = -1 # unreachable
                 for e in self._g[v]:
                     if e[].cap == Cap() or level[e[].dst] >= 0:
                         continue

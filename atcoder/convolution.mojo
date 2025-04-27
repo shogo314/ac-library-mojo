@@ -1,4 +1,3 @@
-from testing import assert_true
 from bit import log2_floor, count_trailing_zeros
 
 from atcoder._math import _primitive_root
@@ -13,7 +12,7 @@ struct _FFTInfo[M: Int]:
     var rate3: List[StaticModint[M]]
     var irate3: List[StaticModint[M]]
 
-    fn __init__(out self) raises:
+    fn __init__(out self):
         alias mint = StaticModint[M]
         alias g = _primitive_root(M)
         alias rank2 = count_trailing_zeros(M - 1)
@@ -48,7 +47,7 @@ struct _FFTInfo[M: Int]:
             iprod = iprod * self.root[i + 3]
 
 
-fn _butterfly[M: Int](mut a: List[StaticModint[M]]) raises:
+fn _butterfly[M: Int](mut a: List[StaticModint[M]]):
     alias mint = StaticModint[M]
     var n = len(a)
     var h = count_trailing_zeros(n)
@@ -97,7 +96,7 @@ fn _butterfly[M: Int](mut a: List[StaticModint[M]]) raises:
             ln += 2
 
 
-fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]) raises:
+fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]):
     alias mint = StaticModint[M]
     var n = len(a)
     var h = count_trailing_zeros(n)
@@ -155,7 +154,7 @@ fn _butterfly_inv[M: Int](mut a: List[StaticModint[M]]) raises:
 
 fn _convolution_fft[
     M: Int
-](a_: List[StaticModint[M]], b_: List[StaticModint[M]]) raises -> List[
+](a_: List[StaticModint[M]], b_: List[StaticModint[M]]) -> List[
     StaticModint[M]
 ]:
     alias mint = StaticModint[M]
@@ -180,7 +179,7 @@ fn _convolution_fft[
 
 fn convolution_mod[
     M: Int
-](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -> List[
+](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[
     StaticModint[M]
 ]:
     var n = len(a)
@@ -188,11 +187,11 @@ fn convolution_mod[
     if n == 0 or m == 0:
         return List[StaticModint[M]]()
     var z = 1 << (log2_floor(n + m - 1) + 1)
-    assert_true((StaticModint[M].mod() - 1) % z == 0)
+    debug_assert((StaticModint[M].mod() - 1) % z == 0)
     return _convolution_fft(a, b)
 
 
-fn convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]:
+fn convolution_int(a: List[Int], b: List[Int]) -> List[Int]:
     var n = len(a)
     var m = len(b)
     if n == 0 or m == 0:
@@ -214,7 +213,7 @@ fn convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]:
     constrained[MOD1 % (UInt64(1) << MAX_AB_BIT) == 1]()
     constrained[MOD2 % (UInt64(1) << MAX_AB_BIT) == 1]()
     constrained[MOD3 % (UInt64(1) << MAX_AB_BIT) == 1]()
-    assert_true(n + m - 1 <= (1 << MAX_AB_BIT))
+    debug_assert(n + m - 1 <= (1 << MAX_AB_BIT))
 
     var c1: List[StaticModint[754974721]]
     var c2: List[StaticModint[167772161]]

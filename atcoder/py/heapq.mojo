@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import HasLtCollectionElement
 
 
@@ -15,8 +13,8 @@ fn heappush[S: HasLtCollectionElement](mut heap: List[S], item: S):
             break
 
 
-fn heappop[S: HasLtCollectionElement](mut heap: List[S]) raises -> S:
-    assert_true(len(heap))
+fn heappop[S: HasLtCollectionElement](mut heap: List[S]) -> S:
+    debug_assert(len(heap))
     if len(heap) == 1:
         return heap.pop()
     var res = heap[0]
@@ -46,8 +44,8 @@ fn heapify[S: HasLtCollectionElement](mut heap: List[S]):
 
 fn heapreplace[
     S: HasLtCollectionElement
-](mut heap: List[S], item: S) raises -> S:
-    assert_true(len(heap))
+](mut heap: List[S], item: S) -> S:
+    debug_assert(len(heap))
     var res = heap[0]
     heap[0] = item
     _heapify(heap, 0)

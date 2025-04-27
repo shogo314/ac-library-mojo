@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder.method_traits import (
     HasInitInt,
     HasMul,
@@ -28,7 +26,7 @@ struct PotentializedUnionFind[S: CollectionElement]:
         self.inv = inv
 
     fn leader(mut self, a: Int) raises -> Int:
-        assert_true(0 <= a < self.n)
+        debug_assert(0 <= a < self.n)
         if self.parent_or_size[a] < 0:
             return a
         var root = self.leader(self.parent_or_size[a])
@@ -39,8 +37,8 @@ struct PotentializedUnionFind[S: CollectionElement]:
         return root
 
     fn merge(mut self, a: Int, b: Int, w: S) raises -> Int:
-        assert_true(0 <= a and a < self.n)
-        assert_true(0 <= b and b < self.n)
+        debug_assert(0 <= a and a < self.n)
+        debug_assert(0 <= b and b < self.n)
         var v = self.op(self.op(self.weight(a), w), self.inv(self.weight(b)))
         var x = self.leader(a)
         var y = self.leader(b)
@@ -55,21 +53,21 @@ struct PotentializedUnionFind[S: CollectionElement]:
         return x
 
     fn same(mut self, a: Int, b: Int) raises -> Bool:
-        assert_true(0 <= a and a < self.n)
-        assert_true(0 <= b and b < self.n)
+        debug_assert(0 <= a and a < self.n)
+        debug_assert(0 <= b and b < self.n)
         return self.leader(a) == self.leader(b)
 
     fn diff(mut self, a: Int, b: Int) raises -> S:
-        assert_true(0 <= a and a < self.n)
-        assert_true(0 <= b and b < self.n)
+        debug_assert(0 <= a and a < self.n)
+        debug_assert(0 <= b and b < self.n)
         return self.op(self.inv(self.weight(a)), self.weight(b))
 
     fn size(mut self, a: Int) raises -> Int:
-        assert_true(0 <= a and a < self.n)
+        debug_assert(0 <= a and a < self.n)
         return -self.parent_or_size[self.leader(a)]
 
     fn weight(mut self, a: Int) raises -> S:
-        assert_true(0 <= a and a < self.n)
+        debug_assert(0 <= a and a < self.n)
         _ = self.leader(a)
         return self.diff_weight[a]
 

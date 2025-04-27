@@ -1,8 +1,6 @@
 # verification-helper: PROBLEM https://onlinejudge.u-aizu.ac.jp/problems/ALDS1_9_C
 
 from atcoder.io import IO
-from testing import assert_true
-
 from atcoder.ext.data_structure.priority_queue import heap_max
 
 

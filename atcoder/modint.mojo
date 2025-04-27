@@ -1,5 +1,3 @@
-from testing import assert_true
-
 from atcoder._math import _inv_gcd
 
 
@@ -56,10 +54,10 @@ struct StaticModint[M: Int]:
     fn __imul__(mut self, rhs: Int):
         self *= Self(rhs)
 
-    fn __itruediv__(mut self, rhs: Self) raises:
+    fn __itruediv__(mut self, rhs: Self):
         self *= rhs.inv()
 
-    fn __itruediv__(mut self, rhs: Int) raises:
+    fn __itruediv__(mut self, rhs: Int):
         self /= Self(rhs)
 
     fn __pos__(self) -> Self:
@@ -68,8 +66,8 @@ struct StaticModint[M: Int]:
     fn __neg__(self) -> Self:
         return Self() - self
 
-    fn pow(self, n: Int) raises -> Self:
-        assert_true(0 <= n)
+    fn pow(self, n: Int) -> Self:
+        debug_assert(0 <= n)
         var x = self
         var r = Self(1)
         var t = n
@@ -80,12 +78,12 @@ struct StaticModint[M: Int]:
             t >>= 1
         return r
 
-    fn __pow__(self, n: Int) raises -> Self:
+    fn __pow__(self, n: Int) -> Self:
         return self.pow(n)
 
-    fn inv(self) raises -> Self:
+    fn inv(self) -> Self:
         eg = _inv_gcd(self._val, M)
-        assert_true(eg[0] == 1)
+        debug_assert(eg[0] == 1)
         return Self(eg[1])
 
     fn __add__(self, o: Self) -> Self:
@@ -118,12 +116,12 @@ struct StaticModint[M: Int]:
         res *= o
         return res
 
-    fn __truediv__(self, o: Self) raises -> Self:
+    fn __truediv__(self, o: Self) -> Self:
         var res = self
         res /= o
         return res
 
-    fn __truediv__(self, o: Int) raises -> Self:
+    fn __truediv__(self, o: Int) -> Self:
         var res = self
         res /= o
         return res

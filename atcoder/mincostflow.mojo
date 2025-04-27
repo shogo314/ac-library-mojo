@@ -1,4 +1,3 @@
-from testing import assert_true
 from collections import Deque
 
 from atcoder._csr import CSR
@@ -35,32 +34,32 @@ struct MCFGraph:
 
     fn add_edge(
         mut self, src: Int, dst: Int, cap: Cap, cost: Cost
-    ) raises -> Int:
-        assert_true(0 <= src < self._n)
-        assert_true(0 <= dst < self._n)
-        assert_true(Cap() <= cap)
-        assert_true(Cost() <= cost)
+    ) -> Int:
+        debug_assert(0 <= src < self._n)
+        debug_assert(0 <= dst < self._n)
+        debug_assert(Cap() <= cap)
+        debug_assert(Cost() <= cost)
         var m = len(self._edges)
         self._edges.append(Edge(src, dst, cap, Cap(), cost))
         return m
 
-    fn get_edge(self, i: Int) raises -> Edge:
+    fn get_edge(self, i: Int) -> Edge:
         var m = len(self._edges)
-        assert_true(0 <= i < m)
+        debug_assert(0 <= i < m)
         return self._edges[i]
 
     fn edges(self) -> List[Edge]:
         return self._edges
 
-    fn flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> (Cap, Cost):
+    fn flow(mut self, s: Int, t: Int, flow_limit: Cap) -> (Cap, Cost):
         return self.slope(s, t, flow_limit)[-1]
 
     fn slope(
         mut self, s: Int, t: Int, flow_limit: Cap
-    ) raises -> List[(Cap, Cost)]:
-        assert_true(0 <= s < self._n)
-        assert_true(0 <= t < self._n)
-        assert_true(s != t)
+    ) -> List[(Cap, Cost)]:
+        debug_assert(0 <= s < self._n)
+        debug_assert(0 <= t < self._n)
+        debug_assert(s != t)
         var m = len(self._edges)
         var edge_idx = List[Int](0) * m
 
@@ -93,7 +92,7 @@ struct MCFGraph:
 
     fn _slope(
         self, mut g: CSR[_Edge], s: Int, t: Int, flow_limit: Cap
-    ) raises -> List[(Cap, Cost)]:
+    ) -> List[(Cap, Cost)]:
         var dual_dist = List[(Cost, Cost)]((Cost(), Cost())) * self._n
         var prev_e = List[Int](0) * self._n
         var vis = List[Bool](False) * self._n
