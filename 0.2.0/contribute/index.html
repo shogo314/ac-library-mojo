@@ -4883,15 +4883,6 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      準備
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
       実行
     </span>
   </a>
@@ -4904,7 +4895,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       ドキュメント
     </span>
@@ -4914,7 +4905,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       インストール
     </span>
@@ -4923,7 +4914,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       実行
     </span>
@@ -5014,15 +5005,6 @@
           <li class="md-nav__item">
   <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
-      準備
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#_5" class="md-nav__link">
-    <span class="md-ellipsis">
       実行
     </span>
   </a>
@@ -5035,7 +5017,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_6" class="md-nav__link">
+  <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       ドキュメント
     </span>
@@ -5045,7 +5027,7 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#_7" class="md-nav__link">
+  <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       インストール
     </span>
@@ -5054,7 +5036,7 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
+  <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       実行
     </span>
@@ -5093,27 +5075,18 @@
 <h3 id="_3">インストール</h3>
 <div class="highlight"><pre><span></span><code>pip3 install online-judge-verify-helper
 </code></pre></div>
-<h3 id="_4">準備</h3>
-<p><code>.verify-helper/config.toml</code> というファイルを作って、内容を以下のようにしてください。</p>
-<div class="highlight"><pre><span></span><code>[languages.mojo]
-compile = &quot;magic run mojo build -o a.out {path} -I {basedir}&quot;
-execute = &quot;./a.out&quot;
-bundle = &quot;false&quot;
-list_dependencies = &quot;python list_dependencies.py {path}&quot;
-verification_file_suffix = &quot;.test.mojo&quot;
-</code></pre></div>
-<h3 id="_5">実行</h3>
+<h3 id="_4">実行</h3>
 <div class="highlight"><pre><span></span><code>oj-verify run
 </code></pre></div>
 <p>初回は時間がかかります。</p>
-<h2 id="_6">ドキュメント</h2>
+<h2 id="_5">ドキュメント</h2>
 <p><a href="https://www.mkdocs.org/">MkDocs</a> を使っています。
 GitHub Actionsで自動化しているので <code>docs</code> を編集するだけでよいです。</p>
 <p>手元でページを見たい場合は以下を参考にしてください。</p>
-<h3 id="_7">インストール</h3>
+<h3 id="_6">インストール</h3>
 <div class="highlight"><pre><span></span><code>pip3 install mkdocs mkdocs-material mkdocs-static-i18n markdown-katex pymdown-extensions mike
 </code></pre></div>
-<h3 id="_8">実行</h3>
+<h3 id="_7">実行</h3>
 <div class="highlight"><pre><span></span><code>mkdocs serve
 </code></pre></div>
 
