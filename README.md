@@ -18,9 +18,9 @@
 We welcome contributions!
 貢献していただける方は、以下のガイドをご参照ください：
 
-日本語ガイド 👉 [CONTRIBUTING.md](CONTRIBUTING.md)
+日本語ガイド 👉 [CONTRIBUTING.md](docs/contribute.ja.md)
 
-English Guide 👉 [CONTRIBUTING_EN.md](CONTRIBUTING_EN.md)
+English Guide 👉 [CONTRIBUTING_EN.md](docs/contribute.en.md)
 
 簡単な修正・Issueの提案・新機能の追加など、どんな貢献も歓迎します！
 

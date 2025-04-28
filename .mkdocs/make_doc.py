@@ -123,11 +123,12 @@ def main():
     import json
     import shutil
 
-    with open("tmp.json", "r") as f:
+    with open(".mkdocs/tmp.json", "r") as f:
         pk = json.load(f)
 
-    if Path("apis").exists():
-        shutil.rmtree("apis")
+    assert not Path("apis").exists()
+    # if Path("apis").exists():
+    #     shutil.rmtree("apis")
     package(Path("apis"), pk)
 
 

@@ -1,5 +1,6 @@
 ./.verify-helper/
 !./.verify-helper/config.toml
+!./.verify-helper/list_dependencies.py
 
 .vscode/
 

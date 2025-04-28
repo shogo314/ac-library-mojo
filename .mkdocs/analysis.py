@@ -182,6 +182,7 @@ class Package:
 
 
 def read_pkg(src: Path) -> Package:
+    assert src.is_dir()
     res = Package(src.name)
     for i in src.iterdir():
         if i.name.startswith("_"):
@@ -200,7 +201,7 @@ def main():
     import json
 
     x = read_pkg(Path("atcoder"))
-    with open("tmp.json", "w") as f:
+    with open(".mkdocs/tmp.json", "w") as f:
         json.dump(x.to_primitive(), f, indent=2)
 
 

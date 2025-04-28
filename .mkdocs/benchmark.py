@@ -1,4 +1,4 @@
-BENCHMARK_JSON = "benchmark.json"
+BENCHMARK_JSON = ".mkdocs/benchmark.json"
 TIMESTAMPS = ".verify-helper/timestamps.local.json"
 TEST_COUNT = 10
 
@@ -115,9 +115,9 @@ def problem(pr: Problem):
             "|",
             "[" + fn.name + "](https://github.com/shogo314/ac-library-mojo/tree/main/" + str(fn.path) + ")",
             "|",
-            f"{(sum(fn.time) / TEST_COUNT):.04}/{min(fn.time):.04}/{max(fn.time):.04}",
+            f"{(sum(fn.time) / TEST_COUNT):.3f}/{min(fn.time):.3f}/{max(fn.time):.3f}",
             "|",
-            f"{(sum(fn.memory) / TEST_COUNT):.04}/{min(fn.memory):.04}/{max(fn.memory):.04}",
+            f"{(sum(fn.memory) / TEST_COUNT):.2f}/{min(fn.memory):.2f}/{max(fn.memory):.2f}",
             "|",
         )
 

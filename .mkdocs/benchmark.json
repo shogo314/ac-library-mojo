@@ -1,0 +1,402 @@
+[
+  {
+    "name": "Double-Ended Priority Queue",
+    "fn": [
+      {
+        "name": "IntervalHeap",
+        "path": "verify/yosupo/data_structure/double_ended_priority_queue/interval_heap.test.mojo",
+        "time": [
+          3.13204,
+          3.601737,
+          2.40348,
+          2.413519,
+          2.579297,
+          2.398024,
+          2.344838,
+          2.426139,
+          2.474344,
+          2.378257
+        ],
+        "memory": [
+          35.972,
+          35.988,
+          35.896,
+          35.684,
+          35.616,
+          36.064,
+          36.124,
+          35.992,
+          35.68,
+          36.056
+        ]
+      },
+      {
+        "name": "SegTree + Compress",
+        "path": "verify/yosupo/data_structure/double_ended_priority_queue/segtree.test.mojo",
+        "time": [
+          2.286097,
+          2.590752,
+          2.59563,
+          2.597637,
+          2.615234,
+          2.713096,
+          2.694074,
+          2.594534,
+          2.643481,
+          2.558723
+        ],
+        "memory": [
+          68.212,
+          67.948,
+          68.268,
+          68.112,
+          68.4,
+          67.56,
+          68.16,
+          67.872,
+          68.036,
+          68.008
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/double_ended_priority_queue"
+  },
+  {
+    "name": "Point Add Range Sum",
+    "fn": [
+      {
+        "name": "FenwickTree",
+        "path": "verify/yosupo/data_structure/point_add_range_sum/fenwicktree.test.mojo",
+        "time": [
+          4.224116,
+          4.397061,
+          4.43652,
+          4.627138,
+          4.376961,
+          4.361108,
+          4.084348,
+          3.993218,
+          3.997422,
+          3.985129
+        ],
+        "memory": [
+          41.552,
+          41.516,
+          40.56,
+          41.8,
+          41.568,
+          41.736,
+          41.148,
+          41.34,
+          41.54,
+          43.672
+        ]
+      },
+      {
+        "name": "SegTree",
+        "path": "verify/yosupo/data_structure/point_add_range_sum/segtree.test.mojo",
+        "time": [
+          3.945114,
+          3.91255,
+          3.936373,
+          3.931024,
+          3.95533,
+          4.09087,
+          3.938059,
+          4.070282,
+          4.025269,
+          3.979657
+        ],
+        "memory": [
+          41.96,
+          41.556,
+          41.44,
+          41.96,
+          41.084,
+          41.748,
+          41.752,
+          41.364,
+          41.616,
+          41.624
+        ]
+      },
+      {
+        "name": "SegTree with Parameter",
+        "path": "verify/yosupo/data_structure/point_add_range_sum/segtree_with_parameter.test.mojo",
+        "time": [
+          4.041106,
+          4.275887,
+          4.337269,
+          4.169967,
+          4.014292,
+          3.989707,
+          3.924644,
+          4.168412,
+          3.916326,
+          3.989532
+        ],
+        "memory": [
+          40.968,
+          41.428,
+          41.376,
+          41.148,
+          41.764,
+          41.972,
+          41.616,
+          41.252,
+          41.04,
+          41.864
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/point_add_range_sum"
+  },
+  {
+    "name": "Point Set Range Composite",
+    "fn": [
+      {
+        "name": "SegTree",
+        "path": "verify/yosupo/data_structure/point_set_range_composite/segtree.test.mojo",
+        "time": [
+          7.550156,
+          7.261254,
+          6.522102,
+          6.557173,
+          6.696844,
+          6.814003,
+          6.575319,
+          6.680201,
+          6.483966,
+          6.642792
+        ],
+        "memory": [
+          61.16,
+          61.616,
+          60.328,
+          60.52,
+          60.38,
+          62.708,
+          60.928,
+          60.86,
+          60.332,
+          61.324
+        ]
+      },
+      {
+        "name": "SegTree with Parameter",
+        "path": "verify/yosupo/data_structure/point_set_range_composite/segtree_with_parameter.test.mojo",
+        "time": [
+          6.760709,
+          6.610913,
+          6.54604,
+          6.56884,
+          6.447696,
+          6.495616,
+          6.620599,
+          6.502772,
+          7.156463,
+          6.661249
+        ],
+        "memory": [
+          60.456,
+          62.14,
+          60.984,
+          61.852,
+          62.384,
+          61.756,
+          62.352,
+          62.596,
+          61.864,
+          61.992
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/point_set_range_composite"
+  },
+  {
+    "name": "Static Range Sum",
+    "fn": [
+      {
+        "name": "FenwickTree",
+        "path": "verify/yosupo/data_structure/static_range_sum/fenwicktree.test.mojo",
+        "time": [
+          3.087832,
+          2.951101,
+          3.579479,
+          3.07985,
+          3.260676,
+          2.89927,
+          2.922854,
+          2.972898,
+          2.996467,
+          3.924451
+        ],
+        "memory": [
+          34.596,
+          36.472,
+          37.472,
+          37.748,
+          35.844,
+          37.576,
+          36.768,
+          37.948,
+          37.884,
+          36.428
+        ]
+      },
+      {
+        "name": "SegTree",
+        "path": "verify/yosupo/data_structure/static_range_sum/segtree.test.mojo",
+        "time": [
+          3.008434,
+          3.287387,
+          3.046331,
+          2.949967,
+          3.11235,
+          2.975682,
+          2.949257,
+          2.962911,
+          3.071823,
+          2.957205
+        ],
+        "memory": [
+          38.176,
+          37.64,
+          37.512,
+          38.152,
+          37.708,
+          36.148,
+          37.416,
+          38.212,
+          37.728,
+          37.948
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/static_range_sum"
+  },
+  {
+    "name": "Predecessor Problem",
+    "fn": [
+      {
+        "name": "AVLTree",
+        "path": "verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo",
+        "time": [
+          21.966338,
+          18.354143,
+          19.57129,
+          18.473215,
+          18.421917,
+          17.862702,
+          17.910593,
+          17.907486,
+          18.097823,
+          18.330723
+        ],
+        "memory": [
+          837.14,
+          838.64,
+          837.568,
+          837.464,
+          837.996,
+          839.18,
+          838.98,
+          837.984,
+          837.096,
+          838.916
+        ]
+      },
+      {
+        "name": "SegTree",
+        "path": "verify/yosupo/data_structure/predecessor_problem/segtree.test.mojo",
+        "time": [
+          8.699956,
+          8.676859,
+          8.758939,
+          8.704504,
+          8.599118,
+          8.551591,
+          9.147509,
+          8.687166,
+          8.608771,
+          8.988921
+        ],
+        "memory": [
+          514.596,
+          514.5,
+          514.676,
+          514.168,
+          514.64,
+          514.38,
+          514.68,
+          514.504,
+          514.032,
+          514.348
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/predecessor_problem"
+  },
+  {
+    "name": "Ordered Set",
+    "fn": [
+      {
+        "name": "AVLTree",
+        "path": "verify/yosupo/data_structure/ordered_set/avltree.test.mojo",
+        "time": [
+          5.605395,
+          4.613645,
+          4.581678,
+          4.874082,
+          4.473067,
+          4.641146,
+          4.872563,
+          4.833927,
+          4.540932,
+          4.615901
+        ],
+        "memory": [
+          73.3,
+          73.184,
+          76.516,
+          75.612,
+          78.26,
+          78.572,
+          78.18,
+          78.76,
+          77.924,
+          79.192
+        ]
+      },
+      {
+        "name": "SegTree + Compress",
+        "path": "verify/yosupo/data_structure/ordered_set/segtree.test.mojo",
+        "time": [
+          2.834182,
+          2.901574,
+          2.807928,
+          3.129634,
+          3.051899,
+          2.94364,
+          2.821534,
+          2.95216,
+          2.867238,
+          2.796649
+        ],
+        "memory": [
+          68.404,
+          68.932,
+          68.552,
+          68.764,
+          67.704,
+          68.192,
+          68.844,
+          68.272,
+          68.364,
+          68.512
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/ordered_set"
+  }
+]

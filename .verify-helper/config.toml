@@ -2,5 +2,5 @@
 compile = "magic run mojo build -o a.out {path} -I {basedir}"
 execute = "./a.out"
 bundle = "false"
-list_dependencies = "python3 list_dependencies.py {path}"
+list_dependencies = "python3 .verify-helper/list_dependencies.py {path}"
 verification_file_suffix = ".test.mojo"

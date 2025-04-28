@@ -2,7 +2,8 @@ from atcoder.method_traits import HasLtCollectionElement
 from atcoder.py.operator import lt, gt
 
 
-struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
+struct PriorityQueue[S: CollectionElement]:
+    var comp: fn (S, S) -> Bool
     var data: List[S]
 
     fn _heapify(mut self, k: Int):
@@ -10,18 +11,20 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
             pass
         else:
             var nk = 2 * k + 1
-            if 2 * k + 2 < len(self.data) and comp(
+            if 2 * k + 2 < len(self.data) and self.comp(
                 self.data[2 * k + 2], self.data[2 * k + 1]
             ):
                 nk = 2 * k + 2
-            if comp(self.data[nk], self.data[k]):
+            if self.comp(self.data[nk], self.data[k]):
                 self.data.swap_elements(k, nk)
                 self._heapify(nk)
 
-    fn __init__(out self):
+    fn __init__(out self, comp: fn (S, S) -> Bool):
+        self.comp = comp
         self.data = List[S]()
 
-    fn __init__(out self, data: List[S]):
+    fn __init__(out self, data: List[S], comp: fn (S, S) -> Bool):
+        self.comp = comp
         self.data = data
         for i in reversed(range(len(self.data))):
             self._heapify(i)
@@ -35,7 +38,7 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
         self.data.append(item)
         while k:
             var nk = (k - 1) >> 1
-            if comp(self.data[k], self.data[nk]):
+            if self.comp(self.data[k], self.data[nk]):
                 self.data.swap_elements(k, nk)
                 k = nk
             else:
@@ -61,9 +64,9 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]:
         return len(self.data)
 
 
-fn heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S, lt[S]]:
-    return PriorityQueue[S, lt[S]]()
+fn heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]:
+    return PriorityQueue[S](lt[S])
 
 
-fn heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S, gt[S]]:
-    return PriorityQueue[S, gt[S]]()
+fn heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]:
+    return PriorityQueue[S](gt[S])

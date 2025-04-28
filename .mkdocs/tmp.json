@@ -55,31 +55,31 @@
                     {
                       "name": "__getitem__",
                       "data": [
-                        "__getitem__(self, i: Int) raises -> T"
+                        "__getitem__(self, i: Int) -> T"
                       ]
                     },
                     {
                       "name": "__contains__",
                       "data": [
-                        "__contains__(self, v: T) raises -> Bool"
+                        "__contains__(self, v: T) -> Bool"
                       ]
                     },
                     {
                       "name": "add",
                       "data": [
-                        "add(mut self, v: T) raises"
+                        "add(mut self, v: T)"
                       ]
                     },
                     {
                       "name": "remove",
                       "data": [
-                        "remove(mut self, v: T) raises"
+                        "remove(mut self, v: T)"
                       ]
                     },
                     {
                       "name": "discard",
                       "data": [
-                        "discard(mut self, v: T) raises"
+                        "discard(mut self, v: T)"
                       ]
                     }
                   ]
@@ -526,6 +526,12 @@
               "data": [
                 "bisect_left[T: HasLtCollectionElement](a: List[T], x: T) -> Int"
               ]
+            },
+            {
+              "name": "bisect_right",
+              "data": [
+                "bisect_right[T: HasLtCollectionElement](a: List[T], x: T) -> Int"
+              ]
             }
           ]
         },
@@ -538,7 +544,7 @@
             {
               "name": "pow_mod",
               "data": [
-                "pow_mod(x: Int, n: Int, m: Int) raises -> Int"
+                "pow_mod(x: Int, n: Int, m: Int) -> Int"
               ]
             }
           ]
@@ -558,7 +564,7 @@
             {
               "name": "heappop",
               "data": [
-                "heappop[S: HasLtCollectionElement](mut heap: List[S]) raises -> S"
+                "heappop[S: HasLtCollectionElement](mut heap: List[S]) -> S"
               ]
             },
             {
@@ -576,7 +582,7 @@
             {
               "name": "heapreplace",
               "data": [
-                "heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) raises -> S"
+                "heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S"
               ]
             }
           ]
@@ -647,20 +653,6 @@
           ]
         },
         {
-          "name": "string",
-          "aliases": [],
-          "structs": [],
-          "traits": [],
-          "functions": [
-            {
-              "name": "string_to_list",
-              "data": [
-                "string_to_list(s: String) -> List[Int]"
-              ]
-            }
-          ]
-        },
-        {
           "name": "sympy",
           "aliases": [],
           "structs": [],
@@ -687,13 +679,13 @@
         {
           "name": "convolution_int",
           "data": [
-            "convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]"
+            "convolution_int(a: List[Int], b: List[Int]) -> List[Int]"
           ]
         },
         {
           "name": "convolution_mod",
           "data": [
-            "convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -> List[StaticModint[M]]"
+            "convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[StaticModint[M]]"
           ]
         }
       ]
@@ -720,31 +712,31 @@
             {
               "name": "merge",
               "data": [
-                "merge(mut self, a: Int, b: Int) raises -> Int"
+                "merge(mut self, a: Int, b: Int) -> Int"
               ]
             },
             {
               "name": "same",
               "data": [
-                "same(mut self, a: Int, b: Int) raises -> Bool"
+                "same(mut self, a: Int, b: Int) -> Bool"
               ]
             },
             {
               "name": "leader",
               "data": [
-                "leader(mut self, a: Int) raises -> Int"
+                "leader(mut self, a: Int) -> Int"
               ]
             },
             {
               "name": "size",
               "data": [
-                "size(mut self, a: Int) raises -> Int"
+                "size(mut self, a: Int) -> Int"
               ]
             },
             {
               "name": "groups",
               "data": [
-                "groups(mut self) raises -> List[List[Int]]"
+                "groups(mut self) -> List[List[Int]]"
               ]
             }
           ]
@@ -771,13 +763,13 @@
             {
               "name": "add",
               "data": [
-                "add(mut self, p: Int, x: T) raises"
+                "add(mut self, p: Int, x: T)"
               ]
             },
             {
               "name": "sum",
               "data": [
-                "sum(self, left: Int, right: Int) raises -> T"
+                "sum(self, left: Int, right: Int) -> T"
               ]
             }
           ]
@@ -866,19 +858,19 @@
             {
               "name": "set",
               "data": [
-                "set(mut self, p: Int, x: S) raises"
+                "set(mut self, p: Int, x: S)"
               ]
             },
             {
               "name": "get",
               "data": [
-                "get(mut self, p: Int) raises -> S"
+                "get(mut self, p: Int) -> S"
               ]
             },
             {
               "name": "prod",
               "data": [
-                "prod(mut self, l: Int, r: Int) raises -> S"
+                "prod(mut self, l: Int, r: Int) -> S"
               ]
             },
             {
@@ -890,8 +882,8 @@
             {
               "name": "apply",
               "data": [
-                "apply(mut self, p: Int, f: F) raises",
-                "apply(mut self, l: Int, r: Int, f: F) raises"
+                "apply(mut self, p: Int, f: F)",
+                "apply(mut self, l: Int, r: Int, f: F)"
               ]
             }
           ]
@@ -916,19 +908,19 @@
         {
           "name": "crt",
           "data": [
-            "crt(r: List[Int], m: List[Int]) raises -> (Int, Int)"
+            "crt(r: List[Int], m: List[Int]) -> (Int, Int)"
           ]
         },
         {
           "name": "floor_sum",
           "data": [
-            "floor_sum(n: Int, m: Int, a: Int, b: Int) raises -> Int"
+            "floor_sum(n: Int, m: Int, a: Int, b: Int) -> Int"
           ]
         },
         {
           "name": "inv_mod",
           "data": [
-            "inv_mod(x: Int, m: Int) raises -> Int"
+            "inv_mod(x: Int, m: Int) -> Int"
           ]
         }
       ]
@@ -955,31 +947,31 @@
             {
               "name": "add_edge",
               "data": [
-                "add_edge(mut self, src: Int, dst: Int, cap: Cap) raises -> Int"
+                "add_edge(mut self, src: Int, dst: Int, cap: Cap) -> Int"
               ]
             },
             {
               "name": "get_edge",
               "data": [
-                "get_edge(self, i: Int) raises -> Edge[Cap]"
+                "get_edge(self, i: Int) -> Edge[Cap]"
               ]
             },
             {
               "name": "edges",
               "data": [
-                "edges(self) raises -> List[Edge[Cap]]"
+                "edges(self) -> List[Edge[Cap]]"
               ]
             },
             {
               "name": "change_edge",
               "data": [
-                "change_edge(mut self, i: Int, new_cap: Cap, new_flow: Cap) raises"
+                "change_edge(mut self, i: Int, new_cap: Cap, new_flow: Cap)"
               ]
             },
             {
               "name": "flow",
               "data": [
-                "flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> Cap"
+                "flow(mut self, s: Int, t: Int, flow_limit: Cap) -> Cap"
               ]
             }
           ]
@@ -1154,13 +1146,13 @@
             {
               "name": "add_edge",
               "data": [
-                "add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) raises -> Int"
+                "add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) -> Int"
               ]
             },
             {
               "name": "get_edge",
               "data": [
-                "get_edge(self, i: Int) raises -> Edge"
+                "get_edge(self, i: Int) -> Edge"
               ]
             },
             {
@@ -1172,13 +1164,13 @@
             {
               "name": "flow",
               "data": [
-                "flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> (Cap, Cost)"
+                "flow(mut self, s: Int, t: Int, flow_limit: Cap) -> (Cap, Cost)"
               ]
             },
             {
               "name": "slope",
               "data": [
-                "slope(mut self, s: Int, t: Int, flow_limit: Cap) raises -> List[(Cap, Cost)]"
+                "slope(mut self, s: Int, t: Int, flow_limit: Cap) -> List[(Cap, Cost)]"
               ]
             }
           ]
@@ -1265,8 +1257,8 @@
             {
               "name": "__itruediv__",
               "data": [
-                "__itruediv__(mut self, rhs: Self) raises",
-                "__itruediv__(mut self, rhs: Int) raises"
+                "__itruediv__(mut self, rhs: Self)",
+                "__itruediv__(mut self, rhs: Int)"
               ]
             },
             {
@@ -1284,19 +1276,19 @@
             {
               "name": "pow",
               "data": [
-                "pow(self, n: Int) raises -> Self"
+                "pow(self, n: Int) -> Self"
               ]
             },
             {
               "name": "__pow__",
               "data": [
-                "__pow__(self, n: Int) raises -> Self"
+                "__pow__(self, n: Int) -> Self"
               ]
             },
             {
               "name": "inv",
               "data": [
-                "inv(self) raises -> Self"
+                "inv(self) -> Self"
               ]
             },
             {
@@ -1323,8 +1315,8 @@
             {
               "name": "__truediv__",
               "data": [
-                "__truediv__(self, o: Self) raises -> Self",
-                "__truediv__(self, o: Int) raises -> Self"
+                "__truediv__(self, o: Self) -> Self",
+                "__truediv__(self, o: Int) -> Self"
               ]
             },
             {
@@ -1388,7 +1380,7 @@
             {
               "name": "add_edge",
               "data": [
-                "add_edge(mut self, src: Int, dst: Int) raises"
+                "add_edge(mut self, src: Int, dst: Int)"
               ]
             },
             {
@@ -1421,19 +1413,19 @@
             {
               "name": "set",
               "data": [
-                "set(mut self, p: Int, x: S) raises -> None"
+                "set(mut self, p: Int, x: S)"
               ]
             },
             {
               "name": "get",
               "data": [
-                "get(mut self, p: Int) raises -> S"
+                "get(mut self, p: Int) -> S"
               ]
             },
             {
               "name": "prod",
               "data": [
-                "prod(self, l: Int, r: Int) raises -> S"
+                "prod(self, l: Int, r: Int) -> S"
               ]
             },
             {
@@ -1478,15 +1470,15 @@
         {
           "name": "max_right",
           "data": [
-            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) raises -> Int",
-            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) raises -> Int"
+            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) -> Int",
+            "max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) -> Int"
           ]
         },
         {
           "name": "min_left",
           "data": [
-            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) raises -> Int",
-            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) raises -> Int"
+            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) -> Int",
+            "min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) -> Int"
           ]
         }
       ]
@@ -1500,8 +1492,14 @@
         {
           "name": "lcp_array",
           "data": [
-            "lcp_array(s: String, sa: List[Int]) raises -> List[Int]",
-            "lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) raises -> List[Int]"
+            "lcp_array(s: String, sa: List[Int]) -> List[Int]",
+            "lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) -> List[Int]"
+          ]
+        },
+        {
+          "name": "string_to_list",
+          "data": [
+            "string_to_list(s: String) -> List[Int]"
           ]
         },
         {
@@ -1536,7 +1534,7 @@
             {
               "name": "add_clause",
               "data": [
-                "add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool) raises"
+                "add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool)"
               ]
             },
             {

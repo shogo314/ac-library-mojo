@@ -27,7 +27,7 @@ jobs:
       - name: Read version info from .version
         id: version
         run: |
-          source .version
+          source .mkdocs/.version
           echo "VERSION=$version" >> $GITHUB_OUTPUT
           echo "SET_DEFAULT=$set_default" >> $GITHUB_OUTPUT
 
