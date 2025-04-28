@@ -1,5 +1,11 @@
 from atcoder.method_traits import HasEqCollectionElement
-from atcoder.py.string import string_to_list
+
+
+fn string_to_list(s: String) -> List[Int]:
+    var res = List[Int](capacity=len(s))
+    for i in range(len(s)):
+        res.append(ord(s[i]))
+    return res
 
 
 fn z_algorithm[S: HasEqCollectionElement](s: List[S]) -> List[Int]:

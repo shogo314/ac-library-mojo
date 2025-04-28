@@ -1,5 +1,9 @@
 from .avltree import AVLTree
-from .dualsegtree import DualSegTree, RAddQ, RUpdateQ
+from .dualsegtree import (
+    DualSegTree,
+    RAddQ,
+    RUpdateQ,
+)
 from .interval_heap import IntervalHeap
 from .potentialized_unionfind import (
     PotentializedUnionFind,

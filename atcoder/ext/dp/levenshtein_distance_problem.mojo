@@ -1,5 +1,5 @@
 from atcoder.method_traits import HasEqCollectionElement
-from atcoder.py.string import string_to_list
+from atcoder.string import string_to_list
 
 
 fn levenshtein_distance[
