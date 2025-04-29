@@ -18,20 +18,20 @@ __init__(out self, v: List[S], mapping: fn (F, S) -> S, composition: fn (F, F) -
 ### `set`
 
 ```
-set(mut self, p: Int, x: S) raises
+set(mut self, p: Int, x: S)
 ```
 
 ### `get`
 
 ```
-get(mut self, p: Int) raises -> S
+get(mut self, p: Int) -> S
 ```
 
 ### `apply`
 
 ```
-apply(mut self, p: Int, f: F) raises
-apply(mut self, l: Int, r: Int, f: F) raises
+apply(mut self, p: Int, f: F)
+apply(mut self, l: Int, r: Int, f: F)
 ```
 
 ### `all_apply`

@@ -14,18 +14,18 @@ struct IntervalHeap[S: HasLtCollectionElement]:
                 self.data.swap_elements(i - 1, i)
             _ = self._up(self._down(i), i)
 
-    fn min(self) raises -> S:
+    fn min(self) -> S:
         debug_assert(len(self.data))
         if len(self.data) == 1:
             return self.data[0]
         else:
             return self.data[1]
 
-    fn max(self) raises -> S:
+    fn max(self) -> S:
         debug_assert(len(self.data))
         return self.data[0]
 
-    fn pop_min(mut self) raises -> S:
+    fn pop_min(mut self) -> S:
         debug_assert(len(self.data))
         if len(self.data) < 3:
             return self.data.pop()
@@ -35,7 +35,7 @@ struct IntervalHeap[S: HasLtCollectionElement]:
             _ = self._up(self._down(1))
             return res
 
-    fn pop_max(mut self) raises -> S:
+    fn pop_max(mut self) -> S:
         debug_assert(len(self.data))
         if len(self.data) < 2:
             return self.data.pop()

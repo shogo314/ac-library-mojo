@@ -3,5 +3,5 @@
 # heap_max
 
 ```
-heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S, gt[S]]
+heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]
 ```

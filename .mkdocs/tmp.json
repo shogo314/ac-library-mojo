@@ -150,20 +150,20 @@
                     {
                       "name": "set",
                       "data": [
-                        "set(mut self, p: Int, x: S) raises"
+                        "set(mut self, p: Int, x: S)"
                       ]
                     },
                     {
                       "name": "get",
                       "data": [
-                        "get(mut self, p: Int) raises -> S"
+                        "get(mut self, p: Int) -> S"
                       ]
                     },
                     {
                       "name": "apply",
                       "data": [
-                        "apply(mut self, p: Int, f: F) raises",
-                        "apply(mut self, l: Int, r: Int, f: F) raises"
+                        "apply(mut self, p: Int, f: F)",
+                        "apply(mut self, l: Int, r: Int, f: F)"
                       ]
                     },
                     {
@@ -215,25 +215,25 @@
                     {
                       "name": "min",
                       "data": [
-                        "min(self) raises -> S"
+                        "min(self) -> S"
                       ]
                     },
                     {
                       "name": "max",
                       "data": [
-                        "max(self) raises -> S"
+                        "max(self) -> S"
                       ]
                     },
                     {
                       "name": "pop_min",
                       "data": [
-                        "pop_min(mut self) raises -> S"
+                        "pop_min(mut self) -> S"
                       ]
                     },
                     {
                       "name": "pop_max",
                       "data": [
-                        "pop_max(mut self) raises -> S"
+                        "pop_max(mut self) -> S"
                       ]
                     },
                     {
@@ -283,37 +283,37 @@
                     {
                       "name": "leader",
                       "data": [
-                        "leader(mut self, a: Int) raises -> Int"
+                        "leader(mut self, a: Int) -> Int"
                       ]
                     },
                     {
                       "name": "merge",
                       "data": [
-                        "merge(mut self, a: Int, b: Int, w: S) raises -> Int"
+                        "merge(mut self, a: Int, b: Int, w: S) -> Int"
                       ]
                     },
                     {
                       "name": "same",
                       "data": [
-                        "same(mut self, a: Int, b: Int) raises -> Bool"
+                        "same(mut self, a: Int, b: Int) -> Bool"
                       ]
                     },
                     {
                       "name": "diff",
                       "data": [
-                        "diff(mut self, a: Int, b: Int) raises -> S"
+                        "diff(mut self, a: Int, b: Int) -> S"
                       ]
                     },
                     {
                       "name": "size",
                       "data": [
-                        "size(mut self, a: Int) raises -> Int"
+                        "size(mut self, a: Int) -> Int"
                       ]
                     },
                     {
                       "name": "weight",
                       "data": [
-                        "weight(mut self, a: Int) raises -> S"
+                        "weight(mut self, a: Int) -> S"
                       ]
                     }
                   ]
@@ -359,7 +359,7 @@
                     {
                       "name": "top",
                       "data": [
-                        "top(self) raises -> S"
+                        "top(self) -> S"
                       ]
                     },
                     {
@@ -371,7 +371,7 @@
                     {
                       "name": "pop",
                       "data": [
-                        "pop(mut self) raises -> S"
+                        "pop(mut self) -> S"
                       ]
                     },
                     {
@@ -795,13 +795,13 @@
             {
               "name": "next",
               "data": [
-                "next(mut self) raises -> String"
+                "next(mut self) -> String"
               ]
             },
             {
               "name": "readline",
               "data": [
-                "readline(mut self) raises -> String"
+                "readline(mut self) -> String"
               ]
             },
             {

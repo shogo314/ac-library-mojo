@@ -10,11 +10,7 @@ fn _miller_rabin(n: Int, l: List[Int]) -> Bool:
     for a in l:
         if n <= a[]:
             return True
-        var x: Int
-        try:
-            x = Int(pow_mod(a[], d, n))
-        except:
-            return False
+        var x = pow_mod(a[], d, n)
         if x != 1:
             for _ in range(s):
                 if x == n - 1:

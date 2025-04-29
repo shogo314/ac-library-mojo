@@ -29,7 +29,7 @@ struct PriorityQueue[S: CollectionElement]:
         for i in reversed(range(len(self.data))):
             self._heapify(i)
 
-    fn top(self) raises -> S:
+    fn top(self) -> S:
         debug_assert(len(self.data))
         return self.data[0]
 
@@ -44,7 +44,7 @@ struct PriorityQueue[S: CollectionElement]:
             else:
                 break
 
-    fn pop(mut self) raises -> S:
+    fn pop(mut self) -> S:
         debug_assert(len(self.data))
         if len(self.data) == 1:
             return self.data.pop()

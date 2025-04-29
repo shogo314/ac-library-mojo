@@ -18,25 +18,25 @@ __init__(out self, data: List[S])
 ### `min`
 
 ```
-min(self) raises -> S
+min(self) -> S
 ```
 
 ### `max`
 
 ```
-max(self) raises -> S
+max(self) -> S
 ```
 
 ### `pop_min`
 
 ```
-pop_min(mut self) raises -> S
+pop_min(mut self) -> S
 ```
 
 ### `pop_max`
 
 ```
-pop_max(mut self) raises -> S
+pop_max(mut self) -> S
 ```
 
 ### `push`

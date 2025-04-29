@@ -3,5 +3,5 @@
 # heap_min
 
 ```
-heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S, lt[S]]
+heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]
 ```

@@ -51,28 +51,28 @@ struct DualSegTree[S: CollectionElement, F: CollectionElement]:
         self.d = v
         self.lz = List[F](id) * (2 * self.size)
 
-    fn set(mut self, p: Int, x: S) raises:
+    fn set(mut self, p: Int, x: S):
         debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self.push(q >> i)
         self.d[p] = x
 
-    fn get(mut self, p: Int) raises -> S:
+    fn get(mut self, p: Int) -> S:
         debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self.push(q >> i)
         return self.d[p]
 
-    fn apply(mut self, p: Int, f: F) raises:
+    fn apply(mut self, p: Int, f: F):
         debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self.push(q >> i)
         self.d[p] = self.mapping(f, self.d[p])
 
-    fn apply(mut self, l: Int, r: Int, f: F) raises:
+    fn apply(mut self, l: Int, r: Int, f: F):
         debug_assert(0 <= l <= r <= self.n)
         if l == r:
             return

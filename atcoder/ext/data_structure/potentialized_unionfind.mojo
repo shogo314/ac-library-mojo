@@ -25,7 +25,7 @@ struct PotentializedUnionFind[S: CollectionElement]:
         self.e = e
         self.inv = inv
 
-    fn leader(mut self, a: Int) raises -> Int:
+    fn leader(mut self, a: Int) -> Int:
         debug_assert(0 <= a < self.n)
         if self.parent_or_size[a] < 0:
             return a
@@ -36,7 +36,7 @@ struct PotentializedUnionFind[S: CollectionElement]:
         self.parent_or_size[a] = root
         return root
 
-    fn merge(mut self, a: Int, b: Int, w: S) raises -> Int:
+    fn merge(mut self, a: Int, b: Int, w: S) -> Int:
         debug_assert(0 <= a and a < self.n)
         debug_assert(0 <= b and b < self.n)
         var v = self.op(self.op(self.weight(a), w), self.inv(self.weight(b)))
@@ -52,21 +52,21 @@ struct PotentializedUnionFind[S: CollectionElement]:
         self.diff_weight[y] = v
         return x
 
-    fn same(mut self, a: Int, b: Int) raises -> Bool:
+    fn same(mut self, a: Int, b: Int) -> Bool:
         debug_assert(0 <= a and a < self.n)
         debug_assert(0 <= b and b < self.n)
         return self.leader(a) == self.leader(b)
 
-    fn diff(mut self, a: Int, b: Int) raises -> S:
+    fn diff(mut self, a: Int, b: Int) -> S:
         debug_assert(0 <= a and a < self.n)
         debug_assert(0 <= b and b < self.n)
         return self.op(self.inv(self.weight(a)), self.weight(b))
 
-    fn size(mut self, a: Int) raises -> Int:
+    fn size(mut self, a: Int) -> Int:
         debug_assert(0 <= a and a < self.n)
         return -self.parent_or_size[self.leader(a)]
 
-    fn weight(mut self, a: Int) raises -> S:
+    fn weight(mut self, a: Int) -> S:
         debug_assert(0 <= a and a < self.n)
         _ = self.leader(a)
         return self.diff_weight[a]

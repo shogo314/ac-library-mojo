@@ -24,14 +24,11 @@ alias F = Optional[Affine[mint]]
 
 fn mapping(f: F, x: S) -> S:
     if f:
-        try:
-            var fv = f.value()
-            var pw = fv.a.pow(x.size)
-            return S(
-                Affine(pw, (pw - 1) / (fv.a - 1) * fv.b), x.size
-            )
-        except:
-            return S(Affine(mint(1), mint(0)), 0)
+        var fv = f.value()
+        var pw = fv.a.pow(x.size)
+        return S(
+            Affine(pw, (pw - 1) / (fv.a - 1) * fv.b), x.size
+        )
     else:
         return x
 

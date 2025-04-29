@@ -17,13 +17,13 @@ __init__(out self) raises
 ### `next`
 
 ```
-next(mut self) raises -> String
+next(mut self) -> String
 ```
 
 ### `readline`
 
 ```
-readline(mut self) raises -> String
+readline(mut self) -> String
 ```
 
 ### `nextInt`

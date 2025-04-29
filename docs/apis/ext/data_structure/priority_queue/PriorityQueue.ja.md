@@ -3,7 +3,7 @@
 # PriorityQueue
 
 ```
-struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]
+struct PriorityQueue[S: CollectionElement]
 ```
 
 ## Methods
@@ -11,14 +11,14 @@ struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]
 ### `__init__`
 
 ```
-__init__(out self)
-__init__(out self, data: List[S])
+__init__(out self, comp: fn (S, S) -> Bool)
+__init__(out self, data: List[S], comp: fn (S, S) -> Bool)
 ```
 
 ### `top`
 
 ```
-top(self) raises -> S
+top(self) -> S
 ```
 
 ### `push`
@@ -30,7 +30,7 @@ push(mut self, item: S)
 ### `pop`
 
 ```
-pop(mut self) raises -> S
+pop(mut self) -> S
 ```
 
 ### `clear`

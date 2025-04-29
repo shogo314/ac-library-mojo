@@ -53,10 +53,7 @@ fn _primitive_root(m: Int) -> Int:
     var g = 2
     while True:
         for i in range(cnt):
-            try:
-                if pow_mod(g, (m - 1) // divs[i], m) == 1:
-                    break
-            except:
+            if pow_mod(g, (m - 1) // divs[i], m) == 1:
                 break
         else:
             return g

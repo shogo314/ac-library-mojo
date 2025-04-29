@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]
+struct AVLTree[T: HasLtCollectionElement]
 ```
 
 ## Methods

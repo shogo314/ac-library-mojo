@@ -1,7 +1,9 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/unionfind_with_potential_non_commutative_group
 
 from atcoder.io import IO
-from atcoder.ext.data_structure.potentialized_unionfind import PotentializedUnionFind
+from atcoder.ext.data_structure.potentialized_unionfind import (
+    PotentializedUnionFind,
+)
 from atcoder.modint import modint998244353
 
 alias mint = modint998244353
@@ -42,12 +44,7 @@ fn e() -> Matrix_2x2:
 
 
 fn inv(x: Matrix_2x2) -> Matrix_2x2:
-    var detinv: mint
-    try:
-        detinv = (x.a * x.d - x.b * x.c).inv()
-    except:
-        detinv = mint()
-
+    var detinv = (x.a * x.d - x.b * x.c).inv()
     return Matrix_2x2(
         x.d * detinv,
         -x.b * detinv,

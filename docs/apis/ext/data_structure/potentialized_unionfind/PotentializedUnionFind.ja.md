@@ -17,35 +17,35 @@ __init__(out self, n: Int, op: fn (S, S) -> S, e: S, inv: fn (S) -> S)
 ### `leader`
 
 ```
-leader(mut self, a: Int) raises -> Int
+leader(mut self, a: Int) -> Int
 ```
 
 ### `merge`
 
 ```
-merge(mut self, a: Int, b: Int, w: S) raises -> Int
+merge(mut self, a: Int, b: Int, w: S) -> Int
 ```
 
 ### `same`
 
 ```
-same(mut self, a: Int, b: Int) raises -> Bool
+same(mut self, a: Int, b: Int) -> Bool
 ```
 
 ### `diff`
 
 ```
-diff(mut self, a: Int, b: Int) raises -> S
+diff(mut self, a: Int, b: Int) -> S
 ```
 
 ### `size`
 
 ```
-size(mut self, a: Int) raises -> Int
+size(mut self, a: Int) -> Int
 ```
 
 ### `weight`
 
 ```
-weight(mut self, a: Int) raises -> S
+weight(mut self, a: Int) -> S
 ```

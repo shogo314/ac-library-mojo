@@ -22,7 +22,7 @@ struct IO:
         else:
             return False
 
-    fn next(mut self) raises -> String:
+    fn next(mut self) -> String:
         var res = List[String]()
         while self.idx < len(self.buff) and not self._ok(self.buff[self.idx]):
             self.idx += 1
@@ -31,7 +31,7 @@ struct IO:
             self.idx += 1
         return "".join(res)
 
-    fn readline(mut self) raises -> String:
+    fn readline(mut self) -> String:
         var res = List[String]()
         while self.idx < len(self.buff):
             if self.buff[self.idx] == "\n":
