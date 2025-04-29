@@ -42,6 +42,7 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
+| [Cumulative Sum](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/cumulative_sum.test.mojo) | 2.984/2.798/3.377 | 36.85/35.47/37.89 |
 | [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/fenwicktree.test.mojo) | 3.167/2.899/3.924 | 36.87/34.60/37.95 |
 | [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/segtree.test.mojo) | 3.032/2.949/3.287 | 37.66/36.15/38.21 |
 

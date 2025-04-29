@@ -3,5 +3,5 @@
 # heappop
 
 ```
-heappop[S: HasLtCollectionElement](mut heap: List[S]) raises -> S
+heappop[S: HasLtCollectionElement](mut heap: List[S]) -> S
 ```

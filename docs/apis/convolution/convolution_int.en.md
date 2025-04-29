@@ -3,5 +3,5 @@
 # convolution_int
 
 ```
-convolution_int(a: List[Int], b: List[Int]) raises -> List[Int]
+convolution_int(a: List[Int], b: List[Int]) -> List[Int]
 ```

@@ -3,5 +3,5 @@
 # floor_sum
 
 ```
-floor_sum(n: Int, m: Int, a: Int, b: Int) raises -> Int
+floor_sum(n: Int, m: Int, a: Int, b: Int) -> Int
 ```

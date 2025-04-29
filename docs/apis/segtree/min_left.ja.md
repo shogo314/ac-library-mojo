@@ -3,6 +3,6 @@
 # min_left
 
 ```
-min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) raises -> Int
-min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) raises -> Int
+min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) -> Int
+min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) -> Int
 ```

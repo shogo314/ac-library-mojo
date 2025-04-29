@@ -17,13 +17,13 @@ __init__(out self, n: Int)
 ### `add_edge`
 
 ```
-add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) raises -> Int
+add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) -> Int
 ```
 
 ### `get_edge`
 
 ```
-get_edge(self, i: Int) raises -> Edge
+get_edge(self, i: Int) -> Edge
 ```
 
 ### `edges`
@@ -35,11 +35,11 @@ edges(self) -> List[Edge]
 ### `flow`
 
 ```
-flow(mut self, s: Int, t: Int, flow_limit: Cap) raises -> (Cap, Cost)
+flow(mut self, s: Int, t: Int, flow_limit: Cap) -> (Cap, Cost)
 ```
 
 ### `slope`
 
 ```
-slope(mut self, s: Int, t: Int, flow_limit: Cap) raises -> List[(Cap, Cost)]
+slope(mut self, s: Int, t: Int, flow_limit: Cap) -> List[(Cap, Cost)]
 ```

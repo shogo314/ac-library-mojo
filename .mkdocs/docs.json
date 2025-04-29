@@ -1,0 +1,32 @@
+{
+    "name": "atcoder",
+    "modules": [
+      {
+        "name": "convolution",
+        "functions": [
+          {
+            "name": "convolution_int"
+          },
+          {
+            "name": "convolution_mod"
+          }
+        ]
+      },
+      {
+        "name": "dsu",
+        "structs": [
+          {
+            "name": "DSU",
+            "methods": [
+              {
+                "name": "__init__"
+              },
+              {
+                "name": "merge"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }

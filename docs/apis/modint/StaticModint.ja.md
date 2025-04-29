@@ -65,8 +65,8 @@ __imul__(mut self, rhs: Int)
 ### `__itruediv__`
 
 ```
-__itruediv__(mut self, rhs: Self) raises
-__itruediv__(mut self, rhs: Int) raises
+__itruediv__(mut self, rhs: Self)
+__itruediv__(mut self, rhs: Int)
 ```
 
 ### `__pos__`
@@ -84,19 +84,19 @@ __neg__(self) -> Self
 ### `pow`
 
 ```
-pow(self, n: Int) raises -> Self
+pow(self, n: Int) -> Self
 ```
 
 ### `__pow__`
 
 ```
-__pow__(self, n: Int) raises -> Self
+__pow__(self, n: Int) -> Self
 ```
 
 ### `inv`
 
 ```
-inv(self) raises -> Self
+inv(self) -> Self
 ```
 
 ### `__add__`
@@ -123,8 +123,8 @@ __mul__(self, o: Int) -> Self
 ### `__truediv__`
 
 ```
-__truediv__(self, o: Self) raises -> Self
-__truediv__(self, o: Int) raises -> Self
+__truediv__(self, o: Self) -> Self
+__truediv__(self, o: Int) -> Self
 ```
 
 ### `__eq__`

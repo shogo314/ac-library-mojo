@@ -3,7 +3,7 @@
 # convolution_mod
 
 ```
-convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -> List[StaticModint[M]]
+convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[StaticModint[M]]
 ```
 
 畳み込みを mod $`m`$ で計算する。$`a, b`$ の少なくとも一方が空配列の場合は空配列を返す。

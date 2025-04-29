@@ -3,5 +3,5 @@
 # crt
 
 ```
-crt(r: List[Int], m: List[Int]) raises -> (Int, Int)
+crt(r: List[Int], m: List[Int]) -> (Int, Int)
 ```

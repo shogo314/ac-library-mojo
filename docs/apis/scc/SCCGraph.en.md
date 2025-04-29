@@ -17,7 +17,7 @@ __init__(out self, n: Int)
 ### `add_edge`
 
 ```
-add_edge(mut self, src: Int, dst: Int) raises
+add_edge(mut self, src: Int, dst: Int)
 ```
 
 ### `scc`

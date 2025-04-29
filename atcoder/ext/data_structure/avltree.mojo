@@ -52,7 +52,7 @@ struct AVLTreeNode[T: HasLtCollectionElement]:
         self.size = 1
 
 
-struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
+struct AVLTree[T: HasLtCollectionElement]:
     var _data: List[AVLTreeNode[T]]
     var _root: AVLTreeNodePointer
 
@@ -145,14 +145,6 @@ struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]:
                 else:
                     p = AVLTreeNodePointer(len(self._data))
                     self._data[node.idx.p].left = p.copy()
-                    new_node = AVLTreeNode[T](v, p.copy(), node.idx.copy())
-                    break
-            elif multi:
-                if node.right:
-                    p = node.right.copy()
-                else:
-                    p = AVLTreeNodePointer(len(self._data))
-                    self._data[node.idx.p].right = p.copy()
                     new_node = AVLTreeNode[T](v, p.copy(), node.idx.copy())
                     break
             else:

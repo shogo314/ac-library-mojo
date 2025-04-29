@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]
+struct AVLTree[T: HasLtCollectionElement]
 ```
 
 ## Methods
@@ -47,29 +47,29 @@ bisect_right(self, v: T) -> Int
 ### `__getitem__`
 
 ```
-__getitem__(self, i: Int) raises -> T
+__getitem__(self, i: Int) -> T
 ```
 
 ### `__contains__`
 
 ```
-__contains__(self, v: T) raises -> Bool
+__contains__(self, v: T) -> Bool
 ```
 
 ### `add`
 
 ```
-add(mut self, v: T) raises
+add(mut self, v: T)
 ```
 
 ### `remove`
 
 ```
-remove(mut self, v: T) raises
+remove(mut self, v: T)
 ```
 
 ### `discard`
 
 ```
-discard(mut self, v: T) raises
+discard(mut self, v: T)
 ```

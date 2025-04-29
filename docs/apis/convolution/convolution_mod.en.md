@@ -3,5 +3,5 @@
 # convolution_mod
 
 ```
-convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) raises -> List[StaticModint[M]]
+convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[StaticModint[M]]
 ```

@@ -18,11 +18,11 @@ __init__(out self, v: List[T])
 ### `add`
 
 ```
-add(mut self, p: Int, x: T) raises
+add(mut self, p: Int, x: T)
 ```
 
 ### `sum`
 
 ```
-sum(self, left: Int, right: Int) raises -> T
+sum(self, left: Int, right: Int) -> T
 ```

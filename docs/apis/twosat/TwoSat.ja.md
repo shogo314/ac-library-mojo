@@ -17,7 +17,7 @@ __init__(out self, n: Int)
 ### `add_clause`
 
 ```
-add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool) raises
+add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool)
 ```
 
 ### `satisfiable`

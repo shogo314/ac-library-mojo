@@ -3,5 +3,5 @@
 # inv_mod
 
 ```
-inv_mod(x: Int, m: Int) raises -> Int
+inv_mod(x: Int, m: Int) -> Int
 ```

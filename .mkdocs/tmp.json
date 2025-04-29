@@ -14,7 +14,7 @@
               "structs": [
                 {
                   "name": "AVLTree",
-                  "data": "struct AVLTree[T: HasLtCollectionElement, multi: Bool = False]",
+                  "data": "struct AVLTree[T: HasLtCollectionElement]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -347,13 +347,13 @@
               "structs": [
                 {
                   "name": "PriorityQueue",
-                  "data": "struct PriorityQueue[S: CollectionElement, comp: fn (S, S) -> Bool]",
+                  "data": "struct PriorityQueue[S: CollectionElement]",
                   "methods": [
                     {
                       "name": "__init__",
                       "data": [
-                        "__init__(out self)",
-                        "__init__(out self, data: List[S])"
+                        "__init__(out self, comp: fn (S, S) -> Bool)",
+                        "__init__(out self, data: List[S], comp: fn (S, S) -> Bool)"
                       ]
                     },
                     {
@@ -400,13 +400,13 @@
                 {
                   "name": "heap_max",
                   "data": [
-                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S, gt[S]]"
+                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]"
                   ]
                 },
                 {
                   "name": "heap_min",
                   "data": [
-                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S, lt[S]]"
+                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]"
                   ]
                 }
               ]

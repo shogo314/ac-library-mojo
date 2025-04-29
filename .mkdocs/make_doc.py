@@ -125,6 +125,8 @@ def main():
 
     with open(".mkdocs/tmp.json", "r") as f:
         pk = json.load(f)
+    with open(".mkdocs/docs.json", "r") as f:
+        dc = json.load(f)
 
     assert not Path("apis").exists()
     # if Path("apis").exists():

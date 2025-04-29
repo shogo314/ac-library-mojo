@@ -17,29 +17,29 @@ __init__(out self, n: Int)
 ### `merge`
 
 ```
-merge(mut self, a: Int, b: Int) raises -> Int
+merge(mut self, a: Int, b: Int) -> Int
 ```
 
 ### `same`
 
 ```
-same(mut self, a: Int, b: Int) raises -> Bool
+same(mut self, a: Int, b: Int) -> Bool
 ```
 
 ### `leader`
 
 ```
-leader(mut self, a: Int) raises -> Int
+leader(mut self, a: Int) -> Int
 ```
 
 ### `size`
 
 ```
-size(mut self, a: Int) raises -> Int
+size(mut self, a: Int) -> Int
 ```
 
 ### `groups`
 
 ```
-groups(mut self) raises -> List[List[Int]]
+groups(mut self) -> List[List[Int]]
 ```

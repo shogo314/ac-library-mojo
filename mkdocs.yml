@@ -71,6 +71,7 @@ nav:
       - bisect:
         - apis/py/bisect/index.md
         - bisect_left: apis/py/bisect/bisect_left.md
+        - bisect_right: apis/py/bisect/bisect_right.md
       - builtin:
         - apis/py/builtin/index.md
         - pow_mod: apis/py/builtin/pow_mod.md
@@ -94,9 +95,6 @@ nav:
         - mul: apis/py/operator/mul.md
         - neg: apis/py/operator/neg.md
         - truediv: apis/py/operator/truediv.md
-      - string:
-        - apis/py/string/index.md
-        - string_to_list: apis/py/string/string_to_list.md
       - sympy:
         - apis/py/sympy/index.md
         - isprime: apis/py/sympy/isprime.md
@@ -165,6 +163,7 @@ nav:
     - string:
       - apis/string/index.md
       - lcp_array: apis/string/lcp_array.md
+      - string_to_list: apis/string/string_to_list.md
       - suffix_array: apis/string/suffix_array.md
       - z_algorithm: apis/string/z_algorithm.md
     - twosat:

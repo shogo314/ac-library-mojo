@@ -10,5 +10,4 @@
 - [itertools](./itertools/index.md)
 - [math](./math/index.md)
 - [operator](./operator/index.md)
-- [string](./string/index.md)
 - [sympy](./sympy/index.md)

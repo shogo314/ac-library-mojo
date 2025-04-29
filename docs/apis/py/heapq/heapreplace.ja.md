@@ -3,5 +3,5 @@
 # heapreplace
 
 ```
-heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) raises -> S
+heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S
 ```

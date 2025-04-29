@@ -3,5 +3,5 @@
 # pow_mod
 
 ```
-pow_mod(x: Int, n: Int, m: Int) raises -> Int
+pow_mod(x: Int, n: Int, m: Int) -> Int
 ```
