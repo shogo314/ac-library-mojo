@@ -1,14 +1,15 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/ordered_set
 
 from atcoder.io import IO
-from atcoder.segtree import RSumQ, max_right, min_left
+from atcoder.segtree import RSumQ, max_right
 from atcoder.py.bisect import bisect_left, bisect_right
 
 
-fn main() raises:
-    fn eq_0(a: Int) -> Bool:
-        return a == 0
+fn eq_0(a: Int) -> Bool:
+    return a == 0
 
+
+fn main() raises:
     var io = IO()
     var N = io.nextInt()
     var Q = io.nextInt()
@@ -56,14 +57,14 @@ fn main() raises:
             print(seg.prod(0, idx))
         elif t == 4:
             var r = bisect_right(v, x)
-            var idx = min_left(seg, r, eq_0) - 1
+            var idx = seg.min_left[eq_0](r) - 1
             if idx == -1:
                 print(-1)
             else:
                 print(v[idx])
         elif t == 5:
             var l = bisect_left(v, x)
-            var idx = max_right(seg, l, eq_0)
+            var idx = seg.max_right[eq_0](l)
             if idx == len(v):
                 print(-1)
             else:

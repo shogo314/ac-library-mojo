@@ -1,14 +1,15 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/double_ended_priority_queue
 
 from atcoder.io import IO
-from atcoder.segtree import RSumQ, max_right, min_left
+from atcoder.segtree import RSumQ
 from atcoder.py.bisect import bisect_left
 
 
-fn main() raises:
-    fn f(x: Int) -> Bool:
-        return x == 0
+fn eq_0(x: Int) -> Bool:
+    return x == 0
 
+
+fn main() raises:
     var io = IO()
     var N = io.nextInt()
     var Q = io.nextInt()
@@ -42,10 +43,10 @@ fn main() raises:
             var idx = bisect_left(v, x)
             seg.set(idx, seg.get(idx) + 1)
         elif t == 1:
-            var idx = max_right(seg, 0, f)
+            var idx = seg.max_right[eq_0](0)
             print(v[idx])
             seg.set(idx, seg.get(idx) - 1)
         elif t == 2:
-            var idx = min_left(seg, len(v), f) - 1
+            var idx = seg.min_left[eq_0](len(v)) - 1
             print(v[idx])
             seg.set(idx, seg.get(idx) - 1)

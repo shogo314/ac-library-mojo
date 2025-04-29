@@ -1,13 +1,14 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/predecessor_problem
 
-from atcoder.segtree import RSumQ, min_left, max_right
+from atcoder.segtree import RSumQ
 from atcoder.io import IO
 
 
-fn main() raises:
-    fn f(x: Int) -> Bool:
-        return x == 0
+fn eq_0(x: Int) -> Bool:
+    return x == 0
 
+
+fn main() raises:
     var io = IO()
     var N = io.nextInt()
     var Q = io.nextInt()
@@ -26,11 +27,11 @@ fn main() raises:
         elif c == 2:
             print(seg.get(k))
         elif c == 3:
-            var tmp = max_right(seg, k, f)
+            var tmp = seg.max_right[eq_0](k)
             if tmp == N:
                 print(-1)
             else:
                 print(tmp)
         elif c == 4:
-            var tmp = min_left(seg, k + 1, f)
+            var tmp = seg.min_left[eq_0](k + 1)
             print(tmp - 1)
