@@ -1,4 +1,4 @@
-from bit import log2_floor, count_trailing_zeros
+from bit import next_power_of_two, count_trailing_zeros
 
 from atcoder._math import _primitive_root
 from atcoder.modint import StaticModint
@@ -162,7 +162,7 @@ fn _convolution_fft[
     var b = b_
     var n = len(a)
     var m = len(b)
-    var z = 1 << (log2_floor(n + m - 1) + 1)
+    var z = next_power_of_two(n + m - 1)
     a.resize(z, mint())
     _butterfly(a)
     b.resize(z, mint())
@@ -179,14 +179,12 @@ fn _convolution_fft[
 
 fn convolution_mod[
     M: Int
-](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[
-    StaticModint[M]
-]:
+](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> List[StaticModint[M]]:
     var n = len(a)
     var m = len(b)
     if n == 0 or m == 0:
         return List[StaticModint[M]]()
-    var z = 1 << (log2_floor(n + m - 1) + 1)
+    var z = next_power_of_two(n + m - 1)
     debug_assert((StaticModint[M].mod() - 1) % z == 0)
     return _convolution_fft(a, b)
 

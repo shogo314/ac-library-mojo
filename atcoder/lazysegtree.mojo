@@ -1,4 +1,4 @@
-from bit import log2_floor, count_trailing_zeros
+from bit import next_power_of_two, count_trailing_zeros
 
 from atcoder.method_traits import HasLtCollectionElement
 from atcoder.py.operator import add
@@ -33,7 +33,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = n
-        self.size = 1 << (log2_floor(n - 1) + 1)
+        self.size = next_power_of_two(self.n)
         self.log = count_trailing_zeros(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
@@ -54,7 +54,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.id = id
 
         self.n = len(v)
-        self.size = 1 << (log2_floor(self.n - 1) + 1)
+        self.size = next_power_of_two(self.n)
         self.log = count_trailing_zeros(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
