@@ -4,4 +4,5 @@
 
 ```
 heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]
+heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]
 ```

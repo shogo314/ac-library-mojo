@@ -5,6 +5,7 @@
 ## Modules
 
 - [avltree](./avltree/index.md)
+- [binarytrie](./binarytrie/index.md)
 - [dualsegtree](./dualsegtree/index.md)
 - [interval_heap](./interval_heap/index.md)
 - [potentialized_unionfind](./potentialized_unionfind/index.md)

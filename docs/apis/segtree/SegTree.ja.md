@@ -38,3 +38,15 @@ prod(self, l: Int, r: Int) -> S
 ```
 all_prod(self) -> S
 ```
+
+### `max_right`
+
+```
+max_right[F: fn (S) -> Bool](self, l: Int) -> Int
+```
+
+### `min_left`
+
+```
+min_left[F: fn (S) -> Bool](self, r: Int) -> Int
+```

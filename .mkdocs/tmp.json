@@ -133,6 +133,129 @@
               "functions": []
             },
             {
+              "name": "binarytrie",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "BinaryTrie",
+                  "data": "struct BinaryTrie[D: Int = 64]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)"
+                      ]
+                    },
+                    {
+                      "name": "__len__",
+                      "data": [
+                        "__len__(self) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "clear",
+                      "data": [
+                        "clear(mut self)"
+                      ]
+                    },
+                    {
+                      "name": "__getitem__",
+                      "data": [
+                        "__getitem__(self, idx: Int) -> UInt"
+                      ]
+                    },
+                    {
+                      "name": "count",
+                      "data": [
+                        "count(self, x: UInt) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "__contains__",
+                      "data": [
+                        "__contains__(self, x: UInt) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "add",
+                      "data": [
+                        "add(mut self, x: UInt, cnt: Int = 1)"
+                      ]
+                    },
+                    {
+                      "name": "remove",
+                      "data": [
+                        "remove(mut self, x: UInt, cnt: Int = 1)"
+                      ]
+                    },
+                    {
+                      "name": "bisect_left",
+                      "data": [
+                        "bisect_left(self, x: UInt) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "bisect_right",
+                      "data": [
+                        "bisect_right(self, x: UInt) -> Int"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "BinaryTrieNode",
+                  "data": "struct BinaryTrieNode",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)"
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "name": "BinaryTrieNodePointer",
+                  "data": "struct BinaryTrieNodePointer",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self, x: Int)",
+                        "__init__(out self)"
+                      ]
+                    },
+                    {
+                      "name": "__bool__",
+                      "data": [
+                        "__bool__(self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__eq__",
+                      "data": [
+                        "__eq__(self, o: Self) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "__ne__",
+                      "data": [
+                        "__ne__(self, o: Self) -> Bool"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": []
+            },
+            {
               "name": "dualsegtree",
               "aliases": [],
               "structs": [
@@ -400,13 +523,15 @@
                 {
                   "name": "heap_max",
                   "data": [
-                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]"
+                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]",
+                    "heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]"
                   ]
                 },
                 {
                   "name": "heap_min",
                   "data": [
-                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]"
+                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]",
+                    "heap_min[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]"
                   ]
                 }
               ]
@@ -784,7 +909,7 @@
       "structs": [
         {
           "name": "IO",
-          "data": "struct IO",
+          "data": "struct IO[BUFF_SIZE: Int = -1]",
           "methods": [
             {
               "name": "__init__",
@@ -795,7 +920,7 @@
             {
               "name": "next",
               "data": [
-                "next(mut self) -> String"
+                "next(mut self) raises -> String"
               ]
             },
             {
@@ -1432,6 +1557,18 @@
               "name": "all_prod",
               "data": [
                 "all_prod(self) -> S"
+              ]
+            },
+            {
+              "name": "max_right",
+              "data": [
+                "max_right[F: fn (S) -> Bool](self, l: Int) -> Int"
+              ]
+            },
+            {
+              "name": "min_left",
+              "data": [
+                "min_left[F: fn (S) -> Bool](self, r: Int) -> Int"
               ]
             }
           ]

@@ -1,6 +1,6 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/ordered_set
 
-from atcoder.ext.data_structure.avltree import AVLTree
+from atcoder.ext.data_structure.binarytrie import BinaryTrie
 from atcoder.io import IO
 
 
@@ -9,32 +9,34 @@ fn main() raises:
     var N = io.nextInt()
     var Q = io.nextInt()
     var A = io.nextListInt(N)
-    var avl = AVLTree[Int]()
+    var trie = BinaryTrie[30]()
     for a in A:
-        avl.add(a[])
+        trie.add(a[])
     for _ in range(Q):
         var q = io.nextInt()
         var x = io.nextInt()
         if q == 0:
-            avl.add(x)
+            if x not in trie:
+                trie.add(x)
         elif q == 1:
-            avl.discard(x)
+            if x in trie:
+                trie.remove(x)
         elif q == 2:
-            if x <= len(avl):
-                print(avl[x - 1])
+            if x <= len(trie):
+                print(trie[x - 1])
             else:
                 print(-1)
         elif q == 3:
-            print(avl.bisect_right(x))
+            print(trie.bisect_right(x))
         elif q == 4:
-            var j = avl.bisect_right(x) - 1
+            var j = trie.bisect_right(x) - 1
             if j == -1:
                 print(-1)
             else:
-                print(avl[j])
+                print(trie[j])
         elif q == 5:
-            var j = avl.bisect_left(x)
-            if j == len(avl):
+            var j = trie.bisect_left(x)
+            if j == len(trie):
                 print(-1)
             else:
-                print(avl[j])
+                print(trie[j])

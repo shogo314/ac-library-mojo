@@ -7,37 +7,45 @@ trait HasInitStringRaisingCollectionElement(
     pass
 
 
-struct IO:
-    var buff: String
+struct IO[BUFF_SIZE: Int = -1]:
+    var f: FileHandle
+    var buff: List[UInt8]
     var idx: Int
 
     fn __init__(out self) raises:
+        constrained[BUFF_SIZE == -1 or BUFF_SIZE >= 1]()
+        self.f = open("/dev/stdin", "r")
         self.idx = 0
-        with open("/dev/stdin", "r") as f:
-            self.buff = f.read()
+        self.buff = self.f.read_bytes(Self.BUFF_SIZE)
 
-    fn _ok(self, c: String) -> Bool:
-        if "!" <= c <= "~":
+    fn _ok(self, c: UInt8) -> Bool:
+        if 0x21 <= Int(c) <= 0x7E:
             return True
         else:
             return False
 
-    fn next(mut self) -> String:
+    fn next(mut self) raises -> String:
         var res = List[String]()
         while self.idx < len(self.buff) and not self._ok(self.buff[self.idx]):
             self.idx += 1
+            if self.idx == len(self.buff):
+                self.buff = self.f.read_bytes(Self.BUFF_SIZE)
+                self.idx = 0
         while self.idx < len(self.buff) and self._ok(self.buff[self.idx]):
-            res.append(self.buff[self.idx])
+            res.append(chr(Int(self.buff[self.idx])))
             self.idx += 1
+            if self.idx == len(self.buff):
+                self.buff = self.f.read_bytes(Self.BUFF_SIZE)
+                self.idx = 0
         return "".join(res)
 
     fn readline(mut self) -> String:
         var res = List[String]()
         while self.idx < len(self.buff):
-            if self.buff[self.idx] == "\n":
+            if self.buff[self.idx] == 0x0A:
                 self.idx += 1
                 break
-            res.append(self.buff[self.idx])
+            res.append(chr(Int(self.buff[self.idx])))
             self.idx += 1
         return "".join(res)
 

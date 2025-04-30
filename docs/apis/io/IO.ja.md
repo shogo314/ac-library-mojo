@@ -3,7 +3,7 @@
 # IO
 
 ```
-struct IO
+struct IO[BUFF_SIZE: Int = -1]
 ```
 
 ## Methods
@@ -17,7 +17,7 @@ __init__(out self) raises
 ### `next`
 
 ```
-next(mut self) -> String
+next(mut self) raises -> String
 ```
 
 ### `readline`

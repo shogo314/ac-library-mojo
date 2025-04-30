@@ -68,5 +68,13 @@ fn heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]:
     return PriorityQueue[S](lt[S])
 
 
+fn heap_min[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]:
+    return PriorityQueue[S](v, lt[S])
+
+
 fn heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]:
     return PriorityQueue[S](gt[S])
+
+
+fn heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]:
+    return PriorityQueue[S](v, gt[S])

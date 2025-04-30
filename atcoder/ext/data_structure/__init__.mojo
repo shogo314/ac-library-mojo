@@ -1,4 +1,5 @@
 from .avltree import AVLTree
+from .binarytrie import BinaryTrie
 from .dualsegtree import (
     DualSegTree,
     RAddQ,

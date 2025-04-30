@@ -16,46 +16,59 @@ oj-verify run {path}
 
 ## 実行結果
 
+### [Many A + B](https://judge.yosupo.jp/problem/many_aplusb)
+
+| 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
+| :--- | :--- | :--- |
+| [Python](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.py) | 3.138/3.020/3.358 | 8.97/8.91/9.03 |
+| [C++](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.cpp) | 0.361/0.326/0.469 | 3.61/3.57/3.64 |
+| [read all](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_all.test.mojo) | 3.653/3.457/4.409 | 92.97/91.62/94.54 |
+| [read 16](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_16.test.mojo) | 7.313/7.013/7.490 | 15.35/14.61/15.72 |
+| [read 256](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_256.test.mojo) | 3.735/3.619/3.895 | 15.57/15.03/17.66 |
+| [read 65536](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_65536.test.mojo) | 3.572/3.455/3.689 | 15.51/15.23/15.80 |
+
 ### [Double-Ended Priority Queue](https://judge.yosupo.jp/problem/double_ended_priority_queue)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [IntervalHeap](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/interval_heap.test.mojo) | 2.615/2.345/3.602 | 35.91/35.62/36.12 |
-| [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/segtree.test.mojo) | 2.589/2.286/2.713 | 68.06/67.56/68.40 |
+| [IntervalHeap](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/interval_heap.test.mojo) | 1.296/1.197/2.017 | 35.76/34.77/38.05 |
+| [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/segtree.test.mojo) | 1.650/1.618/1.735 | 68.01/66.76/68.58 |
 
 ### [Point Add Range Sum](https://judge.yosupo.jp/problem/point_add_range_sum)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/fenwicktree.test.mojo) | 4.248/3.985/4.627 | 41.64/40.56/43.67 |
-| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree.test.mojo) | 3.978/3.913/4.091 | 41.61/41.08/41.96 |
-| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree_with_parameter.test.mojo) | 4.083/3.916/4.337 | 41.44/40.97/41.97 |
+| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/fenwicktree.test.mojo) | 1.952/1.880/2.173 | 41.56/40.58/43.73 |
+| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree.test.mojo) | 2.086/1.999/2.285 | 41.18/39.75/41.98 |
+| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree_with_parameter.test.mojo) | 2.092/1.958/2.756 | 37.94/35.32/39.40 |
 
 ### [Point Set Range Composite](https://judge.yosupo.jp/problem/point_set_range_composite)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree.test.mojo) | 6.778/6.484/7.550 | 61.02/60.33/62.71 |
-| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree_with_parameter.test.mojo) | 6.637/6.448/7.156 | 61.84/60.46/62.60 |
+| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree.test.mojo) | 3.841/3.396/5.484 | 57.01/56.38/59.04 |
+| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree_with_parameter.test.mojo) | 3.818/3.414/4.613 | 56.54/56.34/57.57 |
 
 ### [Static Range Sum](https://judge.yosupo.jp/problem/static_range_sum)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [Cumulative Sum](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/cumulative_sum.test.mojo) | 2.984/2.798/3.377 | 36.85/35.47/37.89 |
-| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/fenwicktree.test.mojo) | 3.167/2.899/3.924 | 36.87/34.60/37.95 |
-| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/segtree.test.mojo) | 3.032/2.949/3.287 | 37.66/36.15/38.21 |
+| [Cumulative Sum](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/cumulative_sum.test.mojo) | 1.601/1.462/1.837 | 33.53/31.90/35.77 |
+| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/fenwicktree.test.mojo) | 1.667/1.569/2.091 | 32.04/31.85/32.60 |
+| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/static_range_sum/segtree.test.mojo) | 1.640/1.612/1.691 | 35.09/32.99/36.52 |
 
 ### [Predecessor Problem](https://judge.yosupo.jp/problem/predecessor_problem)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 18.690/17.863/21.966 | 838.10/837.10/839.18 |
-| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/segtree.test.mojo) | 8.742/8.552/9.148 | 514.45/514.03/514.68 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 22.015/21.004/23.261 | 711.33/710.00/712.09 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/binarytrie.test.mojo) | 18.826/18.313/20.878 | 711.28/710.52/712.09 |
+| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/segtree.test.mojo) | 6.758/6.373/8.253 | 514.23/513.88/514.44 |
 
 ### [Ordered Set](https://judge.yosupo.jp/problem/ordered_set)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 4.765/4.473/5.605 | 76.95/73.18/79.19 |
-| [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/segtree.test.mojo) | 2.911/2.797/3.130 | 68.45/67.70/68.93 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 3.242/3.120/3.417 | 78.73/78.32/79.04 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 3.679/3.253/4.964 | 186.92/185.98/187.72 |
+| [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/segtree.test.mojo) | 1.771/1.689/1.988 | 68.98/68.55/70.83 |

@@ -119,6 +119,30 @@ struct SegTree[S: CollectionElement]:
         return 0
 
 
+fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) -> Bool) -> Int:
+    debug_assert(0 <= l <= seg.n)
+    debug_assert(f(seg.e))
+    if l == seg.n:
+        return seg.n
+    var l_ = l + seg.size
+    var sm = seg.e
+    while True:
+        while l_ % 2 == 0:
+            l_ >>= 1
+        if not f(seg.op(sm, seg.d[l_])):
+            while l_ < seg.size:
+                l_ *= 2
+                if f(seg.op(sm, seg.d[l_])):
+                    sm = seg.op(sm, seg.d[l_])
+                    l_ += 1
+            return l_ - seg.size
+        sm = seg.op(sm, seg.d[l_])
+        l_ += 1
+        if (l_ & -l_) == l_:
+            break
+    return seg.n
+
+
 fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) -> Int:
     debug_assert(0 <= l <= seg.n)
     debug_assert(f(seg.e))
@@ -141,6 +165,30 @@ fn max_right(seg: SegTree[Int], l: Int, f: fn (Int) escaping -> Bool) -> Int:
         if (l_ & -l_) == l_:
             break
     return seg.n
+
+
+fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) -> Bool) -> Int:
+    debug_assert(0 <= r <= seg.n)
+    debug_assert(f(seg.e))
+    if r == 0:
+        return 0
+    var r_ = r + seg.size
+    var sm = seg.e
+    while True:
+        r_ -= 1
+        while r_ > 1 and (r_ % 2):
+            r_ >>= 1
+        if not f(seg.op(seg.d[r_], sm)):
+            while r_ < seg.size:
+                r_ = 2 * r_ + 1
+                if f(seg.op(seg.d[r_], sm)):
+                    sm = seg.op(seg.d[r_], sm)
+                    r_ -= 1
+            return r_ + 1 - seg.size
+        sm = seg.op(seg.d[r_], sm)
+        if (r_ & -r_) == r_:
+            break
+    return 0
 
 
 fn min_left(seg: SegTree[Int], r: Int, f: fn (Int) escaping -> Bool) -> Int:
