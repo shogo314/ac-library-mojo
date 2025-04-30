@@ -20,12 +20,14 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [Python](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.py) | 3.138/3.020/3.358 | 8.97/8.91/9.03 |
-| [C++](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.cpp) | 0.361/0.326/0.469 | 3.61/3.57/3.64 |
-| [read all](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_all.test.mojo) | 3.653/3.457/4.409 | 92.97/91.62/94.54 |
-| [read 16](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_16.test.mojo) | 7.313/7.013/7.490 | 15.35/14.61/15.72 |
-| [read 256](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_256.test.mojo) | 3.735/3.619/3.895 | 15.57/15.03/17.66 |
-| [read 65536](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_65536.test.mojo) | 3.572/3.455/3.689 | 15.51/15.23/15.80 |
+| [read all](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_all.test.mojo) | 2.044/1.828/2.375 | 90.79/89.24/92.30 |
+| [read 16](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_16.test.mojo) | 4.432/4.215/5.475 | 13.34/12.89/13.55 |
+| [read 256](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_256.test.mojo) | 2.130/1.956/2.626 | 12.64/10.27/13.73 |
+| [read 4096](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_4096.test.mojo) | 1.913/1.787/2.478 | 15.09/14.55/15.45 |
+| [read 65536](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_65536.test.mojo) | 2.100/1.836/2.712 | 15.09/14.59/15.76 |
+| [read 1048576](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_1048576.test.mojo) | 1.916/1.759/2.389 | 15.67/13.90/17.74 |
+| [Python](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.py) | 1.119/1.037/1.230 | 9.20/9.14/9.30 |
+| [C++](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io.test.cpp) | 0.349/0.332/0.385 | 3.54/3.50/3.59 |
 
 ### [Double-Ended Priority Queue](https://judge.yosupo.jp/problem/double_ended_priority_queue)
 

@@ -79,7 +79,7 @@ def delete_stamp(path: Path):
                 tmp += l.strip() + "\n"
     assert tmp.endswith("\n}\n")
     if tmp[-4] == ",":
-        tmp[-4:] = "\n}\n"
+        tmp = tmp[:-4] + "\n}\n"
     with open(TIMESTAMPS, "w") as f:
         f.write(tmp)
 

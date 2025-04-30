@@ -25,29 +25,33 @@ struct IO[BUFF_SIZE: Int = -1]:
             return False
 
     fn next(mut self) raises -> String:
-        var res = List[String]()
+        var tmp = List[UInt8]()
         while self.idx < len(self.buff) and not self._ok(self.buff[self.idx]):
             self.idx += 1
             if self.idx == len(self.buff):
                 self.buff = self.f.read_bytes(Self.BUFF_SIZE)
                 self.idx = 0
         while self.idx < len(self.buff) and self._ok(self.buff[self.idx]):
-            res.append(chr(Int(self.buff[self.idx])))
+            tmp.append(self.buff[self.idx])
             self.idx += 1
             if self.idx == len(self.buff):
                 self.buff = self.f.read_bytes(Self.BUFF_SIZE)
                 self.idx = 0
-        return "".join(res)
+        var res = String()
+        res.write_bytes(tmp)
+        return res
 
     fn readline(mut self) -> String:
-        var res = List[String]()
+        var tmp = List[UInt8]()
         while self.idx < len(self.buff):
             if self.buff[self.idx] == 0x0A:
                 self.idx += 1
                 break
-            res.append(chr(Int(self.buff[self.idx])))
+            tmp.append(self.buff[self.idx])
             self.idx += 1
-        return "".join(res)
+        var res = String()
+        res.write_bytes(tmp)
+        return res
 
     fn nextInt(mut self) raises -> Int:
         return Int(self.next())
