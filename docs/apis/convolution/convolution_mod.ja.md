@@ -12,7 +12,7 @@ convolution_mod[M: Int](a: List[StaticModint[M]], b: List[StaticModint[M]]) -> L
 
 - $`2 \le m \le 2 \times 10^9`$
 - $`m`$ は素数
-- $`2^c | (m - 1)`$ かつ $`|a| + |b| - 1 \le 2^c`$ なる $`c`$ が存在する
+- $`2^c | (m - 1)`$ かつ $`|a| + |b| - 1 \le 2^c`$ なる $`c`$ が存在する。
 
 **計算量**
 

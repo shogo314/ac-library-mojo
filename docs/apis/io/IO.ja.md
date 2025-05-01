@@ -3,7 +3,7 @@
 # IO
 
 ```
-struct IO[BUFF_SIZE: Int = -1]
+struct IO[BUFF_SIZE: Int = 65536]
 ```
 
 ## Methods

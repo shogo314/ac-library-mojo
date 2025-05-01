@@ -535,6 +535,56 @@
                   ]
                 }
               ]
+            },
+            {
+              "name": "wordsizetree",
+              "aliases": [],
+              "structs": [
+                {
+                  "name": "WordSizeTree",
+                  "data": "struct WordSizeTree[D: Int = 5]",
+                  "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)"
+                      ]
+                    },
+                    {
+                      "name": "__contains__",
+                      "data": [
+                        "__contains__(self, x: Int) -> Bool"
+                      ]
+                    },
+                    {
+                      "name": "add",
+                      "data": [
+                        "add(mut self, x: Int)"
+                      ]
+                    },
+                    {
+                      "name": "extract",
+                      "data": [
+                        "extract(mut self, x: Int)"
+                      ]
+                    },
+                    {
+                      "name": "ge",
+                      "data": [
+                        "ge(self, x: Int) -> Int"
+                      ]
+                    },
+                    {
+                      "name": "le",
+                      "data": [
+                        "le(self, x: Int) -> Int"
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "traits": [],
+              "functions": []
             }
           ]
         },
@@ -909,7 +959,7 @@
       "structs": [
         {
           "name": "IO",
-          "data": "struct IO[BUFF_SIZE: Int = -1]",
+          "data": "struct IO[BUFF_SIZE: Int = 65536]",
           "methods": [
             {
               "name": "__init__",
@@ -1110,6 +1160,20 @@
         }
       ],
       "functions": []
+    },
+    {
+      "name": "metadata",
+      "aliases": [],
+      "structs": [],
+      "traits": [],
+      "functions": [
+        {
+          "name": "get_version",
+          "data": [
+            "get_version() -> String"
+          ]
+        }
+      ]
     },
     {
       "name": "method_traits",

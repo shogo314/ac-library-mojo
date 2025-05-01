@@ -2,6 +2,8 @@
 !./.verify-helper/config.toml
 !./.verify-helper/list_dependencies.py
 
+site/
+
 .vscode/
 
 *.out
@@ -9,4 +11,4 @@
 .magic/
 magic.lock
 
-site/
+__pycache__

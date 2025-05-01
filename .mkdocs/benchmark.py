@@ -103,9 +103,11 @@ def problem(pr: Problem):
         if fn.time is None:
             tm = []
             mm = []
-            for i in range(TEST_COUNT):
+            for i in range(TEST_COUNT + 1):
                 print(i, fn.path, file=sys.stderr)
                 result = func(Path(fn.path))
+                if i == 0:
+                    continue
                 tm.append(result[0])
                 mm.append(result[1])
             fn.time = tm

@@ -16,6 +16,7 @@
 - [lazysegtree](./lazysegtree/index.md)
 - [math](./math/index.md)
 - [maxflow](./maxflow/index.md)
+- [metadata](./metadata/index.md)
 - [method_traits](./method_traits/index.md)
 - [mincostflow](./mincostflow/index.md)
 - [modint](./modint/index.md)

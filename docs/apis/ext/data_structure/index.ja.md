@@ -10,3 +10,4 @@
 - [interval_heap](./interval_heap/index.md)
 - [potentialized_unionfind](./potentialized_unionfind/index.md)
 - [priority_queue](./priority_queue/index.md)
+- [wordsizetree](./wordsizetree/index.md)

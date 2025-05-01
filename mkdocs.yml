@@ -52,6 +52,9 @@ nav:
           - PriorityQueue: apis/ext/data_structure/priority_queue/PriorityQueue.md
           - heap_max: apis/ext/data_structure/priority_queue/heap_max.md
           - heap_min: apis/ext/data_structure/priority_queue/heap_min.md
+        - wordsizetree:
+          - apis/ext/data_structure/wordsizetree/index.md
+          - WordSizeTree: apis/ext/data_structure/wordsizetree/WordSizeTree.md
       - dp:
         - apis/ext/dp/index.md
         - knapsack_problem:
@@ -131,6 +134,9 @@ nav:
       - Edge: apis/maxflow/Edge.md
       - MFGraph: apis/maxflow/MFGraph.md
       - Capable: apis/maxflow/Capable.md
+    - metadata:
+      - apis/metadata/index.md
+      - get_version: apis/metadata/get_version.md
     - method_traits:
       - apis/method_traits/index.md
       - AddGroup: apis/method_traits/AddGroup.md
