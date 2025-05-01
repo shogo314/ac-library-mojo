@@ -4,7 +4,7 @@ from atcoder.io import IO
 
 
 fn main() raises:
-    var io = IO()
+    var io = IO[-1]()
     var T = io.nextInt()
     for _ in range(T):
         var A = io.nextInt()

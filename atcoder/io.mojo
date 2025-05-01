@@ -7,7 +7,7 @@ trait HasInitStringRaisingCollectionElement(
     pass
 
 
-struct IO[BUFF_SIZE: Int = -1]:
+struct IO[BUFF_SIZE: Int = 65536]:
     var f: FileHandle
     var buff: List[UInt8]
     var idx: Int
