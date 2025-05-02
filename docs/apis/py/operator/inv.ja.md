@@ -3,5 +3,5 @@
 # inv
 
 ```
-inv[T: Invable](x: T) -> x
+inv[T: Invable](x: T) -> T
 ```

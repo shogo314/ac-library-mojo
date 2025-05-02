@@ -2,10 +2,6 @@
 
 # operator
 
-## Traits
-
-- [`Invable`](./Invable.md)
-
 ## Functions
 
 - [`add`](./add.md)

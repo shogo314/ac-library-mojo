@@ -5,6 +5,7 @@ from atcoder.method_traits import (
     HasMul,
     HasTruediv,
     HasLtCollectionElement,
+    Invable,
 )
 
 
@@ -54,10 +55,6 @@ fn max_[T: HasLtCollectionElement](x: T, y: T) -> T:
         return x
 
 
-trait Invable(HasInitInt, HasTruediv):
-    pass
-
-
 @always_inline
-fn inv[T: Invable](x: T) -> x:
+fn inv[T: Invable](x: T) -> T:
     return T(1) / x

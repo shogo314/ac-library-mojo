@@ -3,5 +3,5 @@
 # MulGroup
 
 ```
-trait MulGroup(MulMonoid, HasTruediv)
+trait MulGroup(MulMonoid, Invable)
 ```

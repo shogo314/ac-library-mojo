@@ -96,7 +96,6 @@ nav:
         - isqrt: apis/py/math/isqrt.md
       - operator:
         - apis/py/operator/index.md
-        - Invable: apis/py/operator/Invable.md
         - add: apis/py/operator/add.md
         - gt: apis/py/operator/gt.md
         - inv: apis/py/operator/inv.md
@@ -160,6 +159,7 @@ nav:
       - HasNeg: apis/method_traits/HasNeg.md
       - HasSub: apis/method_traits/HasSub.md
       - HasTruediv: apis/method_traits/HasTruediv.md
+      - Invable: apis/method_traits/Invable.md
       - MulGroup: apis/method_traits/MulGroup.md
       - MulMonoid: apis/method_traits/MulMonoid.md
       - Ring: apis/method_traits/Ring.md

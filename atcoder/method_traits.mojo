@@ -23,6 +23,10 @@ trait HasTruediv:
         pass
 
 
+trait Invable(HasInitInt, HasTruediv):
+    pass
+
+
 trait HasEq:
     fn __eq__(self, x: Self) -> Bool:
         pass
@@ -58,7 +62,7 @@ trait AddGroup(AddMonoid, HasNeg):
     pass
 
 
-trait MulGroup(MulMonoid, HasTruediv):
+trait MulGroup(MulMonoid, Invable):
     pass
 
 

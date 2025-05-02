@@ -781,13 +781,7 @@
           "name": "operator",
           "aliases": [],
           "structs": [],
-          "traits": [
-            {
-              "name": "Invable",
-              "data": "trait Invable(HasInitInt, HasTruediv)",
-              "methods": []
-            }
-          ],
+          "traits": [],
           "functions": [
             {
               "name": "add",
@@ -804,7 +798,7 @@
             {
               "name": "inv",
               "data": [
-                "inv[T: Invable](x: T) -> x"
+                "inv[T: Invable](x: T) -> T"
               ]
             },
             {
@@ -1361,8 +1355,13 @@
           ]
         },
         {
+          "name": "Invable",
+          "data": "trait Invable(HasInitInt, HasTruediv)",
+          "methods": []
+        },
+        {
           "name": "MulGroup",
-          "data": "trait MulGroup(MulMonoid, HasTruediv)",
+          "data": "trait MulGroup(MulMonoid, Invable)",
           "methods": []
         },
         {
