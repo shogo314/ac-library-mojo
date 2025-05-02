@@ -261,6 +261,34 @@
         ]
       },
       {
+        "name": "BinaryTrie",
+        "path": "verify/yosupo/data_structure/double_ended_priority_queue/binarytrie.test.mojo",
+        "time": [
+          4.829584,
+          3.267422,
+          3.055483,
+          3.245883,
+          3.052534,
+          4.695644,
+          4.157399,
+          3.624012,
+          3.079834,
+          12.457836
+        ],
+        "memory": [
+          315.112,
+          312.48,
+          313.176,
+          312.32,
+          313.052,
+          312.952,
+          312.64,
+          313.068,
+          312.62,
+          312.66
+        ]
+      },
+      {
         "name": "SegTree + Compress",
         "path": "verify/yosupo/data_structure/double_ended_priority_queue/segtree.test.mojo",
         "time": [

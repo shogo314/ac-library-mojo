@@ -34,6 +34,7 @@ oj-verify run {path}
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
 | [IntervalHeap](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/interval_heap.test.mojo) | 0.758/0.702/0.876 | 27.86/27.56/28.13 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/binarytrie.test.mojo) | 4.547/3.053/12.458 | 313.01/312.32/315.11 |
 | [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/double_ended_priority_queue/segtree.test.mojo) | 1.230/1.091/1.683 | 64.45/63.99/64.95 |
 
 ### [Point Add Range Sum](https://judge.yosupo.jp/problem/point_add_range_sum)

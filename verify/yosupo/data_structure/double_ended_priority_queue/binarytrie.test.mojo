@@ -9,7 +9,7 @@ fn main() raises:
     var N = io.nextInt()
     var Q = io.nextInt()
     var S = io.nextListInt(N)
-    var trie = BinaryTrie[]()
+    var trie = BinaryTrie[31]()
     for s in S:
         trie.add(s[] + 10**9)
     for _ in range(Q):
