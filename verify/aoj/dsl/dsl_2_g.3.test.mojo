@@ -6,10 +6,6 @@ from atcoder.io import IO
 from atcoder.lazysegtree import RAddSumQ
 
 
-fn mapping(f: Int, x: Int, w: Int) -> Int:
-    return x + f * w
-
-
 fn main() raises:
     var io = IO()
     var n = io.nextInt()

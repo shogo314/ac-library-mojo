@@ -1,4 +1,4 @@
-from bit import next_power_of_two, count_trailing_zeros
+from bit import next_power_of_two, log2_floor
 
 from atcoder.method_traits import (
     AddMonoid,
@@ -19,7 +19,7 @@ struct SegTree[S: CollectionElement]:
     fn __init__(out self, n: Int, op: fn (S, S) -> S, e: S):
         self.n = n
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S]()
         self.d.resize(2 * self.size, e)
         self.op = op
@@ -28,7 +28,7 @@ struct SegTree[S: CollectionElement]:
     fn __init__(out self, v: List[S], op: fn (S, S) -> S, e: S):
         self.n = len(v)
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.op = op
         self.e = e
         self.d = List[S]()

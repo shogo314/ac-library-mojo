@@ -1,4 +1,4 @@
-from bit import next_power_of_two, count_trailing_zeros, log2_floor
+from bit import next_power_of_two, log2_floor
 
 from atcoder.method_traits import (
     AddMonoid,
@@ -17,21 +17,32 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
     var op: fn (S, S) -> S
     var e: S
-    var mapping: fn (F, S, Int) escaping -> S
+    var mapping: fn (F, S, Int, Int) escaping -> S
     var composition: fn (F, F) -> F
     var id: F
 
     @staticmethod
-    fn _mapping(mapping: fn (F, S) -> S) -> fn (F, S, Int) escaping -> S:
-        fn mapping_with_size(f: F, s: S, w: Int) -> S:
+    fn _mapping(mapping: fn (F, S) -> S) -> fn (F, S, Int, Int) escaping -> S:
+        fn mapping_with_size(f: F, s: S, l: Int, r: Int) -> S:
             return mapping(f, s)
 
         return mapping_with_size
 
     @staticmethod
-    fn _mapping(mapping: fn (F, S, Int) -> S) -> fn (F, S, Int) escaping -> S:
-        fn mapping_with_size(f: F, s: S, w: Int) -> S:
-            return mapping(f, s, w)
+    fn _mapping(
+        mapping: fn (F, S, Int) -> S
+    ) -> fn (F, S, Int, Int) escaping -> S:
+        fn mapping_with_size(f: F, s: S, l: Int, r: Int) -> S:
+            return mapping(f, s, r - l)
+
+        return mapping_with_size
+
+    @staticmethod
+    fn _mapping(
+        mapping: fn (F, S, Int, Int) -> S
+    ) -> fn (F, S, Int, Int) escaping -> S:
+        fn mapping_with_size(f: F, s: S, l: Int, r: Int) -> S:
+            return mapping(f, s, l, r)
 
         return mapping_with_size
 
@@ -52,7 +63,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = n
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -73,7 +84,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = len(v)
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -99,7 +110,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = n
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -120,7 +131,101 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = len(v)
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+        for i in range(self.n):
+            self.d[self.size + i] = v[i]
+        for i in reversed(range(1, self.size)):
+            self._update(i)
+
+    fn __init__(
+        out self,
+        n: Int,
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int, Int) -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = Self._mapping(mapping)
+        self.composition = composition
+        self.id = id
+
+        self.n = n
+        self.size = next_power_of_two(self.n)
+        self.log = log2_floor(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+    fn __init__(
+        out self,
+        v: List[S],
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int, Int) -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = Self._mapping(mapping)
+        self.composition = composition
+        self.id = id
+
+        self.n = len(v)
+        self.size = next_power_of_two(self.n)
+        self.log = log2_floor(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+        for i in range(self.n):
+            self.d[self.size + i] = v[i]
+        for i in reversed(range(1, self.size)):
+            self._update(i)
+
+    fn __init__(
+        out self,
+        n: Int,
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int, Int) escaping -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = mapping
+        self.composition = composition
+        self.id = id
+
+        self.n = n
+        self.size = next_power_of_two(self.n)
+        self.log = log2_floor(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+    fn __init__(
+        out self,
+        v: List[S],
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int, Int) escaping -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = mapping
+        self.composition = composition
+        self.id = id
+
+        self.n = len(v)
+        self.size = next_power_of_two(self.n)
+        self.log = log2_floor(self.size)
         self.d = List[S](e) * (2 * self.size)
         self.lz = List[F](id) * (2 * self.size)
 
@@ -177,7 +282,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
-        self.d[q] = self.mapping(f, self.d[q], self.size >> log2_floor(q))
+        self.d[q] = self.mapping(f, self.d[q], p, p + 1)
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
@@ -213,7 +318,9 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.d[k] = self.op(self.d[2 * k], self.d[2 * k + 1])
 
     fn _all_apply(mut self, k: Int, f: F):
-        self.d[k] = self.mapping(f, self.d[k], self.size >> log2_floor(k))
+        var lfk = log2_floor(k)
+        var l = (k - (1 << lfk)) << (self.log - lfk)
+        self.d[k] = self.mapping(f, self.d[k], l, l + (self.size >> lfk))
         if k < self.size:
             self.lz[k] = self.composition(f, self.lz[k])
 

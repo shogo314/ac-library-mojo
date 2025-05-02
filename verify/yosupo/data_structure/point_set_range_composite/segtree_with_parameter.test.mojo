@@ -1,7 +1,7 @@
 # verification-helper: PROBLEM https://judge.yosupo.jp/problem/point_set_range_composite
 
 
-from bit import next_power_of_two, count_trailing_zeros
+from bit import next_power_of_two, log2_floor
 
 
 struct StaticSegTree[S: CollectionElement, Op: fn (S, S) -> S, E: S]:
@@ -13,14 +13,14 @@ struct StaticSegTree[S: CollectionElement, Op: fn (S, S) -> S, E: S]:
     fn __init__(out self, n: Int):
         self.n = n
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S]()
         self.d.resize(2 * self.size, E)
 
     fn __init__(out self, v: List[S]):
         self.n = len(v)
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S]()
         self.d.resize(2 * self.size, E)
         for i in range(self.n):

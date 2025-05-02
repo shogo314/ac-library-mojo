@@ -15,14 +15,7 @@ fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = LazySegTree[Int, Int](
-        List[Int](0) * n,
-        add[Int],
-        0,
-        mapping,
-        add[Int],
-        0,
-    )
+    var seg = LazySegTree[Int, Int](n, add[Int], 0, mapping, add[Int], 0)
     for _ in range(q):
         var op = io.nextInt()
         if op == 0:

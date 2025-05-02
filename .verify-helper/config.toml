@@ -1,5 +1,6 @@
 [languages.mojo]
 compile = "magic run mojo build -o {tempdir}/a.out {path} -I {basedir} -D ASSERT=warn"
+# compile = "magic run mojo build -o {tempdir}/a.out {path} -I {basedir}" # use this when benchmarking
 execute = "{tempdir}/a.out"
 bundle = "false"
 list_dependencies = "python3 .verify-helper/list_dependencies.py {path}"

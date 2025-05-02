@@ -1,5 +1,5 @@
 from collections import Optional
-from bit import next_power_of_two, count_trailing_zeros
+from bit import next_power_of_two, log2_floor
 
 from atcoder.method_traits import AddMonoid
 from atcoder.py.operator import add
@@ -30,7 +30,7 @@ struct DualSegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = n
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = List[S](e) * n
         self.lz = List[F](id) * (2 * self.size)
 
@@ -47,7 +47,7 @@ struct DualSegTree[S: CollectionElement, F: CollectionElement]:
 
         self.n = len(v)
         self.size = next_power_of_two(self.n)
-        self.log = count_trailing_zeros(self.size)
+        self.log = log2_floor(self.size)
         self.d = v
         self.lz = List[F](id) * (2 * self.size)
 
