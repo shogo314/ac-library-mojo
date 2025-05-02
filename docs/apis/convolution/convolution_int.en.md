@@ -1,4 +1,4 @@
-[APIs](../index.md) > [convolution](./index.md) > [convolution_int.md]()
+[APIs](../index.md) > [convolution](./index.md) > [convolution_int]()
 
 # convolution_int
 

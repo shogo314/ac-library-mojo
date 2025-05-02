@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [dualsegtree](./index.md) > [RAddQ.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [dualsegtree](./index.md) > [RAddQ]()
 
 # RAddQ
 

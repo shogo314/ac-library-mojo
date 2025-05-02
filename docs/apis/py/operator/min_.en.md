@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [min_.md]()
+[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [min_]()
 
 # min_
 

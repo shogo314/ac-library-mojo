@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [RAddMaxQ.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [RAddMaxQ]()
 
 # RAddMaxQ
 

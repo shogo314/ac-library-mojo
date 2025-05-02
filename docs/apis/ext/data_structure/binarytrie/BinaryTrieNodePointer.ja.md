@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [binarytrie](./index.md) > [BinaryTrieNodePointer.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [binarytrie](./index.md) > [BinaryTrieNodePointer]()
 
 # BinaryTrieNodePointer
 

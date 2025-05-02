@@ -1,4 +1,4 @@
-[APIs](../index.md) > [scc](./index.md) > [SCCGraph.md]()
+[APIs](../index.md) > [scc](./index.md) > [SCCGraph]()
 
 # SCCGraph
 

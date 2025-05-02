@@ -1,4 +1,4 @@
-[APIs](../index.md) > [io](./index.md) > [HasInitStringRaisingCollectionElement.md]()
+[APIs](../index.md) > [io](./index.md) > [HasInitStringRaisingCollectionElement]()
 
 # HasInitStringRaisingCollectionElement
 

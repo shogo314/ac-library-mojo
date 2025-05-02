@@ -1,4 +1,4 @@
-[APIs](../index.md) > [mincostflow](./index.md) > [MCFGraph.md]()
+[APIs](../index.md) > [mincostflow](./index.md) > [MCFGraph]()
 
 # MCFGraph
 

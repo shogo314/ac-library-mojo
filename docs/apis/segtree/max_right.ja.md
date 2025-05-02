@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [max_right.md]()
+[APIs](../index.md) > [segtree](./index.md) > [max_right]()
 
 # max_right
 

@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [builtin](./index.md) > [pow_mod.md]()
+[APIs](../../index.md) > [py](../index.md) > [builtin](./index.md) > [pow_mod]()
 
 # pow_mod
 

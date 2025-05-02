@@ -1,4 +1,4 @@
-[APIs](../index.md) > [string](./index.md) > [string_to_list.md]()
+[APIs](../index.md) > [string](./index.md) > [string_to_list]()
 
 # string_to_list
 

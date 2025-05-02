@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [min_left.md]()
+[APIs](../index.md) > [segtree](./index.md) > [min_left]()
 
 # min_left
 

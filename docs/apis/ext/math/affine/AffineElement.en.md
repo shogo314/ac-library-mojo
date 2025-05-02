@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [math](../index.md) > [affine](./index.md) > [AffineElement.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [math](../index.md) > [affine](./index.md) > [AffineElement]()
 
 # AffineElement
 

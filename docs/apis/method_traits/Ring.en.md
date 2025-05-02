@@ -1,4 +1,4 @@
-[APIs](../index.md) > [method_traits](./index.md) > [Ring.md]()
+[APIs](../index.md) > [method_traits](./index.md) > [Ring]()
 
 # Ring
 

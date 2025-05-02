@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [max_.md]()
+[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [max_]()
 
 # max_
 

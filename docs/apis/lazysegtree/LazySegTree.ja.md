@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [LazySegTree.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [LazySegTree]()
 
 # LazySegTree
 

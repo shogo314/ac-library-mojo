@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [RAddSumQ.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [RAddSumQ]()
 
 # RAddSumQ
 

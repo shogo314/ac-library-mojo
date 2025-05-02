@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateMaxQ.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateMaxQ]()
 
 # RUpdateMaxQ
 

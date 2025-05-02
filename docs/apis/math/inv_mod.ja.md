@@ -1,4 +1,4 @@
-[APIs](../index.md) > [math](./index.md) > [inv_mod.md]()
+[APIs](../index.md) > [math](./index.md) > [inv_mod]()
 
 # inv_mod
 

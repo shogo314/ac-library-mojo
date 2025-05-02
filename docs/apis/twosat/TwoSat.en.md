@@ -1,4 +1,4 @@
-[APIs](../index.md) > [twosat](./index.md) > [TwoSat.md]()
+[APIs](../index.md) > [twosat](./index.md) > [TwoSat]()
 
 # TwoSat
 

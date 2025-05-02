@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateMinQ.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateMinQ]()
 
 # RUpdateMinQ
 

@@ -1,4 +1,4 @@
-[APIs](../index.md) > [maxflow](./index.md) > [Capable.md]()
+[APIs](../index.md) > [maxflow](./index.md) > [Capable]()
 
 # Capable
 

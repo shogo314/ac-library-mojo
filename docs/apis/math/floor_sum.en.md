@@ -1,4 +1,4 @@
-[APIs](../index.md) > [math](./index.md) > [floor_sum.md]()
+[APIs](../index.md) > [math](./index.md) > [floor_sum]()
 
 # floor_sum
 

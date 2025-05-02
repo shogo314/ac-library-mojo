@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [SegTree.md]()
+[APIs](../index.md) > [segtree](./index.md) > [SegTree]()
 
 # SegTree
 

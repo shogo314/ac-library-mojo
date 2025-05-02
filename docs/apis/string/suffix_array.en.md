@@ -1,4 +1,4 @@
-[APIs](../index.md) > [string](./index.md) > [suffix_array.md]()
+[APIs](../index.md) > [string](./index.md) > [suffix_array]()
 
 # suffix_array
 

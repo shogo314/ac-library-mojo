@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [sympy](./index.md) > [isprime.md]()
+[APIs](../../index.md) > [py](../index.md) > [sympy](./index.md) > [isprime]()
 
 # isprime
 

@@ -1,4 +1,4 @@
-[APIs](../index.md) > [convolution](./index.md) > [convolution_mod.md]()
+[APIs](../index.md) > [convolution](./index.md) > [convolution_mod]()
 
 # convolution_mod
 

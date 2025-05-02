@@ -1,4 +1,4 @@
-[APIs](../index.md) > [method_traits](./index.md) > [AddGroup.md]()
+[APIs](../index.md) > [method_traits](./index.md) > [AddGroup]()
 
 # AddGroup
 

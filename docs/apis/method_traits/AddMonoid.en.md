@@ -1,4 +1,4 @@
-[APIs](../index.md) > [method_traits](./index.md) > [AddMonoid.md]()
+[APIs](../index.md) > [method_traits](./index.md) > [AddMonoid]()
 
 # AddMonoid
 

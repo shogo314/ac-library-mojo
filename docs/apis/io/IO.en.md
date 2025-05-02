@@ -1,4 +1,4 @@
-[APIs](../index.md) > [io](./index.md) > [IO.md]()
+[APIs](../index.md) > [io](./index.md) > [IO]()
 
 # IO
 

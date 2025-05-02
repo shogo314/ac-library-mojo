@@ -1,4 +1,4 @@
-[APIs](../index.md) > [method_traits](./index.md) > [HasMul.md]()
+[APIs](../index.md) > [method_traits](./index.md) > [HasMul]()
 
 # HasMul
 

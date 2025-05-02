@@ -1,4 +1,4 @@
-[APIs](../index.md) > [string](./index.md) > [z_algorithm.md]()
+[APIs](../index.md) > [string](./index.md) > [z_algorithm]()
 
 # z_algorithm
 

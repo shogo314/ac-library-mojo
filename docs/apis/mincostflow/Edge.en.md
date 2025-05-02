@@ -1,4 +1,4 @@
-[APIs](../index.md) > [mincostflow](./index.md) > [Edge.md]()
+[APIs](../index.md) > [mincostflow](./index.md) > [Edge]()
 
 # Edge
 

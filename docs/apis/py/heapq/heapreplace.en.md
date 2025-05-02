@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heapreplace.md]()
+[APIs](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heapreplace]()
 
 # heapreplace
 

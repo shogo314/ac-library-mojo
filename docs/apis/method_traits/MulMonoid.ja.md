@@ -1,4 +1,4 @@
-[APIs](../index.md) > [method_traits](./index.md) > [MulMonoid.md]()
+[APIs](../index.md) > [method_traits](./index.md) > [MulMonoid]()
 
 # MulMonoid
 

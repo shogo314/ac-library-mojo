@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [gt.md]()
+[APIs](../../index.md) > [py](../index.md) > [operator](./index.md) > [gt]()
 
 # gt
 

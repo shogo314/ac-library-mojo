@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [interval_heap](./index.md) > [IntervalHeap.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [interval_heap](./index.md) > [IntervalHeap]()
 
 # IntervalHeap
 

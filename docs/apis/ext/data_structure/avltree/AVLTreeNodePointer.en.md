@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [avltree](./index.md) > [AVLTreeNodePointer.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [avltree](./index.md) > [AVLTreeNodePointer]()
 
 # AVLTreeNodePointer
 

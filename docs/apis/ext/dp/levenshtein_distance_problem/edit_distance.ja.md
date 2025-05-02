@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [dp](../index.md) > [levenshtein_distance_problem](./index.md) > [edit_distance.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [dp](../index.md) > [levenshtein_distance_problem](./index.md) > [edit_distance]()
 
 # edit_distance
 

@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [priority_queue](./index.md) > [PriorityQueue.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [priority_queue](./index.md) > [PriorityQueue]()
 
 # PriorityQueue
 

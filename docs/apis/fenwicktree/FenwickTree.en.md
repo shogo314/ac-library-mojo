@@ -1,4 +1,4 @@
-[APIs](../index.md) > [fenwicktree](./index.md) > [FenwickTree.md]()
+[APIs](../index.md) > [fenwicktree](./index.md) > [FenwickTree]()
 
 # FenwickTree
 

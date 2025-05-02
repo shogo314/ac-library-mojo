@@ -1,4 +1,4 @@
-[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [wordsizetree](./index.md) > [WordSizeTree.md]()
+[APIs](../../../index.md) > [ext](../../index.md) > [data_structure](../index.md) > [wordsizetree](./index.md) > [WordSizeTree]()
 
 # WordSizeTree
 

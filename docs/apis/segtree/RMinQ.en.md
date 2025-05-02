@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [RMinQ.md]()
+[APIs](../index.md) > [segtree](./index.md) > [RMinQ]()
 
 # RMinQ
 

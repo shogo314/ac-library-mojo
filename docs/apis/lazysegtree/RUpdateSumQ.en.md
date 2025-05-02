@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateSumQ.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateSumQ]()
 
 # RUpdateSumQ
 

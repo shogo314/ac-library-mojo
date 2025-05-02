@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [RSumQ.md]()
+[APIs](../index.md) > [segtree](./index.md) > [RSumQ]()
 
 # RSumQ
 

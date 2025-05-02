@@ -1,4 +1,4 @@
-[APIs](../index.md) > [maxflow](./index.md) > [Edge.md]()
+[APIs](../index.md) > [maxflow](./index.md) > [Edge]()
 
 # Edge
 

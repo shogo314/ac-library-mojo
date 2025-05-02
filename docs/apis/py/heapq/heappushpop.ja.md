@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heappushpop.md]()
+[APIs](../../index.md) > [py](../index.md) > [heapq](./index.md) > [heappushpop]()
 
 # heappushpop
 

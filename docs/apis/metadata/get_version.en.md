@@ -1,4 +1,4 @@
-[APIs](../index.md) > [metadata](./index.md) > [get_version.md]()
+[APIs](../index.md) > [metadata](./index.md) > [get_version]()
 
 # get_version
 

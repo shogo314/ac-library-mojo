@@ -101,11 +101,13 @@ def load(t: type, x: dict, dc: dict | None = None):
 
 def breadcrumbs_list(path: Path) -> str:
     name_list = str(path).split("/")
+    if name_list[-1].endswith(".md"):
+        name_list[-1] = name_list[-1][:-3]
     path_list = ["", "./index.md"]
     for i in range(2, len(name_list)):
         path_list.append("../" * (i - 1) + "index.md")
     path_list.reverse()
-    if name_list[-1] == "index.md":
+    if name_list[-1] == "index":
         name_list.pop()
         path_list.pop()
         path_list[-1] = ""

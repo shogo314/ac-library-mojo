@@ -1,4 +1,4 @@
-[APIs](../index.md) > [lazysegtree](./index.md) > [AddMonoidHasLt.md]()
+[APIs](../index.md) > [lazysegtree](./index.md) > [AddMonoidHasLt]()
 
 # AddMonoidHasLt
 

@@ -1,4 +1,4 @@
-[APIs](../index.md) > [string](./index.md) > [lcp_array.md]()
+[APIs](../index.md) > [string](./index.md) > [lcp_array]()
 
 # lcp_array
 

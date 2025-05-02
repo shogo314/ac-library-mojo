@@ -1,4 +1,4 @@
-[APIs](../index.md) > [maxflow](./index.md) > [MFGraph.md]()
+[APIs](../index.md) > [maxflow](./index.md) > [MFGraph]()
 
 # MFGraph
 

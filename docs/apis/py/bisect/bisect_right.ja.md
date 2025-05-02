@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [bisect](./index.md) > [bisect_right.md]()
+[APIs](../../index.md) > [py](../index.md) > [bisect](./index.md) > [bisect_right]()
 
 # bisect_right
 

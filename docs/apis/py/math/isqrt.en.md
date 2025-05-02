@@ -1,4 +1,4 @@
-[APIs](../../index.md) > [py](../index.md) > [math](./index.md) > [isqrt.md]()
+[APIs](../../index.md) > [py](../index.md) > [math](./index.md) > [isqrt]()
 
 # isqrt
 

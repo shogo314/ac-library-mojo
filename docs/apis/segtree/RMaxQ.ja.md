@@ -1,4 +1,4 @@
-[APIs](../index.md) > [segtree](./index.md) > [RMaxQ.md]()
+[APIs](../index.md) > [segtree](./index.md) > [RMaxQ]()
 
 # RMaxQ
 

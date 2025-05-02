@@ -1,4 +1,4 @@
-[APIs](../index.md) > [dsu](./index.md) > [DSU.md]()
+[APIs](../index.md) > [dsu](./index.md) > [DSU]()
 
 # DSU
 

@@ -1,4 +1,4 @@
-[APIs](../index.md) > [math](./index.md) > [crt.md]()
+[APIs](../index.md) > [math](./index.md) > [crt]()
 
 # crt
 

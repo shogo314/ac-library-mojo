@@ -1,4 +1,4 @@
-[APIs](../index.md) > [modint](./index.md) > [StaticModint.md]()
+[APIs](../index.md) > [modint](./index.md) > [StaticModint]()
 
 # StaticModint
 
