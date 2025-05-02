@@ -44,7 +44,6 @@ nav:
         - potentialized_unionfind:
           - apis/ext/data_structure/potentialized_unionfind/index.md
           - PotentializedUnionFind: apis/ext/data_structure/potentialized_unionfind/PotentializedUnionFind.md
-          - UnionFindMulElement: apis/ext/data_structure/potentialized_unionfind/UnionFindMulElement.md
           - UnionFindMul: apis/ext/data_structure/potentialized_unionfind/UnionFindMul.md
           - UnionFindPlus: apis/ext/data_structure/potentialized_unionfind/UnionFindPlus.md
         - priority_queue:
@@ -97,9 +96,13 @@ nav:
         - isqrt: apis/py/math/isqrt.md
       - operator:
         - apis/py/operator/index.md
+        - Invable: apis/py/operator/Invable.md
         - add: apis/py/operator/add.md
         - gt: apis/py/operator/gt.md
+        - inv: apis/py/operator/inv.md
         - lt: apis/py/operator/lt.md
+        - max_: apis/py/operator/max_.md
+        - min_: apis/py/operator/min_.md
         - mul: apis/py/operator/mul.md
         - neg: apis/py/operator/neg.md
         - truediv: apis/py/operator/truediv.md
@@ -123,7 +126,13 @@ nav:
     - lazysegtree:
       - apis/lazysegtree/index.md
       - LazySegTree: apis/lazysegtree/LazySegTree.md
+      - AddMonoidHasLt: apis/lazysegtree/AddMonoidHasLt.md
+      - RAddMaxQ: apis/lazysegtree/RAddMaxQ.md
+      - RAddMinQ: apis/lazysegtree/RAddMinQ.md
+      - RAddSumQ: apis/lazysegtree/RAddSumQ.md
+      - RUpdateMaxQ: apis/lazysegtree/RUpdateMaxQ.md
       - RUpdateMinQ: apis/lazysegtree/RUpdateMinQ.md
+      - RUpdateSumQ: apis/lazysegtree/RUpdateSumQ.md
     - math:
       - apis/math/index.md
       - crt: apis/math/crt.md
@@ -151,7 +160,10 @@ nav:
       - HasNeg: apis/method_traits/HasNeg.md
       - HasSub: apis/method_traits/HasSub.md
       - HasTruediv: apis/method_traits/HasTruediv.md
+      - MulGroup: apis/method_traits/MulGroup.md
       - MulMonoid: apis/method_traits/MulMonoid.md
+      - Ring: apis/method_traits/Ring.md
+      - SemiRing: apis/method_traits/SemiRing.md
     - mincostflow:
       - apis/mincostflow/index.md
       - Edge: apis/mincostflow/Edge.md

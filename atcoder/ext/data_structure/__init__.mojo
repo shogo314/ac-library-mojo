@@ -16,3 +16,4 @@ from .priority_queue import (
     heap_min,
     heap_max,
 )
+from .wordsizetree import WordSizeTree

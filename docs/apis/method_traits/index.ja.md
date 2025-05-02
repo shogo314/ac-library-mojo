@@ -16,4 +16,7 @@
 - [`HasNeg`](./HasNeg.md)
 - [`HasSub`](./HasSub.md)
 - [`HasTruediv`](./HasTruediv.md)
+- [`MulGroup`](./MulGroup.md)
 - [`MulMonoid`](./MulMonoid.md)
+- [`Ring`](./Ring.md)
+- [`SemiRing`](./SemiRing.md)

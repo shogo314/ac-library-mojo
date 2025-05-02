@@ -444,6 +444,68 @@
     "url": "https://judge.yosupo.jp/problem/point_set_range_composite"
   },
   {
+    "name": "Range Affine Point Get",
+    "fn": [
+      {
+        "name": "DualSegTree",
+        "path": "verify/yosupo/data_structure/range_affine_point_get/dualsegtree.test.mojo",
+        "time": [
+          2.925635,
+          2.821185,
+          2.923321,
+          2.804076,
+          2.930099,
+          2.828128,
+          2.813996,
+          2.835477,
+          2.756032,
+          2.744409
+        ],
+        "memory": [
+          39.36,
+          39.22,
+          39.356,
+          39.544,
+          39.748,
+          39.308,
+          41.912,
+          39.064,
+          40.172,
+          38.876
+        ]
+      },
+      {
+        "name": "LazySegTree",
+        "path": "verify/yosupo/data_structure/range_affine_point_get/lazysegtree.test.mojo",
+        "time": [
+          4.392394,
+          3.692655,
+          3.891678,
+          3.758884,
+          3.798646,
+          3.702051,
+          3.732418,
+          3.76051,
+          3.782186,
+          3.884492
+        ],
+        "memory": [
+          46.128,
+          43.812,
+          43.94,
+          43.9,
+          44.112,
+          43.38,
+          43.628,
+          43.628,
+          43.14,
+          44.232
+        ]
+      }
+    ],
+    "url": "https://judge.yosupo.jp/problem/range_affine_point_get"
+  },
+  {
     "name": "Static Range Sum",
     "fn": [
       {

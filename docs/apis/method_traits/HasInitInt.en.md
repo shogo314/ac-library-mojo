@@ -11,5 +11,5 @@ trait HasInitInt
 ### `__init__`
 
 ```
-__init__(out self, x: Int)
+__init__[T: Intable](out self, x: T)
 ```

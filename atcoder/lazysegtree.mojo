@@ -1,7 +1,11 @@
-from bit import next_power_of_two, count_trailing_zeros
+from bit import next_power_of_two, count_trailing_zeros, log2_floor
 
-from atcoder.method_traits import HasLtCollectionElement
-from atcoder.py.operator import add
+from atcoder.method_traits import (
+    AddMonoid,
+    HasLtCollectionElement,
+    SemiRing,
+)
+from atcoder.py.operator import add, min_, max_
 
 
 struct LazySegTree[S: CollectionElement, F: CollectionElement]:
@@ -13,9 +17,23 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
 
     var op: fn (S, S) -> S
     var e: S
-    var mapping: fn (F, S) -> S
+    var mapping: fn (F, S, Int) escaping -> S
     var composition: fn (F, F) -> F
     var id: F
+
+    @staticmethod
+    fn _mapping(mapping: fn (F, S) -> S) -> fn (F, S, Int) escaping -> S:
+        fn mapping_with_size(f: F, s: S, w: Int) -> S:
+            return mapping(f, s)
+
+        return mapping_with_size
+
+    @staticmethod
+    fn _mapping(mapping: fn (F, S, Int) -> S) -> fn (F, S, Int) escaping -> S:
+        fn mapping_with_size(f: F, s: S, w: Int) -> S:
+            return mapping(f, s, w)
+
+        return mapping_with_size
 
     fn __init__(
         out self,
@@ -28,7 +46,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
     ):
         self.op = op
         self.e = e
-        self.mapping = mapping
+        self.mapping = Self._mapping(mapping)
         self.composition = composition
         self.id = id
 
@@ -49,7 +67,54 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
     ):
         self.op = op
         self.e = e
-        self.mapping = mapping
+        self.mapping = Self._mapping(mapping)
+        self.composition = composition
+        self.id = id
+
+        self.n = len(v)
+        self.size = next_power_of_two(self.n)
+        self.log = count_trailing_zeros(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+        for i in range(self.n):
+            self.d[self.size + i] = v[i]
+        for i in reversed(range(1, self.size)):
+            self._update(i)
+
+    fn __init__(
+        out self,
+        n: Int,
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int) -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = Self._mapping(mapping)
+        self.composition = composition
+        self.id = id
+
+        self.n = n
+        self.size = next_power_of_two(self.n)
+        self.log = count_trailing_zeros(self.size)
+        self.d = List[S](e) * (2 * self.size)
+        self.lz = List[F](id) * (2 * self.size)
+
+    fn __init__(
+        out self,
+        v: List[S],
+        op: fn (S, S) -> S,
+        e: S,
+        mapping: fn (F, S, Int) -> S,
+        composition: fn (F, F) -> F,
+        id: F,
+    ):
+        self.op = op
+        self.e = e
+        self.mapping = Self._mapping(mapping)
         self.composition = composition
         self.id = id
 
@@ -112,7 +177,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
-        self.d[q] = self.mapping(f, self.d[q])
+        self.d[q] = self.mapping(f, self.d[q], self.size >> log2_floor(q))
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
@@ -148,7 +213,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.d[k] = self.op(self.d[2 * k], self.d[2 * k + 1])
 
     fn _all_apply(mut self, k: Int, f: F):
-        self.d[k] = self.mapping(f, self.d[k])
+        self.d[k] = self.mapping(f, self.d[k], self.size >> log2_floor(k))
         if k < self.size:
             self.lz[k] = self.composition(f, self.lz[k])
 
@@ -159,27 +224,151 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.lz[k] = self.id
 
 
+fn _update_mapping[S: CollectionElement](f: Optional[S], s: S) -> S:
+    if f:
+        return f.value()
+    else:
+        return s
+
+
+fn _update_composition[
+    S: CollectionElement
+](f: Optional[S], g: Optional[S]) -> Optional[S]:
+    if f:
+        return f
+    else:
+        return g
+
+
 fn RUpdateMinQ[
     S: HasLtCollectionElement
-](n: Int, e: S) -> LazySegTree[S, Optional[S]]:
-    fn op(x: S, y: S) -> S:
-        if y < x:
-            return y
+](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]:
+    return LazySegTree[S, Optional[S]](
+        n,
+        min_[S],
+        MAX,
+        _update_mapping[S],
+        _update_composition[S],
+        Optional[S](),
+    )
+
+
+fn RUpdateMinQ[
+    S: HasLtCollectionElement
+](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]:
+    return LazySegTree[S, Optional[S]](
+        v,
+        min_[S],
+        MAX,
+        _update_mapping[S],
+        _update_composition[S],
+        Optional[S](),
+    )
+
+
+fn RUpdateMaxQ[
+    S: HasLtCollectionElement
+](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]:
+    return LazySegTree[S, Optional[S]](
+        n,
+        max_[S],
+        MIN,
+        _update_mapping[S],
+        _update_composition[S],
+        Optional[S](),
+    )
+
+
+fn RUpdateMaxQ[
+    S: HasLtCollectionElement
+](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]:
+    return LazySegTree[S, Optional[S]](
+        v,
+        max_[S],
+        MIN,
+        _update_mapping[S],
+        _update_composition[S],
+        Optional[S](),
+    )
+
+
+trait AddMonoidHasLt(AddMonoid, HasLtCollectionElement):
+    pass
+
+
+fn RAddMinQ[S: AddMonoidHasLt](n: Int, MAX: S) -> LazySegTree[S, S]:
+    return LazySegTree[S, S](n, min_[S], MAX, add[S], add[S], S())
+
+
+fn RAddMinQ[S: AddMonoidHasLt](v: List[S], MAX: S) -> LazySegTree[S, S]:
+    return LazySegTree[S, S](v, min_[S], MAX, add[S], add[S], S())
+
+
+fn RAddMaxQ[S: AddMonoidHasLt](n: Int, MIN: S) -> LazySegTree[S, S]:
+    return LazySegTree[S, S](n, max_[S], MIN, add[S], add[S], S())
+
+
+fn RAddMaxQ[S: AddMonoidHasLt](v: List[S], MIN: S) -> LazySegTree[S, S]:
+    return LazySegTree[S, S](v, max_[S], MIN, add[S], add[S], S())
+
+
+fn RAddSumQ[S: SemiRing](n: Int) -> LazySegTree[S, S]:
+    fn mapping(f: S, x: S, w: Int) -> S:
+        return x + f * S(w)
+
+    return LazySegTree[S, S](
+        n,
+        add[S],
+        S(),
+        mapping,
+        add[S],
+        S(),
+    )
+
+
+fn RAddSumQ[S: SemiRing](v: List[S]) -> LazySegTree[S, S]:
+    fn mapping(f: S, x: S, w: Int) -> S:
+        return x + f * S(w)
+
+    return LazySegTree[S, S](
+        v,
+        add[S],
+        S(),
+        mapping,
+        add[S],
+        S(),
+    )
+
+
+fn RUpdateSumQ[S: SemiRing](n: Int) -> LazySegTree[S, Optional[S]]:
+    fn mapping(f: Optional[S], x: S, w: Int) -> S:
+        if f:
+            return f.value() * S(w)
         else:
             return x
 
-    fn mapping(f: Optional[S], s: S) -> S:
-        if f:
-            return f.value()
-        else:
-            return s
+    return LazySegTree[S, Optional[S]](
+        n,
+        add[S],
+        S(),
+        mapping,
+        _update_composition[S],
+        S(),
+    )
 
-    fn composition(f: Optional[S], g: Optional[S]) -> Optional[S]:
+
+fn RUpdateSumQ[S: SemiRing](v: List[S]) -> LazySegTree[S, Optional[S]]:
+    fn mapping(f: Optional[S], x: S, w: Int) -> S:
         if f:
-            return f
+            return f.value() * S(w)
         else:
-            return g
+            return x
 
     return LazySegTree[S, Optional[S]](
-        n, op, e, mapping, composition, Optional[S]()
+        v,
+        add[S],
+        S(),
+        mapping,
+        _update_composition[S],
+        S(),
     )

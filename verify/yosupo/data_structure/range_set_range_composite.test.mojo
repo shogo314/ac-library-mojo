@@ -9,26 +9,15 @@ from atcoder.ext.math.affine import Affine
 
 alias mint = modint998244353
 
-
-@value
-struct WithSize[T: CollectionElement](CollectionElement):
-    var value: T
-    var size: Int
-
-    fn __init__(out self, value: T):
-        self.value = value
-        self.size = 1
-
-alias S = WithSize[Affine[mint]]
+alias S = Affine[mint]
 alias F = Optional[Affine[mint]]
 
-fn mapping(f: F, x: S) -> S:
+
+fn mapping(f: F, x: S, w: Int) -> S:
     if f:
         var fv = f.value()
-        var pw = fv.a.pow(x.size)
-        return S(
-            Affine(pw, (pw - 1) / (fv.a - 1) * fv.b), x.size
-        )
+        var pw = fv.a.pow(w)
+        return Affine(pw, (pw - 1) / (fv.a - 1) * fv.b)
     else:
         return x
 
@@ -45,11 +34,11 @@ fn id() -> F:
 
 
 fn op(x: S, y: S) -> S:
-    return S(y.value.assign(x.value), x.size + y.size)
+    return y.assign(x)
 
 
 fn e() -> S:
-    return S(Affine(mint(1), mint(0)), 0)
+    return Affine(mint(1), mint(0))
 
 
 fn main() raises:
@@ -60,10 +49,8 @@ fn main() raises:
     for _ in range(N):
         var a = io.nextInt()
         var b = io.nextInt()
-        init.append(S(Affine(mint(a), mint(b))))
-    var seg = LazySegTree[S, F](
-        init, op, e(), mapping, composite, id()
-    )
+        init.append(Affine(mint(a), mint(b)))
+    var seg = LazySegTree[S, F](init, op, e(), mapping, composite, id())
     for _ in range(Q):
         var q = io.nextInt()
         if q == 0:
@@ -76,4 +63,4 @@ fn main() raises:
             var l = io.nextInt()
             var r = io.nextInt()
             var x = io.nextInt()
-            print(seg.prod(l, r).value.assign(mint(x)))
+            print(seg.prod(l, r).assign(mint(x)))

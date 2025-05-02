@@ -16,14 +16,16 @@ fn mapping(f: Affine[mint], x: mint) -> mint:
     return f.assign(x)
 
 
+fn id() -> Affine[mint]:
+    return Affine(mint(1), mint(0))
+
+
 fn main() raises:
     var io = IO()
     var N = io.nextInt()
     var Q = io.nextInt()
-    var init = io.nextList[mint](N)
-    var seg = DualSegTree[mint, Affine[mint]](
-        init, mapping, composite, Affine(mint(1), mint(0))
-    )
+    var a = io.nextList[mint](N)
+    var seg = DualSegTree[mint, Affine[mint]](a, mapping, composite, id())
     for _ in range(Q):
         var q = io.nextInt()
         if q == 0:

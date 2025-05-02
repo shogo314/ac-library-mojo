@@ -1,4 +1,4 @@
-# verification-helper: PROBLEM https://judge.yosupo.jp/problem/range_affine_range_sum
+# verification-helper: PROBLEM https://judge.yosupo.jp/problem/range_affine_point_get
 
 from atcoder.io import IO
 from atcoder.lazysegtree import LazySegTree
@@ -38,6 +38,5 @@ fn main() raises:
             var c = io.nextInt()
             seg.apply(l, r, Affine(mint(b), mint(c)))
         else:
-            var l = io.nextInt()
-            var r = io.nextInt()
-            print(seg.prod(l, r))
+            var i = io.nextInt()
+            print(seg.get(i))

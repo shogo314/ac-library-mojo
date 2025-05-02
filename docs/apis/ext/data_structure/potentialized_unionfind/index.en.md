@@ -6,10 +6,6 @@
 
 - [`PotentializedUnionFind`](./PotentializedUnionFind.md)
 
-## Traits
-
-- [`UnionFindMulElement`](./UnionFindMulElement.md)
-
 ## Functions
 
 - [`UnionFindMul`](./UnionFindMul.md)

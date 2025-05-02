@@ -18,6 +18,7 @@ __init__(out self) raises
 
 ```
 next(mut self) raises -> String
+next[T: HasInitStringRaisingCollectionElement](mut self) raises -> T
 ```
 
 ### `readline`
@@ -41,6 +42,7 @@ nextListInt(mut self, n: Int) raises -> List[Int]
 ### `nextList`
 
 ```
+nextList(mut self, n: Int) raises -> List[String]
 nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]
 ```
 

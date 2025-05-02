@@ -51,6 +51,13 @@ oj-verify run {path}
 | [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree.test.mojo) | 2.149/1.953/2.606 | 39.68/39.10/40.12 |
 | [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_set_range_composite/segtree_with_parameter.test.mojo) | 2.127/1.906/3.507 | 40.13/39.52/42.05 |
 
+### [Range Affine Point Get](https://judge.yosupo.jp/problem/range_affine_point_get)
+
+| 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
+| :--- | :--- | :--- |
+| [DualSegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/range_affine_point_get/dualsegtree.test.mojo) | 2.838/2.744/2.930 | 39.66/38.88/41.91 |
+| [LazySegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/range_affine_point_get/lazysegtree.test.mojo) | 3.840/3.693/4.392 | 43.99/43.14/46.13 |
+
 ### [Static Range Sum](https://judge.yosupo.jp/problem/static_range_sum)
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |

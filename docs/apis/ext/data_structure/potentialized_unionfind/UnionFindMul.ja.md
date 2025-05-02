@@ -3,5 +3,5 @@
 # UnionFindMul
 
 ```
-UnionFindMul[S: UnionFindMulElement](n: Int) -> PotentializedUnionFind[S]
+UnionFindMul[S: MulGroup](n: Int) -> PotentializedUnionFind[S]
 ```

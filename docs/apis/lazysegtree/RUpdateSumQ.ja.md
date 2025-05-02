@@ -1,0 +1,8 @@
+[APIs](../index.md) > [lazysegtree](./index.md) > [RUpdateSumQ.md]()
+
+# RUpdateSumQ
+
+```
+RUpdateSumQ[S: SemiRing](n: Int) -> LazySegTree[S, Optional[S]]
+RUpdateSumQ[S: SemiRing](v: List[S]) -> LazySegTree[S, Optional[S]]
+```

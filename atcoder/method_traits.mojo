@@ -29,7 +29,7 @@ trait HasEq:
 
 
 trait HasInitInt:
-    fn __init__(out self, x: Int):
+    fn __init__[T: Intable](out self, x: T):
         pass
 
 
@@ -55,4 +55,16 @@ trait MulMonoid(CollectionElement, HasInitInt, HasMul):
 
 
 trait AddGroup(AddMonoid, HasNeg):
+    pass
+
+
+trait MulGroup(MulMonoid, HasTruediv):
+    pass
+
+
+trait SemiRing(AddMonoid, MulMonoid):
+    pass
+
+
+trait Ring(SemiRing, HasNeg):
     pass

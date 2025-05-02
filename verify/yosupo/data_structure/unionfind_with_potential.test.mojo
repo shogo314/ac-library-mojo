@@ -17,7 +17,7 @@ fn main() raises:
         var u = io.nextInt()
         var v = io.nextInt()
         if t == 0:
-            x = io.nextInt()
+            x = io.next[mint]()
             if uf.same(u, v):
                 if uf.diff(v, u) == x:
                     print(1)
@@ -25,7 +25,7 @@ fn main() raises:
                     print(0)
             else:
                 print(1)
-                _ = uf.merge(v, u, mint(x))
+                _ = uf.merge(v, u, x)
         else:
             if uf.same(u, v):
                 print(uf.diff(v, u))

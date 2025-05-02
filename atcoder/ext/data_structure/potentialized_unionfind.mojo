@@ -1,10 +1,8 @@
 from atcoder.method_traits import (
-    HasInitInt,
-    HasMul,
-    HasTruediv,
+    MulGroup,
     AddGroup,
 )
-from atcoder.py.operator import add, neg
+from atcoder.py.operator import add, neg, mul, inv
 
 
 struct PotentializedUnionFind[S: CollectionElement]:
@@ -76,15 +74,5 @@ fn UnionFindPlus[S: AddGroup](n: Int) -> PotentializedUnionFind[S]:
     return PotentializedUnionFind[S](n, add[S], S(), neg[S])
 
 
-trait UnionFindMulElement(CollectionElement, HasMul, HasTruediv, HasInitInt):
-    pass
-
-
-fn UnionFindMul[S: UnionFindMulElement](n: Int) -> PotentializedUnionFind[S]:
-    fn mul(x: S, y: S) -> S:
-        return x * y
-
-    fn inv(x: S) -> S:
-        return S(1) / x
-
-    return PotentializedUnionFind[S](n, mul, S(1), inv)
+fn UnionFindMul[S: MulGroup](n: Int) -> PotentializedUnionFind[S]:
+    return PotentializedUnionFind[S](n, mul[S], S(1), inv[S])
