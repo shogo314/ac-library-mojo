@@ -22,7 +22,7 @@ oj-verify run {path}
 | :--- | :--- | :--- |
 | [read all](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_all.test.mojo) | 2.657/1.713/3.926 | 92.55/91.34/93.78 |
 | [read 16](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_16.test.mojo) | 6.086/4.398/12.508 | 13.32/12.79/13.81 |
-| [read 256](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_256.test.mojo) | 2.940/2.085/5.991 | 13.34/12.65/13.70 |
+| [read 256](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_256.test.mojo) | 2.277/1.926/2.938 | 13.02/11.72/13.51 |
 | [read 4096](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_4096.test.mojo) | 1.802/1.732/2.141 | 15.44/14.98/15.69 |
 | [read 65536](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_65536.test.mojo) | 1.861/1.759/1.998 | 15.43/14.90/15.73 |
 | [read 1048576](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/sample/many_aplusb/io_1048576.test.mojo) | 1.942/1.769/2.271 | 15.44/15.14/15.73 |
