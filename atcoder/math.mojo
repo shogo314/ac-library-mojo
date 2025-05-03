@@ -4,7 +4,7 @@ from atcoder.py.builtin import pow_mod
 
 fn inv_mod(x: Int, m: Int) -> Int:
     debug_assert(1 <= m)
-    var z = atcoder._math._inv_gcd(x, m)
+    var z = _inv_gcd(x, m)
     debug_assert(z[0] == 1)
     return z[1]
 
