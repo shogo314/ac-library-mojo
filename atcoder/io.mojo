@@ -1,10 +1,4 @@
-from atcoder.method_traits import HasInitStringRaising
-
-
-trait HasInitStringRaisingCollectionElement(
-    HasInitStringRaising, CollectionElement
-):
-    pass
+from atcoder.method_traits import HasInitStringRaisingCollectionElement
 
 
 struct IO[BUFF_SIZE: Int = 65536]:

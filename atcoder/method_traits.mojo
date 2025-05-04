@@ -42,6 +42,12 @@ trait HasInitStringRaising:
         pass
 
 
+trait HasInitStringRaisingCollectionElement(
+    HasInitStringRaising, CollectionElement
+):
+    pass
+
+
 trait HasLtCollectionElement(CollectionElement, LessThanComparable):
     pass
 
