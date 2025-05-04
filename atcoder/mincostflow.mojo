@@ -8,7 +8,7 @@ alias Cost = Int
 
 
 @value
-struct Edge:
+struct MCFEdge:
     var src: Int
     var dst: Int
     var cap: Cap
@@ -17,7 +17,7 @@ struct Edge:
 
 
 @value
-struct _Edge:
+struct _MCFEdge:
     var dst: Int
     var rev: Int
     var cap: Cap
@@ -26,11 +26,11 @@ struct _Edge:
 
 struct MCFGraph:
     var _n: Int
-    var _edges: List[Edge]
+    var _edges: List[MCFEdge]
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._edges = List[Edge]()
+        self._edges = List[MCFEdge]()
 
     fn add_edge(
         mut self, src: Int, dst: Int, cap: Cap, cost: Cost
@@ -40,15 +40,15 @@ struct MCFGraph:
         debug_assert(Cap() <= cap)
         debug_assert(Cost() <= cost)
         var m = len(self._edges)
-        self._edges.append(Edge(src, dst, cap, Cap(), cost))
+        self._edges.append(MCFEdge(src, dst, cap, Cap(), cost))
         return m
 
-    fn get_edge(self, i: Int) -> Edge:
+    fn get_edge(self, i: Int) -> MCFEdge:
         var m = len(self._edges)
         debug_assert(0 <= i < m)
         return self._edges[i]
 
-    fn edges(self) -> List[Edge]:
+    fn edges(self) -> List[MCFEdge]:
         return self._edges
 
     fn flow(mut self, s: Int, t: Int, flow_limit: Cap) -> (Cap, Cost):
@@ -65,15 +65,15 @@ struct MCFGraph:
 
         var degree = List[Int](0) * self._n
         var redge_idx = List[Int](0) * m
-        var elist = List[(Int, _Edge)]()
+        var elist = List[(Int, _MCFEdge)]()
         for i in range(m):
             var e = self._edges[i]
             edge_idx[i] = degree[e.src]
             degree[e.src] += 1
             redge_idx[i] = degree[e.dst]
             degree[e.dst] += 1
-            elist.append((e.src, _Edge(e.dst, -1, e.cap - e.flow, e.cost)))
-            elist.append((e.dst, _Edge(e.src, -1, e.flow, -e.cost)))
+            elist.append((e.src, _MCFEdge(e.dst, -1, e.cap - e.flow, e.cost)))
+            elist.append((e.dst, _MCFEdge(e.src, -1, e.flow, -e.cost)))
         var g = CSR(self._n, elist)
         for i in range(m):
             var e = self._edges[i]
@@ -91,7 +91,7 @@ struct MCFGraph:
         return result
 
     fn _slope(
-        self, mut g: CSR[_Edge], s: Int, t: Int, flow_limit: Cap
+        self, mut g: CSR[_MCFEdge], s: Int, t: Int, flow_limit: Cap
     ) -> List[(Cap, Cost)]:
         var dual_dist = List[(Cost, Cost)]((Cost(), Cost())) * self._n
         var prev_e = List[Int](0) * self._n

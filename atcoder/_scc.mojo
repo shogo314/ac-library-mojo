@@ -2,26 +2,26 @@ from atcoder._csr import CSR
 
 
 @value
-struct _Edge:
+struct _SCCEdge:
     var dst: Int
 
 
 struct _SCCGraph:
     var _n: Int
-    var _edges: List[(Int, _Edge)]
+    var _edges: List[(Int, _SCCEdge)]
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._edges = List[(Int, _Edge)]()
+        self._edges = List[(Int, _SCCEdge)]()
 
     fn num_vertices(self) -> Int:
         return self._n
 
     fn add_edge(mut self, src: Int, dst: Int):
-        self._edges.append((src, _Edge(dst)))
+        self._edges.append((src, _SCCEdge(dst)))
 
     fn scc_ids(self) -> (Int, List[Int]):
-        var g = CSR[_Edge](self._n, self._edges)
+        var g = CSR[_SCCEdge](self._n, self._edges)
         var now_ord = 0
         var group_num = 0
         var visited = List[Int](capacity=self._n)

@@ -8,7 +8,7 @@ trait Capable(CollectionElement, Defaultable, HasAdd, HasSub, Comparable):
 
 
 @value
-struct Edge[Cap: Capable]:
+struct MFEdge[Cap: Capable]:
     var src: Int
     var dst: Int
     var cap: Cap
@@ -16,7 +16,7 @@ struct Edge[Cap: Capable]:
 
 
 @value
-struct _Edge[Cap: Capable]:
+struct _MFEdge[Cap: Capable]:
     var dst: Int
     var rev: Int
     var cap: Cap
@@ -24,12 +24,12 @@ struct _Edge[Cap: Capable]:
 
 struct MFGraph[Cap: Capable]:
     var _n: Int
-    var _g: List[List[_Edge[Cap]]]
+    var _g: List[List[_MFEdge[Cap]]]
     var _pos: List[(Int, Int)]
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._g = List[List[_Edge[Cap]]](List[_Edge[Cap]]()) * n
+        self._g = List[List[_MFEdge[Cap]]](List[_MFEdge[Cap]]()) * n
         self._pos = List[(Int, Int)]()
 
     fn add_edge(mut self, src: Int, dst: Int, cap: Cap) -> Int:
@@ -42,20 +42,20 @@ struct MFGraph[Cap: Capable]:
         var dst_id = len(self._g[dst])
         if src == dst:
             dst_id += 1
-        self._g[src].append(_Edge(dst, dst_id, cap))
-        self._g[dst].append(_Edge(src, src_id, Cap()))
+        self._g[src].append(_MFEdge(dst, dst_id, cap))
+        self._g[dst].append(_MFEdge(src, src_id, Cap()))
         return m
 
-    fn get_edge(self, i: Int) -> Edge[Cap]:
+    fn get_edge(self, i: Int) -> MFEdge[Cap]:
         var m = len(self._pos)
         debug_assert(0 <= i < m)
         var _e = self._g[self._pos[i][0]][self._pos[i][1]]
         var _re = self._g[_e.dst][_e.rev]
-        return Edge(self._pos[i][0], _e.dst, _e.cap + _re.cap, _re.cap)
+        return MFEdge(self._pos[i][0], _e.dst, _e.cap + _re.cap, _re.cap)
 
-    fn edges(self) -> List[Edge[Cap]]:
+    fn edges(self) -> List[MFEdge[Cap]]:
         var m = len(self._pos)
-        var result = List[Edge[Cap]]()
+        var result = List[MFEdge[Cap]]()
         for i in range(m):
             result.append(self.get_edge(i))
         return result
