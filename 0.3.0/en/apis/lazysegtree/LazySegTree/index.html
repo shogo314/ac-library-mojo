@@ -5673,6 +5673,10 @@
 __init__(out self, v: List[S], op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
 __init__(out self, n: Int, op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
 __init__(out self, v: List[S], op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+__init__(out self, n: Int, op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int, Int) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+__init__(out self, v: List[S], op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int, Int) -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+__init__(out self, n: Int, op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int, Int) escaping -&gt; S, composition: fn (F, F) -&gt; F, id: F)
+__init__(out self, v: List[S], op: fn (S, S) -&gt; S, e: S, mapping: fn (F, S, Int, Int) escaping -&gt; S, composition: fn (F, F) -&gt; F, id: F)
 </code></pre></div>
 <h3 id="set"><code>set</code></h3>
 <div class="highlight"><pre><span></span><code>set(mut self, p: Int, x: S)
