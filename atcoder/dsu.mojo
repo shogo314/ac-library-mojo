@@ -26,9 +26,12 @@ struct DSU:
 
     fn leader(mut self, a: Int) -> Int:
         debug_assert(0 <= a < self._n)
+        return self._leader(a)
+
+    fn _leader(mut self, a: Int) -> Int:
         if self._parent_or_size[a] < 0:
             return a
-        self._parent_or_size[a] = self.leader(self._parent_or_size[a])
+        self._parent_or_size[a] = self._leader(self._parent_or_size[a])
         return self._parent_or_size[a]
 
     fn size(mut self, a: Int) -> Int:
