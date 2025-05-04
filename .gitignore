@@ -1,14 +1,16 @@
+# verify-helper
 ./.verify-helper/
 !./.verify-helper/config.toml
 !./.verify-helper/list_dependencies.py
-
 site/
 
-.vscode/
-
-*.out
-
+# Mojo
 .magic/
 magic.lock
 
+# Python
 __pycache__
+
+# Others
+.vscode/
+*.out
