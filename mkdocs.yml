@@ -121,7 +121,6 @@ nav:
     - io:
       - apis/io/index.md
       - IO: apis/io/IO.md
-      - HasInitStringRaisingCollectionElement: apis/io/HasInitStringRaisingCollectionElement.md
     - lazysegtree:
       - apis/lazysegtree/index.md
       - LazySegTree: apis/lazysegtree/LazySegTree.md
@@ -154,6 +153,7 @@ nav:
       - HasEqCollectionElement: apis/method_traits/HasEqCollectionElement.md
       - HasInitInt: apis/method_traits/HasInitInt.md
       - HasInitStringRaising: apis/method_traits/HasInitStringRaising.md
+      - HasInitStringRaisingCollectionElement: apis/method_traits/HasInitStringRaisingCollectionElement.md
       - HasLtCollectionElement: apis/method_traits/HasLtCollectionElement.md
       - HasMul: apis/method_traits/HasMul.md
       - HasNeg: apis/method_traits/HasNeg.md

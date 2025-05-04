@@ -11,6 +11,7 @@
 - [`HasEqCollectionElement`](./HasEqCollectionElement.md)
 - [`HasInitInt`](./HasInitInt.md)
 - [`HasInitStringRaising`](./HasInitStringRaising.md)
+- [`HasInitStringRaisingCollectionElement`](./HasInitStringRaisingCollectionElement.md)
 - [`HasLtCollectionElement`](./HasLtCollectionElement.md)
 - [`HasMul`](./HasMul.md)
 - [`HasNeg`](./HasNeg.md)

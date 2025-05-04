@@ -1020,13 +1020,7 @@
           ]
         }
       ],
-      "traits": [
-        {
-          "name": "HasInitStringRaisingCollectionElement",
-          "data": "trait HasInitStringRaisingCollectionElement(HasInitStringRaising, CollectionElement)",
-          "methods": []
-        }
-      ],
+      "traits": [],
       "functions": []
     },
     {
@@ -1304,6 +1298,11 @@
               ]
             }
           ]
+        },
+        {
+          "name": "HasInitStringRaisingCollectionElement",
+          "data": "trait HasInitStringRaisingCollectionElement(HasInitStringRaising, CollectionElement)",
+          "methods": []
         },
         {
           "name": "HasLtCollectionElement",
