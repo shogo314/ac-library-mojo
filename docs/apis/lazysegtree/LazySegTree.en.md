@@ -15,6 +15,10 @@ __init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, co
 __init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S) -> S, composition: fn (F, F) -> F, id: F)
 __init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int) -> S, composition: fn (F, F) -> F, id: F)
 __init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int) -> S, composition: fn (F, F) -> F, id: F)
+__init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int, Int) -> S, composition: fn (F, F) -> F, id: F)
+__init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int, Int) -> S, composition: fn (F, F) -> F, id: F)
+__init__(out self, n: Int, op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int, Int) escaping -> S, composition: fn (F, F) -> F, id: F)
+__init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int, Int) escaping -> S, composition: fn (F, F) -> F, id: F)
 ```
 
 ### `set`
