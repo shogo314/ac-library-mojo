@@ -23,13 +23,13 @@ add_edge(mut self, src: Int, dst: Int, cap: Cap, cost: Cost) -> Int
 ### `get_edge`
 
 ```
-get_edge(self, i: Int) -> Edge
+get_edge(self, i: Int) -> MCFEdge
 ```
 
 ### `edges`
 
 ```
-edges(self) -> List[Edge]
+edges(self) -> List[MCFEdge]
 ```
 
 ### `flow`

@@ -23,13 +23,13 @@ add_edge(mut self, src: Int, dst: Int, cap: Cap) -> Int
 ### `get_edge`
 
 ```
-get_edge(self, i: Int) -> Edge[Cap]
+get_edge(self, i: Int) -> MFEdge[Cap]
 ```
 
 ### `edges`
 
 ```
-edges(self) -> List[Edge[Cap]]
+edges(self) -> List[MFEdge[Cap]]
 ```
 
 ### `change_edge`

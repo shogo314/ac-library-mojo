@@ -1,5 +1,6 @@
 from atcoder.py.builtin import pow_mod
 
+
 fn _inv_gcd(a: Int, b: Int) -> (Int, Int):
     var s = b
     var t = a % b
@@ -30,7 +31,8 @@ fn _primitive_root(m: Int) -> Int:
     if m == 998244353:
         return 3
 
-    var divs = List[Int](0) * 20
+    var divs = List[Int]()
+    divs.resize(20, 0)
     divs[0] = 2
     var cnt = 1
     var x = (m - 1) // 2

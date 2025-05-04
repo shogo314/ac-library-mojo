@@ -1161,8 +1161,8 @@
       "aliases": [],
       "structs": [
         {
-          "name": "Edge",
-          "data": "struct Edge[Cap: Capable]",
+          "name": "MFEdge",
+          "data": "struct MFEdge[Cap: Capable]",
           "methods": []
         },
         {
@@ -1184,13 +1184,13 @@
             {
               "name": "get_edge",
               "data": [
-                "get_edge(self, i: Int) -> Edge[Cap]"
+                "get_edge(self, i: Int) -> MFEdge[Cap]"
               ]
             },
             {
               "name": "edges",
               "data": [
-                "edges(self) -> List[Edge[Cap]]"
+                "edges(self) -> List[MFEdge[Cap]]"
               ]
             },
             {
@@ -1399,8 +1399,8 @@
       ],
       "structs": [
         {
-          "name": "Edge",
-          "data": "struct Edge",
+          "name": "MCFEdge",
+          "data": "struct MCFEdge",
           "methods": []
         },
         {
@@ -1422,13 +1422,13 @@
             {
               "name": "get_edge",
               "data": [
-                "get_edge(self, i: Int) -> Edge"
+                "get_edge(self, i: Int) -> MCFEdge"
               ]
             },
             {
               "name": "edges",
               "data": [
-                "edges(self) -> List[Edge]"
+                "edges(self) -> List[MCFEdge]"
               ]
             },
             {

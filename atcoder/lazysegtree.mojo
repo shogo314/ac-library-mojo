@@ -64,8 +64,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
     fn __init__(
         out self,
@@ -85,8 +87,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = len(v)
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
         for i in range(self.n):
             self.d[self.size + i] = v[i]
@@ -111,8 +115,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
     fn __init__(
         out self,
@@ -132,8 +138,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = len(v)
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
         for i in range(self.n):
             self.d[self.size + i] = v[i]
@@ -158,8 +166,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
     fn __init__(
         out self,
@@ -179,8 +189,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = len(v)
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
         for i in range(self.n):
             self.d[self.size + i] = v[i]
@@ -205,8 +217,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
     fn __init__(
         out self,
@@ -226,8 +240,10 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self.n = len(v)
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S](e) * (2 * self.size)
-        self.lz = List[F](id) * (2 * self.size)
+        self.d = List[S]()
+        self.d.resize(self.size << 1, e)
+        self.lz = List[F]()
+        self.lz.resize(self.size << 1, id)
 
         for i in range(self.n):
             self.d[self.size + i] = v[i]

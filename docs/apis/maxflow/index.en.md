@@ -4,7 +4,7 @@
 
 ## Structs
 
-- [`Edge`](./Edge.md)
+- [`MFEdge`](./MFEdge.md)
 - [`MFGraph`](./MFGraph.md)
 
 ## Traits

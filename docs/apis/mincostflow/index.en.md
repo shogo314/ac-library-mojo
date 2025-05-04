@@ -9,5 +9,5 @@
 
 ## Structs
 
-- [`Edge`](./Edge.md)
+- [`MCFEdge`](./MCFEdge.md)
 - [`MCFGraph`](./MCFGraph.md)

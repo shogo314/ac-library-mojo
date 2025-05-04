@@ -138,7 +138,7 @@ nav:
       - inv_mod: apis/math/inv_mod.md
     - maxflow:
       - apis/maxflow/index.md
-      - Edge: apis/maxflow/Edge.md
+      - MFEdge: apis/maxflow/MFEdge.md
       - MFGraph: apis/maxflow/MFGraph.md
       - Capable: apis/maxflow/Capable.md
     - metadata:
@@ -166,7 +166,7 @@ nav:
       - SemiRing: apis/method_traits/SemiRing.md
     - mincostflow:
       - apis/mincostflow/index.md
-      - Edge: apis/mincostflow/Edge.md
+      - MCFEdge: apis/mincostflow/MCFEdge.md
       - MCFGraph: apis/mincostflow/MCFGraph.md
     - modint:
       - apis/modint/index.md

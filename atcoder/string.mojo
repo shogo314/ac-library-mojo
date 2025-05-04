@@ -12,7 +12,8 @@ fn z_algorithm[S: HasEqCollectionElement](s: List[S]) -> List[Int]:
     var n = len(s)
     if n == 0:
         return List[Int]()
-    var z = List[Int](0) * n
+    var z = List[Int]()
+    z.resize(n, 0)
     var j = 0
     for i in range(1, n):
         if j + z[j] <= i:

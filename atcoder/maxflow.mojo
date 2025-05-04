@@ -29,7 +29,8 @@ struct MFGraph[Cap: Capable]:
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._g = List[List[_MFEdge[Cap]]](List[_MFEdge[Cap]]()) * n
+        self._g = List[List[_MFEdge[Cap]]]()
+        self._g.resize(n, List[_MFEdge[Cap]]())
         self._pos = List[(Int, Int)]()
 
     fn add_edge(mut self, src: Int, dst: Int, cap: Cap) -> Int:
@@ -75,8 +76,10 @@ struct MFGraph[Cap: Capable]:
         debug_assert(0 <= s < self._n)
         debug_assert(0 <= t < self._n)
         debug_assert(s != t)
-        var level = List[Int](0) * self._n
-        var current_edge = List[Int](0) * self._n
+        var level = List[Int]()
+        level.resize(self._n, 0)
+        var current_edge = List[Int]()
+        current_edge.resize(self._n, 0)
 
         var flow = Cap()
         while flow < flow_limit:
@@ -90,7 +93,7 @@ struct MFGraph[Cap: Capable]:
                 try:
                     v = queue.popleft()
                 except:
-                    v = -1 # unreachable
+                    v = -1  # unreachable
                 for e in self._g[v]:
                     if e[].cap == Cap() or level[e[].dst] >= 0:
                         continue
