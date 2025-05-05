@@ -21,7 +21,7 @@ fn main() raises:
         var a = io.nextInt()
         var b = io.nextInt()
         init.append(Affine(mint(a), mint(b)))
-    var seg = SegTree[Affine[mint]](init, composite, Affine(mint(1), mint(0)))
+    var seg = SegTree[Affine[mint]](init, composite, Affine[mint]())
     for _ in range(Q):
         var q = io.nextInt()
         if q == 0:

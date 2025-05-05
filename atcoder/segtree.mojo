@@ -48,9 +48,15 @@ struct SegTree[S: CollectionElement]:
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
-    fn get(mut self, p: Int) -> S:
+    fn __setitem__(mut self, idx: Int, x: S):
+        self.set(idx, x)
+
+    fn get(self, p: Int) -> S:
         debug_assert(0 <= p < self.n)
         return self.d[p + self.size]
+
+    fn __getitem__(self, idx: Int) -> S:
+        return self.get(idx)
 
     fn prod(self, l: Int, r: Int) -> S:
         debug_assert(0 <= l and l <= r and r <= self.n)

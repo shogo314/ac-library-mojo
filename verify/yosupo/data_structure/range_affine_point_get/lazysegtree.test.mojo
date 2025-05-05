@@ -17,17 +17,13 @@ fn composite(x: Affine[mint], y: Affine[mint]) -> Affine[mint]:
     return x.assign(y)
 
 
-fn id() -> Affine[mint]:
-    return Affine(mint(1), mint(0))
-
-
 fn main() raises:
     var io = IO()
     var N = io.nextInt()
     var Q = io.nextInt()
     var a = io.nextList[mint](N)
     var seg = LazySegTree[mint, Affine[mint]](
-        a, add[mint], mint(), mapping, composite, id()
+        a, add[mint], mint(), mapping, composite, Affine[mint]()
     )
     for _ in range(Q):
         var q = io.nextInt()

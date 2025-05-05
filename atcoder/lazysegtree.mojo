@@ -259,12 +259,18 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         for i in range(1, self.log + 1):
             self._update(q >> i)
 
+    fn __setitem__(mut self, idx: Int, x: S):
+        self.set(idx, x)
+
     fn get(mut self, p: Int) -> S:
         debug_assert(0 <= p < self.n)
         var q = p + self.size
         for i in reversed(range(1, self.log + 1)):
             self._push(q >> i)
         return self.d[q]
+
+    fn __getitem__(mut self, idx: Int) -> S:
+        return self.get(idx)
 
     fn prod(mut self, l: Int, r: Int) -> S:
         debug_assert(0 <= l <= r <= self.n)

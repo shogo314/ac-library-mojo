@@ -32,7 +32,7 @@ fn main() raises:
     for a in tmp:
         if v[-1] < a[]:
             v.append(a[])
-    var seg = SegTree[Affine[mint]](len(v), composite, Affine(mint(1), mint(0)))
+    var seg = SegTree[Affine[mint]](len(v), composite, Affine[mint]())
     for i in range(Q):
         var q = query[i][0]
         if q == 0:

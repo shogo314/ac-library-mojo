@@ -29,16 +29,8 @@ fn composite(x: F, y: F) -> F:
         return y
 
 
-fn id() -> F:
-    return F()
-
-
 fn op(x: S, y: S) -> S:
     return y.assign(x)
-
-
-fn e() -> S:
-    return Affine(mint(1), mint(0))
 
 
 fn main() raises:
@@ -50,7 +42,9 @@ fn main() raises:
         var a = io.nextInt()
         var b = io.nextInt()
         init.append(Affine(mint(a), mint(b)))
-    var seg = LazySegTree[S, F](init, op, e(), mapping, composite, id())
+    var seg = LazySegTree[S, F](
+        init, op, Affine[mint](), mapping, composite, F()
+    )
     for _ in range(Q):
         var q = io.nextInt()
         if q == 0:
