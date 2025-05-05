@@ -352,6 +352,58 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         self._all_apply(2 * k + 1, lzk)
         self.lz[k] = self.id
 
+    fn max_right[F: fn (S) -> Bool](mut self, l: Int) -> Int:
+        debug_assert(0 <= l <= self.n)
+        debug_assert(F(self.e))
+        if l == self.n:
+            return self.n
+        var l_ = l + self.size
+        for i in reversed(range(1, self.log + 1)):
+            self._push(l_ >> i)
+        var sm = self.e
+        while True:
+            while l_ % 2 == 0:
+                l_ >>= 1
+            if not F(self.op(sm, self.d[l_])):
+                while l_ < self.size:
+                    self._push(l_)
+                    l_ *= 2
+                    if F(self.op(sm, self.d[l_])):
+                        sm = self.op(sm, self.d[l_])
+                        l_ += 1
+                return l_ - self.size
+            sm = self.op(sm, self.d[l_])
+            l_ += 1
+            if (l_ & -l_) == l_:
+                break
+        return self.n
+
+    fn min_left[F: fn (S) -> Bool](mut self, r: Int) -> Int:
+        debug_assert(0 <= r <= self.n)
+        debug_assert(F(self.e))
+        if r == 0:
+            return 0
+        var r_ = r + self.size
+        for i in reversed(range(1, self.log + 1)):
+            self._push((r - 1) >> i)
+        var sm = self.e
+        while True:
+            r_ -= 1
+            while r_ > 1 and (r_ % 2):
+                r_ >>= 1
+            if not F(self.op(self.d[r_], sm)):
+                while r_ < self.size:
+                    self._push(r_)
+                    r_ = 2 * r_ + 1
+                    if F(self.op(self.d[r_], sm)):
+                        sm = self.op(self.d[r_], sm)
+                        r_ -= 1
+                return r_ + 1 - self.size
+            sm = self.op(self.d[r_], sm)
+            if (r_ & -r_) == r_:
+                break
+        return 0
+
 
 fn _update_mapping[S: CollectionElement](f: Optional[S], s: S) -> S:
     if f:
