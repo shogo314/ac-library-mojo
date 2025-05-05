@@ -1,6 +1,7 @@
 from atcoder._math import _inv_gcd
 
 
+@value
 struct StaticModint[M: Int]:
     var _val: Int
 
@@ -8,9 +9,9 @@ struct StaticModint[M: Int]:
         constrained[M >= 1]()
         self._val = 0
 
-    fn __init__(out self, v: Int):
+    fn __init__[T: Intable](out self, v: T):
         constrained[M >= 1]()
-        self._val = v % M
+        self._val = Int(v) % M
 
     fn __init__(out self, v: UInt64):
         constrained[M >= 1]()
@@ -18,12 +19,6 @@ struct StaticModint[M: Int]:
 
     fn __init__(out self, v: String) raises:
         self._val = Int(v) % M
-
-    fn __copyinit__(out self, o: Self):
-        self._val = o._val
-
-    fn __moveinit__(out self, owned o: Self):
-        self._val = o._val
 
     fn val(self) -> Int:
         return self._val
