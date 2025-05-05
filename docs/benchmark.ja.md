@@ -41,9 +41,10 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/fenwicktree.test.mojo) | 1.244/1.074/1.888 | 23.58/22.70/23.93 |
-| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree.test.mojo) | 1.174/1.111/1.312 | 27.81/27.46/28.08 |
-| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree_with_parameter.test.mojo) | 1.151/1.097/1.291 | 28.13/27.64/29.98 |
+| [FenwickTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/fenwicktree.test.mojo) | 1.280/1.202/1.560 | 22.50/17.64/23.69 |
+| [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree.test.mojo) | 1.412/1.336/1.692 | 27.61/26.78/28.04 |
+| [SegTree with Parameter](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/segtree_with_parameter.test.mojo) | 1.391/1.307/1.541 | 27.67/27.08/28.10 |
+| [LazySegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/point_add_range_sum/lazysegtree.test.mojo) | 3.034/2.853/3.827 | 33.97/30.06/36.22 |
 
 ### [Point Set Range Composite](https://judge.yosupo.jp/problem/point_set_range_composite)
 
