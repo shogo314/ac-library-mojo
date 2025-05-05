@@ -482,7 +482,7 @@ fn RUpdateSumQ[S: SemiRing](n: Int) -> LazySegTree[S, Optional[S]]:
         S(),
         mapping,
         _update_composition[S],
-        S(),
+        Optional[S](),
     )
 
 
@@ -499,5 +499,5 @@ fn RUpdateSumQ[S: SemiRing](v: List[S]) -> LazySegTree[S, Optional[S]]:
         S(),
         mapping,
         _update_composition[S],
-        S(),
+        Optional[S](),
     )
