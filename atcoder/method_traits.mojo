@@ -76,5 +76,9 @@ trait SemiRing(AddMonoid, MulMonoid):
     pass
 
 
-trait Ring(SemiRing, HasNeg):
+trait Ring(AddGroup, MulMonoid):
+    pass
+
+
+trait Field(AddGroup, MulGroup):
     pass
