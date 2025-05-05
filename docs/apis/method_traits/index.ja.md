@@ -6,6 +6,7 @@
 
 - [`AddGroup`](./AddGroup.md)
 - [`AddMonoid`](./AddMonoid.md)
+- [`Field`](./Field.md)
 - [`HasAdd`](./HasAdd.md)
 - [`HasEq`](./HasEq.md)
 - [`HasEqCollectionElement`](./HasEqCollectionElement.md)

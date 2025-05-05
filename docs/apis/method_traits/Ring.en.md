@@ -3,5 +3,5 @@
 # Ring
 
 ```
-trait Ring(SemiRing, HasNeg)
+trait Ring(AddGroup, MulMonoid)
 ```

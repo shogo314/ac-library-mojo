@@ -72,7 +72,6 @@ nav:
         - affine:
           - apis/ext/math/affine/index.md
           - Affine: apis/ext/math/affine/Affine.md
-          - AffineElement: apis/ext/math/affine/AffineElement.md
     - py:
       - apis/py/index.md
       - bisect:
@@ -148,6 +147,7 @@ nav:
       - apis/method_traits/index.md
       - AddGroup: apis/method_traits/AddGroup.md
       - AddMonoid: apis/method_traits/AddMonoid.md
+      - Field: apis/method_traits/Field.md
       - HasAdd: apis/method_traits/HasAdd.md
       - HasEq: apis/method_traits/HasEq.md
       - HasEqCollectionElement: apis/method_traits/HasEqCollectionElement.md

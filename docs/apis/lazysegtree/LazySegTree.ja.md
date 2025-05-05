@@ -27,10 +27,22 @@ __init__(out self, v: List[S], op: fn (S, S) -> S, e: S, mapping: fn (F, S, Int,
 set(mut self, p: Int, x: S)
 ```
 
+### `__setitem__`
+
+```
+__setitem__(mut self, idx: Int, x: S)
+```
+
 ### `get`
 
 ```
 get(mut self, p: Int) -> S
+```
+
+### `__getitem__`
+
+```
+__getitem__(mut self, idx: Int) -> S
 ```
 
 ### `prod`
@@ -50,4 +62,16 @@ all_prod(self) -> S
 ```
 apply(mut self, p: Int, f: F)
 apply(mut self, l: Int, r: Int, f: F)
+```
+
+### `max_right`
+
+```
+max_right[F: fn (S) -> Bool](mut self, l: Int) -> Int
+```
+
+### `min_left`
+
+```
+min_left[F: fn (S) -> Bool](mut self, r: Int) -> Int
 ```

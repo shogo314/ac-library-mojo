@@ -654,25 +654,45 @@
               "structs": [
                 {
                   "name": "Affine",
-                  "data": "struct Affine[T: AffineElement]",
+                  "data": "struct Affine[T: SemiRing]",
                   "methods": [
+                    {
+                      "name": "__init__",
+                      "data": [
+                        "__init__(out self)"
+                      ]
+                    },
                     {
                       "name": "assign",
                       "data": [
                         "assign(self, x: T) -> T",
                         "assign(self, o: Self) -> Self"
                       ]
+                    },
+                    {
+                      "name": "__call__",
+                      "data": [
+                        "__call__(self, x: T) -> T",
+                        "__call__(self, o: Self) -> Self"
+                      ]
+                    },
+                    {
+                      "name": "__add__",
+                      "data": [
+                        "__add__(self, o: Self) -> Self",
+                        "__add__(self, b: T) -> Self"
+                      ]
+                    },
+                    {
+                      "name": "__mul__",
+                      "data": [
+                        "__mul__(self, a: T) -> Self"
+                      ]
                     }
                   ]
                 }
               ],
-              "traits": [
-                {
-                  "name": "AffineElement",
-                  "data": "trait AffineElement(HasAdd, HasMul, CollectionElement)",
-                  "methods": []
-                }
-              ],
+              "traits": [],
               "functions": []
             }
           ]
@@ -1051,9 +1071,21 @@
               ]
             },
             {
+              "name": "__setitem__",
+              "data": [
+                "__setitem__(mut self, idx: Int, x: S)"
+              ]
+            },
+            {
               "name": "get",
               "data": [
                 "get(mut self, p: Int) -> S"
+              ]
+            },
+            {
+              "name": "__getitem__",
+              "data": [
+                "__getitem__(mut self, idx: Int) -> S"
               ]
             },
             {
@@ -1073,6 +1105,18 @@
               "data": [
                 "apply(mut self, p: Int, f: F)",
                 "apply(mut self, l: Int, r: Int, f: F)"
+              ]
+            },
+            {
+              "name": "max_right",
+              "data": [
+                "max_right[F: fn (S) -> Bool](mut self, l: Int) -> Int"
+              ]
+            },
+            {
+              "name": "min_left",
+              "data": [
+                "min_left[F: fn (S) -> Bool](mut self, r: Int) -> Int"
               ]
             }
           ]
@@ -1247,6 +1291,11 @@
           "methods": []
         },
         {
+          "name": "Field",
+          "data": "trait Field(AddGroup, MulGroup)",
+          "methods": []
+        },
+        {
           "name": "HasAdd",
           "data": "trait HasAdd",
           "methods": [
@@ -1374,7 +1423,7 @@
         },
         {
           "name": "Ring",
-          "data": "trait Ring(SemiRing, HasNeg)",
+          "data": "trait Ring(AddGroup, MulMonoid)",
           "methods": []
         },
         {
@@ -1474,21 +1523,9 @@
               "name": "__init__",
               "data": [
                 "__init__(out self)",
-                "__init__(out self, v: Int)",
+                "__init__[T: Intable](out self, v: T)",
                 "__init__(out self, v: UInt64)",
                 "__init__(out self, v: String) raises"
-              ]
-            },
-            {
-              "name": "__copyinit__",
-              "data": [
-                "__copyinit__(out self, o: Self)"
-              ]
-            },
-            {
-              "name": "__moveinit__",
-              "data": [
-                "__moveinit__(out self, owned o: Self)"
               ]
             },
             {
@@ -1687,9 +1724,21 @@
               ]
             },
             {
+              "name": "__setitem__",
+              "data": [
+                "__setitem__(mut self, idx: Int, x: S)"
+              ]
+            },
+            {
               "name": "get",
               "data": [
-                "get(mut self, p: Int) -> S"
+                "get(self, p: Int) -> S"
+              ]
+            },
+            {
+              "name": "__getitem__",
+              "data": [
+                "__getitem__(self, idx: Int) -> S"
               ]
             },
             {

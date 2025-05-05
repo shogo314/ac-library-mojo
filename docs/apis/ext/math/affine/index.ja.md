@@ -5,7 +5,3 @@
 ## Structs
 
 - [`Affine`](./Affine.md)
-
-## Traits
-
-- [`AffineElement`](./AffineElement.md)

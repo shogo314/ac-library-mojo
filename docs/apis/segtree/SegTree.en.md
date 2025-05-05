@@ -21,10 +21,22 @@ __init__(out self, v: List[S], op: fn (S, S) -> S, e: S)
 set(mut self, p: Int, x: S)
 ```
 
+### `__setitem__`
+
+```
+__setitem__(mut self, idx: Int, x: S)
+```
+
 ### `get`
 
 ```
-get(mut self, p: Int) -> S
+get(self, p: Int) -> S
+```
+
+### `__getitem__`
+
+```
+__getitem__(self, idx: Int) -> S
 ```
 
 ### `prod`

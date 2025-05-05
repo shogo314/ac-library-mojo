@@ -12,21 +12,9 @@ struct StaticModint[M: Int]
 
 ```
 __init__(out self)
-__init__(out self, v: Int)
+__init__[T: Intable](out self, v: T)
 __init__(out self, v: UInt64)
 __init__(out self, v: String) raises
-```
-
-### `__copyinit__`
-
-```
-__copyinit__(out self, o: Self)
-```
-
-### `__moveinit__`
-
-```
-__moveinit__(out self, owned o: Self)
 ```
 
 ### `val`
