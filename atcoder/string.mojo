@@ -1,4 +1,4 @@
-from atcoder.method_traits import HasEqCollectionElement
+from atcoder.method_traits import HasEq
 
 
 fn string_to_list(s: String) -> List[Int]:
@@ -8,7 +8,7 @@ fn string_to_list(s: String) -> List[Int]:
     return res
 
 
-fn z_algorithm[S: HasEqCollectionElement](s: List[S]) -> List[Int]:
+fn z_algorithm[S: HasEq & CollectionElement](s: List[S]) -> List[Int]:
     var n = len(s)
     if n == 0:
         return List[Int]()
@@ -187,7 +187,7 @@ fn lcp_array(s: String, sa: List[Int]) -> List[Int]:
     return lcp_array(string_to_list(s), sa)
 
 
-fn lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) -> List[Int]:
+fn lcp_array[C: HasEq & CollectionElement](s: List[C], sa: List[Int]) -> List[Int]:
     debug_assert(len(s) == len(sa))
     var n = len(s)
     debug_assert(n >= 1)

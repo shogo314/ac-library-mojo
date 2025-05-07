@@ -1,4 +1,4 @@
-from atcoder.method_traits import HasInitStringRaisingCollectionElement
+from atcoder.method_traits import HasInitStringRaising
 
 
 struct IO[BUFF_SIZE: Int = 65536]:
@@ -50,7 +50,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
     fn nextInt(mut self) raises -> Int:
         return Int(self.next())
 
-    fn next[T: HasInitStringRaisingCollectionElement](mut self) raises -> T:
+    fn next[T: HasInitStringRaising & CollectionElement](mut self) raises -> T:
         return T(self.next())
 
     fn nextListInt(mut self, n: Int) raises -> List[Int]:
@@ -66,7 +66,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
         return res
 
     fn nextList[
-        T: HasInitStringRaisingCollectionElement
+        T: HasInitStringRaising & CollectionElement
     ](mut self, n: Int) raises -> List[T]:
         var res = List[T](capacity=n)
         for _ in range(n):
@@ -74,7 +74,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
         return res
 
     @staticmethod
-    fn print[S: WritableCollectionElement](v: List[S]):
+    fn print[S: Writable & CollectionElement](v: List[S]):
         for i in range(len(v)):
             if i:
                 print(" ", end="")

@@ -1,4 +1,4 @@
-from atcoder.method_traits import HasLtCollectionElement
+from atcoder.method_traits import HasLt
 
 
 @value
@@ -22,7 +22,7 @@ struct AVLTreeNodePointer:
 
 
 @value
-struct AVLTreeNode[T: HasLtCollectionElement]:
+struct AVLTreeNode[T: HasLt & CollectionElement]:
     var key: T
     var idx: AVLTreeNodePointer
     var par: AVLTreeNodePointer
@@ -52,7 +52,7 @@ struct AVLTreeNode[T: HasLtCollectionElement]:
         self.size = 1
 
 
-struct AVLTree[T: HasLtCollectionElement]:
+struct AVLTree[T: HasLt & CollectionElement]:
     var _data: List[AVLTreeNode[T]]
     var _root: AVLTreeNodePointer
 

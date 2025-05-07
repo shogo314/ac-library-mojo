@@ -32,6 +32,9 @@ trait HasEq:
         pass
 
 
+alias HasLt = LessThanComparable
+
+
 trait HasInitInt:
     fn __init__[T: Intable](out self, x: T):
         pass
@@ -40,20 +43,6 @@ trait HasInitInt:
 trait HasInitStringRaising:
     fn __init__(out self, x: String) raises:
         pass
-
-
-trait HasInitStringRaisingCollectionElement(
-    HasInitStringRaising, CollectionElement
-):
-    pass
-
-
-trait HasLtCollectionElement(CollectionElement, LessThanComparable):
-    pass
-
-
-trait HasEqCollectionElement(CollectionElement, HasEq):
-    pass
 
 
 trait AddMonoid(CollectionElement, Defaultable, HasAdd):

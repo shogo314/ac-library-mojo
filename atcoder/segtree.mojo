@@ -3,7 +3,7 @@ from bit import next_power_of_two, log2_floor
 from atcoder.method_traits import (
     AddMonoid,
     MulMonoid,
-    HasLtCollectionElement,
+    HasLt,
 )
 from atcoder.py.operator import add, mul
 
@@ -237,7 +237,7 @@ fn RMulQ[S: MulMonoid](v: List[S]) -> SegTree[S]:
     return SegTree[S](v, mul[S], S(1))
 
 
-fn RMaxQ[S: HasLtCollectionElement](n: Int, MIN: S) -> SegTree[S]:
+fn RMaxQ[S: HasLt & CollectionElement](n: Int, MIN: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if x < y:
             return y
@@ -247,7 +247,7 @@ fn RMaxQ[S: HasLtCollectionElement](n: Int, MIN: S) -> SegTree[S]:
     return SegTree[S](n, op, MIN)
 
 
-fn RMaxQ[S: HasLtCollectionElement](v: List[S], MIN: S) -> SegTree[S]:
+fn RMaxQ[S: HasLt & CollectionElement](v: List[S], MIN: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if x < y:
             return y
@@ -257,7 +257,7 @@ fn RMaxQ[S: HasLtCollectionElement](v: List[S], MIN: S) -> SegTree[S]:
     return SegTree[S](v, op, MIN)
 
 
-fn RMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> SegTree[S]:
+fn RMinQ[S: HasLt & CollectionElement](n: Int, MAX: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if y < x:
             return y
@@ -267,7 +267,7 @@ fn RMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> SegTree[S]:
     return SegTree[S](n, op, MAX)
 
 
-fn RMinQ[S: HasLtCollectionElement](v: List[S], MAX: S) -> SegTree[S]:
+fn RMinQ[S: HasLt & CollectionElement](v: List[S], MAX: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if y < x:
             return y

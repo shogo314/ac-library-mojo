@@ -1,7 +1,7 @@
-from atcoder.method_traits import HasLtCollectionElement
+from atcoder.method_traits import HasLt
 
 
-fn bisect_left[T: HasLtCollectionElement](a: List[T], x: T) -> Int:
+fn bisect_left[T: HasLt & CollectionElement](a: List[T], x: T) -> Int:
     var lo = -1
     var hi = len(a)
     while lo + 1 < hi:
@@ -13,7 +13,7 @@ fn bisect_left[T: HasLtCollectionElement](a: List[T], x: T) -> Int:
     return hi
 
 
-fn bisect_right[T: HasLtCollectionElement](a: List[T], x: T) -> Int:
+fn bisect_right[T: HasLt & CollectionElement](a: List[T], x: T) -> Int:
     var lo = -1
     var hi = len(a)
     while lo + 1 < hi:

@@ -1,9 +1,9 @@
-from atcoder.method_traits import HasEqCollectionElement
+from atcoder.method_traits import HasEq
 from atcoder.string import string_to_list
 
 
 fn levenshtein_distance[
-    C: HasEqCollectionElement
+    C: HasEq & CollectionElement
 ](s1: List[C], s2: List[C]) -> Int:
     var dp = List[List[Int]](capacity=len(s1) + 1)
     dp.resize(len(s1) + 1, List[Int](0) * (len(s2) + 1))
@@ -25,7 +25,7 @@ fn levenshtein_distance(s1: String, s2: String) -> Int:
     return levenshtein_distance(string_to_list(s1), string_to_list(s2))
 
 
-fn edit_distance[C: HasEqCollectionElement](s1: List[C], s2: List[C]) -> Int:
+fn edit_distance[C: HasEq & CollectionElement](s1: List[C], s2: List[C]) -> Int:
     return levenshtein_distance(s1, s2)
 
 

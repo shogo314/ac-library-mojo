@@ -1,4 +1,4 @@
-from atcoder.method_traits import HasLtCollectionElement
+from atcoder.method_traits import HasLt
 from atcoder.py.operator import lt, gt
 
 
@@ -64,17 +64,17 @@ struct PriorityQueue[S: CollectionElement]:
         return len(self.data)
 
 
-fn heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]:
+fn heap_min[S: HasLt & CollectionElement]() -> PriorityQueue[S]:
     return PriorityQueue[S](lt[S])
 
 
-fn heap_min[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]:
+fn heap_min[S: HasLt & CollectionElement](v: List[S]) -> PriorityQueue[S]:
     return PriorityQueue[S](v, lt[S])
 
 
-fn heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]:
+fn heap_max[S: HasLt & CollectionElement]() -> PriorityQueue[S]:
     return PriorityQueue[S](gt[S])
 
 
-fn heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]:
+fn heap_max[S: HasLt & CollectionElement](v: List[S]) -> PriorityQueue[S]:
     return PriorityQueue[S](v, gt[S])

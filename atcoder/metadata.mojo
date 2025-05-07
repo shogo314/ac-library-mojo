@@ -1,4 +1,4 @@
-alias _VERSION = "0.3.2"
+alias _VERSION = "0.4.0"
 
 
 fn get_version() -> String:

@@ -176,7 +176,7 @@ fn _convolution_fft[
     for i in range(z):
         a[i] = a[i] * b[i]
     _butterfly_inv(a)
-    a.resize(n + m - 1)
+    a.resize(unsafe_uninit_length=n + m - 1)
     var iz = mint(z).inv()
     for i in range(n + m - 1):
         a[i] = a[i] * iz

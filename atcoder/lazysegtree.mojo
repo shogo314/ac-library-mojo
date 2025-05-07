@@ -2,7 +2,7 @@ from bit import next_power_of_two, log2_floor
 
 from atcoder.method_traits import (
     AddMonoid,
-    HasLtCollectionElement,
+    HasLt,
     SemiRing,
 )
 from atcoder.py.operator import add, min_, max_
@@ -422,7 +422,7 @@ fn _update_composition[
 
 
 fn RUpdateMinQ[
-    S: HasLtCollectionElement
+    S: HasLt & CollectionElement
 ](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -435,7 +435,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMinQ[
-    S: HasLtCollectionElement
+    S: HasLt & CollectionElement
 ](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -448,7 +448,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMaxQ[
-    S: HasLtCollectionElement
+    S: HasLt & CollectionElement
 ](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -461,7 +461,7 @@ fn RUpdateMaxQ[
 
 
 fn RUpdateMaxQ[
-    S: HasLtCollectionElement
+    S: HasLt & CollectionElement
 ](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -473,7 +473,7 @@ fn RUpdateMaxQ[
     )
 
 
-trait AddMonoidHasLt(AddMonoid, HasLtCollectionElement):
+trait AddMonoidHasLt(AddMonoid, HasLt & CollectionElement):
     pass
 
 
