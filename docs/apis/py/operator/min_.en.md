@@ -3,5 +3,5 @@
 # min_
 
 ```
-min_[T: HasLtCollectionElement](x: T, y: T) -> T
+min_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T
 ```

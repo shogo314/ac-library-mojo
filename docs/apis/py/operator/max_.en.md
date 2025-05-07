@@ -3,5 +3,5 @@
 # max_
 
 ```
-max_[T: HasLtCollectionElement](x: T, y: T) -> T
+max_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T
 ```

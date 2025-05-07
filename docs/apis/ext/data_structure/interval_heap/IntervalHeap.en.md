@@ -3,7 +3,7 @@
 # IntervalHeap
 
 ```
-struct IntervalHeap[S: HasLtCollectionElement]
+struct IntervalHeap[S: LessThanComparable & CollectionElement]
 ```
 
 ## Methods

@@ -3,6 +3,6 @@
 # RUpdateMinQ
 
 ```
-RUpdateMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]
-RUpdateMinQ[S: HasLtCollectionElement](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]
+RUpdateMinQ[S: LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]
+RUpdateMinQ[S: LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]
 ```

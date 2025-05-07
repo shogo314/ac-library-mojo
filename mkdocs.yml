@@ -124,7 +124,6 @@ nav:
     - lazysegtree:
       - apis/lazysegtree/index.md
       - LazySegTree: apis/lazysegtree/LazySegTree.md
-      - AddMonoidHasLt: apis/lazysegtree/AddMonoidHasLt.md
       - RAddMaxQ: apis/lazysegtree/RAddMaxQ.md
       - RAddMinQ: apis/lazysegtree/RAddMinQ.md
       - RAddSumQ: apis/lazysegtree/RAddSumQ.md
@@ -151,11 +150,8 @@ nav:
       - Field: apis/method_traits/Field.md
       - HasAdd: apis/method_traits/HasAdd.md
       - HasEq: apis/method_traits/HasEq.md
-      - HasEqCollectionElement: apis/method_traits/HasEqCollectionElement.md
       - HasInitInt: apis/method_traits/HasInitInt.md
       - HasInitStringRaising: apis/method_traits/HasInitStringRaising.md
-      - HasInitStringRaisingCollectionElement: apis/method_traits/HasInitStringRaisingCollectionElement.md
-      - HasLtCollectionElement: apis/method_traits/HasLtCollectionElement.md
       - HasMul: apis/method_traits/HasMul.md
       - HasNeg: apis/method_traits/HasNeg.md
       - HasSub: apis/method_traits/HasSub.md

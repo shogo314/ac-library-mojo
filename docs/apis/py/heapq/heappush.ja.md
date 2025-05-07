@@ -3,5 +3,5 @@
 # heappush
 
 ```
-heappush[S: HasLtCollectionElement](mut heap: List[S], item: S)
+heappush[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S)
 ```

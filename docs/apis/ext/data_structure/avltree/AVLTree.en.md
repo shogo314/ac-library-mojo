@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[T: HasLtCollectionElement]
+struct AVLTree[T: LessThanComparable & CollectionElement]
 ```
 
 ## Methods

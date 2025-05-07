@@ -3,5 +3,5 @@
 # heapify
 
 ```
-heapify[S: HasLtCollectionElement](mut heap: List[S])
+heapify[S: LessThanComparable & CollectionElement](mut heap: List[S])
 ```

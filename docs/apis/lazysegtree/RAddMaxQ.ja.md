@@ -3,6 +3,6 @@
 # RAddMaxQ
 
 ```
-RAddMaxQ[S: AddMonoidHasLt](n: Int, MIN: S) -> LazySegTree[S, S]
-RAddMaxQ[S: AddMonoidHasLt](v: List[S], MIN: S) -> LazySegTree[S, S]
+RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, S]
+RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, S]
 ```

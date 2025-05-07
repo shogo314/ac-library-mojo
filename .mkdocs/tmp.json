@@ -14,7 +14,7 @@
               "structs": [
                 {
                   "name": "AVLTree",
-                  "data": "struct AVLTree[T: HasLtCollectionElement]",
+                  "data": "struct AVLTree[T: LessThanComparable & CollectionElement]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -86,7 +86,7 @@
                 },
                 {
                   "name": "AVLTreeNode",
-                  "data": "struct AVLTreeNode[T: HasLtCollectionElement]",
+                  "data": "struct AVLTreeNode[T: LessThanComparable & CollectionElement]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -326,7 +326,7 @@
               "structs": [
                 {
                   "name": "IntervalHeap",
-                  "data": "struct IntervalHeap[S: HasLtCollectionElement]",
+                  "data": "struct IntervalHeap[S: LessThanComparable & CollectionElement]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -517,15 +517,15 @@
                 {
                   "name": "heap_max",
                   "data": [
-                    "heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]",
-                    "heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]"
+                    "heap_max[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]",
+                    "heap_max[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]"
                   ]
                 },
                 {
                   "name": "heap_min",
                   "data": [
-                    "heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]",
-                    "heap_min[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]"
+                    "heap_min[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]",
+                    "heap_min[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]"
                   ]
                 }
               ]
@@ -615,14 +615,14 @@
                 {
                   "name": "edit_distance",
                   "data": [
-                    "edit_distance[C: HasEqCollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "edit_distance[C: HasEq & CollectionElement](s1: List[C], s2: List[C]) -> Int",
                     "edit_distance(s1: String, s2: String) -> Int"
                   ]
                 },
                 {
                   "name": "levenshtein_distance",
                   "data": [
-                    "levenshtein_distance[C: HasEqCollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "levenshtein_distance[C: HasEq & CollectionElement](s1: List[C], s2: List[C]) -> Int",
                     "levenshtein_distance(s1: String, s2: String) -> Int"
                   ]
                 }
@@ -713,13 +713,13 @@
             {
               "name": "bisect_left",
               "data": [
-                "bisect_left[T: HasLtCollectionElement](a: List[T], x: T) -> Int"
+                "bisect_left[T: LessThanComparable & CollectionElement](a: List[T], x: T) -> Int"
               ]
             },
             {
               "name": "bisect_right",
               "data": [
-                "bisect_right[T: HasLtCollectionElement](a: List[T], x: T) -> Int"
+                "bisect_right[T: LessThanComparable & CollectionElement](a: List[T], x: T) -> Int"
               ]
             }
           ]
@@ -747,31 +747,31 @@
             {
               "name": "heapify",
               "data": [
-                "heapify[S: HasLtCollectionElement](mut heap: List[S])"
+                "heapify[S: LessThanComparable & CollectionElement](mut heap: List[S])"
               ]
             },
             {
               "name": "heappop",
               "data": [
-                "heappop[S: HasLtCollectionElement](mut heap: List[S]) -> S"
+                "heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S"
               ]
             },
             {
               "name": "heappush",
               "data": [
-                "heappush[S: HasLtCollectionElement](mut heap: List[S], item: S)"
+                "heappush[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S)"
               ]
             },
             {
               "name": "heappushpop",
               "data": [
-                "heappushpop[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S"
+                "heappushpop[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S) -> S"
               ]
             },
             {
               "name": "heapreplace",
               "data": [
-                "heapreplace[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S"
+                "heapreplace[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S) -> S"
               ]
             }
           ]
@@ -830,13 +830,13 @@
             {
               "name": "max_",
               "data": [
-                "max_[T: HasLtCollectionElement](x: T, y: T) -> T"
+                "max_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T"
               ]
             },
             {
               "name": "min_",
               "data": [
-                "min_[T: HasLtCollectionElement](x: T, y: T) -> T"
+                "min_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T"
               ]
             },
             {
@@ -1003,7 +1003,7 @@
               "name": "next",
               "data": [
                 "next(mut self) raises -> String",
-                "next[T: HasInitStringRaisingCollectionElement](mut self) raises -> T"
+                "next[T: HasInitStringRaising & CollectionElement](mut self) raises -> T"
               ]
             },
             {
@@ -1028,13 +1028,13 @@
               "name": "nextList",
               "data": [
                 "nextList(mut self, n: Int) raises -> List[String]",
-                "nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]"
+                "nextList[T: HasInitStringRaising & CollectionElement](mut self, n: Int) raises -> List[T]"
               ]
             },
             {
               "name": "print",
               "data": [
-                "print[S: WritableCollectionElement](v: List[S])"
+                "print[S: Writable & CollectionElement](v: List[S])"
               ]
             }
           ]
@@ -1122,26 +1122,20 @@
           ]
         }
       ],
-      "traits": [
-        {
-          "name": "AddMonoidHasLt",
-          "data": "trait AddMonoidHasLt(AddMonoid, HasLtCollectionElement)",
-          "methods": []
-        }
-      ],
+      "traits": [],
       "functions": [
         {
           "name": "RAddMaxQ",
           "data": [
-            "RAddMaxQ[S: AddMonoidHasLt](n: Int, MIN: S) -> LazySegTree[S, S]",
-            "RAddMaxQ[S: AddMonoidHasLt](v: List[S], MIN: S) -> LazySegTree[S, S]"
+            "RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, S]",
+            "RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, S]"
           ]
         },
         {
           "name": "RAddMinQ",
           "data": [
-            "RAddMinQ[S: AddMonoidHasLt](n: Int, MAX: S) -> LazySegTree[S, S]",
-            "RAddMinQ[S: AddMonoidHasLt](v: List[S], MAX: S) -> LazySegTree[S, S]"
+            "RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, S]",
+            "RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, S]"
           ]
         },
         {
@@ -1154,15 +1148,15 @@
         {
           "name": "RUpdateMaxQ",
           "data": [
-            "RUpdateMaxQ[S: HasLtCollectionElement](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]",
-            "RUpdateMaxQ[S: HasLtCollectionElement](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]"
+            "RUpdateMaxQ[S: LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]",
+            "RUpdateMaxQ[S: LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]"
           ]
         },
         {
           "name": "RUpdateMinQ",
           "data": [
-            "RUpdateMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]",
-            "RUpdateMinQ[S: HasLtCollectionElement](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]"
+            "RUpdateMinQ[S: LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]",
+            "RUpdateMinQ[S: LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]"
           ]
         },
         {
@@ -1320,11 +1314,6 @@
           ]
         },
         {
-          "name": "HasEqCollectionElement",
-          "data": "trait HasEqCollectionElement(CollectionElement, HasEq)",
-          "methods": []
-        },
-        {
           "name": "HasInitInt",
           "data": "trait HasInitInt",
           "methods": [
@@ -1347,16 +1336,6 @@
               ]
             }
           ]
-        },
-        {
-          "name": "HasInitStringRaisingCollectionElement",
-          "data": "trait HasInitStringRaisingCollectionElement(HasInitStringRaising, CollectionElement)",
-          "methods": []
-        },
-        {
-          "name": "HasLtCollectionElement",
-          "data": "trait HasLtCollectionElement(CollectionElement, LessThanComparable)",
-          "methods": []
         },
         {
           "name": "HasMul",
@@ -1773,15 +1752,15 @@
         {
           "name": "RMaxQ",
           "data": [
-            "RMaxQ[S: HasLtCollectionElement](n: Int, MIN: S) -> SegTree[S]",
-            "RMaxQ[S: HasLtCollectionElement](v: List[S], MIN: S) -> SegTree[S]"
+            "RMaxQ[S: LessThanComparable & CollectionElement](n: Int, MIN: S) -> SegTree[S]",
+            "RMaxQ[S: LessThanComparable & CollectionElement](v: List[S], MIN: S) -> SegTree[S]"
           ]
         },
         {
           "name": "RMinQ",
           "data": [
-            "RMinQ[S: HasLtCollectionElement](n: Int, MAX: S) -> SegTree[S]",
-            "RMinQ[S: HasLtCollectionElement](v: List[S], MAX: S) -> SegTree[S]"
+            "RMinQ[S: LessThanComparable & CollectionElement](n: Int, MAX: S) -> SegTree[S]",
+            "RMinQ[S: LessThanComparable & CollectionElement](v: List[S], MAX: S) -> SegTree[S]"
           ]
         },
         {
@@ -1824,7 +1803,7 @@
           "name": "lcp_array",
           "data": [
             "lcp_array(s: String, sa: List[Int]) -> List[Int]",
-            "lcp_array[C: HasEqCollectionElement](s: List[C], sa: List[Int]) -> List[Int]"
+            "lcp_array[C: HasEq & CollectionElement](s: List[C], sa: List[Int]) -> List[Int]"
           ]
         },
         {
@@ -1842,7 +1821,7 @@
         {
           "name": "z_algorithm",
           "data": [
-            "z_algorithm[S: HasEqCollectionElement](s: List[S]) -> List[Int]",
+            "z_algorithm[S: HasEq & CollectionElement](s: List[S]) -> List[Int]",
             "z_algorithm(s: String) -> List[Int]"
           ]
         }

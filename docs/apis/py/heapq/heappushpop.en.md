@@ -3,5 +3,5 @@
 # heappushpop
 
 ```
-heappushpop[S: HasLtCollectionElement](mut heap: List[S], item: S) -> S
+heappushpop[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S) -> S
 ```

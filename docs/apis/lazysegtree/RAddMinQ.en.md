@@ -3,6 +3,6 @@
 # RAddMinQ
 
 ```
-RAddMinQ[S: AddMonoidHasLt](n: Int, MAX: S) -> LazySegTree[S, S]
-RAddMinQ[S: AddMonoidHasLt](v: List[S], MAX: S) -> LazySegTree[S, S]
+RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, S]
+RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, S]
 ```

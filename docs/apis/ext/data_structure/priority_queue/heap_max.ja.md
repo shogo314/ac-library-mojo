@@ -3,6 +3,6 @@
 # heap_max
 
 ```
-heap_max[S: HasLtCollectionElement]() -> PriorityQueue[S]
-heap_max[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]
+heap_max[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]
+heap_max[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]
 ```

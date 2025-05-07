@@ -18,7 +18,7 @@ __init__(out self) raises
 
 ```
 next(mut self) raises -> String
-next[T: HasInitStringRaisingCollectionElement](mut self) raises -> T
+next[T: HasInitStringRaising & CollectionElement](mut self) raises -> T
 ```
 
 ### `readline`
@@ -43,11 +43,11 @@ nextListInt(mut self, n: Int) raises -> List[Int]
 
 ```
 nextList(mut self, n: Int) raises -> List[String]
-nextList[T: HasInitStringRaisingCollectionElement](mut self, n: Int) raises -> List[T]
+nextList[T: HasInitStringRaising & CollectionElement](mut self, n: Int) raises -> List[T]
 ```
 
 ### `print`
 
 ```
-print[S: WritableCollectionElement](v: List[S])
+print[S: Writable & CollectionElement](v: List[S])
 ```

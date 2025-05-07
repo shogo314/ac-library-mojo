@@ -6,10 +6,6 @@
 
 - [`LazySegTree`](./LazySegTree.md)
 
-## Traits
-
-- [`AddMonoidHasLt`](./AddMonoidHasLt.md)
-
 ## Functions
 
 - [`RAddMaxQ`](./RAddMaxQ.md)

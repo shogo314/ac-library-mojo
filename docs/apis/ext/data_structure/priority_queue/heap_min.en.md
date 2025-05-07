@@ -3,6 +3,6 @@
 # heap_min
 
 ```
-heap_min[S: HasLtCollectionElement]() -> PriorityQueue[S]
-heap_min[S: HasLtCollectionElement](v: List[S]) -> PriorityQueue[S]
+heap_min[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]
+heap_min[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]
 ```
