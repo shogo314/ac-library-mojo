@@ -1,7 +1,4 @@
-from atcoder.method_traits import HasLt
-
-
-struct IntervalHeap[S: HasLt & CollectionElement]:
+struct IntervalHeap[S: LessThanComparable & CollectionElement]:
     var data: List[S]
 
     fn __init__(out self):

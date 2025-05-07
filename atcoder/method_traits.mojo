@@ -32,9 +32,6 @@ trait HasEq:
         pass
 
 
-alias HasLt = LessThanComparable
-
-
 trait HasInitInt:
     fn __init__[T: Intable](out self, x: T):
         pass

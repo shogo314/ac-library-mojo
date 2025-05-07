@@ -1,7 +1,6 @@
-from atcoder.method_traits import HasLt
-
-
-fn heappush[S: HasLt & CollectionElement](mut heap: List[S], item: S):
+fn heappush[
+    S: LessThanComparable & CollectionElement
+](mut heap: List[S], item: S):
     var k = len(heap)
     heap.append(item)
     while k:
@@ -13,7 +12,7 @@ fn heappush[S: HasLt & CollectionElement](mut heap: List[S], item: S):
             break
 
 
-fn heappop[S: HasLt & CollectionElement](mut heap: List[S]) -> S:
+fn heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S:
     debug_assert(len(heap))
     if len(heap) == 1:
         return heap.pop()
@@ -24,7 +23,9 @@ fn heappop[S: HasLt & CollectionElement](mut heap: List[S]) -> S:
     return res
 
 
-fn heappushpop[S: HasLt & CollectionElement](mut heap: List[S], item: S) -> S:
+fn heappushpop[
+    S: LessThanComparable & CollectionElement
+](mut heap: List[S], item: S) -> S:
     if len(heap):
         if not heap[0] < item:
             return item
@@ -37,13 +38,13 @@ fn heappushpop[S: HasLt & CollectionElement](mut heap: List[S], item: S) -> S:
         return item
 
 
-fn heapify[S: HasLt & CollectionElement](mut heap: List[S]):
+fn heapify[S: LessThanComparable & CollectionElement](mut heap: List[S]):
     for i in reversed(range(len(heap))):
         _heapify(heap, i)
 
 
 fn heapreplace[
-    S: HasLt & CollectionElement
+    S: LessThanComparable & CollectionElement
 ](mut heap: List[S], item: S) -> S:
     debug_assert(len(heap))
     var res = heap[0]
@@ -52,7 +53,9 @@ fn heapreplace[
     return res
 
 
-fn _heapify[S: HasLt & CollectionElement](mut heap: List[S], k: Int):
+fn _heapify[
+    S: LessThanComparable & CollectionElement
+](mut heap: List[S], k: Int):
     if len(heap) <= 2 * k + 1:
         pass
     else:

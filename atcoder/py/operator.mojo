@@ -4,7 +4,6 @@ from atcoder.method_traits import (
     HasNeg,
     HasMul,
     HasTruediv,
-    HasLt,
     Invable,
 )
 
@@ -40,7 +39,7 @@ fn gt[T: LessThanComparable](x: T, y: T) -> Bool:
 
 
 @always_inline
-fn min_[T: HasLt & CollectionElement](x: T, y: T) -> T:
+fn min_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T:
     if y < x:
         return y
     else:
@@ -48,7 +47,7 @@ fn min_[T: HasLt & CollectionElement](x: T, y: T) -> T:
 
 
 @always_inline
-fn max_[T: HasLt & CollectionElement](x: T, y: T) -> T:
+fn max_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T:
     if x < y:
         return y
     else:

@@ -2,7 +2,6 @@ from bit import next_power_of_two, log2_floor
 
 from atcoder.method_traits import (
     AddMonoid,
-    HasLt,
     SemiRing,
 )
 from atcoder.py.operator import add, min_, max_
@@ -422,7 +421,7 @@ fn _update_composition[
 
 
 fn RUpdateMinQ[
-    S: HasLt & CollectionElement
+    S: LessThanComparable & CollectionElement
 ](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -435,7 +434,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMinQ[
-    S: HasLt & CollectionElement
+    S: LessThanComparable & CollectionElement
 ](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -448,7 +447,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMaxQ[
-    S: HasLt & CollectionElement
+    S: LessThanComparable & CollectionElement
 ](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -461,7 +460,7 @@ fn RUpdateMaxQ[
 
 
 fn RUpdateMaxQ[
-    S: HasLt & CollectionElement
+    S: LessThanComparable & CollectionElement
 ](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -473,23 +472,27 @@ fn RUpdateMaxQ[
     )
 
 
-trait AddMonoidHasLt(AddMonoid, HasLt & CollectionElement):
-    pass
-
-
-fn RAddMinQ[S: AddMonoidHasLt](n: Int, MAX: S) -> LazySegTree[S, S]:
+fn RAddMinQ[
+    S: AddMonoid & LessThanComparable & CollectionElement
+](n: Int, MAX: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](n, min_[S], MAX, add[S], add[S], S())
 
 
-fn RAddMinQ[S: AddMonoidHasLt](v: List[S], MAX: S) -> LazySegTree[S, S]:
+fn RAddMinQ[
+    S: AddMonoid & LessThanComparable & CollectionElement
+](v: List[S], MAX: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](v, min_[S], MAX, add[S], add[S], S())
 
 
-fn RAddMaxQ[S: AddMonoidHasLt](n: Int, MIN: S) -> LazySegTree[S, S]:
+fn RAddMaxQ[
+    S: AddMonoid & LessThanComparable & CollectionElement
+](n: Int, MIN: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](n, max_[S], MIN, add[S], add[S], S())
 
 
-fn RAddMaxQ[S: AddMonoidHasLt](v: List[S], MIN: S) -> LazySegTree[S, S]:
+fn RAddMaxQ[
+    S: AddMonoid & LessThanComparable & CollectionElement
+](v: List[S], MIN: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](v, max_[S], MIN, add[S], add[S], S())
 
 
