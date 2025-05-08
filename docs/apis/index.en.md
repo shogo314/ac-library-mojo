@@ -4,6 +4,7 @@
 
 ## Packages
 
+- [cpp](./cpp/index.md)
 - [ext](./ext/index.md)
 - [py](./py/index.md)
 

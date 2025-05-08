@@ -20,6 +20,12 @@ nav:
   - TIPs: tips.md
   - APIs:
     - apis/index.md
+    - cpp:
+      - apis/cpp/index.md
+      - algorithm:
+        - apis/cpp/algorithm/index.md
+        - next_permutation: apis/cpp/algorithm/next_permutation.md
+        - prev_permutation: apis/cpp/algorithm/prev_permutation.md
     - ext:
       - apis/ext/index.md
       - data_structure:
