@@ -1,6 +1,7 @@
 from atcoder.method_traits import AddGroup
 
 
+@value
 struct FenwickTree[T: AddGroup]:
     var _n: Int
     var _data: List[T]

@@ -1,3 +1,4 @@
+@value
 struct CSR[E: Copyable & Movable]:
     var start: List[Int]
     var elist: List[E]

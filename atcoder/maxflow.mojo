@@ -21,6 +21,7 @@ struct _MFEdge[Cap: Capable]:
     var cap: Cap
 
 
+@value
 struct MFGraph[Cap: Capable]:
     var _n: Int
     var _g: List[List[_MFEdge[Cap]]]

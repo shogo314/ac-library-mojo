@@ -2,6 +2,7 @@ from sys import bitwidthof
 from bit import count_leading_zeros, count_trailing_zeros
 
 
+@value
 struct WordSizeTree[D: Int = 5]:
     alias B = 6
     alias W = 1 << Self.B

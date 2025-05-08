@@ -33,6 +33,7 @@ struct BinaryTrieNode:
         self.size = 0
 
 
+@value
 struct BinaryTrie[D: Int = 64]:
     alias P = BinaryTrieNodePointer
     var _data: List[BinaryTrieNode]

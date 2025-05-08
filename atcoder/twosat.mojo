@@ -1,6 +1,7 @@
 from atcoder._scc import _SCCGraph
 
 
+@value
 struct TwoSat:
     var _n: Int
     var _answer: List[Bool]

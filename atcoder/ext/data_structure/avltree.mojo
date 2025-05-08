@@ -49,6 +49,7 @@ struct AVLTreeNode[T: LessThanComparable & Copyable & Movable]:
         self.size = 1
 
 
+@value
 struct AVLTree[T: LessThanComparable & Copyable & Movable]:
     var _data: List[AVLTreeNode[T]]
     var _root: AVLTreeNodePointer

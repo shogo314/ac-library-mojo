@@ -24,6 +24,7 @@ struct _MCFEdge:
     var cost: Cost
 
 
+@value
 struct MCFGraph:
     var _n: Int
     var _edges: List[MCFEdge]

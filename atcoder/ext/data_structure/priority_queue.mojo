@@ -1,6 +1,7 @@
 from atcoder.py.operator import lt, gt
 
 
+@value
 struct PriorityQueue[S: Copyable & Movable]:
     var comp: fn (S, S) -> Bool
     var data: List[S]

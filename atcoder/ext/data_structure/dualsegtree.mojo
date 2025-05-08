@@ -5,6 +5,7 @@ from atcoder.method_traits import AddMonoid
 from atcoder.py.operator import add
 
 
+@value
 struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]:
     var n: Int
     var size: Int

@@ -5,6 +5,7 @@ from atcoder.method_traits import (
 from atcoder.py.operator import add, neg, mul, inv
 
 
+@value
 struct PotentializedUnionFind[S: Copyable & Movable]:
     var n: Int
     var parent_or_size: List[Int]

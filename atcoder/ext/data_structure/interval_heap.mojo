@@ -1,3 +1,4 @@
+@value
 struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
     var data: List[S]
 

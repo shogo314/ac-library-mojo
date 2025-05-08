@@ -7,6 +7,7 @@ from atcoder.method_traits import (
 from atcoder.py.operator import add, min_, max_
 
 
+@value
 struct LazySegTree[S: Copyable & Movable, F: Copyable & Movable]:
     var n: Int
     var size: Int

@@ -7,6 +7,7 @@ from atcoder.method_traits import (
 from atcoder.py.operator import add, mul
 
 
+@value
 struct SegTree[S: Copyable & Movable]:
     var n: Int
     var size: Int

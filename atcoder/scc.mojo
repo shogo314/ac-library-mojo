@@ -1,6 +1,7 @@
 from atcoder._scc import _SCCGraph
 
 
+@value
 struct SCCGraph:
     var internal: _SCCGraph
 

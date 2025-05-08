@@ -1,3 +1,4 @@
+@value
 struct DSU:
     var _n: Int
     var _parent_or_size: List[Int]

@@ -6,6 +6,7 @@ struct _SCCEdge:
     var dst: Int
 
 
+@value
 struct _SCCGraph:
     var _n: Int
     var _edges: List[(Int, _SCCEdge)]
