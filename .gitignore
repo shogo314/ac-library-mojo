@@ -4,6 +4,10 @@
 !./.verify-helper/list_dependencies.py
 site/
 
+# for make docs
+.mkdocs/tmp.json
+.mkdocs/benchmark.json
+
 # Mojo
 .magic/
 magic.lock
