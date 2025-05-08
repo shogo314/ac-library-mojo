@@ -9,8 +9,7 @@ struct TwoSat:
     fn __init__(out self, n: Int):
         self._n = n
         self._scc = _SCCGraph(2 * n)
-        self._answer = List[Bool]()
-        self._answer.resize(n, False)
+        self._answer = List(length=n, fill=False)
 
     fn add_clause(mut self, i: Int, f: Bool, j: Int, g: Bool):
         debug_assert(0 <= i < self._n)

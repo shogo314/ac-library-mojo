@@ -31,8 +31,7 @@ fn _primitive_root(m: Int) -> Int:
     if m == 998244353:
         return 3
 
-    var divs = List[Int]()
-    divs.resize(20, 0)
+    var divs = List[Int](length=20, fill=0)
     divs[0] = 2
     var cnt = 1
     var x = (m - 1) // 2

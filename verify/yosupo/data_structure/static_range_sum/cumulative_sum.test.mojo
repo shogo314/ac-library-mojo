@@ -8,8 +8,7 @@ fn main() raises:
     var N = io.nextInt()
     var Q = io.nextInt()
     var a = io.nextListInt(N)
-    var acc = List[Int]()
-    acc.resize(N + 1, 0)
+    var acc = List[Int](length=N + 1, fill=0)
     for i in range(N):
         acc[i + 1] = acc[i] + a[i]
     for _ in range(Q):

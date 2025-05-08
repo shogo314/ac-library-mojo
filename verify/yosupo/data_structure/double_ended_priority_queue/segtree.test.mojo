@@ -31,8 +31,7 @@ fn main() raises:
     for a in tmp:
         if len(v) == 0 or v[-1] < a[]:
             v.append(a[])
-    var init = List[Int]()
-    init.resize(len(v), 0)
+    var init = List[Int](length=len(v), fill=0)
     for s in S:
         init[bisect_left(v, s[])] += 1
     var seg = RSumQ(init)

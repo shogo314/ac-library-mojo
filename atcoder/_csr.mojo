@@ -5,8 +5,7 @@ struct CSR[E: Copyable & Movable]:
     fn __init__(out self, n: Int, edges: List[(Int, E)]):
         self.start = List[Int](capacity=n + 1)
         self.elist = List[E](capacity=len(edges))
-        var tmp = List[List[E]]()
-        tmp.resize(n, List[E]())
+        var tmp = List[List[E]](length=n, fill=List[E]())
         for e in edges:
             tmp[e[][0]].append(e[][1])
         self.start.append(0)

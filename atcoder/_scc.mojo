@@ -25,12 +25,9 @@ struct _SCCGraph:
         var now_ord = 0
         var group_num = 0
         var visited = List[Int](capacity=self._n)
-        var low = List[Int]()
-        low.resize(self._n, 0)
-        var order = List[Int]()
-        order.resize(self._n, -1)
-        var ids = List[Int]()
-        ids.resize(self._n, 0)
+        var low = List[Int](length=self._n, fill=0)
+        var order = List[Int](length=self._n, fill=-1)
+        var ids = List[Int](length=self._n, fill=0)
         var pre = -1
         for idx in range(self._n):
             if order[idx] != -1:
@@ -72,12 +69,10 @@ struct _SCCGraph:
     fn scc(self) -> List[List[Int]]:
         var ids = self.scc_ids()
         var group_num = ids[0]
-        var counts = List[Int]()
-        counts.resize(group_num, 0)
+        var counts = List[Int](length=group_num, fill=0)
         for i in range(self._n):
             counts[ids[1][i]] += 1
-        var groups = List[List[Int]]()
-        groups.resize(group_num, List[Int]())
+        var groups = List[List[Int]](length=group_num, fill=List[Int]())
         for i in range(self._n):
             groups[ids[1][i]].append(i)
         return groups

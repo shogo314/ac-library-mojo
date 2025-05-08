@@ -19,8 +19,7 @@ struct SegTree[S: Copyable & Movable]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S]()
-        self.d.resize(2 * self.size, e)
+        self.d = List(length=self.size << 1, fill=e)
         self.op = op
         self.e = e
 
@@ -30,8 +29,7 @@ struct SegTree[S: Copyable & Movable]:
         self.log = log2_floor(self.size)
         self.op = op
         self.e = e
-        self.d = List[S]()
-        self.d.resize(2 * self.size, e)
+        self.d = List(length=self.size << 1, fill=e)
         for i in range(self.n):
             self.d[self.size + i] = v[i]
         for i in reversed(range(1, self.size)):

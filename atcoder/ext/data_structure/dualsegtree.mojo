@@ -31,10 +31,8 @@ struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]:
         self.n = n
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
-        self.d = List[S]()
-        self.d.resize(n, e)
-        self.lz = List[F]()
-        self.lz.resize(self.size << 1, id)
+        self.d = List(length=n, fill=e)
+        self.lz = List(length=self.size << 1, fill=id)
 
     fn __init__(
         out self,
@@ -51,8 +49,7 @@ struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]:
         self.size = next_power_of_two(self.n)
         self.log = log2_floor(self.size)
         self.d = v
-        self.lz = List[F]()
-        self.lz.resize(self.size << 1, id)
+        self.lz = List(length=self.size << 1, fill=id)
 
     fn set(mut self, p: Int, x: S):
         debug_assert(0 <= p < self.n)

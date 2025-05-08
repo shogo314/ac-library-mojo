@@ -7,8 +7,7 @@ struct FenwickTree[T: AddGroup]:
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._data = List[T]()
-        self._data.resize(n, T())
+        self._data = List(length=n, fill=T())
 
     fn __init__(out self, v: List[T]):
         self._n = len(v)

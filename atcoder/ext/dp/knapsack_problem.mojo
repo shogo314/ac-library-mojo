@@ -1,6 +1,5 @@
 fn knapsack(vw: List[(Int, Int)], weight_limit: Int) -> Int:
-    var dp = List[Int]()
-    dp.resize(weight_limit + 1, 0)
+    var dp = List[Int](length=weight_limit + 1, fill=0)
     for i in range(len(vw)):
         var v = vw[i][0]
         var w = vw[i][1]
@@ -86,8 +85,7 @@ fn _knapsack_01_meet_in_the_middle(
 
 
 fn _knapsack_01_weight(vw: List[(Int, Int)], weight_limit: Int) -> Int:
-    var dp = List[Int]()
-    dp.resize(weight_limit + 1, 0)
+    var dp = List[Int](length=weight_limit + 1, fill=0)
     for i in range(len(vw)):
         var v = vw[i][0]
         var w = vw[i][1]
@@ -100,8 +98,7 @@ fn _knapsack_01_weight(vw: List[(Int, Int)], weight_limit: Int) -> Int:
 fn _knapsack_01_value(
     vw: List[(Int, Int)], weight_limit: Int, sum_value: Int
 ) -> Int:
-    var dp = List[Int]()
-    dp.resize(sum_value + 1, Int.MAX)
+    var dp = List(length=sum_value + 1, fill=Int.MAX)
     dp[0] = 0
     for i in range(len(vw)):
         var v = vw[i][0]

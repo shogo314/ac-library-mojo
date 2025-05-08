@@ -80,8 +80,7 @@ struct WordSizeTree[D: Int = 5]:
         @parameter
         for i in range(D):
             self._wpa.append(self._wp[i] + self._wpa[i])
-        self._data = List[UInt]()
-        self._data.resize(self._wpa[D], 0)
+        self._data = List(length=self._wpa[D], fill=UInt(0))
 
     fn __contains__(self, x: Int) -> Bool:
         debug_assert(0 <= x < self._wp[D])

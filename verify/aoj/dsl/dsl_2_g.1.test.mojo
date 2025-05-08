@@ -30,7 +30,7 @@ fn main() raises:
     var n = io.nextInt()
     var q = io.nextInt()
     var seg = LazySegTree[WithSize[Int], Int](
-        List[WithSize[Int]](WithSize(0)) * n,
+        List(length=n, fill=WithSize(0)),
         op,
         WithSize(0, 0),
         mapping,

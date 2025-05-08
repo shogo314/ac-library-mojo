@@ -15,10 +15,8 @@ struct PotentializedUnionFind[S: Copyable & Movable]:
 
     fn __init__(out self, n: Int, op: fn (S, S) -> S, e: S, inv: fn (S) -> S):
         self.n = n
-        self.parent_or_size = List[Int](capacity=n)
-        self.parent_or_size.resize(n, -1)
-        self.diff_weight = List[S](capacity=n)
-        self.diff_weight.resize(n, e)
+        self.parent_or_size = List(length=n, fill=-1)
+        self.diff_weight = List(length=n, fill=e)
         self.op = op
         self.e = e
         self.inv = inv

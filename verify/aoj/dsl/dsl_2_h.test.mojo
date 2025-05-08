@@ -10,7 +10,7 @@ fn main() raises:
     var io = IO()
     var n = io.nextInt()
     var q = io.nextInt()
-    var seg = RAddMinQ[Int](List[Int](0) * n, Int.MAX)
+    var seg = RAddMinQ[Int](List(length=n, fill=0), Int.MAX)
     for _ in range(q):
         var op = io.nextInt()
         if op == 0:

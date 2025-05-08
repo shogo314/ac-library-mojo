@@ -22,8 +22,7 @@ fn main() raises:
     for a in tmp:
         if len(s) == 0 or s[-1] < a[]:
             s.append(a[])
-    var dat = List[Int]()
-    dat.resize(len(s), 0)
+    var dat = List[Int](length=len(s), fill=0)
     for i in range(Q):
         var t = tk[i][0]
         var k = tk[i][1]

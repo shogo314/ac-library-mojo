@@ -4,8 +4,7 @@ struct DSU:
 
     fn __init__(out self, n: Int):
         self._n = n
-        self._parent_or_size = List[Int]()
-        self._parent_or_size.resize(n, -1)
+        self._parent_or_size = List(length=n, fill=-1)
 
     fn merge(mut self, a: Int, b: Int) -> Int:
         debug_assert(0 <= a < self._n)
@@ -40,15 +39,12 @@ struct DSU:
         return -self._parent_or_size[self.leader(a)]
 
     fn groups(mut self) -> List[List[Int]]:
-        var leader_buf = List[Int]()
-        leader_buf.resize(self._n, 0)
-        var group_size = List[Int]()
-        group_size.resize(self._n, 0)
+        var leader_buf = List[Int](length=self._n, fill=0)
+        var group_size = List[Int](length=self._n, fill=0)
         for i in range(self._n):
             leader_buf[i] = self.leader(i)
             group_size[leader_buf[i]] += 1
-        var result = List[List[Int]]()
-        result.resize(self._n, List[Int]())
+        var result = List[List[Int]](length=self._n, fill=List[Int]())
         for i in range(self._n):
             result[leader_buf[i]].append(i)
         var res = List[List[Int]]()

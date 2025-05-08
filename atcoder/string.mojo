@@ -12,8 +12,7 @@ fn z_algorithm[S: HasEq & Copyable & Movable](s: List[S]) -> List[Int]:
     var n = len(s)
     if n == 0:
         return List[Int]()
-    var z = List[Int]()
-    z.resize(n, 0)
+    var z = List[Int](length=n, fill=0)
     var j = 0
     for i in range(1, n):
         if j + z[j] <= i:
@@ -47,19 +46,15 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
             return List[Int](0, 1)
         else:
             return List[Int](1, 0)
-    var sa = List[Int]()
-    sa.resize(n, 0)
-    var ls = List[Bool]()
-    ls.resize(n, False)
+    var sa = List[Int](length=n, fill=0)
+    var ls = List[Bool](length=n, fill=False)
     for i in reversed(range(n - 1)):
         if s[i] == s[i + 1]:
             ls[i] = ls[i + 1]
         else:
             ls[i] = s[i] < s[i + 1]
-    var sum_l = List[Int]()
-    sum_l.resize(upper + 1, 0)
-    var sum_s = List[Int]()
-    sum_s.resize(upper + 1, 0)
+    var sum_l = List[Int](length=upper + 1, fill=0)
+    var sum_s = List[Int](length=upper + 1, fill=0)
     for i in range(n):
         if ls[i]:
             sum_l[s[i] + 1] += 1
@@ -70,8 +65,7 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
         if i < upper:
             sum_l[i + 1] += sum_s[i]
 
-    var lms_map = List[Int]()
-    lms_map.resize(n + 1, -1)
+    var lms_map = List[Int](length=n + 1, fill=-1)
     var m = 0
     for i in range(1, n):
         if ls[i] and not ls[i - 1]:
@@ -86,8 +80,7 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
     if True:
         sa.clear()
         sa.resize(n, -1)
-        var buf = List[Int]()
-        buf.resize(upper + 1, 0)
+        var buf = List[Int](length=upper + 1, fill=0)
         for i in range(upper + 1):
             buf[i] = sum_s[i]
         for d in lms:
@@ -118,8 +111,7 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
     for v in sa:
         if lms_map[v[]] != -1:
             sorted_lms.append(v[])
-    var rec_s = List[Int]()
-    rec_s.resize(m, 0)
+    var rec_s = List[Int](length=m, fill=0)
     var rec_upper = 0
     rec_s[lms_map[sorted_lms[0]]] = 0
     for i in range(1, m):
@@ -155,8 +147,7 @@ fn _sa_is(s: List[Int], upper: Int) -> List[Int]:
     if True:
         sa.clear()
         sa.resize(n, -1)
-        var buf = List[Int]()
-        buf.resize(upper + 1, 0)
+        var buf = List[Int](length=upper + 1, fill=0)
         for i in range(upper + 1):
             buf[i] = sum_s[i]
         for d in sorted_lms:
@@ -187,17 +178,17 @@ fn lcp_array(s: String, sa: List[Int]) -> List[Int]:
     return lcp_array(string_to_list(s), sa)
 
 
-fn lcp_array[C: HasEq & Copyable & Movable](s: List[C], sa: List[Int]) -> List[Int]:
+fn lcp_array[
+    C: HasEq & Copyable & Movable
+](s: List[C], sa: List[Int]) -> List[Int]:
     debug_assert(len(s) == len(sa))
     var n = len(s)
     debug_assert(n >= 1)
-    var rnk = List[Int]()
-    rnk.resize(n, 0)
+    var rnk = List[Int](length=n, fill=0)
     for i in range(n):
         debug_assert(0 <= sa[i] < n)
         rnk[sa[i]] = i
-    var lcp = List[Int]()
-    lcp.resize(n - 1, 0)
+    var lcp = List[Int](length=n - 1, fill=0)
     var h = 0
     for i in range(n):
         if h:
