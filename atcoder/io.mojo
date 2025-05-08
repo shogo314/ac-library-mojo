@@ -50,7 +50,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
     fn nextInt(mut self) raises -> Int:
         return Int(self.next())
 
-    fn next[T: HasInitStringRaising & CollectionElement](mut self) raises -> T:
+    fn next[T: HasInitStringRaising & Copyable & Movable](mut self) raises -> T:
         return T(self.next())
 
     fn nextListInt(mut self, n: Int) raises -> List[Int]:
@@ -66,7 +66,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
         return res
 
     fn nextList[
-        T: HasInitStringRaising & CollectionElement
+        T: HasInitStringRaising & Copyable & Movable
     ](mut self, n: Int) raises -> List[T]:
         var res = List[T](capacity=n)
         for _ in range(n):
@@ -74,7 +74,7 @@ struct IO[BUFF_SIZE: Int = 65536]:
         return res
 
     @staticmethod
-    fn print[S: Writable & CollectionElement](v: List[S]):
+    fn print[S: Writable & Copyable & Movable](v: List[S]):
         for i in range(len(v)):
             if i:
                 print(" ", end="")

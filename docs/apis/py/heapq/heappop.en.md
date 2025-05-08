@@ -3,5 +3,5 @@
 # heappop
 
 ```
-heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S
+heappop[S: LessThanComparable & Copyable & Movable](mut heap: List[S]) -> S
 ```

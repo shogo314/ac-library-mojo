@@ -1,4 +1,4 @@
-struct IntervalHeap[S: LessThanComparable & CollectionElement]:
+struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
     var data: List[S]
 
     fn __init__(out self):

@@ -3,7 +3,7 @@
 # PotentializedUnionFind
 
 ```
-struct PotentializedUnionFind[S: CollectionElement]
+struct PotentializedUnionFind[S: Copyable & Movable]
 ```
 
 ## Methods

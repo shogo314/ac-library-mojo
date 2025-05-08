@@ -3,7 +3,7 @@
 # PriorityQueue
 
 ```
-struct PriorityQueue[S: CollectionElement]
+struct PriorityQueue[S: Copyable & Movable]
 ```
 
 ## Methods

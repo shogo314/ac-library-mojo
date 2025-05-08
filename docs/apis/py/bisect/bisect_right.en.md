@@ -3,5 +3,5 @@
 # bisect_right
 
 ```
-bisect_right[T: LessThanComparable & CollectionElement](a: List[T], x: T) -> Int
+bisect_right[T: LessThanComparable & Copyable & Movable](a: List[T], x: T) -> Int
 ```

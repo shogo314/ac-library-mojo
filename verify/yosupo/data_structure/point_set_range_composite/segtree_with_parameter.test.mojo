@@ -4,7 +4,7 @@
 from bit import next_power_of_two, log2_floor
 
 
-struct StaticSegTree[S: CollectionElement, Op: fn (S, S) -> S, E: S]:
+struct StaticSegTree[S: Copyable & Movable, Op: fn (S, S) -> S, E: S]:
     var n: Int
     var size: Int
     var log: Int

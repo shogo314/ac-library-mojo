@@ -1,7 +1,7 @@
 from atcoder.py.operator import lt, gt
 
 
-struct PriorityQueue[S: CollectionElement]:
+struct PriorityQueue[S: Copyable & Movable]:
     var comp: fn (S, S) -> Bool
     var data: List[S]
 
@@ -63,21 +63,21 @@ struct PriorityQueue[S: CollectionElement]:
         return len(self.data)
 
 
-fn heap_min[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]:
+fn heap_min[S: LessThanComparable & Copyable & Movable]() -> PriorityQueue[S]:
     return PriorityQueue[S](lt[S])
 
 
 fn heap_min[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S]) -> PriorityQueue[S]:
     return PriorityQueue[S](v, lt[S])
 
 
-fn heap_max[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]:
+fn heap_max[S: LessThanComparable & Copyable & Movable]() -> PriorityQueue[S]:
     return PriorityQueue[S](gt[S])
 
 
 fn heap_max[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S]) -> PriorityQueue[S]:
     return PriorityQueue[S](v, gt[S])

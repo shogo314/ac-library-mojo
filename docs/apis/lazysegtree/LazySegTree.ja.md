@@ -3,7 +3,7 @@
 # LazySegTree
 
 ```
-struct LazySegTree[S: CollectionElement, F: CollectionElement]
+struct LazySegTree[S: Copyable & Movable, F: Copyable & Movable]
 ```
 
 ## Methods

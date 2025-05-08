@@ -3,5 +3,5 @@
 # AddMonoid
 
 ```
-trait AddMonoid(CollectionElement, Defaultable, HasAdd)
+trait AddMonoid(Copyable & Movable, Defaultable, HasAdd)
 ```

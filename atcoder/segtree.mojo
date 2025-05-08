@@ -7,7 +7,7 @@ from atcoder.method_traits import (
 from atcoder.py.operator import add, mul
 
 
-struct SegTree[S: CollectionElement]:
+struct SegTree[S: Copyable & Movable]:
     var n: Int
     var size: Int
     var log: Int
@@ -237,7 +237,7 @@ fn RMulQ[S: MulMonoid](v: List[S]) -> SegTree[S]:
 
 
 fn RMaxQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](n: Int, MIN: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if x < y:
@@ -249,7 +249,7 @@ fn RMaxQ[
 
 
 fn RMaxQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S], MIN: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if x < y:
@@ -261,7 +261,7 @@ fn RMaxQ[
 
 
 fn RMinQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](n: Int, MAX: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if y < x:
@@ -273,7 +273,7 @@ fn RMinQ[
 
 
 fn RMinQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S], MAX: S) -> SegTree[S]:
     fn op(x: S, y: S) -> S:
         if y < x:

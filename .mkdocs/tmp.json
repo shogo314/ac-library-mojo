@@ -14,7 +14,7 @@
               "structs": [
                 {
                   "name": "AVLTree",
-                  "data": "struct AVLTree[T: LessThanComparable & CollectionElement]",
+                  "data": "struct AVLTree[T: LessThanComparable & Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -86,7 +86,7 @@
                 },
                 {
                   "name": "AVLTreeNode",
-                  "data": "struct AVLTreeNode[T: LessThanComparable & CollectionElement]",
+                  "data": "struct AVLTreeNode[T: LessThanComparable & Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -261,7 +261,7 @@
               "structs": [
                 {
                   "name": "DualSegTree",
-                  "data": "struct DualSegTree[S: CollectionElement, F: CollectionElement]",
+                  "data": "struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -315,7 +315,7 @@
                 {
                   "name": "RUpdateQ",
                   "data": [
-                    "RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegTree[S, Optional[S]]"
+                    "RUpdateQ[S: Copyable & Movable](n: Int, e: S) -> DualSegTree[S, Optional[S]]"
                   ]
                 }
               ]
@@ -326,7 +326,7 @@
               "structs": [
                 {
                   "name": "IntervalHeap",
-                  "data": "struct IntervalHeap[S: LessThanComparable & CollectionElement]",
+                  "data": "struct IntervalHeap[S: LessThanComparable & Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -395,7 +395,7 @@
               "structs": [
                 {
                   "name": "PotentializedUnionFind",
-                  "data": "struct PotentializedUnionFind[S: CollectionElement]",
+                  "data": "struct PotentializedUnionFind[S: Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -464,7 +464,7 @@
               "structs": [
                 {
                   "name": "PriorityQueue",
-                  "data": "struct PriorityQueue[S: CollectionElement]",
+                  "data": "struct PriorityQueue[S: Copyable & Movable]",
                   "methods": [
                     {
                       "name": "__init__",
@@ -517,15 +517,15 @@
                 {
                   "name": "heap_max",
                   "data": [
-                    "heap_max[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]",
-                    "heap_max[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]"
+                    "heap_max[S: LessThanComparable & Copyable & Movable]() -> PriorityQueue[S]",
+                    "heap_max[S: LessThanComparable & Copyable & Movable](v: List[S]) -> PriorityQueue[S]"
                   ]
                 },
                 {
                   "name": "heap_min",
                   "data": [
-                    "heap_min[S: LessThanComparable & CollectionElement]() -> PriorityQueue[S]",
-                    "heap_min[S: LessThanComparable & CollectionElement](v: List[S]) -> PriorityQueue[S]"
+                    "heap_min[S: LessThanComparable & Copyable & Movable]() -> PriorityQueue[S]",
+                    "heap_min[S: LessThanComparable & Copyable & Movable](v: List[S]) -> PriorityQueue[S]"
                   ]
                 }
               ]
@@ -615,14 +615,14 @@
                 {
                   "name": "edit_distance",
                   "data": [
-                    "edit_distance[C: HasEq & CollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "edit_distance[C: HasEq & Copyable & Movable](s1: List[C], s2: List[C]) -> Int",
                     "edit_distance(s1: String, s2: String) -> Int"
                   ]
                 },
                 {
                   "name": "levenshtein_distance",
                   "data": [
-                    "levenshtein_distance[C: HasEq & CollectionElement](s1: List[C], s2: List[C]) -> Int",
+                    "levenshtein_distance[C: HasEq & Copyable & Movable](s1: List[C], s2: List[C]) -> Int",
                     "levenshtein_distance(s1: String, s2: String) -> Int"
                   ]
                 }
@@ -713,13 +713,13 @@
             {
               "name": "bisect_left",
               "data": [
-                "bisect_left[T: LessThanComparable & CollectionElement](a: List[T], x: T) -> Int"
+                "bisect_left[T: LessThanComparable & Copyable & Movable](a: List[T], x: T) -> Int"
               ]
             },
             {
               "name": "bisect_right",
               "data": [
-                "bisect_right[T: LessThanComparable & CollectionElement](a: List[T], x: T) -> Int"
+                "bisect_right[T: LessThanComparable & Copyable & Movable](a: List[T], x: T) -> Int"
               ]
             }
           ]
@@ -747,31 +747,31 @@
             {
               "name": "heapify",
               "data": [
-                "heapify[S: LessThanComparable & CollectionElement](mut heap: List[S])"
+                "heapify[S: LessThanComparable & Copyable & Movable](mut heap: List[S])"
               ]
             },
             {
               "name": "heappop",
               "data": [
-                "heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S"
+                "heappop[S: LessThanComparable & Copyable & Movable](mut heap: List[S]) -> S"
               ]
             },
             {
               "name": "heappush",
               "data": [
-                "heappush[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S)"
+                "heappush[S: LessThanComparable & Copyable & Movable](mut heap: List[S], item: S)"
               ]
             },
             {
               "name": "heappushpop",
               "data": [
-                "heappushpop[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S) -> S"
+                "heappushpop[S: LessThanComparable & Copyable & Movable](mut heap: List[S], item: S) -> S"
               ]
             },
             {
               "name": "heapreplace",
               "data": [
-                "heapreplace[S: LessThanComparable & CollectionElement](mut heap: List[S], item: S) -> S"
+                "heapreplace[S: LessThanComparable & Copyable & Movable](mut heap: List[S], item: S) -> S"
               ]
             }
           ]
@@ -830,13 +830,13 @@
             {
               "name": "max_",
               "data": [
-                "max_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T"
+                "max_[T: LessThanComparable & Copyable & Movable](x: T, y: T) -> T"
               ]
             },
             {
               "name": "min_",
               "data": [
-                "min_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T"
+                "min_[T: LessThanComparable & Copyable & Movable](x: T, y: T) -> T"
               ]
             },
             {
@@ -1003,7 +1003,7 @@
               "name": "next",
               "data": [
                 "next(mut self) raises -> String",
-                "next[T: HasInitStringRaising & CollectionElement](mut self) raises -> T"
+                "next[T: HasInitStringRaising & Copyable & Movable](mut self) raises -> T"
               ]
             },
             {
@@ -1028,13 +1028,13 @@
               "name": "nextList",
               "data": [
                 "nextList(mut self, n: Int) raises -> List[String]",
-                "nextList[T: HasInitStringRaising & CollectionElement](mut self, n: Int) raises -> List[T]"
+                "nextList[T: HasInitStringRaising & Copyable & Movable](mut self, n: Int) raises -> List[T]"
               ]
             },
             {
               "name": "print",
               "data": [
-                "print[S: Writable & CollectionElement](v: List[S])"
+                "print[S: Writable & Copyable & Movable](v: List[S])"
               ]
             }
           ]
@@ -1049,7 +1049,7 @@
       "structs": [
         {
           "name": "LazySegTree",
-          "data": "struct LazySegTree[S: CollectionElement, F: CollectionElement]",
+          "data": "struct LazySegTree[S: Copyable & Movable, F: Copyable & Movable]",
           "methods": [
             {
               "name": "__init__",
@@ -1127,15 +1127,15 @@
         {
           "name": "RAddMaxQ",
           "data": [
-            "RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, S]",
-            "RAddMaxQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, S]"
+            "RAddMaxQ[S: AddMonoid & LessThanComparable & Copyable & Movable](n: Int, MIN: S) -> LazySegTree[S, S]",
+            "RAddMaxQ[S: AddMonoid & LessThanComparable & Copyable & Movable](v: List[S], MIN: S) -> LazySegTree[S, S]"
           ]
         },
         {
           "name": "RAddMinQ",
           "data": [
-            "RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, S]",
-            "RAddMinQ[S: AddMonoid & LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, S]"
+            "RAddMinQ[S: AddMonoid & LessThanComparable & Copyable & Movable](n: Int, MAX: S) -> LazySegTree[S, S]",
+            "RAddMinQ[S: AddMonoid & LessThanComparable & Copyable & Movable](v: List[S], MAX: S) -> LazySegTree[S, S]"
           ]
         },
         {
@@ -1148,15 +1148,15 @@
         {
           "name": "RUpdateMaxQ",
           "data": [
-            "RUpdateMaxQ[S: LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]",
-            "RUpdateMaxQ[S: LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]"
+            "RUpdateMaxQ[S: LessThanComparable & Copyable & Movable](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]",
+            "RUpdateMaxQ[S: LessThanComparable & Copyable & Movable](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]"
           ]
         },
         {
           "name": "RUpdateMinQ",
           "data": [
-            "RUpdateMinQ[S: LessThanComparable & CollectionElement](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]",
-            "RUpdateMinQ[S: LessThanComparable & CollectionElement](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]"
+            "RUpdateMinQ[S: LessThanComparable & Copyable & Movable](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]",
+            "RUpdateMinQ[S: LessThanComparable & Copyable & Movable](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]"
           ]
         },
         {
@@ -1196,7 +1196,12 @@
     },
     {
       "name": "maxflow",
-      "aliases": [],
+      "aliases": [
+        {
+          "name": "Capable",
+          "data": "Capable = Copyable & Movable & Defaultable & HasAdd & HasSub & Comparable"
+        }
+      ],
       "structs": [
         {
           "name": "MFEdge",
@@ -1246,13 +1251,7 @@
           ]
         }
       ],
-      "traits": [
-        {
-          "name": "Capable",
-          "data": "trait Capable(CollectionElement, Defaultable, HasAdd, HasSub, Comparable)",
-          "methods": []
-        }
-      ],
+      "traits": [],
       "functions": []
     },
     {
@@ -1281,7 +1280,7 @@
         },
         {
           "name": "AddMonoid",
-          "data": "trait AddMonoid(CollectionElement, Defaultable, HasAdd)",
+          "data": "trait AddMonoid(Copyable & Movable, Defaultable, HasAdd)",
           "methods": []
         },
         {
@@ -1397,7 +1396,7 @@
         },
         {
           "name": "MulMonoid",
-          "data": "trait MulMonoid(CollectionElement, HasInitInt, HasMul)",
+          "data": "trait MulMonoid(Copyable & Movable, HasInitInt, HasMul)",
           "methods": []
         },
         {
@@ -1687,7 +1686,7 @@
       "structs": [
         {
           "name": "SegTree",
-          "data": "struct SegTree[S: CollectionElement]",
+          "data": "struct SegTree[S: Copyable & Movable]",
           "methods": [
             {
               "name": "__init__",
@@ -1752,15 +1751,15 @@
         {
           "name": "RMaxQ",
           "data": [
-            "RMaxQ[S: LessThanComparable & CollectionElement](n: Int, MIN: S) -> SegTree[S]",
-            "RMaxQ[S: LessThanComparable & CollectionElement](v: List[S], MIN: S) -> SegTree[S]"
+            "RMaxQ[S: LessThanComparable & Copyable & Movable](n: Int, MIN: S) -> SegTree[S]",
+            "RMaxQ[S: LessThanComparable & Copyable & Movable](v: List[S], MIN: S) -> SegTree[S]"
           ]
         },
         {
           "name": "RMinQ",
           "data": [
-            "RMinQ[S: LessThanComparable & CollectionElement](n: Int, MAX: S) -> SegTree[S]",
-            "RMinQ[S: LessThanComparable & CollectionElement](v: List[S], MAX: S) -> SegTree[S]"
+            "RMinQ[S: LessThanComparable & Copyable & Movable](n: Int, MAX: S) -> SegTree[S]",
+            "RMinQ[S: LessThanComparable & Copyable & Movable](v: List[S], MAX: S) -> SegTree[S]"
           ]
         },
         {
@@ -1803,7 +1802,7 @@
           "name": "lcp_array",
           "data": [
             "lcp_array(s: String, sa: List[Int]) -> List[Int]",
-            "lcp_array[C: HasEq & CollectionElement](s: List[C], sa: List[Int]) -> List[Int]"
+            "lcp_array[C: HasEq & Copyable & Movable](s: List[C], sa: List[Int]) -> List[Int]"
           ]
         },
         {
@@ -1821,7 +1820,7 @@
         {
           "name": "z_algorithm",
           "data": [
-            "z_algorithm[S: HasEq & CollectionElement](s: List[S]) -> List[Int]",
+            "z_algorithm[S: HasEq & Copyable & Movable](s: List[S]) -> List[Int]",
             "z_algorithm(s: String) -> List[Int]"
           ]
         }

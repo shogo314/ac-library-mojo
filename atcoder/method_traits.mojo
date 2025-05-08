@@ -42,11 +42,11 @@ trait HasInitStringRaising:
         pass
 
 
-trait AddMonoid(CollectionElement, Defaultable, HasAdd):
+trait AddMonoid(Copyable & Movable, Defaultable, HasAdd):
     pass
 
 
-trait MulMonoid(CollectionElement, HasInitInt, HasMul):
+trait MulMonoid(Copyable & Movable, HasInitInt, HasMul):
     pass
 
 

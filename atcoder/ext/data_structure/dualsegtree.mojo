@@ -5,7 +5,7 @@ from atcoder.method_traits import AddMonoid
 from atcoder.py.operator import add
 
 
-struct DualSegTree[S: CollectionElement, F: CollectionElement]:
+struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]:
     var n: Int
     var size: Int
     var log: Int
@@ -114,7 +114,7 @@ fn RAddQ[S: AddMonoid](n: Int) -> DualSegTree[S, S]:
     return DualSegTree[S](n, S(), add[S], add[S], S())
 
 
-fn RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegTree[S, Optional[S]]:
+fn RUpdateQ[S: Copyable & Movable](n: Int, e: S) -> DualSegTree[S, Optional[S]]:
     fn mapping(f: Optional[S], s: S) -> S:
         if f:
             return f.value()

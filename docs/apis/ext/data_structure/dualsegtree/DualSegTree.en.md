@@ -3,7 +3,7 @@
 # DualSegTree
 
 ```
-struct DualSegTree[S: CollectionElement, F: CollectionElement]
+struct DualSegTree[S: Copyable & Movable, F: Copyable & Movable]
 ```
 
 ## Methods

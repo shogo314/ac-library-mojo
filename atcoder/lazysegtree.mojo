@@ -7,7 +7,7 @@ from atcoder.method_traits import (
 from atcoder.py.operator import add, min_, max_
 
 
-struct LazySegTree[S: CollectionElement, F: CollectionElement]:
+struct LazySegTree[S: Copyable & Movable, F: Copyable & Movable]:
     var n: Int
     var size: Int
     var log: Int
@@ -404,7 +404,7 @@ struct LazySegTree[S: CollectionElement, F: CollectionElement]:
         return 0
 
 
-fn _update_mapping[S: CollectionElement](f: Optional[S], s: S) -> S:
+fn _update_mapping[S: Copyable & Movable](f: Optional[S], s: S) -> S:
     if f:
         return f.value()
     else:
@@ -412,7 +412,7 @@ fn _update_mapping[S: CollectionElement](f: Optional[S], s: S) -> S:
 
 
 fn _update_composition[
-    S: CollectionElement
+    S: Copyable & Movable
 ](f: Optional[S], g: Optional[S]) -> Optional[S]:
     if f:
         return f
@@ -421,7 +421,7 @@ fn _update_composition[
 
 
 fn RUpdateMinQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](n: Int, MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -434,7 +434,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMinQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S], MAX: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -447,7 +447,7 @@ fn RUpdateMinQ[
 
 
 fn RUpdateMaxQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         n,
@@ -460,7 +460,7 @@ fn RUpdateMaxQ[
 
 
 fn RUpdateMaxQ[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]:
     return LazySegTree[S, Optional[S]](
         v,
@@ -473,25 +473,25 @@ fn RUpdateMaxQ[
 
 
 fn RAddMinQ[
-    S: AddMonoid & LessThanComparable & CollectionElement
+    S: AddMonoid & LessThanComparable & Copyable & Movable
 ](n: Int, MAX: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](n, min_[S], MAX, add[S], add[S], S())
 
 
 fn RAddMinQ[
-    S: AddMonoid & LessThanComparable & CollectionElement
+    S: AddMonoid & LessThanComparable & Copyable & Movable
 ](v: List[S], MAX: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](v, min_[S], MAX, add[S], add[S], S())
 
 
 fn RAddMaxQ[
-    S: AddMonoid & LessThanComparable & CollectionElement
+    S: AddMonoid & LessThanComparable & Copyable & Movable
 ](n: Int, MIN: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](n, max_[S], MIN, add[S], add[S], S())
 
 
 fn RAddMaxQ[
-    S: AddMonoid & LessThanComparable & CollectionElement
+    S: AddMonoid & LessThanComparable & Copyable & Movable
 ](v: List[S], MIN: S) -> LazySegTree[S, S]:
     return LazySegTree[S, S](v, max_[S], MIN, add[S], add[S], S())
 

@@ -3,6 +3,6 @@
 # z_algorithm
 
 ```
-z_algorithm[S: HasEq & CollectionElement](s: List[S]) -> List[Int]
+z_algorithm[S: HasEq & Copyable & Movable](s: List[S]) -> List[Int]
 z_algorithm(s: String) -> List[Int]
 ```

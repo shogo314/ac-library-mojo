@@ -1,5 +1,5 @@
 fn heappush[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](mut heap: List[S], item: S):
     var k = len(heap)
     heap.append(item)
@@ -12,7 +12,7 @@ fn heappush[
             break
 
 
-fn heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S:
+fn heappop[S: LessThanComparable & Copyable & Movable](mut heap: List[S]) -> S:
     debug_assert(len(heap))
     if len(heap) == 1:
         return heap.pop()
@@ -24,7 +24,7 @@ fn heappop[S: LessThanComparable & CollectionElement](mut heap: List[S]) -> S:
 
 
 fn heappushpop[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](mut heap: List[S], item: S) -> S:
     if len(heap):
         if not heap[0] < item:
@@ -38,13 +38,13 @@ fn heappushpop[
         return item
 
 
-fn heapify[S: LessThanComparable & CollectionElement](mut heap: List[S]):
+fn heapify[S: LessThanComparable & Copyable & Movable](mut heap: List[S]):
     for i in reversed(range(len(heap))):
         _heapify(heap, i)
 
 
 fn heapreplace[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](mut heap: List[S], item: S) -> S:
     debug_assert(len(heap))
     var res = heap[0]
@@ -54,7 +54,7 @@ fn heapreplace[
 
 
 fn _heapify[
-    S: LessThanComparable & CollectionElement
+    S: LessThanComparable & Copyable & Movable
 ](mut heap: List[S], k: Int):
     if len(heap) <= 2 * k + 1:
         pass

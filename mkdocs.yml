@@ -139,7 +139,6 @@ nav:
       - apis/maxflow/index.md
       - MFEdge: apis/maxflow/MFEdge.md
       - MFGraph: apis/maxflow/MFGraph.md
-      - Capable: apis/maxflow/Capable.md
     - metadata:
       - apis/metadata/index.md
       - get_version: apis/metadata/get_version.md

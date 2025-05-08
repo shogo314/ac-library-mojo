@@ -3,5 +3,5 @@
 # min_
 
 ```
-min_[T: LessThanComparable & CollectionElement](x: T, y: T) -> T
+min_[T: LessThanComparable & Copyable & Movable](x: T, y: T) -> T
 ```

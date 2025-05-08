@@ -8,7 +8,7 @@ from atcoder.py.operator import add
 
 
 @value
-struct WithSize[T: CollectionElement]:
+struct WithSize[T: Copyable & Movable]:
     var value: T
     var size: Int
 

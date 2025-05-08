@@ -3,5 +3,5 @@
 # RUpdateQ
 
 ```
-RUpdateQ[S: CollectionElement](n: Int, e: S) -> DualSegTree[S, Optional[S]]
+RUpdateQ[S: Copyable & Movable](n: Int, e: S) -> DualSegTree[S, Optional[S]]
 ```

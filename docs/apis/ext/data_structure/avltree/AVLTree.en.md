@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[T: LessThanComparable & CollectionElement]
+struct AVLTree[T: LessThanComparable & Copyable & Movable]
 ```
 
 ## Methods

@@ -19,7 +19,7 @@ struct AVLTreeNodePointer:
 
 
 @value
-struct AVLTreeNode[T: LessThanComparable & CollectionElement]:
+struct AVLTreeNode[T: LessThanComparable & Copyable & Movable]:
     var key: T
     var idx: AVLTreeNodePointer
     var par: AVLTreeNodePointer
@@ -49,7 +49,7 @@ struct AVLTreeNode[T: LessThanComparable & CollectionElement]:
         self.size = 1
 
 
-struct AVLTree[T: LessThanComparable & CollectionElement]:
+struct AVLTree[T: LessThanComparable & Copyable & Movable]:
     var _data: List[AVLTreeNode[T]]
     var _root: AVLTreeNodePointer
 

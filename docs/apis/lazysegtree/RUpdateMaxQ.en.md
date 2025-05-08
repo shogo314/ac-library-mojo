@@ -3,6 +3,6 @@
 # RUpdateMaxQ
 
 ```
-RUpdateMaxQ[S: LessThanComparable & CollectionElement](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]
-RUpdateMaxQ[S: LessThanComparable & CollectionElement](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]
+RUpdateMaxQ[S: LessThanComparable & Copyable & Movable](n: Int, MIN: S) -> LazySegTree[S, Optional[S]]
+RUpdateMaxQ[S: LessThanComparable & Copyable & Movable](v: List[S], MIN: S) -> LazySegTree[S, Optional[S]]
 ```

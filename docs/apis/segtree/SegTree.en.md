@@ -3,7 +3,7 @@
 # SegTree
 
 ```
-struct SegTree[S: CollectionElement]
+struct SegTree[S: Copyable & Movable]
 ```
 
 ## Methods

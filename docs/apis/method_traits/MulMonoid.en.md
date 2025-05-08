@@ -3,5 +3,5 @@
 # MulMonoid
 
 ```
-trait MulMonoid(CollectionElement, HasInitInt, HasMul)
+trait MulMonoid(Copyable & Movable, HasInitInt, HasMul)
 ```

@@ -10,7 +10,7 @@ alias mint = modint998244353
 
 
 @value
-struct Matrix_2x2(CollectionElement):
+struct Matrix_2x2:
     var a: mint
     var b: mint
     var c: mint
