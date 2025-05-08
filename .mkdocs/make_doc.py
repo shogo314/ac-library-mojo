@@ -22,6 +22,8 @@ def load(t: type, x: dict, dc: dict | None = None):
     assert dc is None or x["name"] == dc["name"]
     if t is Package:
         res = Package(x["name"])
+        if type(dc) is dict:
+            res.description = dc.get("description", {})
         for a in x["packages"]:
             if type(dc) is dict:
                 d = get_same_name(dc.get("packages"), a["name"])
@@ -238,24 +240,29 @@ def module(path: Path, md: Module, indent):
         a.close()
 
 
-def package(path: Path, pk: Package, indent=0):
+def package(path: Path, pk: Package, indent: int = 0):
     path.mkdir()
     print(" " * indent + "- " + path.name + ":")
     print(" " * (indent + 2) + "- " + str(path.joinpath("index.md")))
-    s = "# " + pk.name + "\n"
     if pk.packages:
-        s += "\n## Packages\n\n"
         for p in pk.packages:
-            name = p.name
-            package(path.joinpath(name), p, indent + 2)
-            s += f"- [{name}](./{name}/index.md)\n"
+            package(path.joinpath(p.name), p, indent + 2)
     if pk.modules:
-        s += "\n## Modules\n\n"
         for m in pk.modules:
-            name = m.name
-            module(path.joinpath(name), m, indent + 2)
-            s += f"- [{name}](./{name}/index.md)\n"
-    output(path.joinpath("index.md"), s)
+            module(path.joinpath(m.name), m, indent + 2)
+    f = open_files(path.joinpath("index.md"))
+    for a, lg in zip(f, LANGUAGE_LIST):
+        a.write("# " + pk.name + "\n")
+        if lg in pk.description:
+            a.write("\n" + pk.description[lg].strip() + "\n")
+        if pk.packages:
+            a.write("\n## Packages\n\n")
+            for p in pk.packages:
+                a.write(f"- [{p.name}](./{p.name}/index.md)\n")
+        if pk.modules:
+            a.write("\n## Modules\n\n")
+            for m in pk.modules:
+                a.write(f"- [{m.name}](./{m.name}/index.md)\n")
 
 
 def main():

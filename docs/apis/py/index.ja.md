@@ -2,6 +2,8 @@
 
 # py
 
+Python 3の標準ライブラリにある便利な機能を実装する。
+
 ## Modules
 
 - [bisect](./bisect/index.md)
