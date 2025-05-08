@@ -103,7 +103,7 @@ struct BinaryTrie[D: Int = 64]:
     fn add(mut self, x: UInt, cnt: Int = 1):
         debug_assert(D == 64 or x < (UInt(1) << D))
         var p = self._root
-        var l = List[Self.P]()
+        var l = List[Self.P](capacity=D + 1)
         l.append(p)
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
@@ -126,7 +126,7 @@ struct BinaryTrie[D: Int = 64]:
     fn remove(mut self, x: UInt, cnt: Int = 1):
         debug_assert(cnt <= self.count(x))
         var p = self._root
-        var l = List[Self.P]()
+        var l = List[Self.P](capacity=D + 1)
         l.append(p)
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
@@ -147,8 +147,6 @@ struct BinaryTrie[D: Int = 64]:
     fn bisect_left(self, x: UInt) -> Int:
         var k = 0
         var p = self._root
-        var l = List[Self.P]()
-        l.append(p)
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
                 k += self._size(self._data[p.p].left)
@@ -159,14 +157,11 @@ struct BinaryTrie[D: Int = 64]:
                 if not self._data[p.p].left:
                     break
                 p = self._data[p.p].left
-            l.append(p)
         return k
 
     fn bisect_right(self, x: UInt) -> Int:
         var k = 0
         var p = self._root
-        var l = List[Self.P]()
-        l.append(p)
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
                 k += self._size(self._data[p.p].left)
@@ -177,7 +172,6 @@ struct BinaryTrie[D: Int = 64]:
                 if not self._data[p.p].left:
                     break
                 p = self._data[p.p].left
-            l.append(p)
         else:
             k += self._size(p)
         return k
