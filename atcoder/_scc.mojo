@@ -73,6 +73,8 @@ struct _SCCGraph:
         for i in range(self._n):
             counts[ids[1][i]] += 1
         var groups = List[List[Int]](length=group_num, fill=List[Int]())
+        for i in range(group_num):
+            groups[i].reserve(counts[i])
         for i in range(self._n):
             groups[ids[1][i]].append(i)
         return groups
