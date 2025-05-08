@@ -91,6 +91,7 @@ nav:
         - heapreplace: apis/py/heapq/heapreplace.md
       - itertools:
         - apis/py/itertools/index.md
+        - permutations: apis/py/itertools/permutations.md
       - math:
         - apis/py/math/index.md
         - isqrt: apis/py/math/isqrt.md
