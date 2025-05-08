@@ -9,7 +9,7 @@ struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
         for i in reversed(range(len(self.data))):
             if i & 1 and self.data[i - 1] < self.data[i]:
                 self.data.swap_elements(i - 1, i)
-            _ = self._up(self._down(i), i)
+            self._up(self._down(i), i)
 
     fn min(self) -> S:
         debug_assert(len(self.data))
@@ -29,7 +29,7 @@ struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
         else:
             self.data.swap_elements(1, len(self.data) - 1)
             var res = self.data.pop()
-            _ = self._up(self._down(1))
+            self._up(self._down(1))
             return res
 
     fn pop_max(mut self) -> S:
@@ -39,13 +39,13 @@ struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
         else:
             self.data.swap_elements(0, len(self.data) - 1)
             var res = self.data.pop()
-            _ = self._up(self._down(0))
+            self._up(self._down(0))
             return res
 
     fn push(mut self, item: S):
         var k = len(self.data)
         self.data.append(item)
-        _ = self._up(k)
+        self._up(k)
 
     fn __bool__(self) -> Bool:
         return len(self.data)
@@ -82,18 +82,16 @@ struct IntervalHeap[S: LessThanComparable & Copyable & Movable]:
                     break
         return k
 
-    fn _up(mut self, k_: Int, root: Int = 1) -> Int:
+    fn _up(mut self, k_: Int, root: Int = 1):
         var k = k_
         if (k | 1) < len(self.data) and self.data[k & ~1] < self.data[k | 1]:
             self.data.swap_elements(k & ~1, k | 1)
             k ^= 1
-        var p = 0
         while root < k and self.data[Self.parent(k)] < self.data[k]:
-            p = Self.parent(k)
+            var p = Self.parent(k)
             self.data.swap_elements(p, k)
             k = p
         while root < k and self.data[k] < self.data[Self.parent(k) | 1]:
-            p = Self.parent(k) | 1
+            var p = Self.parent(k) | 1
             self.data.swap_elements(p, k)
             k = p
-        return k
