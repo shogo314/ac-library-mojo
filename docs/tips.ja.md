@@ -46,22 +46,28 @@ magic run mojo build Main.mojo -o a.out -I $HOME/.local/lib/mojo -D ATCODER -D O
 
 ## コンパイル時定義の利用
 
+### `ATCODER`
+
 AtCoder上のコンパイルコマンドでは `-D ATCODER` が付いており、これは以下のコードで確認できます。
 
 ```
 import sys
-
-
 fn main():
     print(sys.is_defined["ATCODER"]()) # True
 ```
 
-AtCoderのサーバーでは環境変数が設定されており
+AtCoderのサーバーでは環境変数が設定されており、下のコードでもAtCoderのサーバーかどうか確認ができます。しかし、上のコードだとコンパイル時に判定が出来るため、上の方がより高速な動作が期待できます。
 
 ```
 import os
-
-
 fn main():
     print(os.getenv("ATCODER")) # 1
 ```
+
+### `ASSERT`
+
+ライブラリでは `debug_assert` を利用しています。しかしこれは通常のコンパイルでは判定は行われません。判定を行いたい場合は、コンパイルコマンドに `-D ASSERT=warn` を付けるとよいです。
+
+## ライブラリのバージョン
+
+`0.4.0` 以降では `metadata.get_version()` でこのライブラリのバージョンを取得出来ます。
