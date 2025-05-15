@@ -1,3 +1,4 @@
+VERSION = "0.4.0"
 BENCHMARK_JSON = ".mkdocs/benchmark.json"
 TIMESTAMPS = ".verify-helper/timestamps.local.json"
 TEST_COUNT = 10
@@ -115,7 +116,7 @@ def problem(pr: Problem):
         BENCHMARK.output()
         print(
             "|",
-            "[" + fn.name + "](https://github.com/shogo314/ac-library-mojo/tree/main/" + str(fn.path) + ")",
+            "[" + fn.name + "](https://github.com/shogo314/ac-library-mojo/tree/" + VERSION + "/" + str(fn.path) + ")",
             "|",
             f"{(sum(fn.time) / TEST_COUNT):.3f}/{min(fn.time):.3f}/{max(fn.time):.3f}",
             "|",
