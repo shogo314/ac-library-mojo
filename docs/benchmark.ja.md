@@ -74,8 +74,8 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 17.808/15.852/21.723 | 593.73/592.50/594.55 |
-| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/binarytrie.test.mojo) | 11.144/9.923/17.131 | 629.93/629.02/630.64 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 10.092/8.635/12.437 | 662.42/661.54/663.24 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/binarytrie.test.mojo) | 7.240/6.664/9.171 | 631.08/629.82/632.76 |
 | [WordSizeTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/wordsizetree.test.mojo) | 1.663/1.466/2.349 | 50.02/49.86/50.35 |
 | [SegTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/predecessor_problem/segtree.test.mojo) | 3.068/2.356/3.944 | 379.71/379.44/380.88 |
 
@@ -83,6 +83,6 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 3.669/2.478/7.360 | 76.53/76.02/76.82 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 1.973/1.831/2.230 | 63.76/62.78/64.43 |
 | [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 2.604/2.186/3.293 | 182.31/181.30/183.14 |
 | [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/main/verify/yosupo/data_structure/ordered_set/segtree.test.mojo) | 1.409/1.258/1.685 | 72.02/71.43/72.92 |
