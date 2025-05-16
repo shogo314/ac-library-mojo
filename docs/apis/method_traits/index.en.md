@@ -8,7 +8,6 @@
 - [`AddMonoid`](./AddMonoid.md)
 - [`Field`](./Field.md)
 - [`HasAdd`](./HasAdd.md)
-- [`HasEq`](./HasEq.md)
 - [`HasInitInt`](./HasInitInt.md)
 - [`HasInitStringRaising`](./HasInitStringRaising.md)
 - [`HasMul`](./HasMul.md)

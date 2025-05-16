@@ -153,7 +153,6 @@ nav:
       - AddMonoid: apis/method_traits/AddMonoid.md
       - Field: apis/method_traits/Field.md
       - HasAdd: apis/method_traits/HasAdd.md
-      - HasEq: apis/method_traits/HasEq.md
       - HasInitInt: apis/method_traits/HasInitInt.md
       - HasInitStringRaising: apis/method_traits/HasInitStringRaising.md
       - HasMul: apis/method_traits/HasMul.md

@@ -3,6 +3,6 @@
 # edit_distance
 
 ```
-edit_distance[C: HasEq & Copyable & Movable](s1: List[C], s2: List[C]) -> Int
+edit_distance[C: EqualityComparable & Copyable & Movable](s1: List[C], s2: List[C]) -> Int
 edit_distance(s1: String, s2: String) -> Int
 ```

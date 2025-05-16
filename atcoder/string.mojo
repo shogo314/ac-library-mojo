@@ -1,6 +1,3 @@
-from atcoder.method_traits import HasEq
-
-
 fn string_to_list(s: String) -> List[Int]:
     var res = List[Int](capacity=len(s))
     for i in range(len(s)):
@@ -8,7 +5,9 @@ fn string_to_list(s: String) -> List[Int]:
     return res
 
 
-fn z_algorithm[S: HasEq & Copyable & Movable](s: List[S]) -> List[Int]:
+fn z_algorithm[
+    S: EqualityComparable & Copyable & Movable
+](s: List[S]) -> List[Int]:
     var n = len(s)
     if n == 0:
         return List[Int]()
@@ -179,7 +178,7 @@ fn lcp_array(s: String, sa: List[Int]) -> List[Int]:
 
 
 fn lcp_array[
-    C: HasEq & Copyable & Movable
+    C: EqualityComparable & Copyable & Movable
 ](s: List[C], sa: List[Int]) -> List[Int]:
     debug_assert(len(s) == len(sa))
     var n = len(s)

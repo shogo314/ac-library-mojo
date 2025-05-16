@@ -27,11 +27,6 @@ trait Invable(HasInitInt, HasTruediv):
     pass
 
 
-trait HasEq:
-    fn __eq__(self, x: Self) -> Bool:
-        pass
-
-
 trait HasInitInt:
     fn __init__[T: Intable](out self, x: T):
         pass
