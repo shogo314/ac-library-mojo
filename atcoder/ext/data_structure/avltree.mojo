@@ -30,9 +30,11 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
     fn __init__(out self):
         self._root = Self._NodePointer()
 
+    @always_inline
     fn __bool__(self) -> Bool:
         return Bool(self._root)
 
+    @always_inline
     fn __len__(self) -> Int:
         return Int(self._size(self._root))
 
@@ -90,6 +92,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
             else:
                 return p[].key
 
+    @always_inline
     fn __contains__(self, key: ElementType) -> Bool:
         return Bool(self._find(key))
 
@@ -268,18 +271,21 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                 p.free()
                 self._root = Self._NodePointer()
 
+    @always_inline
     fn _level(self, p: Self._NodePointer) -> Int32:
         if p:
             return p[].level
         else:
             return -1
 
+    @always_inline
     fn _size(self, p: Self._NodePointer) -> Int32:
         if p:
             return p[].size
         else:
             return 0
 
+    @always_inline
     fn _update(mut self, p: Self._NodePointer):
         debug_assert(Bool(p))
         var left = p[].left

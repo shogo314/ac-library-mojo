@@ -84,5 +84,6 @@ oj-verify run {path}
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
 | [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 1.973/1.831/2.230 | 63.76/62.78/64.43 |
-| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 2.604/2.186/3.293 | 182.31/181.30/183.14 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 2.455/2.037/3.155 | 273.11/272.25/274.93 |
+| [BinaryTrie with List](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie_list.test.mojo) | 1.968/1.812/2.437 | 183.82/182.98/185.07 |
 | [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/segtree.test.mojo) | 1.409/1.258/1.685 | 72.02/71.43/72.92 |
