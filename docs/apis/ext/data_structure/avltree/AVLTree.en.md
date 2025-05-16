@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[T: LessThanComparable & Copyable & Movable]
+struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]
 ```
 
 ## Methods
@@ -35,41 +35,35 @@ clear(mut self)
 ### `bisect_left`
 
 ```
-bisect_left(self, v: T) -> Int
+bisect_left(self, key: ElementType) -> Int
 ```
 
 ### `bisect_right`
 
 ```
-bisect_right(self, v: T) -> Int
+bisect_right(self, key: ElementType) -> Int
 ```
 
 ### `__getitem__`
 
 ```
-__getitem__(self, i: Int) -> T
+__getitem__(self, idx: Int) -> ElementType
 ```
 
 ### `__contains__`
 
 ```
-__contains__(self, v: T) -> Bool
+__contains__(self, key: ElementType) -> Bool
 ```
 
 ### `add`
 
 ```
-add(mut self, v: T)
-```
-
-### `remove`
-
-```
-remove(mut self, v: T)
+add(mut self, owned key: ElementType)
 ```
 
 ### `discard`
 
 ```
-discard(mut self, v: T)
+discard(mut self, key: ElementType)
 ```

@@ -17,10 +17,11 @@ struct BinaryTrieNode:
 
 
 @value
-struct BinaryTrie[D: Int = 64]:
+struct BinaryTrie[D: Int = 64, PreAllocate: Bool = False]:
     alias _Node = BinaryTrieNode
     alias _NodePointer = UnsafePointer[Self._Node]
     var _root: Self._NodePointer
+    var _last_pointer: Self._NodePointer
 
     @always_inline
     fn _size(self, p: Self._NodePointer) -> Int:
@@ -34,15 +35,20 @@ struct BinaryTrie[D: Int = 64]:
         debug_assert(Bool(p))
         p[].size = self._size(p[].left) + self._size(p[].right)
 
-    @staticmethod
     @always_inline
-    fn _make_node() -> Self._NodePointer:
-        var node = Self._Node()
-        var addr = Self._NodePointer.alloc(1)
-        if not addr:
-            abort("Out of memory")
-        addr.init_pointee_move(node)
-        return addr
+    fn _make_node(mut self) -> Self._NodePointer:
+        if PreAllocate:
+            var node = Self._Node()
+            self._last_pointer += 1
+            self._last_pointer.init_pointee_move(node)
+            return self._last_pointer
+        else:
+            var node = Self._Node()
+            var addr = Self._NodePointer.alloc(1)
+            if not addr:
+                abort("Out of memory")
+            addr.init_pointee_move(node)
+            return addr
 
     @staticmethod
     fn _destruct(p: Self._NodePointer):
@@ -57,7 +63,22 @@ struct BinaryTrie[D: Int = 64]:
     fn __init__(out self):
         constrained[1 <= D <= 64]()
         constrained[bitwidthof[UInt]() == 64]()
-        self._root = Self._make_node()
+        constrained[not PreAllocate]()
+        var node = Self._Node()
+        self._root = Self._NodePointer.alloc(1)
+        if not self._root:
+            abort("Out of memory")
+        self._root.init_pointee_move(node)
+        self._last_pointer = Self._NodePointer()
+
+    fn __init__(out self, allocate_size: Int):
+        constrained[1 <= D <= 64]()
+        constrained[bitwidthof[UInt]() == 64]()
+        constrained[PreAllocate]()
+        self._last_pointer = Self._NodePointer.alloc(allocate_size)
+        if not self._last_pointer:
+            abort("Out of memory")
+        self._root = self._last_pointer
 
     @always_inline
     fn __len__(self) -> Int:
@@ -115,11 +136,11 @@ struct BinaryTrie[D: Int = 64]:
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
                 if not p[].right:
-                    p[].right = Self._make_node()
+                    p[].right = self._make_node()
                 p = p[].right
             else:
                 if not p[].left:
-                    p[].left = Self._make_node()
+                    p[].left = self._make_node()
                 p = p[].left
             l.append(p)
         p = l.pop()

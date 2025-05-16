@@ -6,4 +6,3 @@
 
 - [`AVLTree`](./AVLTree.md)
 - [`AVLTreeNode`](./AVLTreeNode.md)
-- [`AVLTreeNodePointer`](./AVLTreeNodePointer.md)

@@ -3,7 +3,7 @@
 # AVLTreeNode
 
 ```
-struct AVLTreeNode[T: LessThanComparable & Copyable & Movable]
+struct AVLTreeNode[ElementType: LessThanComparable & Copyable & Movable]
 ```
 
 ## Methods
@@ -11,6 +11,5 @@ struct AVLTreeNode[T: LessThanComparable & Copyable & Movable]
 ### `__init__`
 
 ```
-__init__(out self, key: T)
-__init__(out self, key: T, idx: AVLTreeNodePointer, par: AVLTreeNodePointer)
+__init__(out self, owned key: ElementType)
 ```

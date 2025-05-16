@@ -3,7 +3,7 @@
 # BinaryTrie
 
 ```
-struct BinaryTrie[D: Int = 64]
+struct BinaryTrie[D: Int = 64, PreAllocate: Bool = False]
 ```
 
 ## Methods
@@ -12,6 +12,7 @@ struct BinaryTrie[D: Int = 64]
 
 ```
 __init__(out self)
+__init__(out self, allocate_size: Int)
 ```
 
 ### `__len__`

@@ -6,4 +6,3 @@
 
 - [`BinaryTrie`](./BinaryTrie.md)
 - [`BinaryTrieNode`](./BinaryTrieNode.md)
-- [`BinaryTrieNodePointer`](./BinaryTrieNodePointer.md)
