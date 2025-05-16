@@ -4389,8 +4389,6 @@
       
         
       
-        
-      
     
     
     
@@ -4516,29 +4514,6 @@
   
   <span class="md-ellipsis">
     HasAdd
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../method_traits/HasEq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HasEq
     
   </span>
   
@@ -5819,11 +5794,12 @@
 
 <p><a href="../../../../">APIs</a> &gt; <a href="../../../">ext</a> &gt; <a href="../../">data_structure</a> &gt; <a href="../">avltree</a> &gt; <a href="">AVLTree</a></p>
 <h1 id="avltree">AVLTree</h1>
-<div class="highlight"><pre><span></span><code>struct AVLTree[ElementType: LessThanComparable &amp; Copyable &amp; Movable]
+<div class="highlight"><pre><span></span><code>struct AVLTree[ElementType: LessThanComparable &amp; Copyable &amp; Movable, PreAllocate: Bool = False]
 </code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self)
+__init__(out self, allocate_size: Int)
 </code></pre></div>
 <h3 id="__bool__"><code>__bool__</code></h3>
 <div class="highlight"><pre><span></span><code>__bool__(self) -&gt; Bool

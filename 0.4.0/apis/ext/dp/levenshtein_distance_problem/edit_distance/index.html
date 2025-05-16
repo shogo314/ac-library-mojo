@@ -4252,8 +4252,6 @@
       
         
       
-        
-      
     
     
     
@@ -4379,29 +4377,6 @@
   
   <span class="md-ellipsis">
     HasAdd
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../../method_traits/HasEq/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    HasEq
     
   </span>
   
@@ -5569,7 +5544,7 @@
 
 <p><a href="../../../../">APIs</a> &gt; <a href="../../../">ext</a> &gt; <a href="../../">dp</a> &gt; <a href="../">levenshtein_distance_problem</a> &gt; <a href="">edit_distance</a></p>
 <h1 id="edit_distance">edit_distance</h1>
-<div class="highlight"><pre><span></span><code>edit_distance[C: HasEq &amp; Copyable &amp; Movable](s1: List[C], s2: List[C]) -&gt; Int
+<div class="highlight"><pre><span></span><code>edit_distance[C: EqualityComparable &amp; Copyable &amp; Movable](s1: List[C], s2: List[C]) -&gt; Int
 edit_distance(s1: String, s2: String) -&gt; Int
 </code></pre></div>
 
