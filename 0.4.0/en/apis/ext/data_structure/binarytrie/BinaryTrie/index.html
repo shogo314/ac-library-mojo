@@ -845,8 +845,6 @@
       
         
       
-        
-      
     
     
     
@@ -936,29 +934,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../avltree/AVLTreeNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AVLTreeNodePointer
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -980,8 +955,6 @@
       
         
           
-        
-      
         
       
         
@@ -1223,29 +1196,6 @@
   
   <span class="md-ellipsis">
     BinaryTrieNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../BinaryTrieNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    BinaryTrieNodePointer
     
   </span>
   
@@ -5887,11 +5837,12 @@
 
 <p><a href="../../../../">APIs</a> &gt; <a href="../../../">ext</a> &gt; <a href="../../">data_structure</a> &gt; <a href="../">binarytrie</a> &gt; <a href="">BinaryTrie</a></p>
 <h1 id="binarytrie">BinaryTrie</h1>
-<div class="highlight"><pre><span></span><code>struct BinaryTrie[D: Int = 64]
+<div class="highlight"><pre><span></span><code>struct BinaryTrie[D: Int = 64, PreAllocate: Bool = False]
 </code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
 <div class="highlight"><pre><span></span><code>__init__(out self)
+__init__(out self, allocate_size: Int)
 </code></pre></div>
 <h3 id="__len__"><code>__len__</code></h3>
 <div class="highlight"><pre><span></span><code>__len__(self) -&gt; Int

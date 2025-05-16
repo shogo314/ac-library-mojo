@@ -847,8 +847,6 @@
       
         
       
-        
-      
     
     
     
@@ -1040,15 +1038,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove" class="md-nav__link">
-    <span class="md-ellipsis">
-      remove
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#discard" class="md-nav__link">
     <span class="md-ellipsis">
       discard
@@ -1094,29 +1083,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../AVLTreeNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AVLTreeNodePointer
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1136,8 +1102,6 @@
       
         
           
-        
-      
         
       
         
@@ -1223,29 +1187,6 @@
   
   <span class="md-ellipsis">
     BinaryTrieNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../binarytrie/BinaryTrieNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    BinaryTrieNodePointer
     
   </span>
   
@@ -5844,15 +5785,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#remove" class="md-nav__link">
-    <span class="md-ellipsis">
-      remove
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#discard" class="md-nav__link">
     <span class="md-ellipsis">
       discard
@@ -5887,7 +5819,7 @@
 
 <p><a href="../../../../">APIs</a> &gt; <a href="../../../">ext</a> &gt; <a href="../../">data_structure</a> &gt; <a href="../">avltree</a> &gt; <a href="">AVLTree</a></p>
 <h1 id="avltree">AVLTree</h1>
-<div class="highlight"><pre><span></span><code>struct AVLTree[T: LessThanComparable &amp; Copyable &amp; Movable]
+<div class="highlight"><pre><span></span><code>struct AVLTree[ElementType: LessThanComparable &amp; Copyable &amp; Movable]
 </code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
@@ -5903,25 +5835,22 @@
 <div class="highlight"><pre><span></span><code>clear(mut self)
 </code></pre></div>
 <h3 id="bisect_left"><code>bisect_left</code></h3>
-<div class="highlight"><pre><span></span><code>bisect_left(self, v: T) -&gt; Int
+<div class="highlight"><pre><span></span><code>bisect_left(self, key: ElementType) -&gt; Int
 </code></pre></div>
 <h3 id="bisect_right"><code>bisect_right</code></h3>
-<div class="highlight"><pre><span></span><code>bisect_right(self, v: T) -&gt; Int
+<div class="highlight"><pre><span></span><code>bisect_right(self, key: ElementType) -&gt; Int
 </code></pre></div>
 <h3 id="__getitem__"><code>__getitem__</code></h3>
-<div class="highlight"><pre><span></span><code>__getitem__(self, i: Int) -&gt; T
+<div class="highlight"><pre><span></span><code>__getitem__(self, idx: Int) -&gt; ElementType
 </code></pre></div>
 <h3 id="__contains__"><code>__contains__</code></h3>
-<div class="highlight"><pre><span></span><code>__contains__(self, v: T) -&gt; Bool
+<div class="highlight"><pre><span></span><code>__contains__(self, key: ElementType) -&gt; Bool
 </code></pre></div>
 <h3 id="add"><code>add</code></h3>
-<div class="highlight"><pre><span></span><code>add(mut self, v: T)
-</code></pre></div>
-<h3 id="remove"><code>remove</code></h3>
-<div class="highlight"><pre><span></span><code>remove(mut self, v: T)
+<div class="highlight"><pre><span></span><code>add(mut self, owned key: ElementType)
 </code></pre></div>
 <h3 id="discard"><code>discard</code></h3>
-<div class="highlight"><pre><span></span><code>discard(mut self, v: T)
+<div class="highlight"><pre><span></span><code>discard(mut self, key: ElementType)
 </code></pre></div>
 
 

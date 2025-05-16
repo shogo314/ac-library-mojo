@@ -14,7 +14,7 @@
         <link rel="prev" href="../AVLTree/">
       
       
-        <link rel="next" href="../AVLTreeNodePointer/">
+        <link rel="next" href="../../binarytrie/">
       
       
       <link rel="icon" href="../../../../../assets/images/favicon.png">
@@ -847,8 +847,6 @@
       
         
       
-        
-      
     
     
     
@@ -1004,29 +1002,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../AVLTreeNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    AVLTreeNodePointer
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -1046,8 +1021,6 @@
       
         
           
-        
-      
         
       
         
@@ -1133,29 +1106,6 @@
   
   <span class="md-ellipsis">
     BinaryTrieNode
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../binarytrie/BinaryTrieNodePointer/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    BinaryTrieNodePointer
     
   </span>
   
@@ -5707,12 +5657,11 @@
 
 <p><a href="../../../../">APIs</a> &gt; <a href="../../../">ext</a> &gt; <a href="../../">data_structure</a> &gt; <a href="../">avltree</a> &gt; <a href="">AVLTreeNode</a></p>
 <h1 id="avltreenode">AVLTreeNode</h1>
-<div class="highlight"><pre><span></span><code>struct AVLTreeNode[T: LessThanComparable &amp; Copyable &amp; Movable]
+<div class="highlight"><pre><span></span><code>struct AVLTreeNode[ElementType: LessThanComparable &amp; Copyable &amp; Movable]
 </code></pre></div>
 <h2 id="methods">Methods</h2>
 <h3 id="__init__"><code>__init__</code></h3>
-<div class="highlight"><pre><span></span><code>__init__(out self, key: T)
-__init__(out self, key: T, idx: AVLTreeNodePointer, par: AVLTreeNodePointer)
+<div class="highlight"><pre><span></span><code>__init__(out self, owned key: ElementType)
 </code></pre></div>
 
 
