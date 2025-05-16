@@ -22,12 +22,25 @@ struct AVLTreeNode[ElementType: LessThanComparable & Copyable & Movable]:
 
 
 @value
-struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
+struct AVLTree[
+    ElementType: LessThanComparable & Copyable & Movable,
+    PreAllocate: Bool = False,
+]:
     alias _Node = AVLTreeNode[ElementType]
     alias _NodePointer = UnsafePointer[Self._Node]
     var _root: Self._NodePointer
+    var _next_pointer: Self._NodePointer
 
     fn __init__(out self):
+        constrained[not PreAllocate]()
+        self._root = Self._NodePointer()
+        self._next_pointer = Self._NodePointer()
+
+    fn __init__(out self, allocate_size: Int):
+        constrained[PreAllocate]()
+        self._next_pointer = Self._NodePointer.alloc(allocate_size)
+        if not self._next_pointer:
+            abort("Out of memory")
         self._root = Self._NodePointer()
 
     @always_inline
@@ -38,15 +51,20 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
     fn __len__(self) -> Int:
         return Int(self._size(self._root))
 
-    @staticmethod
     @always_inline
-    fn _make_node(owned key: ElementType) -> Self._NodePointer:
+    fn _make_node(mut self, owned key: ElementType) -> Self._NodePointer:
         var node = Self._Node(key^)
-        var addr = Self._NodePointer.alloc(1)
-        if not addr:
-            abort("Out of memory")
-        addr.init_pointee_move(node)
-        return addr
+        if PreAllocate:
+            var p = self._next_pointer
+            p.init_pointee_move(node)
+            self._next_pointer += 1
+            return p
+        else:
+            var addr = Self._NodePointer.alloc(1)
+            if not addr:
+                abort("Out of memory")
+            addr.init_pointee_move(node)
+            return addr
 
     @staticmethod
     fn _destruct(p: Self._NodePointer):
@@ -60,8 +78,9 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
 
     fn clear(mut self):
         if self._root:
-            Self._destruct(self._root)
-            self._root.free()
+            if not PreAllocate:
+                Self._destruct(self._root)
+                self._root.free()
             self._root = Self._NodePointer()
 
     fn bisect_left(self, key: ElementType) -> Int:
@@ -108,7 +127,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
 
     fn add(mut self, owned key: ElementType):
         if not self._root:
-            self._root = Self._make_node(key^)
+            self._root = self._make_node(key^)
             return
         var p = self._root
         while True:
@@ -116,7 +135,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                 if p[].right:
                     p = p[].right
                 else:
-                    var addr = Self._make_node(key^)
+                    var addr = self._make_node(key^)
                     addr[].par = p
                     p[].right = addr
                     break
@@ -124,7 +143,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                 if p[].left:
                     p = p[].left
                 else:
-                    var addr = Self._make_node(key^)
+                    var addr = self._make_node(key^)
                     addr[].par = p
                     p[].left = addr
                     break
@@ -252,7 +271,8 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                     debug_assert(False)
             else:
                 self._root = q
-            p.free()
+            if not PreAllocate:
+                p.free()
             self._balance(q)
         else:
             if par:
@@ -262,10 +282,12 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                     par[].right = Self._NodePointer()
                 else:
                     debug_assert(False)
-                p.free()
+                if not PreAllocate:
+                    p.free()
                 self._balance(par)
             else:
-                p.free()
+                if not PreAllocate:
+                    p.free()
                 self._root = Self._NodePointer()
 
     @always_inline
