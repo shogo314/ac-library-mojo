@@ -90,8 +90,11 @@ struct BinaryTrie[D: Int = 64, PreAllocate: Bool = False]:
 
     fn clear(mut self):
         if self._root:
-            self._destruct(self._root)
-            self._update(self._root)
+            if not PreAllocate:
+                self._destruct(self._root)
+            self._root[].left = Self._NodePointer()
+            self._root[].right = Self._NodePointer()
+            self._root[].size = 0
 
     fn __getitem__(self, idx: Int) -> UInt:
         debug_assert(-len(self) <= idx < len(self))

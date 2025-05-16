@@ -74,9 +74,10 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 10.092/8.635/12.437 | 662.42/661.54/663.24 |
-| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/binarytrie.test.mojo) | 8.121/7.008/10.192 | 662.58/661.70/663.74 |
-| [BinaryTrie with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/binarytrie_preallocate.test.mojo) | 5.339/5.140/5.667 | 518.59/517.99/519.37 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/avltree.test.mojo) | 9.649/8.757/11.131 | 662.65/661.90/663.60 |
+| [AVLTree with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/avltree_preallocate.test.mojo) | 7.821/7.507/8.291 | 438.89/438.32/439.66 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/binarytrie.test.mojo) | 7.108/6.595/7.820 | 662.87/662.01/663.35 |
+| [BinaryTrie with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/binarytrie_preallocate.test.mojo) | 6.070/5.687/6.717 | 518.36/517.49/518.90 |
 | [WordSizeTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/wordsizetree.test.mojo) | 1.663/1.466/2.349 | 50.02/49.86/50.35 |
 | [SegTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/predecessor_problem/segtree.test.mojo) | 3.068/2.356/3.944 | 379.71/379.44/380.88 |
 
@@ -84,7 +85,8 @@ oj-verify run {path}
 
 | 機能 | 実行時間 avg/min/max (sec) | メモリ avg/min/max (MB) |
 | :--- | :--- | :--- |
-| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 1.973/1.831/2.230 | 63.76/62.78/64.43 |
-| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 2.087/2.014/2.177 | 275.41/273.93/276.15 |
-| [BinaryTrie with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie_preallocate.test.mojo) | 1.963/1.833/2.115 | 215.43/214.37/216.00 |
+| [AVLTree](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/avltree.test.mojo) | 1.976/1.872/2.384 | 64.41/63.74/66.03 |
+| [AVLTree with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/avltree_preallocate.test.mojo) | 1.729/1.599/1.927 | 55.72/55.08/56.54 |
+| [BinaryTrie](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie.test.mojo) | 2.404/2.191/2.616 | 273.63/272.33/274.62 |
+| [BinaryTrie with preallocate](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/binarytrie_preallocate.test.mojo) | 1.895/1.705/2.227 | 215.07/214.12/216.10 |
 | [SegTree + Compress](https://github.com/shogo314/ac-library-mojo/tree/0.4.0/verify/yosupo/data_structure/ordered_set/segtree.test.mojo) | 1.409/1.258/1.685 | 72.02/71.43/72.92 |

@@ -9,7 +9,7 @@ fn main() raises:
     var N = io.nextInt()
     var Q = io.nextInt()
     var T = io.next()
-    var trie = BinaryTrie[27, True](60777216)
+    var trie = BinaryTrie[27, True](56777216)
     for i in range(N):
         if T[i] == "1":
             trie.add(i)

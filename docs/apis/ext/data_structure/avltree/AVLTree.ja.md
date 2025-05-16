@@ -3,7 +3,7 @@
 # AVLTree
 
 ```
-struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]
+struct AVLTree[ElementType: LessThanComparable & Copyable & Movable, PreAllocate: Bool = False]
 ```
 
 ## Methods
@@ -12,6 +12,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]
 
 ```
 __init__(out self)
+__init__(out self, allocate_size: Int)
 ```
 
 ### `__bool__`
