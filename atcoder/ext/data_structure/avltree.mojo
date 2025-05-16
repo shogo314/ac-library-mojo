@@ -39,6 +39,16 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
         return Int(self._size(self._root))
 
     @staticmethod
+    @always_inline
+    fn _make_node(owned key: ElementType) -> Self._NodePointer:
+        var node = Self._Node(key^)
+        var addr = Self._NodePointer.alloc(1)
+        if not addr:
+            abort("Out of memory")
+        addr.init_pointee_move(node)
+        return addr
+
+    @staticmethod
     fn _destruct(p: Self._NodePointer):
         debug_assert(Bool(p))
         if p[].left:
@@ -50,7 +60,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
 
     fn clear(mut self):
         if self._root:
-            self._destruct(self._root)
+            Self._destruct(self._root)
             self._root.free()
             self._root = Self._NodePointer()
 
@@ -98,12 +108,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
 
     fn add(mut self, owned key: ElementType):
         if not self._root:
-            var node = Self._Node(key^)
-            var addr = Self._NodePointer.alloc(1)
-            if not addr:
-                abort("Out of memory")
-            addr.init_pointee_move(node)
-            self._root = addr
+            self._root = Self._make_node(key^)
             return
         var p = self._root
         while True:
@@ -111,11 +116,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                 if p[].right:
                     p = p[].right
                 else:
-                    var node = Self._Node(key^)
-                    var addr = Self._NodePointer.alloc(1)
-                    if not addr:
-                        abort("Out of memory")
-                    addr.init_pointee_move(node)
+                    var addr = Self._make_node(key^)
                     addr[].par = p
                     p[].right = addr
                     break
@@ -123,11 +124,7 @@ struct AVLTree[ElementType: LessThanComparable & Copyable & Movable]:
                 if p[].left:
                     p = p[].left
                 else:
-                    var node = Self._Node(key^)
-                    var addr = Self._NodePointer.alloc(1)
-                    if not addr:
-                        abort("Out of memory")
-                    addr.init_pointee_move(node)
+                    var addr = Self._make_node(key^)
                     addr[].par = p
                     p[].left = addr
                     break

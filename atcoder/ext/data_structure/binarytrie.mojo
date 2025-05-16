@@ -34,23 +34,15 @@ struct BinaryTrie[D: Int = 64]:
         debug_assert(Bool(p))
         p[].size = self._size(p[].left) + self._size(p[].right)
 
-    fn __init__(out self):
-        constrained[1 <= D <= 64]()
-        constrained[bitwidthof[UInt]() == 64]()
+    @staticmethod
+    @always_inline
+    fn _make_node() -> Self._NodePointer:
         var node = Self._Node()
         var addr = Self._NodePointer.alloc(1)
         if not addr:
             abort("Out of memory")
         addr.init_pointee_move(node)
-        self._root = addr
-
-    @always_inline
-    fn __len__(self) -> Int:
-        return self._size(self._root)
-
-    @always_inline
-    fn __bool__(self) -> Bool:
-        return len(self)
+        return addr
 
     @staticmethod
     fn _destruct(p: Self._NodePointer):
@@ -61,6 +53,19 @@ struct BinaryTrie[D: Int = 64]:
         if p[].right:
             Self._destruct(p[].right)
             p[].right.free()
+
+    fn __init__(out self):
+        constrained[1 <= D <= 64]()
+        constrained[bitwidthof[UInt]() == 64]()
+        self._root = Self._make_node()
+
+    @always_inline
+    fn __len__(self) -> Int:
+        return self._size(self._root)
+
+    @always_inline
+    fn __bool__(self) -> Bool:
+        return len(self)
 
     fn clear(mut self):
         if self._root:
@@ -110,21 +115,11 @@ struct BinaryTrie[D: Int = 64]:
         for i in reversed(range(D)):
             if (x >> i) & UInt(1):
                 if not p[].right:
-                    var node = Self._Node()
-                    var addr = Self._NodePointer.alloc(1)
-                    if not addr:
-                        abort("Out of memory")
-                    addr.init_pointee_move(node)
-                    p[].right = addr
+                    p[].right = Self._make_node()
                 p = p[].right
             else:
                 if not p[].left:
-                    var node = Self._Node()
-                    var addr = Self._NodePointer.alloc(1)
-                    if not addr:
-                        abort("Out of memory")
-                    addr.init_pointee_move(node)
-                    p[].left = addr
+                    p[].left = Self._make_node()
                 p = p[].left
             l.append(p)
         p = l.pop()
